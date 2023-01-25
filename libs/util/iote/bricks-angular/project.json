@@ -1,0 +1,42 @@
+{
+  "name": "util-iote-bricks-angular",
+  "projectType": "library",
+  "sourceRoot": "libs/util/iote/bricks-angular/src",
+  "prefix": "iote",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/util/iote/bricks-angular"],
+      "options": {
+        "project": "libs/util/iote/bricks-angular/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/util/iote/bricks-angular/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/util/iote/bricks-angular/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/util/iote/bricks-angular"],
+      "options": {
+        "jestConfig": "libs/util/iote/bricks-angular/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/util/iote/bricks-angular/**/*.ts",
+          "libs/util/iote/bricks-angular/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
