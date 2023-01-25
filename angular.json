@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "elewa-group-website": "apps/elewa-group-website",
+    "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql"
   },
   "defaultProject": "elewa-group-website"
