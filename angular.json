@@ -1,7 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "elewa-group-website": "apps/elewa-group-website"
+    "elewa-group-website": "apps/elewa-group-website",
+    "state-data-gql": "libs/state/data/gql"
   },
   "defaultProject": "elewa-group-website"
 }

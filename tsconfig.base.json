@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
