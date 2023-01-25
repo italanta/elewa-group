@@ -43,3 +43,6 @@ scully.log
 apps/elewa-group-website/src/environments/environment.prod.ts
 apps/elewa-group-website/src/environments/environment.ts
 package-lock.json
+scully.elewa-group-website.config.js
+scully/plugins/plugins.js
+apps/elewa-group-website/src/assets/scully-routes.json
