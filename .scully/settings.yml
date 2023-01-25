@@ -1,0 +1,11 @@
+identifier: lbd9ban0dbb32ed3
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: elewa-group-website
+homeFolder: /Users/ianodhiambo/Documents/elewa/elewa-group
+distFolder: ./dist/apps/elewa-group-website
+outDir: /Users/ianodhiambo/Documents/elewa/elewa-group/dist/static
+handle404: ''
+allowErrorCollect: false
