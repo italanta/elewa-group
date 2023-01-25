@@ -15,8 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elewa-group/state/crm/data": ["libs/state/crm/data/src/index.ts"],
-      "@elewa-group/state/crm/gql": ["libs/state/crm/gql/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
