@@ -5,5 +5,6 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [HomePageComponent],
+  exports: [ HomePageComponent]
 })
 export class FeaturesElewaHomeModule {}
