@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
+import { HomePageModule } from '@elewa-group/pages/elewa/home'
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, ScullyLibModule],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule, 
+    ScullyLibModule,
+    HomePageModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
