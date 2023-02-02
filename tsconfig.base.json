@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elewa-group/features/elewa/home": [
-        "libs/features/elewa/home/src/index.ts"
+      "@elewa-group/pages/elewa/home": [
+        "libs/pages/elewa/home/src/index.ts"
       ],
       "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
       "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],

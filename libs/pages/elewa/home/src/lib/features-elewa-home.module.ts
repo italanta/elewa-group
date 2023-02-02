@@ -7,4 +7,4 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
   declarations: [HomePageComponent],
   exports: [ HomePageComponent]
 })
-export class FeaturesElewaHomeModule {}
+export class HomePageModule {}

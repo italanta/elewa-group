@@ -2,7 +2,7 @@
   "version": 2,
   "projects": {
     "elewa-group-website": "apps/elewa-group-website",
-    "features-elewa-home": "libs/features/elewa/home",
+    "pages-elewa-home": "libs/pages/elewa/home",
     "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql",
     "util-iote-bricks": "libs/util/iote/bricks",

@@ -1,15 +1,15 @@
 {
-  "name": "features-elewa-home",
+  "name": "pages-elewa-home",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/features/elewa/home/src",
+  "sourceRoot": "libs/pages/elewa/home/src",
   "prefix": "elewa-group",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/features/elewa/home/jest.config.ts",
+        "jestConfig": "libs/pages/elewa/home/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -24,8 +24,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/features/elewa/home/**/*.ts",
-          "libs/features/elewa/home/**/*.html"
+          "libs/pages/elewa/home/**/*.ts",
+          "libs/pages/elewa/home/**/*.html"
         ]
       }
     }
