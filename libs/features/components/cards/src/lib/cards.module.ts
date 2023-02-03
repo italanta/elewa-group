@@ -6,4 +6,4 @@ import { ElewaGroupCardComponent } from './elewa-group-card/elewa-group-card.com
   imports: [CommonModule],
   declarations: [ElewaGroupCardComponent],
 })
-export class FeaturesComponentsCardsModule {}
+export class CardsModule {}
