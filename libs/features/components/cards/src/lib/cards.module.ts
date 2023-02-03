@@ -5,5 +5,6 @@ import { ElewaGroupCardComponent } from './elewa-group-card/elewa-group-card.com
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaGroupCardComponent],
+  exports: [ElewaGroupCardComponent]
 })
 export class CardsModule {}

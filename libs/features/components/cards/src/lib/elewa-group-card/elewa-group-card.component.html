@@ -1,8 +1,8 @@
 <div class="card">
-    <img [src]="imgSrc" alt="Image">
     <div class="card-content">
-      <h3>{{ title }}</h3>
       <h5>{{ subtitle }}</h5>
+      <h3>{{ title }}</h3>
+      <img [src]="imgSrc" alt={{title}}>
       <p>{{ description }}</p>
     </div>
 </div>
