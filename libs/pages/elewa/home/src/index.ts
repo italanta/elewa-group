@@ -1,1 +1,1 @@
-export * from './lib/pages-elewa-home.module';
+export * from './lib/features-elewa-home.module';
