@@ -1,8 +1,8 @@
 .card {
   width: 320px;
   height: 350px;
-  background-color: #f6f6f6;
-  color: #000000;
+  background-color: var(--card-bgColor);
+  color: var(--card-text-color);
   border-radius: 20px;
   overflow: hidden;
   margin: 10px;
@@ -19,7 +19,7 @@
   }
   
   p {
-    font-size: 13px;
+    font-size: var(--card-font-size);
   }
   
   h3,
@@ -28,7 +28,7 @@
   }
   
   h3 {
-    font-size: 24px;
+    font-size: var(--card-header-font-size);
   }
   
   h5 {
@@ -39,7 +39,7 @@
 
 @media only screen and (max-width: 768px) {
   .card {
-    width: 80%;
+    width: 220px;
     height: auto;
 
     img {
@@ -49,7 +49,6 @@
 
     h3,
     h5 {
-      margin-bottom: 0px;
       font-weight: 400;
     }
   

@@ -10,3 +10,27 @@
   justify-content: center;
   align-items: center;
 }
+
+.home-cards-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.home-cards {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

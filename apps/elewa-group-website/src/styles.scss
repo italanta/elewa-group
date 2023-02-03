@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --card-bgColor: #f6f6f6;
+    --card-text-color: #000000;
+    --card-font-size: 17px;
+    --card-header-font-size: 24px;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
