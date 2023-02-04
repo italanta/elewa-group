@@ -1,0 +1,53 @@
+.card{
+    padding: 20px 30px;
+    background: #f4f4f4;
+    border: 0;
+    border-radius: 20px;
+    width: 15%;
+    height: 30%;
+
+    .headers h2, .headers h5{
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .img img{
+        margin: 30px 0;
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,2), rgba(0,0,0,0));
+    }
+
+    .text{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .card{
+        width: 35%;
+        border-radius: 23px;
+
+        .headers h2, .headers h5{
+            margin: 0;
+            padding: 0 0;
+        }
+
+        .headers h5{
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        .headers h2{
+            font-size: 17px;
+            font-weight: 600;
+        }
+    
+        .img img{
+            margin: 10px 0;
+        }
+
+        .text{
+            font-size: 12px;
+        }
+    }
+}
