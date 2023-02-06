@@ -3,6 +3,7 @@
 Please include a summary of the changes and the related issue. Please also include relevant motivation and context. 
 List any dependencies that are required for this change.
 
+
 Example
 This pull request is part of the work to make it easier for people to contribute to naming convention guides. 
 One of the easiest way to make small changes would be using the Edit on Github button.
