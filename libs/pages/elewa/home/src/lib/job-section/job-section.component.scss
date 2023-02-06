@@ -1,12 +1,13 @@
 .jobs-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
-h2 {
-    font-size: var(--font-size-xl);
-    font-weight: bold;
+
+p {
+     font-size: var(--font-size-xxxl); 
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
@@ -15,4 +16,5 @@ a {
     font-weight: bold;
     color: var(--secondary-color);
     text-decoration: none;
+    
 }
