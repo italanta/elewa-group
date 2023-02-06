@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'elewa-group-button-with-animation',
@@ -10,14 +10,14 @@ import { Location } from '@angular/common';
 
 export class ElewaGroupButtonWithAnimationComponent {
   constructor(
-    private location: Location
+    private router: Router,
   ) {}
 
-  @Input() mode="light";
-  @Input() message="Button Text";
-  @Input() action=".";
+  @Input() mode: string | undefined;
+  @Input() message: string | undefined;
+  @Input() action: string | undefined;
 
-  nav(): void{
-    this.location.go(this.action);
-  }
+  btnClick= ()=> {
+    this.router.navigateByUrl('/user');
+};
 }
