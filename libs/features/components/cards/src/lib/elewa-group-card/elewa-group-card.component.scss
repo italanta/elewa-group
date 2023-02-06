@@ -1,8 +1,8 @@
 .card {
   width: 320px;
   height: 350px;
-  background-color: var(--card-bgColor);
-  color: var(--card-text-color);
+  background-color: var(--elewa-group-website-card-bgColor);
+  color: var(--elewa-group-website-card-text-color);
   border-radius: 20px;
   overflow: hidden;
   margin: 10px;
@@ -19,20 +19,15 @@
   }
   
   p {
-    font-size: var(--card-font-size);
-  }
-  
-  h3,
-  h5 {
-    font-weight: 400;
+    font-family: var(--elewa-group-website-dmsans-regular);
   }
   
   h3 {
-    font-size: var(--card-header-font-size);
+    font-family: var(--elewa-group-website-dmsans-regular);
   }
   
   h5 {
-    font-size: 16px;
+    font-family: var(--elewa-group-website-dmsans-regular);
   }
 
 }
@@ -47,17 +42,16 @@
       height: 50px;
     }
 
-    h3,
-    h5 {
-      font-weight: 400;
+    p {
+      font-family: var(--elewa-group-website-dmsans-regular);
     }
-  
+    
     h3 {
-      font-size: 18px;
+      font-family: var(--elewa-group-website-dmsans-regular);
     }
-  
+    
     h5 {
-      font-size: 14px;
+      font-family: var(--elewa-group-website-dmsans-regular);
     }
 
   }
