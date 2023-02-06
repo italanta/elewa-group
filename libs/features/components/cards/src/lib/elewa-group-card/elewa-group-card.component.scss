@@ -2,7 +2,7 @@
   width: 320px;
   height: 350px;
   background-color: var(--elewa-group-website-card-bgColor);
-  color: var(--elewa-group-website-card-text-color);
+  color: var(--elewa-group-website-color-primary);
   border-radius: 20px;
   overflow: hidden;
   margin: 10px;
@@ -20,14 +20,17 @@
   
   p {
     font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-card-font-size);
   }
   
   h3 {
     font-family: var(--elewa-group-website-dmsans-regular);
+    font-size:  var(--elewa-group-website-card-header-font-size);
   }
   
   h5 {
     font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-card-sub-title-font-size);
   }
 
 }
