@@ -5,5 +5,6 @@ import { ElewaHeroComponent } from './components/elewa-hero/elewa-hero.component
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaHeroComponent],
+  exports: [ElewaHeroComponent]
 })
 export class ElementsLayoutModule {}
