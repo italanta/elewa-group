@@ -36,6 +36,10 @@
     margin: auto;
 }
 
+.button-with-animation .right-arrow-container #arrow-right{
+    color: var(--elewa-group-website-color-card);
+}
+
 .light{
     background-color: var(--elewa-group-website-color-card);
     color: var(--elewa-group-website-color-primary);
@@ -43,8 +47,5 @@
 }
 .light .right-arrow-container{
     background-color: var(--elewa-group-website-color-primary);
-}
-.button-with-animation .right-arrow-container #arrow-right{
-    color: var(--elewa-group-website-color-card);
 }
 
