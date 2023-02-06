@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './elewa-hero.component.html',
   styleUrls: ['./elewa-hero.component.scss'],
 })
-export class ElewaHeroComponent {}
+export class ElewaHeroComponent {
+  @Input() subtitle = 'How to recognize an elewa member';
+  @Input() title = 'Dependable, Creative, Supportive, Open Minded and Fun*';
+  @Input() backgroundImg =  'https://via.placeholder.com/1900x1080';
+}
