@@ -1,0 +1,33 @@
+// convs-mgric Variables and Theming. For more info, please see:
+// http://convs-mgricframework.com/docs/theming/
+/** convs-mgric CSS Variables **/
+
+:root {
+
+  /** primary **/
+  --elewa-group-website-color-primary: #000000;
+
+  /** Font family **/
+  --elewa-group-website-dmsans-bold: 'DMSans-Bold';
+  --elewa-group-website-dmsans-bold-italic: 'DMSans-Bold-Italic';
+  --elewa-group-website-dmsans-italic: 'DMSans-ITalic';
+  --elewa-group-website-dmsans-medium: 'DMSans-Medium';
+  --elewa-group-website-dmsans-medium-italic: 'DMSans-Medium-Italic';
+  --elewa-group-website-dmsans-regular: 'DMSans-Regular';
+
+  // reusable card component
+  --elewa-group-website-color-reusable-card-component: #f4f4f4;
+  --elewa-group-website-color--webkit-mask-image1: rgba(0,0,0,1);
+  --elewa-group-website-color--webkit-mask-image2: rgba(0,0,0,0);
+  --elewa-group-website-color--webkit-mask-image3: rgba(0,0,0,2);
+  --elewa-group-website-color--webkit-mask-image4: rgba(0,0,0,0);
+
+  --elewa-group-website-font-weight-subtitle: 300;
+  --elewa-group-website-font-weight-title: 500;
+  --elewa-group-website-font-weight-title-medium: 600;
+  --elewa-group-website-font-size-title: 30px;
+  --elewa-group-website-font-size-title-medium: 20px;
+  --elewa-group-website-font-size-description: 16px;
+  --elewa-group-website-font-size-description-medium: 12px;
+
+}
