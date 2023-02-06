@@ -1,0 +1,23 @@
+nav {
+      
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+    
+      float: right;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      background-color: gray;
+      
+    }
+  }  
+  
+  .white-text{
+    color: white;
+  }
