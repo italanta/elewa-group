@@ -1,0 +1,29 @@
+// convs-mgric Variables and Theming. For more info, please see:
+// http://convs-mgricframework.com/docs/theming/
+/** convs-mgric CSS Variables **/
+
+:root {
+
+  /** primary **/
+  --elewa-group-website-color-primary: #000000;
+
+  /** Font family **/
+  --elewa-group-website-dmsans-bold: 'DMSans-Bold';
+  --elewa-group-website-dmsans-bold-italic: 'DMSans-Bold-Italic';
+  --elewa-group-website-dmsans-italic: 'DMSans-ITalic';
+  --elewa-group-website-dmsans-medium: 'DMSans-Medium';
+  --elewa-group-website-dmsans-medium-italic: 'DMSans-Medium-Italic';
+  --elewa-group-website-dmsans-regular: 'DMSans-Regular';
+
+  // hero section
+  --elewa-group-website-color-bg: #000000;
+  --elewa-group-website-color: #ffffff;
+  --elewa-group-website-font-size-heading: 45px;
+  --elewa-group-website-font-size-heading-medium: 15px;
+  --elewa-group-website-font-size-subheading: 20px;
+  --elewa-group-website-font-size-subheading-medium: 13px;
+  --elewa-group-website-font-size-title: 15px;
+  --elewa-group-website-font-size-description: 13px;
+  --elewa-group-website-font-size-description-medium: 12px;
+
+}
