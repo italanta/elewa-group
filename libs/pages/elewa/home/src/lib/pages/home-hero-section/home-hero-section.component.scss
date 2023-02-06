@@ -1,4 +1,4 @@
-.container-fluid{
+.container{
     background-color: var(--elewa-group-website-color-bg);
     border-radius: 0 0 30px 30px;
     margin: 0 5%;
@@ -60,7 +60,10 @@
 }
 
 @media screen and (max-width: 850px) {
-    .container-fluid{
+    .container{
+        margin: 0 0;
+        padding: 20px 40px;
+        
         .col4{
             display: none;
         }
