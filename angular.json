@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "elements-layout": "libs/elements/layout",
     "elewa-group-website": "apps/elewa-group-website",
     "pages-elewa-about-us": "libs/pages/elewa/about-us",
     "pages-elewa-home": "libs/pages/elewa/home",
