@@ -9,13 +9,16 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
 
+import {ElementsLayoutModule } from '@elewa-group/elements/layout';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule, 
     ScullyLibModule,
     HomePageModule,
-    CardsModule
+    CardsModule,
+    ElementsLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],
