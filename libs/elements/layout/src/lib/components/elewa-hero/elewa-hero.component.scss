@@ -1,6 +1,3 @@
-// * {
-//   outline: solid red 0.1rem;
-// }
 #elewa-hero .backgroundImage {
   position: absolute;
   z-index: -1;
@@ -12,12 +9,11 @@
   width: calc(min(85vw, 65rem));
   margin: auto;
   position: relative;
-  //   background-color: red;
+
   height: 100%;
 }
 
 #elewa-hero {
-  //   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -38,7 +34,7 @@
   height: 5rem;
   position: absolute;
   bottom: 0;
-  // background-color: red;
+
   width: 100%;
 }
 .navbar #elewa-banner {
@@ -58,7 +54,7 @@
 }
 .navbar ul li {
   margin-left: 0.1rem;
-  //   background-color: red;
+
   padding-top: 0.3rem;
   padding-left: 0.7rem;
   padding-bottom: 0.3rem;
