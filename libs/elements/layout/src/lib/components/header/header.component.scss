@@ -1,0 +1,33 @@
+
+
+@media (max-width: 952px){
+    .navbar-header{
+        font-size: 30px;
+    padding-left: 50px;
+    }
+
+}
+@media (max-width: 858px){
+    .navlinks {
+        display: block;
+        font-size: 30px;
+        color: white;
+        line-height: 40px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+    }
+    ul {
+        background: grey;
+    }
+    .navlinks ul li {
+        display: block;
+    }
+    .navlinks ul li a{
+        font-size: 20px;
+    }
+    
+}
+
+
