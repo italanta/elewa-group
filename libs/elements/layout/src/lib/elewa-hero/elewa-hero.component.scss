@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.lander-wrapper {
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  font-family: var(--elewa-group-website-dmsans-regular);
+}
+.lander-section {
+  padding: 1rem 3rem;
+}
+
+.lander-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px white;
+}
+.lander-header h2 {
+  font-family: var(--elewa-group-website-dmsans-bold);
+}
+.lander-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.lander-navlinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.lander-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0 1.75rem;
+  top: 40%;
+  width: 60vw;
+}
+.lander-content h2 {
+  font-size: 2.25rem;
+  font-weight: 100;
+  margin: 0;
+}
+.burger-icon {
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0.25rem 0;
+}
+h4 {
+  font-weight: lighter;
+  margin: 0.25rem 0;
+}
+
+@media screen and (max-width: 777px) {
+  .lander-header {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .lander-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .navlinks-hidden {
+    display: none !important;
+  }
+
+  .lander-header h2 {
+    align-self: flex-start;
+    padding: 0.5rem;
+  }
+  .lander-section {
+    padding: 0;
+  }
+  .lander-content {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 4rem;
+  }
+  .lander-navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: antiquewhite;
+  }
+  
+  a {
+    border-bottom: solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  a:first-child {
+    border-top: solid 1px;
+  }
+}

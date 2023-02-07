@@ -1,1 +1,46 @@
-<p>elewa-hero works!</p> 
+<div class="lander-wrapper">
+  <img
+    src="https://images.unsplash.com/photo-1674592309639-39067f6a8111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    alt="lander image"
+    class="lander-image"
+  />
+  <div class="lander-section">
+    <header class="lander-header">
+      <div class="lander-title">
+        <h2>elewa group</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="burger-icon"
+          (click)="setVisibility()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+      <ul
+        class="{{
+          isNavLinks ? 'lander-navlinks' : 'lander-navlinks navlinks-hidden'
+        }}"
+      >
+        <a href="#activities">Activities</a>
+        <a href="#aboutUs">About us</a>
+        <a href="#socialImpact">Social impact</a>
+        <a href="#invest">Invest</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </ul>
+    </header>
+    <div class="lander-content">
+      <h3>{{subHeading}}</h3>
+      <h2>{{titleText}}</h2>
+      <h4>{{subText}}</h4>
+    </div>
+  </div>
+</div>
