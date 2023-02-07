@@ -18,5 +18,7 @@ describe('HomeSectionComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    
   });
+
 });
