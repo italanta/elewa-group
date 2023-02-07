@@ -7,17 +7,19 @@ import { ChangeDetectionStrategy, Component, OnInit, Input, Output, EventEmitter
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ElewaGroupButtonComponent {
-  public buttonText = 'Learn More';
+  public buttonText = 'Get this offer now';
 
   @Input()
 	set text(name: string) {
 		this.buttonText = name;
 	}
+
+	//@Input() set theme (mode: 'light' | 'dark') 
 	get name(): string {
 		return this.buttonText;
 	}
 
-	@Input() color = '0068B4';
+	@Input() color = 'black';
 	@Input() type = 'hover';
   @Output() btnClick = new EventEmitter();
 
