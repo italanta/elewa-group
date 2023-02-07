@@ -71,6 +71,9 @@ h3 {
 h4 {
   font-weight: lighter;
   margin: 0.25rem 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
 }
 
 @media screen and (max-width: 777px) {
@@ -115,7 +118,7 @@ h4 {
     width: 100%;
     background-color: antiquewhite;
   }
-  
+
   a {
     border-bottom: solid 1px;
     width: 100%;
