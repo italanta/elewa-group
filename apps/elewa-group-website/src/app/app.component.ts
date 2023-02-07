@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'elewa-group-website';
+  body = "djcidk"
 }
