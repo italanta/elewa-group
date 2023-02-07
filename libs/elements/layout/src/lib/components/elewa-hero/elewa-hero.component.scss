@@ -1,0 +1,25 @@
+#elewa-hero {
+  width: 100vw;
+  height: 100vw;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  background: var(--elewa-group-website-color-card);
+}
+.navbar a {
+  // font-size: var(--elewa-group-website-font-size-title);
+  font-weight: var(--elewa-group-website-font-weight-title);
+}
+.navbar ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  float: right;
+  text-decoration: none;
+}
+.navbar ul li {
+  margin-left: 2rem;
+}
+
+.content {
+  margin-top: 250px;
+  margin-left: 50px;
+}
