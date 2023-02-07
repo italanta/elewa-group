@@ -7,4 +7,4 @@ import { ElewaGroupButtonComponent } from './elewa-group-button/elewa-group-butt
   declarations: [ElewaGroupButtonComponent],
   exports: [ElewaGroupButtonComponent ]
 })
-export class FeaturesComponentsButtonsModule {}
+export class ButtonsModule {}
