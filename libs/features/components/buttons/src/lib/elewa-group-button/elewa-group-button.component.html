@@ -1,13 +1,23 @@
-<!-- <button
-	[type]="type"
-	(click)="onClick()"
-	class="btn">
-	<span>{{ buttonText }}</span>
-</button> -->
-
-<button [type]="type" (click)="onClick()" class="btn">
-  <span class="text">{{ buttonText }}</span>
-  <div class="arrow">
-	<i id="icon"class="fa-thin fa-arrow-right"></i>
-  </div>
-</button>
+<a href="{{ action }}">
+	<button
+	  type="button"
+	  class="button"
+	  [ngStyle]="{
+		'background-color': mode === 'dark' ? '#000000' : '#FFFFFF',
+		color: mode === 'dark' ? '#FFFFFF' : '#000000'
+	  }"
+	>
+	  {{ message }}
+	  <span class="fa-stack fa-2x">
+		<i
+		  class="fa fa-circle fa-stack-2x"
+		  [ngClass]="mode === 'dark' ? 'white' : 'dark'"
+		></i>
+		<i
+		  class="fa fa-long-arrow-right fa-stack-1x"
+		  [ngClass]="mode === 'dark' ? 'dark' : 'white'"
+		  aria-hidden="true"
+		></i
+	  ></span>
+	</button>
+  </a>
