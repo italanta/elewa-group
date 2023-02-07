@@ -4,44 +4,50 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+ <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
+ <url>
   <loc>https://elewa-group-website.com/</loc>
-  <lastmod>weekly</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
+    <lastmod>2023-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+ </url>
+ <url>
   <loc>https://elewa-group-website.com/activities</loc>
-  <lastmod>weekly</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-<url>
+   <lastmod>2023-02-01</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.90</priority>
+ </url>
+ <url>
+ <url>
   <loc>https://elewa-group-website.com/about</loc>
-  <lastmod>weekly</lastmod>
+  <lastmod>2023-02-01</lastmod>
   <priority>0.65</priority>
-</url>
+ </url>
   <loc>https://elewa-group-website.com/socialimpact</loc>
-  <lastmod>weekly</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
+     <lastmod>2023-02-01</lastmod>
+     <changefreq>monthly</changefreq>
+     <priority>0.70</priority>
+ </url>
+ <url>
   <loc>https://elewa-group-website/invest</loc>
-  <lastmod>weekly</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
+    <lastmod>2023-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+ </url>
+ <url>
   <loc>https://elewa-group-website/news</loc>
-  <lastmod>weekly</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
+   <lastmod>2023-02-01</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.80</priority>
+ </url>
+ <url>
   <loc>https://elewa-group-website/contact</loc>
-  <lastmod>weekly</lastmod>
+  <lastmod>2023-02-01</lastmod>
+   <changefreq>monthly</changefreq>
   <priority>0.64</priority>
-</url>
+ </url>
 
 
 </urlset>

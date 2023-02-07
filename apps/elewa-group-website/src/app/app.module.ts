@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ScullyLibModule } from '@scullyio/ng-lib';
@@ -9,14 +10,11 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
 
+
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule, 
-    ScullyLibModule,
-    HomePageModule,
-    CardsModule
-  ],
+  imports: [BrowserModule, ScullyLibModule, HomePageModule, CardsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
