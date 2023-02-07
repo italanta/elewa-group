@@ -7,7 +7,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 import { JobSectionComponent}  from '@elewa-group/pages/elewa/home'
-
+import { CardsModule } from '@elewa-group/features/components/cards';
 
 
 @NgModule({
@@ -16,10 +16,9 @@ import { JobSectionComponent}  from '@elewa-group/pages/elewa/home'
     BrowserModule, 
     ScullyLibModule,
     HomePageModule,
-    JobSectionComponent
-   
-    
-   
+    JobSectionComponent,
+    CardsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
