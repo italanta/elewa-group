@@ -23,12 +23,15 @@
 		cursor: pointer;
 	}
 }
+#icon{
+	color: white;
+}
 
 .text{
 	padding: 8px;
 }
 .arrow{
-    background-color: black;
+    background-color: var(--elewa-group-website-color-card);
 	color: white;
     height: 30px;
     width: 30px;

@@ -11,7 +11,6 @@ import { CardsModule } from '@elewa-group/features/components/cards';
 
 import { FeaturesComponentsButtonsModule } from '@elewa-group/features/components/buttons';
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
