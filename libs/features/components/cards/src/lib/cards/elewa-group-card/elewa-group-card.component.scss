@@ -1,53 +1,61 @@
 .card{
     padding: 20px 30px;
-    background: #f4f4f4;
+    font-family: var( --elewa-group-website-dmsans-regular);
+    background: var(--elewa-group-website-color-card);
     border: 0;
     border-radius: 20px;
-    width: 15%;
+    width: 20%;
     height: 30%;
 
-    .headers h2, .headers h5{
+    .headers .p1{
+        font-family: var(--elewa-group-website-dmsans-regular);
+        font-size: var(--elewa-group-website-font-size-title);
+        font-weight: var(--elewa-group-website-font-weight-title);
+    }
+
+    .headers .p2{
+        font-family: var(--elewa-group-website-dmsans-regular);
+        font-weight: var(--elewa-group-website-font-weight-subtitle);
+    }
+
+    .headers .p1, .headers .p2{
         margin: 0;
         padding: 5px 0;
     }
 
     .img img{
         margin: 30px 0;
-        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-        mask-image: linear-gradient(to bottom, rgba(0,0,0,2), rgba(0,0,0,0));
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-card-item1)), to(var(--elewa-group-website-color-card-item2)));
+        mask-image: linear-gradient(to bottom, var(--elewa-group-website-color-card-item3), var(--elewa-group-website-color-card-item4));
     }
 
     .text{
-        font-size: 14px;
+        font-size: var(--elewa-group-website-font-size-description);
     }
 }
 
 @media only screen and (max-width: 850px) {
     .card{
-        width: 35%;
+        width: 45%;
         border-radius: 23px;
+        padding: 20px 25px;
 
-        .headers h2, .headers h5{
+        .headers .p1, .headers .p2{
             margin: 0;
             padding: 0 0;
         }
 
-        .headers h5{
-            font-size: 13px;
-            font-weight: 300;
+        .headers .p1{
+            font-size: var(--elewa-group-website-font-size-title-medium);
+            font-weight: var(--elewa-group-website-font-weight-title-medium);
         }
 
-        .headers h2{
-            font-size: 17px;
-            font-weight: 600;
-        }
-    
         .img img{
             margin: 10px 0;
         }
 
         .text{
-            font-size: 12px;
+            font-size: var(--elewa-group-website-font-size-description-medium);
         }
     }
 }
