@@ -68,7 +68,7 @@ h3 {
   font-weight: normal;
   margin: 0.25rem 0;
 }
-h4 {
+.footer {
   font-weight: lighter;
   margin: 0.25rem 0;
   position: absolute;
@@ -89,6 +89,11 @@ h4 {
     width: 100%;
     padding: 0.5rem;
   }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+  }
   .burger-icon {
     display: block;
   }
@@ -107,7 +112,7 @@ h4 {
     position: relative;
     width: 100%;
     padding: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .lander-navlinks {
     display: flex;
@@ -116,7 +121,7 @@ h4 {
     align-items: center;
     padding: 0;
     width: 100%;
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
   }
 
   a {
