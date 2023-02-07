@@ -10,7 +10,7 @@ export class ElewaHeroComponent implements OnInit {
   @Input() subHeading = 'How to recognize an elewa member';
   @Input() titleText = 'Dependable, Creative, Supportive, Open Minded and Fun*';
   @Input() subText = 'Irrespective of origin, nationality, gender, and belief.';
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.isNavLinks = false;
   }
   setVisibility() {
