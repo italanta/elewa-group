@@ -1,0 +1,18 @@
+// .footer {
+//     color: whitesmoke;
+// }
+// .text {
+//     color: white;
+// }
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 10px;
+    }
+}
