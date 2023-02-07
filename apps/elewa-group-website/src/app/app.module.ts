@@ -10,6 +10,7 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home'
 import { FeaturesComponentsButtonsModule } from '@elewa-group/features/components/buttons';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { ElewaGroupButtonComponent } from '@elewa-group/features/components/buttons';
 
 @NgModule({
   declarations: [AppComponent],

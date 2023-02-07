@@ -1,29 +1,38 @@
 .btn {
-	background: black;
+	background: white;
 	border-radius: 20px;
-	color: white;
-	font-weight: 400;
-	width: 300px;
+	color: black;
+	width: 280px;
 	height: 45px;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: 'Roboto';
-	border: 0px;
+	outline: 2px;
+	outline-color: black;
     display: flex;
     flex-direction: row;
     align-items: space-between;
-    justify-content: center;
-    gap: 50px;
-    padding-top: 15px;
+    justify-content: start;
+	position: absolute;
+	gap: 50px;
+    //padding-top: 15px;
 
 	&:hover {
-		background-color: rgb(16, 16, 20);
+		color: rgb(1, 11, 11);
+		transition: color 0.5s ease-in-out;
+		font-weight: 700;
+		cursor: pointer;
 	}
 }
 
+.text{
+	padding: 8px;
+}
 .arrow{
-    background-color: white;
-    height: 25px;
-    width: 25px;
+    background-color: black;
+	color: white;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
+	padding: 4px;
 
 }
