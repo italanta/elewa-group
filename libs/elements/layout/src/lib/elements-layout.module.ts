@@ -5,5 +5,6 @@ import { WebsiteHeaderComponent } from './website-header/website-header.componen
 @NgModule({
   imports: [CommonModule],
   declarations: [WebsiteHeaderComponent],
+  exports: [WebsiteHeaderComponent],
 })
 export class ElementsLayoutModule {}
