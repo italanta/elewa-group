@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ElewaHeroComponent implements OnInit {
   isNavLinks!: boolean;
-  @Input() subHeading = 'How to recognize an elewa member';
-  @Input() titleText = 'Dependable, Creative, Supportive, Open Minded and Fun*';
-  @Input() subText = 'Irrespective of origin, nationality, gender, and belief.';
+  @Input() subtitle = 'How to recognize an elewa member';
+  @Input() mainTitle = 'Dependable, Creative, Supportive, Open Minded and Fun*';
+  @Input() footer = '*Serious when it matters';
   ngOnInit(): void { 
     this.isNavLinks = false;
   }
