@@ -1,7 +1,16 @@
 
 
 <div id="elewa-hero">
-    <img src = {{backgroundImg}} class="backgroundImage"/>
+    <!-- <img src = {{backgroundImg}} class="backgroundImage"/> -->
+
+    <img
+        srcset={{srcset.join(", ")}}
+        sizes="(max-width: 480px) 480,
+               (max-width: 767px)  800px,
+                1900px"
+        src="backgroundImg"
+        alt="top banner hero image"/>
+
     <div class="container">
         <nav class="navbar">
             <div class="component">
