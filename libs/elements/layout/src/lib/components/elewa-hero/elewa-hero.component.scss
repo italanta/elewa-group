@@ -1,12 +1,18 @@
 // * {
 //   outline: solid red 0.1rem;
 // }
-
+#elewa-hero .backgroundImage {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
 .container {
   width: calc(min(85vw, 65rem));
   margin: auto;
   position: relative;
-//   background-color: red;
+  //   background-color: red;
   height: 100%;
 }
 
@@ -16,41 +22,43 @@
   margin: 0;
   padding: 0;
   font-family: var(--elewa-group-website-dmsans-regular);
-  background: var(--elewa-group-website-color-card);
+
+  position: relative;
 }
+
 .navbar {
-  
   min-height: 6rem;
   border-bottom: 0.1rem solid white;
-  position:relative;
+  position: relative;
 }
-.navbar >div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height:5rem;
-    position:absolute;
-    bottom: 0;
-    // background-color: red;
-    width: 100%
-
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  // background-color: red;
+  width: 100%;
 }
 .navbar #elewa-banner {
   font-size: var(--elewa-group-website-font-size-title);
-  
+  color: var(--elewa-group-website-color-card);
+  mix-blend-mode: color-dodge;
 }
 .navbar a {
   text-decoration: none;
+  color: var(--elewa-group-website-color-card);
+  mix-blend-mode: color-dodge;
 }
 .navbar ul {
   display: flex;
   padding: 0;
   list-style: none;
-  
 }
 .navbar ul li {
   margin-left: 0.1rem;
-//   background-color: red;
+  //   background-color: red;
   padding-top: 0.3rem;
   padding-left: 0.7rem;
   padding-bottom: 0.3rem;
@@ -62,4 +70,7 @@
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
+  color: var(--elewa-group-website-color-card);
+  mix-blend-mode: color-dodge;
+  max-width: max(60%, 32rem);
 }
