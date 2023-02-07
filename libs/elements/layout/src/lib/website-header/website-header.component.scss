@@ -1,12 +1,23 @@
+* {
+  font-family: var(--elewa-group-website-dmsans-regular);
+}
 .lander-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px white;
+  background-color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin: auto 2rem;
 }
-.lander-header h2 {
+.lander-title h2 {
   font-family: var(--elewa-group-website-dmsans-bold);
 }
+.lander-title > * {
+  color: white;
+}
+
 .lander-navlinks {
   display: flex;
   gap: 1.5rem;
@@ -16,6 +27,7 @@
   width: 2rem;
   display: none;
   cursor: pointer;
+  font-weight: bold;
 }
 ul {
   list-style: none;
@@ -26,7 +38,7 @@ a {
 }
 
 @media screen and (max-width: 777px) {
-.lander-header {
+  .lander-header {
     display: flex;
     flex-direction: column;
     border: none;
