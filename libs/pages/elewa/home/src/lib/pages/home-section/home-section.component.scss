@@ -1,11 +1,11 @@
 .home-section {
-    background-color: white;
+    background-color: var(--elewa-group-website-background-color);
 }
 
 
 
 .secondary-parent {
-    background-color: blue;
+    background-color: var(--elewa-group-website-background-color);
     width: 500px;
     text-align: center;
     margin-left: auto;
@@ -16,14 +16,24 @@
 }
 
 h1 {
-    color: black;
+    color: var(--elewa-group-website-font-color-h1);
     padding: 0;
     margin: 0;
-    font-size: 540;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--elewa-group-website-font-size-h1);
+    font-weight: var(--elewa-group-website-font-weight-h1);
+    font-family: var(--elewa-group-website-dmsans-regular);
 }
 
 .h1-down {
-    padding: 0;
+    padding: 0 5%;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-font-size-h1);
+    font-weight: var(--elewa-group-website-font-weight-h1);
+    // background-color: aquamarine;
+}
+
+a {
+    font-family: var(--elewa-group-website-dmsans-medium);
+    text-decoration: none;
+    color: var(--elewa-group-website-font-color-a);
 }
