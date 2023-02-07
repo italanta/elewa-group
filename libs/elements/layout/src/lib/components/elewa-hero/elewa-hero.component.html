@@ -1,40 +1,34 @@
-
-
 <div id="elewa-hero">
-    <!-- <img src = {{backgroundImg}} class="backgroundImage"/> -->
+  <!-- <img src = {{backgroundImg}} class="backgroundImage"/> -->
 
-    <img
-        srcset={{srcset.join(", ")}}
-        sizes="(max-width: 480px) 480,
-               (max-width: 767px)  800px,
-                1900px"
-        src="backgroundImg"
-        alt="top banner hero image"/>
+  <img class="backgroundImage" srcset={{srcSet}} 
+  src="backgroundImg" alt="top banner hero image"
+  sizes={{sizes}}/>
+  
 
-    <div class="container">
-        <nav class="navbar">
-            <div class="component">
-            <a href = "#" id = "elewa-banner">elewa group</a>
-            <ul>
-                
-                <li><a href = "#">Activities</a></li>
-                <li><a href = "#">About us</a></li>
-                <li><a href = "#">Social impact</a></li>
-                <li><a href = "#">Invest</a></li>
-                <li><a href = "#">News</a></li>
-                <li><a href = "#">Contact</a></li>
-            </ul>
-        </div>
-        </nav>
-    
-        <div>
-            <div class="content">
-                <h2>{{subtitle}}</h2>
-                <h1>{{title}}</h1>
-                <footer>{{footer}}</footer>
-            </div>
-    
-            <!-- <div class="dummy-div"></div> -->
-        </div>
+  <div class="container">
+    <nav class="navbar">
+      <div class="component">
+        <a href="#" id="elewa-banner">elewa group</a>
+        <ul>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Social impact</a></li>
+          <li><a href="#">Invest</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <div class="content">
+        <h2>{{ subtitle }}</h2>
+        <h1>{{ title }}</h1>
+        <footer>{{ footer }}</footer>
+      </div>
+
+      <!-- <div class="dummy-div"></div> -->
     </div>
+  </div>
 </div>
