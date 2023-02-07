@@ -1,6 +1,11 @@
 * {
   outline: solid red 0.1rem;
 }
+
+.container {
+  width: calc(min(85vw, 57rem));
+}
+
 #elewa-hero {
   //   width: 100vw;
   height: 100vh;
