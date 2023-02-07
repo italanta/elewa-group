@@ -14,6 +14,11 @@
         padding: 60px 0;
     }
 
+    .col4 img{
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-hero-image1)), to(var(--elewa-group-website-color-hero-image3)));
+        mask-image: linear-gradient(to bottom, var(--elewa-group-website-color-hero-image3), var(--elewa-group-website-color-hero-image4));
+    }
+
     .col8{
         width: 60%;
         padding-right: 15%;
