@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { JobsSectionComponent } from './pages/jobs-section/jobs-section.component';
+import { Routes, RouterModule } from '@angular/router';
+
+// routes
+const routes: Routes = [
+  {
+    path: 'jobs',
+    component: JobsSectionComponent,
+  },
+];
+
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule.forRoot(routes)],
+  declarations: [JobsSectionComponent], 
+  exports: [JobsSectionComponent], 
 })
 export class PagesElewaHomeJobsSectionModule {}
