@@ -2,23 +2,23 @@
     background-color: white;
 }
 
-.main-parent {
-    background-color: aquamarine;
-    height: 800px;
-}
+
 
 .secondary-parent {
-    background-color: bisque;
+    background-color: white;
     width: 500px;
-    height: 100px;
-
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25%;
     
 }
 
-h4 {
+h1 {
     color: black;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 540;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
 }
