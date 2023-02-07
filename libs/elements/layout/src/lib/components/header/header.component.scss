@@ -1,0 +1,216 @@
+  /* start of navbar  */
+
+  .container{
+    max-width: 100vw;
+  }
+
+  .navbars ul{
+    list-style-type: none;
+  }
+  
+  .header {
+    background-color: var(--elewa-group-website-header-background-color);
+  }
+  
+  .navbars {
+    z-index:999;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: var(--elewa-group-website-navbars-background-color);
+  }
+
+  .border{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--elewa-group-website-color-white);
+    margin: 0 80px;
+    padding-top: 20px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .elewa-text{
+    width: 50%;
+    align-items: left;
+    margin: 16px 0;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-italic);
+  }
+
+  .home-logo{
+    color: var(--elewa-group-website-color-white);
+    justify-content: space-between;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    list-style-type: none;
+    width: 50%;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link{
+    color: var(--elewa-group-website-color-white);
+    text-decoration: none;
+    font-size: var(--elewa-group-website-font-size-nav-link);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    transition: color .25s;
+    }
+  
+  .nav-link:hover {
+    color: var(--elewa-group-website-navbars-link-hover-color);
+    cursor: pointer;
+  }
+  
+  .menu-header{
+    background-color: var(--elewa-group-website-header-background-color);
+  }
+  
+  .bar, .bar2{
+    background: var(--elewa-group-website-color-white);
+  }
+  
+  .menu-header{
+    display: none;
+  }
+  
+  /* media screen  */
+  
+  @media only screen and (max-width: 1306px) {
+    .nav-item {
+      margin-left: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .nav-item {
+      margin-left: 0 !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1033px) {
+    .menu-header{
+      display: block;
+      width: 100%;
+      z-index: 988;
+      padding: 10px 0;
+      max-width: 100%;
+    }
+  
+    .nav-menus {
+      position: fixed;
+      left: -120%;
+      top: 6.2%;
+      padding: 0 0;
+      flex-direction: column;
+      background-color: var(--elewa-group-website-header-background-color);
+      width: 70%;
+      border-radius: 5px;
+      text-align: center;
+      transition: 0.3s;
+      z-index: 999;
+    }
+  
+    .nav-menu{
+      display: none;
+    }
+  
+    .nav-link{
+        color: var(--elewa-group-website-color-white);
+        text-decoration: none;
+        font-size: var(--elewa-group-website-font-size-nav-link-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+        transition: color .25s;
+    }
+    
+    .nav-link:hover {
+      color: var(--elewa-group-website-navbars-link-hover-color);
+    }
+    
+    .nav-menus.active {
+      left: 27.5%;
+    }
+  
+    .nav-items {
+      padding: 20px 0;
+      width: 100%;
+      border-bottom: 1px solid var(--elewa-group-website-color-white);
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+ 
+  
+  @media only screen and (max-width: 850px) {
+    .navbars-mobile{
+      margin: 0;
+      display: flex;
+      padding: 0 15px;
+    }
+
+    .fixed-top{
+      display: none;
+    }
+
+    .elewa-mobile{
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .home-logo{
+        width: 50%;
+        align-items: left;
+        margin: 16px 0;
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+        font-family: var(--elewa-group-website-dmsans-italic);
+    }
+  
+    .hamburger {
+      width: 15%;
+      margin: 5px 0;
+      max-height: 85px;
+    }
+  
+    .bar{
+      height: 2px;
+      width: 55px;
+      margin: 5px 0;
+      float: right;
+    }
+
+    .bar2{
+        height: 2px;
+        width: 27px;
+        float: right;
+        margin: 5px 0;
+    }
+  }
+
+/* end of navbar  */
