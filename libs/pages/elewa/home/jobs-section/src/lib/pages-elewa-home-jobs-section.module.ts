@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { JobsSectionComponent } from './pages/jobs-section/jobs-section.component';
+import { JobsSectionComponent } from './jobs-section/jobs-section.component';
 import { Routes, RouterModule } from '@angular/router';
 
 // routes
@@ -17,4 +17,4 @@ const routes: Routes = [
   declarations: [JobsSectionComponent], 
   exports: [JobsSectionComponent], 
 })
-export class PagesElewaHomeJobsSectionModule {}
+export class JobsSectionModule {}
