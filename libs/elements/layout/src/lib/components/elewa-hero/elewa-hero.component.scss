@@ -1,9 +1,13 @@
-* {
-  outline: solid red 0.1rem;
-}
+// * {
+//   outline: solid red 0.1rem;
+// }
 
 .container {
-  width: calc(min(85vw, 57rem));
+  width: calc(min(85vw, 65rem));
+  margin: auto;
+  position: relative;
+//   background-color: red;
+  height: 100%;
 }
 
 #elewa-hero {
@@ -15,12 +19,25 @@
   background: var(--elewa-group-website-color-card);
 }
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
+  min-height: 6rem;
+  border-bottom: 0.1rem solid white;
+  position:relative;
+}
+.navbar >div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:5rem;
+    position:absolute;
+    bottom: 0;
+    // background-color: red;
+    width: 100%
+
 }
 .navbar #elewa-banner {
   font-size: var(--elewa-group-website-font-size-title);
+  
 }
 .navbar a {
   text-decoration: none;
@@ -29,12 +46,20 @@
   display: flex;
   padding: 0;
   list-style: none;
+  
 }
 .navbar ul li {
-  margin-left: 2rem;
+  margin-left: 0.1rem;
+//   background-color: red;
+  padding-top: 0.3rem;
+  padding-left: 0.7rem;
+  padding-bottom: 0.3rem;
+  padding-right: 0.7rem;
 }
 
 .content {
-  margin-top: 250px;
-  margin-left: 50px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }
