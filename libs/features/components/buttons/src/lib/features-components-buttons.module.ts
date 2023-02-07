@@ -5,5 +5,6 @@ import { ElewaGroupButtonComponent } from './elewa-group-button/elewa-group-butt
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaGroupButtonComponent],
+  exports: [ElewaGroupButtonComponent ]
 })
 export class FeaturesComponentsButtonsModule {}
