@@ -17,4 +17,4 @@ const routes: Routes = [
   declarations: [JobsSectionComponent], 
   exports: [JobsSectionComponent], 
 })
-export class JobsSectionModule {}
+export class JobsSectionsComponent {}

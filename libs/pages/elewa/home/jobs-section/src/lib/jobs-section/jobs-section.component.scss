@@ -2,7 +2,7 @@
     min-width: 80vw;
     min-height: 80vh;
     font-family: var(--elewa-group-website-dmsans-regular);
-    font-size: 40px;
+    font-size: var(--elewa-group-website-font-size-title);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,15 +10,15 @@
   }
   
   .jobs a{
-    color: black;
+    color: var(--elewa-group-website-color-primary);
     text-decoration: none;
     font-family: var(--elewa-group-website-dmsans-bold);
   }
   
   
-  @media only screen and (max-width: 515px) {
+  @media only screen and (max-width: 430px) {
     .jobs{
-      font-size: 30px;
+      font-size: var(--elewa-group-website-font-size-title-medium);
       min-height: 70vh;
     }
   }
