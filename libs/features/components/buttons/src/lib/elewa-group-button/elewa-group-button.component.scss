@@ -1,41 +1,18 @@
-.btn {
-	background: white;
-	border-radius: 20px;
-	color: black;
-	width: 280px;
-	height: 45px;
-	font-size: 20px;
-	font-family: 'Roboto';
-	outline: 2px;
-	outline-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    justify-content: start;
-	position: absolute;
-	gap: 50px;
-    //padding-top: 15px;
-
-	&:hover {
-		color: rgb(1, 11, 11);
-		transition: color 0.5s ease-in-out;
-		font-weight: 700;
-		cursor: pointer;
-	}
-}
-#icon{
-	color: white;
+.button {
+  color: var(--elewa-group-website-color-card);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--elewa-group-website-dmsans-medium);
+  display: inline-block;
+  font-size: var(--elewa-group-website-font-size-title-medium);
+  border-radius: 20px;
 }
 
-.text{
-	padding: 8px;
+.dark {
+  color: var(--elewa-group-website-color-primary)
 }
-.arrow{
-    background-color: var(--elewa-group-website-color-card);
-	color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-	padding: 4px;
 
+.white{
+  color:var(--elewa-group-website-color-card)
 }
