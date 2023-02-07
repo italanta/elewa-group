@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {} from '@fortawesome/angular-fontawesome'
+import { ChangeDetectionStrategy, Component, OnInit, Input, Output, EventEmitter } from '@angular/core'; 
 
 @Component({
   selector: 'elewa-group-elewa-group-button',
