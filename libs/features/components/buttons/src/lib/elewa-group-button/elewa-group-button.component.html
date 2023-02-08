@@ -1,1 +1,23 @@
-<p>elewa-group-button works!</p>
+<a href="{{ action }}">
+	<button
+	  type="button"
+	  class="button"
+	  [ngStyle]="{
+		'background-color': mode === 'dark' ? '#000000' : '#FFFFFF',
+		color: mode === 'dark' ? '#FFFFFF' : '#000000'
+	  }"
+	>
+	  {{ message }}
+	  <span class="fa-stack fa-2x" id="circle">
+		<i
+		  class="fa fa-circle fa-stack-2x" id="circle"
+		  [ngClass]="mode === 'dark' ? 'light' : 'dark'"
+		></i>
+		<i
+		  class="fa fa-long-arrow-right fa-stack-1x" id="arrow"
+		  [ngClass]="mode === 'dark' ? 'dark' : 'light'"
+		  aria-hidden="true"
+		></i
+	  ></span>
+	</button>
+  </a>
