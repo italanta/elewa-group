@@ -1,0 +1,29 @@
+
+.container {
+  padding-left: 50px;
+  background: var(--elewa-group-website-color);
+
+}
+.title {
+  font-size:var(--elewa-group-website-font-size-heading);
+  font-weight:var(--elewa-group-website-font-weight-title);
+  font-family:var(--elewa-group-website-dmsans-regular);
+}
+.sub-title {
+  font-size: var(--elewa-group-website-font-size-subheading);
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  height: fit-content;
+  width: fit-content;
+}
+@media (max-width:800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+  }
+
+}
