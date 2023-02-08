@@ -1,0 +1,36 @@
+.mission{
+  padding: 1rem 1.7rem;
+  background-color: rgba(0,0,0,.1);
+  margin: -9px;
+  overflow: hidden;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: var(--elewa-group-website-dmsans-bold);
+
+  .mission h4{
+    font-size: var(--elewa-group-website-font-size-title);
+    font-weight: var(--elewa-group-website-font-weight-title-medium);
+  }
+
+  .mission-statements p{
+    font-size: var(--elewa-group-website-font-size-description);
+    line-height: 1.5rem;
+    max-width: 87%;
+
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .mission-statements{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+
+    // .mission-statements p{
+      // max-width: 70%;
+      // padding-right: 2rem;
+
+    // }
+  }
+}
