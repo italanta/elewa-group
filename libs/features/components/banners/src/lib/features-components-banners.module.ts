@@ -5,5 +5,6 @@ import { ElewaGroupTeamMemberComponent } from './elewa-group-team-member/elewa-g
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaGroupTeamMemberComponent],
+  exports: [ElewaGroupTeamMemberComponent]
 })
 export class FeaturesComponentsBannersModule {}
