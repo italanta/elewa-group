@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
-import { LayoutModule } from '@elewa-group/elements/layout';
+import { LayoutModule } from 'libs/elements/layout/src';
 
 @NgModule({
   declarations: [AppComponent],
