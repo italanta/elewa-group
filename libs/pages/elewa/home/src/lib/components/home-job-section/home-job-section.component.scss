@@ -1,0 +1,22 @@
+.jobs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: xx-large;
+}
+
+p {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+a {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+    
+}
