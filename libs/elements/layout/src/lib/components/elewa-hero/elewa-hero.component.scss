@@ -19,46 +19,6 @@
   padding: 0;
   font-family: var(--elewa-group-website-dmsans-regular);
   position: relative;
-  
-}
-
-.navbar {
-  min-height: 6rem;
-  border-bottom: 0.1rem solid white;
-  position: relative;
-}
-.navbar > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5rem;
-  position: absolute;
-  bottom: 0;
-
-  width: 100%;
-}
-.navbar #elewa-banner {
-  font-size: 30px;
-  color: var(--elewa-group-website-color-card);
-  mix-blend-mode: color-dodge;
-}
-.navbar a {
-  text-decoration: none;
-  color: var(--elewa-group-website-color-card);
-  mix-blend-mode: color-dodge;
-}
-.navbar ul {
-  display: flex;
-  padding: 0;
-  list-style: none;
-}
-.navbar ul li {
-  margin-left: 0.1rem;
-
-  padding-top: 0.3rem;
-  padding-left: 0.7rem;
-  padding-bottom: 0.3rem;
-  padding-right: 0.7rem;
 }
 
 .content {
@@ -67,6 +27,15 @@
   left: 0;
   transform: translate(0, -50%);
   color: var(--elewa-group-website-color-card);
-  mix-blend-mode: color-dodge;
+
   max-width: max(60%, 32rem);
+}
+.content > h2 {
+  font-size: var(--elewa-group-website-font-size-title);
+}
+.footer {
+  position: absolute;
+  left: 0;
+  color: var(--elewa-group-website-color-card);
+  bottom: 5%;
 }
