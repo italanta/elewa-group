@@ -1,36 +1,50 @@
 .mission{
   padding: 1rem 1.7rem;
-  background-color: rgba(0,0,0,.1);
+  background-color: var(--elewa-group-website-color-card);
   margin: -9px;
   overflow: hidden;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  font-family: var(--elewa-group-website-dmsans-bold);
+  
 
-  .mission h4{
-    font-size: var(--elewa-group-website-font-size-title);
+  h4{
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-size: var(--elewa-group-website-font-size-title-medium);
     font-weight: var(--elewa-group-website-font-weight-title-medium);
   }
 
   .mission-statements p{
-    font-size: var(--elewa-group-website-font-size-description);
+    font-family: var(--elewa-group-website-dmsans-regular);
     line-height: 1.5rem;
-    max-width: 87%;
+    font-size:var(--elewa-group-website-font-size-description);
 
   }
 }
 
 @media only screen and (min-width: 850px) {
+  .mission{
+    margin-left:auto;
+    marging-right:auto;
+    margin: -4px;
+    padding:0rem 14rem;
+
+    h4{
+      font-size: var(--elewa-group-website-font-size-title);
+      font-weight: var(--elewa-group-website-font-weight-title);
+      margin:0;
+    }
+
   .mission-statements{
     display:flex;
     justify-content:space-between;
     align-items: center;
 
+    p{
+      max-width:41%;
+    }
+    
 
-    // .mission-statements p{
-      // max-width: 70%;
-      // padding-right: 2rem;
-
-    // }
   }
+
+}
 }
