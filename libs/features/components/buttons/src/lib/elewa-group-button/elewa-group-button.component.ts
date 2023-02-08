@@ -1,9 +1,13 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'elewa-group-elewa-group-button',
+  selector: 'elewa-group-button',
   templateUrl: './elewa-group-button.component.html',
   styleUrls: ['./elewa-group-button.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ElewaGroupButtonComponent {}
+export class ElewaGroupButtonComponent {
+  @Input() mode = "dark";
+  @Input() message = "hello world";
+  @Input() action: string | undefined;
+
+}
