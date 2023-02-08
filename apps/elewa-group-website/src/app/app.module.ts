@@ -19,6 +19,7 @@ import { CardsModule } from '@elewa-group/features/components/cards';
     HomePageModule,
     AboutUsModule,
     CardsModule
-  ]
+  ],
+  bootstrap:[AppComponent]
 })
 export class AppModule {}
