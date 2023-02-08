@@ -1,37 +1,38 @@
 .button {
   color: var(--elewa-group-website-color-card);
-  padding: 10px 32px;
+  padding: 5px 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 20px;
-  width: 250px;
+  border-radius: 30px;
+  width: auto;
   height: 45px;
-}
-.button:hover{
-  transition: .5s;
 }
 
 .dark {
   color: var(--elewa-group-website-color-primary)
 }
 
-.white{
+.light{
   color: var(--elewa-group-website-color-card);
 }
 
 #circle{
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 }
 
 #arrow{
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 }
 .button:hover #circle{
   transform: translateX(7px);
   transition: .5s;
 }
 
+.button:hover #arrow{
+  transform: translateX(5px);
+  transition: .5s;
+}

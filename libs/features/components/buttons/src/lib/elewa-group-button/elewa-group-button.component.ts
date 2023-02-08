@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class ElewaGroupButtonComponent {
   @Input() mode = "dark";
   @Input() message = "hello world";
-  @Input() action = "google.com";
+  @Input() action: string | undefined;
+
 }
