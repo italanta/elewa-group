@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
-
+import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,ElewaGroupImageAndTextBannerComponent],
   imports: [
     BrowserModule, 
     ScullyLibModule,
