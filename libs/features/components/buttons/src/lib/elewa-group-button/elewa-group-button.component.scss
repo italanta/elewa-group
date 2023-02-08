@@ -6,6 +6,11 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 20px;
+  width: 250px;
+  height: 45px;
+}
+.button:hover{
+  transition: .5s;
 }
 
 .dark {
@@ -14,5 +19,19 @@
 
 .white{
   color: var(--elewa-group-website-color-card);
+}
+
+#circle{
+  height: 30px;
+  width: 30px;
+}
+
+#arrow{
+  width: 28px;
+  height: 28px;
+}
+.button:hover #circle{
+  transform: translateX(7px);
+  transition: .5s;
 }
 
