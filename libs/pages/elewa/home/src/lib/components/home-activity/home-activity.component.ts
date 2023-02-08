@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'elewa-group-home-activity',
@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./home-activity.component.scss'],
 })
 export class HomeActivityComponent {
-  
+
 }
