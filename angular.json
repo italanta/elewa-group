@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 1,
   "projects": {
     "elewa-group-website": "apps/elewa-group-website",
     "features-components-banners": "libs/features/components/banners",
@@ -23,5 +23,7 @@
     "util-ngfi-multi-lang": "libs/util/ngfi/multi-lang",
     "util-ngfi-state": "libs/util/ngfi/state"
   },
-  "defaultProject": "elewa-group-website"
+  "cli": {
+    "analytics": "9a30cc0f-5a7a-41d9-ad59-724824b4a129"
+  }
 }
