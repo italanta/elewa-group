@@ -5,8 +5,11 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
 
-import { HomePageModule } from '@elewa-group/pages/elewa/home'
 import {AboutUsModule} from '@elewa-group/pages/elewa/about-us'
+
+import { HomePageModule } from '@elewa-group/pages/elewa/home';
+
+import { CardsModule } from '@elewa-group/features/components/cards';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,10 +17,8 @@ import {AboutUsModule} from '@elewa-group/pages/elewa/about-us'
     BrowserModule,
     ScullyLibModule,
     HomePageModule,
-    AboutUsModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+    AboutUsModule,
+    CardsModule
+  ]
 })
 export class AppModule {}
