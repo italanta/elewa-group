@@ -16,6 +16,7 @@
     margin: 10px ;
     transition: all 0.3s;
     transition-delay: 0.05;
+    letter-spacing: 0px;
 }
 
 .button-with-animation .right-arrow-container{
