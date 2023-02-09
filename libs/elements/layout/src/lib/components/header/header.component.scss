@@ -1,0 +1,225 @@
+  /* start of navbar  */
+
+  .container{
+    max-width: 100vw;
+    height: 10vh;
+  }
+
+  .navbars ul{
+    list-style-type: none;
+  }
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:999;
+    width: 100%;
+    margin-top: 1%;
+  }
+  
+  .header {
+    background-color: var(--elewa-group-website-header-background-color);
+  }
+
+  .border{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--elewa-group-website-color-white);
+    margin: 0 80px;
+    padding-top: 20px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-menus {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .elewa-text{
+    width: 50%;
+    align-items: left;
+    margin: 16px 0;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-italic);
+  }
+
+  .home-logo{
+    color: var(--elewa-group-website-color-white);
+    justify-content: space-between;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    list-style-type: none;
+    width: 50%;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link{
+    color: var(--elewa-group-website-color-white);
+    text-decoration: none;
+    font-size: var(--elewa-group-website-font-size-nav-link);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    transition: color .25s;
+    }
+  
+  .nav-link:hover {
+    color: var(--elewa-group-website-navbars-link-hover-color);
+    cursor: pointer;
+  }
+  
+  .menu-header{
+    background-color: var(--elewa-group-website-header-background-color);
+  }
+  
+  .bar, .bar2{
+    background: var(--elewa-group-website-color-white);
+  }
+  
+  .menu-header{
+    display: none;
+  }
+  
+  /* media screen  */
+  
+  @media only screen and (max-width: 1306px) {
+    .nav-item {
+      margin-left: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .nav-item {
+      margin-left: 0 !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1033px) {
+    .menu-header{
+      display: block;
+      width: 100%;
+      z-index: 988;
+      max-width: 100%;
+    }
+  
+    .nav-menus {
+      position: fixed;
+      left: -120%;
+      top: 8.3%;
+      padding: 120px 0;
+      flex-direction: column;
+      background-color: var(--elewa-group-website-nav-menu-background-color);
+      width: 95.5%;
+      height: 100%;
+      border-radius: 5px;
+      text-align: center;
+      transition: 0.3s;
+      z-index: 999;
+    }
+  
+    .nav-menu{
+      display: none;
+    }
+  
+    .nav-link{
+        color: var(--elewa-group-website-color-white);
+        text-decoration: none;
+        font-size: var(--elewa-group-website-font-size-nav-link-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+        transition: color .25s;
+    }
+    
+    .nav-link:hover {
+      color: var(--elewa-group-website-navbars-link-hover-color);
+    }
+    
+    .nav-menus.active {
+      left: 0;
+      margin:0 8px;
+    }
+  
+    .nav-items {
+      padding: 10px 0;
+      width: 80%;
+      border-bottom: 1px solid var(--elewa-group-website-color-white);
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+ 
+  
+  @media only screen and (max-width: 850px) {
+    .container{
+      height: 5vh;
+    }
+
+    header{
+      margin-top: 6%;
+    }
+
+    .navbars-mobile{
+      margin: 0;
+      display: flex;
+      padding: 0 40px;
+    }
+
+    .fixed-top{
+      display: none;
+    }
+
+    .elewa-mobile{
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    .home-logo img{
+        width: 60%;
+        margin-top: 10px;
+    }
+  
+    .hamburger {
+      width: 15%;
+      margin: 5px 0;
+      max-height: 85px;
+    }
+  
+    .bar{
+      height: 2px;
+      width: 50px;
+      margin: 5px 0;
+      float: right;
+    }
+
+    .bar2{
+        height: 2px;
+        width: 25px;
+        float: right;
+        margin: 5px 0;
+    }
+  }
+
+/* end of navbar  */
