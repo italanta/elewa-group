@@ -8,7 +8,7 @@ import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/
   imports: [CommonModule],
   declarations: [HomePageComponent, HomeHeroSectionComponent,ElewaGroupImageAndTextBannerComponent],
 
-import { LayoutModule } from '@elewa-group/elements/layout';
+// import { LayoutModule } from '@elewa-group/elements/layout';
 
   exports: [HomePageComponent, HomeHeroSectionComponent],
 })
