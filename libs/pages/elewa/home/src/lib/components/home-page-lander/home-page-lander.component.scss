@@ -1,0 +1,60 @@
+.homepage{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background: url(https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg?auto=compress&cs=tinysrgb&w=4200);
+    background-size: cover;
+}
+
+.homepage__content {
+    margin-left: 80px;
+}
+
+.homepage__content p {
+    color: var(--elewa-group-website-color);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-font-size-description);
+}
+
+.homepage__content p:nth-child(1) {
+    text-transform: uppercase;
+    margin-bottom: -30px;
+}
+
+.homepage__content h1 {
+    font-size: var(--elewa-group-website-font-size-heading);
+    color: var(--elewa-group-website-color);
+    width: 65%;
+    font-family: var(--elewa-group-website-dmsans-regular);
+}
+
+.homepage__content .homepage__content-desc {
+    margin-top: -30px;
+}
+
+@media (max-width: 999px) {
+    .homepage__content{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+    .homepage__content{
+        margin-left: 42px;
+    }
+    .homepage__content p {
+        font-size: var(--elewa-group-website-font-size-description-medium);
+    }
+
+    .homepage__content p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    .homepage__content .homepage__content-desc {
+        margin-top: 0;
+    }
+    
+    .homepage__content h1 {
+        font-size: var(--elewa-group-website-font-size-subheading);
+    }
+}
