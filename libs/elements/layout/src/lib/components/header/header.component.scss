@@ -3,6 +3,7 @@
   .container{
     max-width: 100vw;
     height: 10vh;
+    position: relative;
   }
 
   .navbars ul{
@@ -10,13 +11,12 @@
   }
 
   header{
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index:999;
     width: 100%;
     margin-top: 1%;
+    color: red;
   }
   
   .header {
