@@ -3,48 +3,47 @@
   background-color: var(--elewa-group-website-color-card);
   margin: -9px;
   overflow: hidden;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
-  h4{
+
+  .mission h4{
     font-family: var(--elewa-group-website-dmsans-bold);
-    font-size: var(--elewa-group-website-font-size-title-medium);
-    font-weight: var(--elewa-group-website-font-weight-title-medium);
+    font-size: var(--elewa-group-website-font-size-title);
+    font-weight: var(--elewa-group-website-font-weight-title);
   }
 
-  .mission-statements p{
-    font-family: var(--elewa-group-website-dmsans-regular);
+   p{
     line-height: 1.5rem;
-    font-size:var(--elewa-group-website-font-size-description);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-size-description);
 
   }
 }
 
 @media only screen and (min-width: 850px) {
   .mission{
-    margin-left:auto;
-    marging-right:auto;
-    margin: -4px;
-    padding:0rem 14rem;
+    padding:0rem 8rem;
 
     h4{
-      font-size: var(--elewa-group-website-font-size-title);
-      font-weight: var(--elewa-group-website-font-weight-title);
+      font-size: var( --elewa-group-website-font-size-heading);
+      font-weight: var(--elewa-group-website-dmsans-medium);
       margin:0;
     }
 
-  .mission-statements{
+    .mission-statements{
     display:flex;
     justify-content:space-between;
     align-items: center;
 
     p{
       max-width:41%;
+
     }
-    
+
+
+    }
+
 
   }
-
-}
 }
