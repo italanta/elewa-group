@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ScullyLibModule } from '@scullyio/ng-lib';
@@ -21,5 +21,6 @@ import { LayoutModule } from '@elewa-group/elements/layout';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  
 })
 export class AppModule {}
