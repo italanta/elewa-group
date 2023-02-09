@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ElewaHeroComponent } from './components/elewa-hero/elewa-hero.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ElewaHeroComponent],
-  exports: [ElewaHeroComponent]
+  declarations: [ElewaHeroComponent, HeaderComponent],
+  exports: [ElewaHeroComponent, HeaderComponent]
 })
-export class ElementsLayoutModule {}
+
+export class LayoutModule {}
