@@ -1,12 +1,52 @@
 .home-jobs-section{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     font-family:var(--elewa-group-website-dmsans-regular);
-    span {
+
+    a {
         font-family: var(--elewa-group-website-dmsans-bold);
+        text-decoration: none;
+        color: inherit;
     }
-    font-size: 1.7rem;
-    text-align: center;
-    margin: 0;
-    :last-of-type{
-        font-size: 1.6rem;
+    span{
+        margin:none;
     }
+    :last-child{
+        font-size: 2.1rem;
+    }
+    @media only screen and (min-width:1024px){
+        font-size: 3.3rem;
+        :last-child{
+            font-size: 3.2rem;
+        }
+    }
+    @media only screen and (max-width:1024px){
+        font-size: 2.8rem;
+        :last-child{
+            font-size: 2.7rem;
+        }
+    }
+    @media only screen and (max-width:768px){
+        font-size: 2.4rem;
+        :last-child{
+            font-size: 2.2rem;
+        }
+    }
+    @media only screen and (max-width:530px){
+        font-size: 1.8rem;
+        :last-child{
+            font-size: 1.7rem;
+        }
+    }
+    @media only screen and (max-width:420px){
+        font-size: 1.2rem;
+        :last-child{
+            font-size: 1.1rem;
+        }
+    }
+  
+    
 }
