@@ -89,6 +89,13 @@ ul {
 }
 
 @media (max-width: 767px) {
+    .mobile-text {
+        display: block;
+        margin-top: 1rem;
+    }
+    // .row {
+    //     display: none;
+    // }
   .footer {
     padding: 10px;
   }
