@@ -9,7 +9,6 @@ import {AboutUsModule} from '@elewa-group/pages/elewa/about-us'
 
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
-import { CardsModule } from '@elewa-group/features/components/cards';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 @NgModule({
@@ -19,7 +18,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ScullyLibModule,
     HomePageModule,
     AboutUsModule,
-    CardsModule,
+
     LayoutModule
   ],
   bootstrap:[AppComponent]
