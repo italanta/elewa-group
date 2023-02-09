@@ -1,0 +1,41 @@
+.member-wrapper {
+  background-color: black;
+  color: var(--elewa-group-website-color);
+  display: flex;
+  height: 500px;
+  width: 100%;
+  flex-direction: row;
+}
+.image-wrapper {
+  display: flex;
+  flex: 1;
+  height: 450px;
+  width: 200px;
+  border-bottom-right-radius: 10%;
+}
+img {
+  border-bottom-right-radius: 10%;
+  
+
+}
+
+.p1 {
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-size: 24px;
+  padding-bottom: 0;
+}
+.p2 {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.p3 {
+  padding-top: 25px;
+  font-size: 18px;
+}
+.desc-wrapper {
+  padding-right: 500px;
+}
+.team-member-definition{
+    margin-left: 350px
+}
