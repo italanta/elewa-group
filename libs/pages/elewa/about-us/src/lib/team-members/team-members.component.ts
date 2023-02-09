@@ -15,7 +15,6 @@ interface Members {
 export class TeamMembersComponent implements OnInit {
   membersArr: Members[] = [];
   mainDiv: any = document.querySelector('.team-main');
-  // windowSize!: number;
   leftMove() {
     if (this.mainDiv) {
       this.mainDiv.scrollLeft -= 320;
@@ -27,14 +26,7 @@ export class TeamMembersComponent implements OnInit {
     }
   }
 
-  onResize(event: any) {
-    // this.windowSize = event.target.innerWidth;
-    // console.log(this.windowSize);
-  }
-
   ngOnInit(): void {
-    // this.windowSize = document.body.offsetWidth;
-    // console.log(this.windowSize);
     this.mainDiv = document.querySelector('.team-main');
     this.membersArr = [
       {
@@ -77,7 +69,6 @@ export class TeamMembersComponent implements OnInit {
         LinkedInProfileLink: 'https://www.linkedin.com/',
         summary: 'lorem ipsum dolor sint',
       },
-      
     ];
   }
 }
