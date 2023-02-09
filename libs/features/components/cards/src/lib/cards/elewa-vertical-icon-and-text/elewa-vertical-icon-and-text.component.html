@@ -1,5 +1,7 @@
-<div class="about-card">
-  <i class="{{ icon }} about-icon"></i>
-  <h3 class="about-title">{{ title }}</h3>
-  <p class="about-description">{{ description }}</p>
+<div class="cards-main">
+  <div class="card" *ngFor="let property of properties" let i = index>
+    <i class="{{ property.icon }} about-icon"></i>
+    <h3 class="about-title">{{ property.title }}</h3>
+    <p class="about-description">{{ property.description }}</p>
+  </div>
 </div>
