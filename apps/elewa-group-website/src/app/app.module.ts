@@ -6,10 +6,20 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppComponent } from './app.component';
 
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
+
+import { CardsModule } from '@elewa-group/features/components/cards';
+import { LayoutModule } from '@elewa-group/elements/layout';
 import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [AppComponent, FooterComponent],
-  imports: [BrowserModule, ScullyLibModule, HomePageModule],
+  imports: [
+    BrowserModule, 
+    ScullyLibModule,
+    HomePageModule,
+    CardsModule,
+    LayoutModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
