@@ -1,0 +1,19 @@
+.horizontal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal ul li {
+  display: inline-flex;
+}
+
+.horizontal ul li img{
+  width: 80px;
+  height: 50px;
+  margin: 0 25px 0 25px;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-hero-image1)), to(var(--elewa-group-website-color-hero-image3)));
+  mask-image: linear-gradient(to right, var(--elewa-group-website-color-hero-image3), var(--elewa-group-website-color-hero-image4));
+}
+

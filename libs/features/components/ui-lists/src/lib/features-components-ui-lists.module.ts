@@ -9,6 +9,6 @@ import { ElewaGroupHorizontalListOrgsComponent } from './components/elewa-group-
     ElewaGroupVerticalListOneComponent,
     ElewaGroupHorizontalListOrgsComponent,
   ],
-  exports: [ElewaGroupVerticalListOneComponent],
+  exports: [ElewaGroupVerticalListOneComponent, ElewaGroupHorizontalListOrgsComponent],
 })
 export class UiListsModule {}
