@@ -1,0 +1,29 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: rgb(231, 229, 229);
+  padding: 0.5rem;
+}
+.banner-text {
+  width: 60%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.banner-image {
+  width: 19rem;
+  height: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.banner-image img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
