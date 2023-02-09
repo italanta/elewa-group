@@ -39,6 +39,7 @@
     font-weight: var(--elewa-group-website-font-weight-title-medium);
     transform: translateX(20px);
     letter-spacing: 1px;
+    margin-right:0;
 }
 
 .button-with-animation .right-arrow-container #arrow-right{
