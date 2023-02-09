@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface Members {
   name: string;
@@ -13,7 +13,7 @@ interface Members {
   styleUrls: ['./team-members.component.scss'],
 })
 export class TeamMembersComponent implements OnInit {
-  membersArr: Members[] = [];
+  @Input() membersArr: Members[] = [];
   mainDiv: any = document.querySelector('.team-main');
   leftMove() {
     if (this.mainDiv) {
