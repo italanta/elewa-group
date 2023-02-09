@@ -1,3 +1,6 @@
+*{
+  font-family: var(--elewa-group-website-dmsans-regular);
+}
 .banner-container {
   display: flex;
   align-items: center;
@@ -14,6 +17,10 @@
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+}
+.banner-text h2{
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-size: 2rem;
 }
 .banner-image {
   width: 19rem;
