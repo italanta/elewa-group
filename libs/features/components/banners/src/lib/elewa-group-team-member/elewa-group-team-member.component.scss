@@ -19,6 +19,7 @@
   .banner-image {
     display:flex;
     width: 40%;
+    height: 70%;
     margin-bottom: 3%;
     height: 100%;
     background-size: cover;
@@ -28,8 +29,6 @@
   
   .banner-info {
     height: 70%;
-    margin-left: 5%;
-    margin-right: 5%;
     width: 40%;
     padding: 0 40px;
     text-align: left;
@@ -48,7 +47,6 @@
     font-family: var(--elewa-group-website-dmsans-bold);
     font-size: var(--elewa-group-website-font-size-description);
     font-size: 15px;
-    
     margin-bottom: 40px;
   }
 
@@ -69,32 +67,13 @@
     position: absolute;
     bottom: 70px;
     left: 70px;
-
   }
   
  
-  .fa-linkedin-in {
-    
+  .fa-linkedin-in {   
     color: white;
     font-size: 25px;
 }
-  
-
-//   .fa-linkedin-in:before {
-//     content: "\f08c";
-//     font-family: FontAwesome;
-//     font-weight: normal;
-//     font-style: normal;
-//     display: inline-block;
-//     speak: none;
-//     text-decoration: inherit;
-//     text-align: center;
-//     font-variant: normal;
-//     text-transform: none;
-//     line-height: 1;
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//   }
 
 .banner-controls {
     position: absolute;
@@ -104,9 +83,7 @@
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0 40px;
-
-    
+    padding: 0 40px;  
   }
   
   .previous-button,
@@ -192,6 +169,7 @@
     .banner-info {
           order: 1;
           width: 70%;
+          height: 30%;
           display: block;
          }
 
@@ -199,6 +177,7 @@
            order: -1;
            margin-top: 5%;
            width: 70%;
+           height: 60%;
            }
      
       .linkedin-icon {
@@ -215,42 +194,49 @@
         transform: translateX(-50%);
       }
    
+      .progress-bar {
+        width: 70%;
+        height: 10px;
+        background-color: lightgrey;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 40px;
+        left: 5%;
+        transform: translateX(-50%);
+      }
 
-   .progress-bar {
-    width: 70%;
-    height: 5px;
-    background-color: lightgrey;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-left: 75px;
-    margin-right: 75px;
+      .progress-bar-fill {
+        height: 100%;
+        width: 90%;
+      }
+      
+      .banner-controls {
+        width: 70%;
+        height: 20px;
+        position: absolute;
+        bottom: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 45%;
+        transform: translateX(-50%);
+      }
+      
+  
+
+  .previous-button {
+    order: 1;
+    margin-left: 0;
   }
 
-
-
-  .previous-button,
 .next-button {
-display: flex;
-border-width: 0.1px;
-border-style: inset;
-color: var(--elewa-group-website-color);
-width: 50px;
-height: 50px;
-border-radius: 50%;
-align-items: center;
-justify-content: center;
-// margin-left: 10px;
-margin-right: 25px;
-bottom: 0;
-left: 0;
-right: 0;
-position: absolute;
+  order: 2;
 }
 
 .fa-arrow-left-long,
 .fa-arrow-right-long {
 color: var(--elewa-group-website-color);
-font-size: 30px;
+font-size: 20px;
 font-weight: lighter;
 cursor: pointer;
 background: none;
