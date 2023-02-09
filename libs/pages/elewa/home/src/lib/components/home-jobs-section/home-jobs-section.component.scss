@@ -1,0 +1,12 @@
+.home-jobs-section{
+    font-family:var(--elewa-group-website-dmsans-regular);
+    span {
+        font-family: var(--elewa-group-website-dmsans-bold);
+    }
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0;
+    :last-of-type{
+        font-size: 1.6rem;
+    }
+}
