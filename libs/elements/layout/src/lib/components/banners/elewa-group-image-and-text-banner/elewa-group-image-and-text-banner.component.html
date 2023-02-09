@@ -1,1 +1,36 @@
-<p>elewa-group-image-and-text-banner works!</p>
+<div
+  class="banner-container"
+  *ngIf="placement !== 'right'"
+  [ngStyle]="{ 'background-color': background }"
+>
+  <div class="banner-image">
+    <img src="{{ imgUrl }}" alt="banner image" />
+  </div>
+  <div
+    class="banner-text"
+    [ngStyle]="{ color: background === 'black' ? 'white' : 'black' }"
+  >
+    <h2>{{ title }}</h2>
+    <div>
+      {{ text }}
+    </div>
+  </div>
+</div>
+<div
+  class="banner-container"
+  *ngIf="placement === 'right'"
+  [ngStyle]="{ 'background-color': background }"
+>
+  <div
+    class="banner-text"
+    [ngStyle]="{ color: background === 'black' ? 'white' : 'black' }"
+  >
+    <h2>{{ title }}</h2>
+    <div>
+      {{ text }}
+    </div>
+  </div>
+  <div class="banner-image">
+    <img src="{{ imgUrl }}" alt="banner image" />
+  </div>
+</div>
