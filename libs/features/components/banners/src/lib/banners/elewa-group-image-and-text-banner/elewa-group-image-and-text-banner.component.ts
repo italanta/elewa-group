@@ -15,5 +15,5 @@ export class ElewaGroupImageAndTextBannerComponent {
   viverra. Aenean cursus bibendum felis non vulputate. Proin sed massa vitae
   sapien tincidunt pulvinar. Nunc mauris est, dapibus non tellus id,
   vehicula fermentum urna. Nullam iaculis purus massa`
-  @Input() imgSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfoejJofpCmw5_L_RF8yUF1i2J7wpJbx6UBBgkekPpWi2GUtd4RR95sI_kGWBhlTdWjM&usqp=CAU"
+  @Input() imgSrc = "https://images.unsplash.com/photo-1675790463148-3b5ec3d62139?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
 }
