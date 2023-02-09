@@ -1,1 +1,42 @@
-<p>elewa-group-team-member works!</p>
+<div class="banner-container">
+    <ng-container *ngFor="let banner of banners; index as i">
+        <div class="banner" *ngIf="i === currentBannerIndex">
+            <div class="banner-image" [style.background-image]="'url(' + banner.imageUrl + ')'"></div>
+            <div class="banner-info">
+              <h1>{{banner.name}}</h1>
+              <h2>{{banner.title}}</h2>
+              <p>{{banner.description}}</p>
+              <div class="linkedin-icon">
+                <a [href]="banner.linkedInUrl"><i class="fa-brands fa-linkedin-in">LinkedIn</i></a>
+              </div>
+            </div>
+            <div class="close-button-container">
+              <button class="close-button">
+               <!-- <i class="fa-thin fa-xmark-large"></i> best design -->
+               <button class="close-button" (click)="goBackToMultiUserView()">
+                <i class="fa-solid fa-xmark"></i>
+               </button>
+               
+               
+              </button>
+            </div>
+        </div>
+      </ng-container>
+    <div class="banner-controls">
+      <div class="previous-button">
+        <button class="fa-arrow-left-long" (click)="previousBanner()">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+      </div>
+      <div class = "next-button">  
+        <button class="fa-arrow-right-long" (click)="nextBanner()">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div> 
+    </div>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" [style.width.%]="progressPercentage"></div>
+    </div>
+    
+
+  </div>
