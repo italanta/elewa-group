@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-top: 30px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    .content {
+        padding: 20px 30px;
+        font-family: var( --elewa-group-website-dmsans-regular);
+        border: 0;
+        align-content: center;
+        margin-left: 50px;
+
+        .title1{
+            font-family: var(--elewa-group-website-dmsans-bold);
+            font-size: x-large;
+            font-weight: var(--elewa-group-website-font-weight-title);
+        }
+
+        .description1 {
+            font-size: var(--elewa-group-website-font-size-description);
+            
+        }
+   }
+
+   .banner-img{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// .container{
+//     display: flex;
+    
+//     margin-top: 30px;
+//     .row{
+//         display: flex;
+//         background-color: #f4f4f4;
+//         border-bottom-right-radius: 40px;
+//         border-bottom-left-radius: 40px;
+//         align-content: center;
+//     }
+//         .column{
+//             flex: 50%;
+//         }
+//         .content{
+            
+//             padding: 20px 30px;
+//             font-family: var( --elewa-group-website-dmsans-regular);
+//             border: 0;
+//             align-content: center;
+
+//             .title1{
+//             font-family: var(--elewa-group-website-dmsans-bold);
+//             font-size: var(--elewa-group-website-font-size-title);
+//             font-weight: var(--elewa-group-website-font-weight-title);
+//             }
+
+//             .description1{
+//                 text-align: justify;
+//                 margin-left: px;
+//             }
+
+            
+//         }
+
+//         .banner-img{
+//             margin-top: 50px;
+//             margin-bottom: 50px;
+//         }
+        
+
+// }
