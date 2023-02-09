@@ -36,6 +36,7 @@
 .circle i {
   font-size: 20px;
 }
+
 .line {
   margin-left: 8%;
   margin-right: 7%;
@@ -61,6 +62,10 @@ ul {
   // display: block;
   justify-content: space-between;
   // margin-right: 500px;
+}
+
+.row ul{
+    padding: 0;
 }
 .row ul li {
   // text-align: left;
