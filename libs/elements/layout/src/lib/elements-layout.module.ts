@@ -6,6 +6,6 @@ import { ElewaGroupImageAndTextBannerComponent } from './components/banners/elew
 @NgModule({
   imports: [CommonModule],
   declarations: [HeaderComponent, ElewaGroupImageAndTextBannerComponent],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, ElewaGroupImageAndTextBannerComponent],
 })
 export class LayoutModule {}
