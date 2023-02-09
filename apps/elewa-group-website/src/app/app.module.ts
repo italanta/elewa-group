@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
-import { LayoutModule } from '@elewa-group/elements/layout';
+import { LayoutModule } from 'libs/elements/layout/src';
+import {PagesElewaSocialImpactModule} from 'libs/pages/elewa/social-impact/src'
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,8 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
-    LayoutModule
+    LayoutModule,
+    PagesElewaSocialImpactModule
   ],
   providers: [],
   bootstrap: [AppComponent],
