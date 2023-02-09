@@ -5,7 +5,8 @@
   width: 100vw;
   height: 100vh;
 }
-.container {
+
+#elewa-hero .container {
   width: 80%;
   margin: auto;
   position: relative;
@@ -21,21 +22,29 @@
   position: relative;
 }
 
-.content {
+#elewa-hero .content {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  color: var(--elewa-group-website-color-card);
+  color: var(--elewa-group-website-color);
 
   max-width: max(60%, 32rem);
 }
-.content > h2 {
-  font-size: var(--elewa-group-website-font-size-title);
-}
-.footer {
+
+#elewa-hero footer {
   position: absolute;
   left: 0;
-  color: var(--elewa-group-website-color-card);
-  bottom: 5%;
+  color: var(--elewa-group-website-color);
+  bottom: 7%;
+  font-weight: 900;
+  
+}
+
+#elewa-hero .title {
+  font-size: var(--elewa-group-website-font-size-hero-heading);
+}
+
+#elewa-hero .subtitle {
+  font-size: var(--elewa-group-website-font-size-hero-subheading);
 }
