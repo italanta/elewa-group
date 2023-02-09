@@ -1,0 +1,85 @@
+// .container{
+
+// }
+
+.grid-container {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: left;
+}
+
+.grid-item {
+  text-align: center;
+
+}
+
+.icon {
+  font-size: 40px;
+}
+
+$mobile-width: 480px;
+$laptop-width: 1024px;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: left;
+}
+
+.grid-item {
+  text-align: left;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.grid-container {
+  // display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: left;
+
+  @media only screen and (max-width: $mobile-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  @media only screen and (min-width: $laptop-width) {
+    grid-template-columns: repeat(2, 400px);
+    display: grid;
+    gap: 50px;
+  }
+}
+
+.grid-item {
+  text-align: left;
+
+  @media only screen and (max-width: $mobile-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (min-width: $laptop-width) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.icon {
+  font-size: 40px;
+
+  @media only screen and (max-width: $mobile-width) {
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: $laptop-width) {
+    font-size: 40px;
+  }
+}
+
+img{
+  font-size: 12px;
+}
