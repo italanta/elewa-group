@@ -4,8 +4,8 @@
     background: var(--elewa-group-website-color-card);
     border: 0;
     border-radius: 20px;
-    width: 20%;
-    height: 30%;
+    // width: 20%;
+    // height: 30%;
 
     .headers .p1{
         font-family: var(--elewa-group-website-dmsans-regular);
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 850px) {
     .card{
-        width: 45%;
+        width: 90%;
         border-radius: 23px;
         padding: 20px 25px;
 
