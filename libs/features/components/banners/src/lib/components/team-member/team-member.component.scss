@@ -1,4 +1,5 @@
 .member-wrapper {
+    position: relative;
   background-color: black;
   color: var(--elewa-group-website-color);
   display: flex;
@@ -26,12 +27,12 @@ img {
 }
 .p2 {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 20px;
 }
 .p3 {
   padding-top: 25px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .desc-wrapper {
   padding-right: 500px;
@@ -39,3 +40,48 @@ img {
 .team-member-definition{
     margin-left: 350px
 }
+
+// This places the social icon at place stated by the design
+.social-icon{
+    background: var(--elewa-group-website-color-primary);
+    position: absolute;
+    bottom: 70px;
+    left: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.social-icon a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding-top: 13px;
+    font-size: 25px;
+}
+
+// This is the cancel to exit from the team members card
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: var(--elewa-group-website-color);
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  

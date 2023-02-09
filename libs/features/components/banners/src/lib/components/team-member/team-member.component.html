@@ -1,22 +1,25 @@
 <div class="member-wrapper">
+    <a href="#" class="close"></a>
   <div class="image-wrapper">
     <div class="image-border">
       <img src="{{ imageSrc }}" alt="{{ name }}" />
+      <div class="social-icon">
+        <a href="{{ linkedinUrl }}"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
   <div class="team-member-definition">
     <div class="member-content">
-        <h3 class="p1">{{ name }}</h3>
-        <p class="p2">{{ title }}</p>
-    
-        <div class="desc-wrapper">
-            <p class="p3">{{ descrition }}</p>
-        </div>
-        <div class="desc-wrapper">
-            <p class="p3">{{ descrition }}</p>
-        </div>
-        
+      <h3 class="p1">{{ name }}</h3>
+      <p class="p2">{{ title }}</p>
+
+      <div class="desc-wrapper">
+        <p class="p3">{{ descrition }}</p>
       </div>
+      <div class="desc-wrapper">
+        <p class="p3">{{ descrition }}</p>
+      </div>
+    </div>
   </div>
 </div>
