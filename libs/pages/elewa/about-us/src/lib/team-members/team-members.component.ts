@@ -61,14 +61,7 @@ export class TeamMembersComponent implements OnInit {
         LinkedInProfileLink: '',
         summary: 'lorem ipsum dolor sint',
       },
-      {
-        name: 'Herman Vandenbranden',
-        role: 'Management',
-        imageLink:
-          'https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60',
-        LinkedInProfileLink: 'https://www.linkedin.com/',
-        summary: 'lorem ipsum dolor sint',
-      },
+      
     ];
   }
 }
