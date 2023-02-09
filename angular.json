@@ -1,9 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "elewa-group-website": "apps/elewa-group-website",
-    "pages-elewa-about-us": "libs/pages/elewa/about-us",
     "elements-layout": "libs/elements/layout",
+    "elewa-group-website": "apps/elewa-group-website",
+    "features-components-banners": "libs/features/components/banners",
+    "pages-elewa-about-us": "libs/pages/elewa/about-us",
     "pages-elewa-home": "libs/pages/elewa/home",
     "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql",
