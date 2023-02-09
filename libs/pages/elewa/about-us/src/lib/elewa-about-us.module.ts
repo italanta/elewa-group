@@ -6,5 +6,6 @@ import { MissionComponent } from './mission/mission.component';
   imports: [CommonModule],
   declarations: [MissionComponent],
   exports: [MissionComponent]
+
 })
 export class AboutUsModule {}
