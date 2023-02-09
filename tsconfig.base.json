@@ -19,6 +19,7 @@
         "libs/pages/elewa/about-us/src/index.ts"
       ],
       "@elewa-group/pages/elewa/home": ["libs/pages/elewa/home/src/index.ts"],
+      "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
       "@elewa-group/features/components/cards": ["libs/features/components/cards/src/index.ts"],
       "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
       "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],
