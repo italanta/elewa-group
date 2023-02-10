@@ -1,0 +1,17 @@
+.horizontal-list-container {
+    display: flex;
+    background-color: var(  --elewa-group-website-color);
+    justify-content: center;
+
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+img {
+    height: auto;
+    width: auto;
+}
