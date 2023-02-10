@@ -1,0 +1,5 @@
+<ul class="horizontal-list">
+    <li class="list-logo" *ngFor="let logo of logos">
+      <img class="logo" src={{logo.src}} alt={{logo.alt}} srcset={{joinSrcSet(logo.srcset)}}/>
+    </li>
+</ul>

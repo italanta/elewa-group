@@ -21,8 +21,7 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
-    ButtonsModule,
-    LayoutModule
+    ButtonsModule,    
     LayoutModule,
     UiListsModule
   ],

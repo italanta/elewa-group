@@ -1,0 +1,15 @@
+.horizontal-list{
+    display: flex;
+    list-style: none;
+
+    .list-logo {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        width: 196px;
+        height: 83px;
+    }
+    .logo {
+        width: auto;
+        height: 100%;
+    }
+}
