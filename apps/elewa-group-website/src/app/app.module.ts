@@ -9,6 +9,8 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
 import { LayoutModule } from '@elewa-group/elements/layout';
+import { UiListsModule } from '@elewa-group/features/components/ui-lists';
+
 
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
@@ -21,6 +23,8 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     CardsModule,
     ButtonsModule,
     LayoutModule
+    LayoutModule,
+    UiListsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
