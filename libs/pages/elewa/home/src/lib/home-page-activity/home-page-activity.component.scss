@@ -1,0 +1,42 @@
+.activity-container {
+    background: var(--elewa-group-website-color);
+    color: var(--elewa-group-website-color-primary);
+}
+
+.activity-title {
+    font-size: var(--elewa-group-website-font-size-heading);
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    margin-left: 2%;
+}
+
+.activity-description {
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
+    font-size: var(--elewa-group-website-font-size-title-medium);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    margin-left: 2%;
+}
+
+.activity-cards {
+    display: flex;
+    margin-top: 5%;
+}
+.activity-cards elewa-group-card {
+    width: 100%;
+    margin: .5%
+}
+
+@media (max-width:850px) {
+    .activity-title{
+        font-size: var(--elewa-group-website-font-size-title-medium);
+        font-size: var(--elewa-group-website-font-size-heading);
+        font-weight: var(--elewa-group-website-font-weight-title)
+    }
+    .activity-description{
+        font-size: var(--elewa-group-website-font-size-title-small);
+    }
+    .activity-cards {
+        display: grid;
+        grid-template-columns: repeat(1);
+    }
+}
