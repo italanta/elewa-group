@@ -10,6 +10,8 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 import { CardsModule } from '@elewa-group/features/components/cards';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -17,6 +19,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
+    ButtonsModule,
     LayoutModule
   ],
   providers: [],
