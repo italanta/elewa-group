@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-group-image-and-text-banner.component.scss'],
 })
 export class ElewaGroupImageAndTextBannerComponent {
-  @Input() title1 = 'A cooperative mindset';
-  @Input() description1 = 'Elewa\'s Businessess have one common objective, to unlock true potential of individuals, teams, and communities. All out talents are enrolled in a personal growth track. In turn, they contribute their own growth towards the growth of others, the group and their communities.';
-  @Input() img1 = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png'
+  @Input() title = 'A cooperative mindset';
+  @Input() description = 'Elewa\'s Businessess have one common objective, to unlock true potential of individuals, teams, and communities. All out talents are enrolled in a personal growth track. In turn, they contribute their own growth towards the growth of others, the group and their communities.';
+  @Input() img = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png'
   
 }
