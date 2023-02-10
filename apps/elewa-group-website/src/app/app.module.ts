@@ -17,7 +17,9 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
-    LayoutModule
+    LayoutModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,205 @@
+// 
+body {
+  font: "DMSans-Regular";
+  color: #fff;
+}
+
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  & time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  & ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+    height: auto;
+
+    & li {
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+      width: 520px;
+      height: 1px;
+      background: #000000;
+      top: calc(100% + 16px);
+
+      & div {
+        position: absolute;
+        left: calc(100% + 7px);
+        width: 500px;
+        padding: 15px;
+        font-size: 1rem;
+        white-space: normal;
+        color: black;
+        background: white;
+        display: -webkit-box;
+         -webkit-line-clamp: 50; /* number of lines to show */
+                 line-clamp: 50; 
+         -webkit-box-orient: vertical;
+      }
+      
+      &:last-child {
+        &::after {
+          left: calc(100% - 15px);
+        }
+      }
+
+      &:first-child {
+        width: 0px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 0px);
+          bottom: 0;
+          width: 18px;
+          height: 18px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background: #070707;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 20px);
+        bottom: 0;
+        width: 18px;
+        height: 18px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #070707;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.arrows {
+  display: flex;
+  justify-content: right;
+  margin: 20px;
+
+  &.arrows {
+    .arrow__prev {
+      margin-right: 20px;
+    }
+  }
+  
+  &.disabled {
+    opacity: 0.5;
+  }
+  
+  &.arrows{
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    width: 50%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li div {
+    position: static;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
+    

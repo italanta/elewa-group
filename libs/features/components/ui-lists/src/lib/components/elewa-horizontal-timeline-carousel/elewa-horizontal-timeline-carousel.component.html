@@ -1,0 +1,26 @@
+<section class="timeline">
+  <ol>
+    <li *ngFor="let year of years">
+      <div>
+        <time>{{ year.year }}</time>
+        <h1>{{ year.title }}</h1>
+        {{ year.description }}
+      </div>
+    </li>
+  </ol>
+</section>
+
+<div class="arrows">
+  <button class="arrow arrow__prev disabled" disabled>
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg"
+      alt="prev timeline arrow"
+    />
+  </button>
+  <button class="arrow arrow__next">
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg"
+      alt="next timeline arrow"
+    />
+  </button>
+</div>

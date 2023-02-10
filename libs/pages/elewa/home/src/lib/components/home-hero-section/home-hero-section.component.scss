@@ -1,114 +1,114 @@
-.container{
-    background-color: var(--elewa-group-website-color-bg);
-    border-radius: 0 0 30px 30px;
-    margin: 0 0;
-    padding: 50px 20px;
-    display: flex;
+// .container{
+//     background-color: var(--elewa-group-website-color-bg);
+//     border-radius: 0 0 30px 30px;
+//     margin: 0 0;
+//     padding: 50px 20px;
+//     display: flex;
 
-    p{
-        color: var(--elewa-group-website-color);
-    }
+//     p{
+//         color: var(--elewa-group-website-color);
+//     }
 
-    .col4{
-        width: 40%;
-        padding: 60px 0;
-    }
+//     .col4{
+//         width: 40%;
+//         padding: 60px 0;
+//     }
 
-    .col4 img{
-        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-hero-image1)), to(var(--elewa-group-website-color-hero-image3)));
-        mask-image: linear-gradient(to bottom, var(--elewa-group-website-color-hero-image3), var(--elewa-group-website-color-hero-image4));
-    }
+//     .col4 img{
+//         -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-hero-image1)), to(var(--elewa-group-website-color-hero-image3)));
+//         mask-image: linear-gradient(to bottom, var(--elewa-group-website-color-hero-image3), var(--elewa-group-website-color-hero-image4));
+//     }
 
-    .col8{
-        width: 60%;
-        padding-right: 15%;
-    }
+//     .col8{
+//         width: 60%;
+//         padding-right: 15%;
+//     }
 
-    .cards{
-        display: flex;
-    }
+//     .cards{
+//         display: flex;
+//     }
 
-    .heading{
-        font-size: var(--elewa-group-website-font-size-heading);
-        width: 80%;
-        font-family: var(--elewa-group-website-dmsans-regular);
-    }
+//     .heading{
+//         font-size: var(--elewa-group-website-font-size-heading);
+//         width: 80%;
+//         font-family: var(--elewa-group-website-dmsans-regular);
+//     }
 
-    .sub-heading{
-        font-size: var(--elewa-group-website-font-size-subheading);
-        font-family: var(--elewa-group-website-dmsans-regular);
-        padding-bottom: 40px;
-    }
+//     .sub-heading{
+//         font-size: var(--elewa-group-website-font-size-subheading);
+//         font-family: var(--elewa-group-website-dmsans-regular);
+//         padding-bottom: 40px;
+//     }
 
-    .card-one{
-        width: 40%;
-    }
+//     .card-one{
+//         width: 40%;
+//     }
 
-    .left{
-        padding-right: 20px;
-    }
+//     .left{
+//         padding-right: 20px;
+//     }
 
-    .right{
-        padding-left: 80px;
-    }
+//     .right{
+//         padding-left: 80px;
+//     }
 
-    .title{
-        font-size: var(--elewa-group-website-font-size-title);
-        font-family: var(--elewa-group-website-dmsans-medium);
-    }
+//     .title{
+//         font-size: var(--elewa-group-website-font-size-title);
+//         font-family: var(--elewa-group-website-dmsans-medium);
+//     }
 
-    .description{
-        font-family: var(--elewa-group-website-dmsans-regular);
-        font-size: var(--elewa-group-website-font-size-description);
-    }
+//     .description{
+//         font-family: var(--elewa-group-website-dmsans-regular);
+//         font-size: var(--elewa-group-website-font-size-description);
+//     }
 
-}
+// }
 
-@media screen and (max-width: 850px) {
-    .container{
-        margin: 0 0;
-        padding: 20px 40px;
+// @media screen and (max-width: 850px) {
+//     .container{
+//         margin: 0 0;
+//         padding: 20px 40px;
         
-        .col4{
-            display: none;
-        }
+//         .col4{
+//             display: none;
+//         }
 
-        .col8{
-            width: 100%;
-            padding-right: 0;
-        }
+//         .col8{
+//             width: 100%;
+//             padding-right: 0;
+//         }
 
-        .heading{
-            width: 100%;
-            font-size: var( --elewa-group-website-font-size-heading-medium);
-        }
+//         .heading{
+//             width: 100%;
+//             font-size: var( --elewa-group-website-font-size-heading-medium);
+//         }
 
-        .sub-heading{
-            font-size: var( --elewa-group-website-font-size-subheading-medium);
-        }
+//         .sub-heading{
+//             font-size: var( --elewa-group-website-font-size-subheading-medium);
+//         }
 
-        .cards{
-            display: block;
-        }
+//         .cards{
+//             display: block;
+//         }
 
-        .card-one{
-            width: 100%;
-        }
+//         .card-one{
+//             width: 100%;
+//         }
 
-        .left{
-            padding-right: 0;
-        }
+//         .left{
+//             padding-right: 0;
+//         }
     
-        .right{
-            padding-left: 0;
-        }
+//         .right{
+//             padding-left: 0;
+//         }
 
-        .description{
-            font-size: var(--elewa-group-website-font-size-description-medium);
-        }
+//         .description{
+//             font-size: var(--elewa-group-website-font-size-description-medium);
+//         }
 
-        .sub-heading{
-            padding-bottom: 20px;
-        }
-    }
-}
+//         .sub-heading{
+//             padding-bottom: 20px;
+//         }
+//     }
+// }
