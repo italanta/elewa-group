@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./social-impact.component.scss'],
 })
 export class SocialImpactComponent {
-  @Input() title = 'Contràriament a la creença popular';
+  @Input() title = 'Beyond Business';
   @Input() paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nequearcu. Sed venenatis enim at maximus euismod. Ut mi orci, vulputate eu commodo hendrerit nisi. Nam sapien metus, tristique sit amet
   consectetur eget, pretium nec sem. Etiam egestas feugiat lacus, ac feugiat
   sapien faucibus nec. Vivamus arcu sapien, luctus id augue eget, vestibulum
@@ -14,6 +14,6 @@ export class SocialImpactComponent {
   viverra. Aenean cursus bibendum felis non vulputate. Proin sed massa vitae
   sapien tincidunt pulvinar. Nunc mauris est, dapibus non tellus id,
   vehicula fermentum urna. Nullam iaculis purus massa`
-  @Input() imgSrc = "https://media.istockphoto.com/id/1365693929/photo/shot-of-a-young-woman-using-a-digital-tablet-while-inspecting-crops-on-a-farm.jpg?b=1&s=170667a&w=0&k=20&c=u2E4bzYwNmGJspLn_UHrvCw7z0_xVgVuQj0RZ1UWOO0="
+  @Input() imgSrc = "https://images.pexels.com/photos/11199063/pexels-photo-11199063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 
 }
