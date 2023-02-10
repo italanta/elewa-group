@@ -3,7 +3,9 @@
     min-height: 50vh;
     display:flex;
     justify-content: space-between;
+    align-content: flex-start;
     align-items: center;
+    border: 2px solid black;
 }
 
 .intro{
@@ -13,9 +15,19 @@
 }
 
 .impact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    .para{
+        margin-top: 20px;
+        align-self: center;
+    }
 }
 
-.img
+.img img{
+    margin: 20px;
+    min-height: 20%;
+}
