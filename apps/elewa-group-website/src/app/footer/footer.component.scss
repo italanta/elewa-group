@@ -136,6 +136,11 @@ p {
     place-content: center;
     align-items: center;
   }
+  .privacy-with-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .social-icons {
     display: block;
     text-align: center;
