@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-elewa-about-us-location-section',
+  selector: 'elewa-group-about-us-location-section',
   templateUrl: './elewa-about-us-location-section.component.html',
   styleUrls: ['./elewa-about-us-location-section.component.css']
 })
-export class ElewaAboutUsLocationSectionComponent implements OnInit {
+export class ElewaAboutUsLocationSectionComponent {
 
-  constructor() { }
+  // constructor() { }
 
-  ngOnInit() {
-  }
+  // ngOnInit() {
+  // }
 
 }
