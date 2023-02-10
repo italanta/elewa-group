@@ -1,0 +1,43 @@
+.container{
+  padding-right: 10px;
+  padding: 10px;
+}
+.cultures-section {
+  width: 100%;
+  padding: .5rem;
+}
+.culture-row {
+  display: flex;
+}
+
+.culture-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: .5rem .2rem;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.culture-card:last-of-type {
+  border-right: none;
+}
+
+.culture-card:first-of-type {
+  border-left: none;
+  border-right: none;
+}
+
+@media only screen and (max-width: 850px) {
+
+
+  .culture-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .culture-card {
+    border: none;
+    border-top: 1px solid #000;
+  }
+}
