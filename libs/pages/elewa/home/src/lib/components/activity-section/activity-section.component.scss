@@ -1,21 +1,29 @@
 .activitySection{
     background-color: white;
-  
+    width: 100vw;
 }
 .heading{
     margin-left: 5%;
     margin-bottom:4px;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
 }
 .activityDescriptionSummary{
     max-width: 25%;
     padding: 5px;
     margin-left: 5%;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
 }
 .activityCards{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
 }
 .educationCard{
-margin-left: 7%;
+margin-left: 10%;
+font-family: var(--elewa-group-website-dmsans-regular);
+font-weight: var(--elewa-group-website-font-weight-subtitle);
 
 }
