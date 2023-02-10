@@ -18,9 +18,7 @@
       "@elewa-group/features/components/buttons": [
         "libs/features/components/buttons/src/index.ts"
       ],
-      "@elewa-group/features/components/cards": [
-        "libs/features/components/cards/src/index.ts"
-      ],
+      
       "@elewa-group/pages/elewa/about-us": [
         "libs/pages/elewa/about-us/src/index.ts"
       ],
