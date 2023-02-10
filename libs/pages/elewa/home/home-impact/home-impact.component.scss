@@ -1,0 +1,21 @@
+.container-impact{
+    min-width: 100vw;
+    min-height: 50vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.impact{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.img
