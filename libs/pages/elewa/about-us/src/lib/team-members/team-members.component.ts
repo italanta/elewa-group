@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Members } from './membersInterface';
 
 interface Members {
   name: string;
