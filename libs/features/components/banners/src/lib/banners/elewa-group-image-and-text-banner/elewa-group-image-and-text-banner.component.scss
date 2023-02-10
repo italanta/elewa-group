@@ -33,7 +33,7 @@
 
    .col8{
     width: 60%;
-    padding-left: 10%;
+    padding-left: 0%;
     padding-right: 15%;
     display: flex;
     flex-direction: column;
@@ -49,8 +49,7 @@
 .col4 img{
     height: 500px;
     width: 350px;
-   
-    justify-content: center;
+    float: right;
     border-radius: 20px;
 }
     }
@@ -66,6 +65,7 @@
             height: 500px;
             width: 350px;
             justify-content: center;
+            border-radius: 20px;
         }
         .col8{
             width: 60%;
@@ -74,6 +74,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
         }
 
          }
@@ -130,7 +131,8 @@
             .col4 img{
                 height: 400px;
                 width: 90%;
-                justify-content: center;
+                margin: auto;
+                float: none;
                 border-radius: 20px;
             }
         }
