@@ -1,63 +1,3 @@
-.member-wrapper {
-  position: relative;
-  background-color: black;
-  color: var(--elewa-group-website-color);
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-.image-wrapper {
-  display: flex;
-  flex: 1;
-  height: 450px;
-  width: 200px;
-  border-bottom-right-radius: 10%;
-}
-img {
-  border-bottom-right-radius: 10%;
-}
-
-.p1 {
-  font-family: var(--elewa-group-website-dmsans-bold);
-  font-size: 24px;
-  padding-bottom: 0;
-}
-.p2 {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-.p3 {
-  padding-top: 25px;
-  font-size: 20px;
-}
-.desc-wrapper {
-  padding-right: 500px;
-}
-.team-member-definition {
-  margin-left: 350px;
-}
-
-// This places the social icon at place stated by the design
-.social-icon {
-  background: var(--elewa-group-website-color-primary);
-  position: absolute;
-  bottom: 70px;
-  left: 80px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
-.social-icon a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  color: white;
-  align-items: center;
-  padding-top: 13px;
-  font-size: 25px;
-}
-
 // This is the cancel to exit from the team members card
 .close {
   position: absolute;
@@ -81,4 +21,133 @@ img {
 }
 .close:after {
   transform: rotate(-45deg);
+}
+
+.member-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.member {
+  position: absolute;
+  background-color: var(--elewa-group-website-color-bg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.member-image {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin-bottom: 3%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 10%;
+}
+
+.member-info {
+  height: 70%;
+  width: 40%;
+  padding: 0 40px;
+  text-align: left;
+  color: var(--elewa-group-website-color);
+}
+
+h1 {
+  font-size: 24px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-size: var(--elewa-group-website-font-size-description);
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+p {
+  color: var(--elewa-group-website-color);
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 20px;
+}
+
+.social-icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+}
+
+.fa-linkedin-in {
+  color: white;
+  font-size: 25px;
+}
+
+.member-controls {
+  position: absolute;
+  bottom: 90px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0 40px;
+}
+
+.previous-button,
+.next-button {
+  display: flex;
+  border-width: 0.1px;
+  border-style: inset;
+  color: var(--elewa-group-website-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+  // position: absolute;
+}
+
+.btn {
+  color: var(--elewa-group-website-color);
+  font-size: 10px;
+  font-weight: lighter;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.progress-bar {
+  width: 47%;
+  height: 1px;
+  background-color: gray;
+  position: absolute;
+  bottom: 70px;
+  margin-left: 45%;
+  font-size: 100px;
+  color: white;
+  font-weight: bolder;
+}
+
+.progress-bar-fill {
+  background-color: var(--elewa-group-website-color);
+  height: 100%;
+  font-weight: bolder;
+  font-size: 100px;
 }
