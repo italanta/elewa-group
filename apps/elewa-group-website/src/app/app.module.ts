@@ -12,6 +12,9 @@ import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+
+
 @NgModule({
   declarations: [AppComponent,ElewaGroupImageAndTextBannerComponent],
   imports: [
@@ -19,6 +22,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
+    ButtonsModule,
     LayoutModule
   ],
   providers: [],
