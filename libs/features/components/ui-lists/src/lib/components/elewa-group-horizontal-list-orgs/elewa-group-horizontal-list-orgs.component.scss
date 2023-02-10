@@ -1,15 +1,32 @@
 .horizontal-list{
     display: flex;
     list-style: none;
+    justify-content: center;
 
     .list-logo {
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-        width: 196px;
-        height: 83px;
+        width: 180px;
+        height: 73px;
+        margin-top: 5px;
+        padding: 2px;
     }
     .logo {
         width: auto;
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .horizontal-list {
+        flex-direction: column;
+        justify-content: center;
+        .list-logo {
+            width: 120px;
+            height: 43px;
+            margin-top: 5px;
+            padding: 2px;
+        }
+    }
+   
+  }
