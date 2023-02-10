@@ -1,15 +1,27 @@
-<div class="body">
-        <div class="card">
-            <h3 class="title">Our activities which fulfill <br> our purpose</h3>
-            <p>Practically, we are organized as a transparent multi-stake-holder <br> C0(o)rporation which develops and supports brands.Inturn, our <br> brands develop and support people. they carry and promote <br> our culture, geared towards the rapid acceleration of human <br> capital</p>
-        </div>
-        <div class="grid-container">
-            <div class="e-card">
-            <elewa-group-card></elewa-group-card> 
+<div class="container">
+  <div>
+    <p class="title">
+      Our activities which fulfill<br />
+      our purpose
+    </p>
 
-            <elewa-group-card [subtitle]="'Technology'"  [imgSrc]="'https://cdn-icons-png.flaticon.com/512/525/525999.png?w=740&t=st=1675501297~exp=1675501897~hmac=1155bac819e804d6cec3f35352bfdf66b30145c40de715340157d1f63bcfc939'" [description]='"Offshore tech services which accelerate your business and our talent."' [title]="'italanta'"></elewa-group-card> 
-            
-            <elewa-group-card [subtitle]="'Ventures'"  [imgSrc]="'https://cdn-icons-png.flaticon.com/512/525/525999.png?w=740&t=st=1675501297~exp=1675501897~hmac=1155bac819e804d6cec3f35352bfdf66b30145c40de715340157d1f63bcfc939'" [description]='"Sometimes to grow means to let go.Our bravest mpove into Veenture Labs, where our people they start and accelerate their own startups."' [title]="'Venture Labs'"></elewa-group-card>
-            </div>
-        </div>
+    <p class="sub-title">
+      Practically, we are organized as a transparent multi-stakeholder<br />
+      Co(o)rparation which develops and supports brands. In turn, our<br />
+      brands develop and support people. They carry and promote our<br />
+      culture, geared towards the rapid acceleration of human capital.
+    </p>
+  </div>
+
+  <div class="cards" >
+    <div *ngFor="let card of cards">
+    <elewa-group-card
+      [subtitle]="card.subtitle"
+      [description]="card.description"
+      [imgSrc]="card.imgSrc"
+      [title]="card.title"
+    >
+      </elewa-group-card>
+  </div>
+  </div>
 </div>
