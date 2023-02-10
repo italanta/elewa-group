@@ -31,6 +31,12 @@
     // max-width: 40%;
     padding-right: 10%;
 }
+.button-div{
+    display: flex;
+}
+.button{
+    padding-right: 20px;
+}
 @media screen and (max-width: 850px)  {
     .impact-container{
         flex-direction: column;
@@ -46,5 +52,8 @@
     }
     .button{
         padding-bottom: 20px;
+    }
+    .button-div{
+        flex-direction: column;        
     }
 }
