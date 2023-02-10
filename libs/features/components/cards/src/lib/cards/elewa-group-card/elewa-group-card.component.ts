@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-group-card.component.scss'],
 })
 export class ElewaGroupCardComponent {
-  @Input() subtitle : string | undefined;
-  @Input() title : string | undefined;
-  @Input() imgSrc : string | undefined;
-  @Input()  description :string | undefined;
+  @Input() subtitle : string = '';
+  @Input() title : string ='';
+  @Input() imgSrc : string ='';
+  @Input()  description :string ='';
 }

@@ -9,11 +9,14 @@
     font-weight: var(--elewa-group-website-font-weight-subtitle);
 }
 .activityDescriptionSummary{
+    display:flex;
+    flex-wrap: nowrap;
     max-width: 25%;
     padding: 5px;
     margin-left: 5%;
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-weight-subtitle);
+    
 }
 .activityCards{
     display: grid;
@@ -24,6 +27,7 @@
 .educationCard{
 margin-left: 10%;
 font-family: var(--elewa-group-website-dmsans-regular);
-font-weight: var(--elewa-group-website-font-weight-subtitle);
+font-size: var(--elewa-group-website-font-size-title);
+font-weight: var(--elewa-group-website-font-weight-title);
 
 }
