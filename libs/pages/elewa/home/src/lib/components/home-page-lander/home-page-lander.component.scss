@@ -1,0 +1,75 @@
+
+.homepage-lander
+{
+    display: flex;
+
+    min-height: 100vh;
+
+    //background-image:linear-gradient(rgba(91, 91, 97, 2.5), rgba(240, 240, 247, 0)), url("https://images.unsplash.com/photo-1595583946260-2eb883f5ce11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    
+    background-image: url("https://images.unsplash.com/photo-1595583946260-2eb883f5ce11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-color: rgb(161, 164, 164);
+    background-repeat:  no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position: center;
+
+    background-blend-mode: multiply;
+}
+
+.homepage-tile 
+{
+    width: 45%;
+    margin: auto 60px;
+
+    .heading, .sub-heading
+    {
+        color: var(--elewa-group-website-color);
+        font-family: var(--elewa-group-website-dmsans-regular);
+    }
+
+    .heading{
+        font-size: var(--elewa-group-website-font-size-heading);
+        letter-spacing: 1px;    
+    }
+
+    .sub-heading{
+        font-size: var(--elewa-group-website-font-size-subheading);
+    }
+
+}
+
+
+
+// responsiveness
+
+@media only screen and (max-width: 768px) {
+
+    .homepage-lander
+    {
+        min-height: 60vh;
+        
+        background-position: left center;
+        background-size: auto;   
+    }
+
+    .homepage-tile
+    {
+        width: 100%;
+        margin-top: 140px;
+
+        .heading
+        {
+            width: 70%;
+
+            font-size: var( --elewa-group-website-font-size-heading-medium);
+            font-weight: var(--elewa-group-website-font-weight-title-medium);
+        }
+
+        .sub-heading{
+            width: 100%;
+
+            font-size: var( --elewa-group-website-font-size-subheading-medium);
+        }
+    }
+}
