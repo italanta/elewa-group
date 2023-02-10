@@ -9,6 +9,6 @@ export class ElewaGroupImageAndTextBannerComponent {
   @Input() title = 'A cooperative mindset'
   @Input() imageUrl = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png'
   @Input() text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-  @Input() color ="#00000"
+  @Input() bgcolor ="#FFC0CB"
   @Input() placement = "left"
 }
