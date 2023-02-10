@@ -35,7 +35,7 @@
 .line {
   margin-left: 8%;
   margin-right: 7%;
-  margin-bottom: -15px;
+  margin-bottom: 15px;
 }
 ul {
   list-style: none;
@@ -106,16 +106,20 @@ p {
   // white-space: nowrap;
   //overflow: hidden;
 }
+.mobile {
+  display: none;
+}
 
 @media (max-width: 767px) {
-  // .mobile-text {
-  //     display: block;
-  //     margin-top: 1rem;
-  // }
+  .mobile-text {
+    //     display: block;
+    margin-top: 1rem;
+  }
 
   .non-mobile {
     display: none;
   }
+  
   .footer {
     padding: 10px;
     max-width: 100vw;
@@ -136,5 +140,8 @@ p {
     display: block;
     text-align: center;
     margin: 10px auto;
+  }
+  .hide-mobile {
+    display: none;
   }
 }
