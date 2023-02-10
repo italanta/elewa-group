@@ -8,8 +8,7 @@
 }
 .container {
   text-align: center;
-  font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--elewa-group-website-font-size-heading);
 }
 
 .btn {
@@ -30,7 +29,7 @@
   justify-content: center;
 }
 .circle i {
-  font-size: 20px;
+  font-size: var(--elewa-group-website-font-size-subheading);
 }
 
 .line {
@@ -86,7 +85,7 @@ h3 {
   margin-left: 5%;
   margin-right: 5%;
 }
-.elewa-text img{
+.elewa-text img {
   margin-left: 1rem;
 }
 .social-icons {
@@ -95,7 +94,7 @@ h3 {
   margin-top: 30px;
 }
 .social-icons i {
-  font-size: 20px;
+  font-size: var(--elewa-group-website-font-size-subheading);
   margin-right: 10px;
 }
 .icon-container {
@@ -127,7 +126,7 @@ p {
   .section {
     padding: 0;
   }
-  .elewa-text{
+  .elewa-text {
     display: flex;
     flex-direction: column;
     place-content: center;
