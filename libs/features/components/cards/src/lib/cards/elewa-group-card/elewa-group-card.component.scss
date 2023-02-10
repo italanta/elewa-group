@@ -4,8 +4,8 @@
     background: var(--elewa-group-website-color-card);
     border: 0;
     border-radius: 20px;
-    width: 20%;
-    height: 30%;
+    // width: 20%;
+    height: 100%;
 
     .headers .p1{
         font-family: var(--elewa-group-website-dmsans-regular);
@@ -48,6 +48,7 @@
         .headers .p1{
             font-size: var(--elewa-group-website-font-size-title-medium);
             font-weight: var(--elewa-group-website-font-weight-title-medium);
+            margin-bottom: 1%;
         }
 
         .img img{
