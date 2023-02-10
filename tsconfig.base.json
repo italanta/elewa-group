@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
+      "@elewa-group/features/components/buttons":[
+        "libs/features/components/buttons/src/index.ts"
+      ],
       "@elewa-group/features/components/cards": [
         "libs/features/components/cards/src/index.ts"
       ],
