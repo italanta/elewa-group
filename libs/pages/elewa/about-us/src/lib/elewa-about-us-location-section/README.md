@@ -2,7 +2,21 @@
 
 This documentations shows findings on different maps api/service libraries that can be used to pinpoint a location on a map.
 
-## 1. Angular Google Maps Components (AGM)
+## 1. Angular Material
+
+This is the latest library serivice. The sources for this package are in the main [Angular Material](https://github.com/angular/components) repo.
+
+### Dependencies
+* [@types/google](https://www.npmjs.com/package/%40types%2Fgoogle.maps)
+* [mapstslib](https://www.npmjs.com/package/tslib)
+
+### Installation
+
+```ts
+npm i @angular/google-maps
+```
+For more information about the component, visit the [repository](https://github.com/angular/components) or directly access the [homepage](https://github.com/angular/components/tree/main/src/google-maps#readme).
+## 2. Angular Google Maps Components (AGM)
 
 This component provides a Google Maps Angular component  (previously known as angular2-google-maps) that implements the Google Maps JavaScript API.
   
@@ -93,7 +107,7 @@ You should also checkout the [Getting started](https://angular-maps.com/guides/g
 
 ---
 
-## 2. The Maps Embed API overview
+## 3. The Maps Embed API overview
 
 Place an interactive map, or Street View panorama on your web page with a simple HTTP request—no JavaScript required.
 
