@@ -4,7 +4,7 @@
   color: var(--elewa-group-website-color);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 600px;
+  min-height: 600px;
 }
 .container {
   text-align: center;
@@ -73,8 +73,8 @@ h3 {
   font-family: var(--elewa-group-website-dmsans-medium);
   margin-bottom: 25px;
 }
-.row ul{
-    padding: 0;
+.row ul {
+  padding: 0;
 }
 .row ul li {
   display: block;
@@ -82,11 +82,25 @@ h3 {
   font-family: var(--elewa-group-website-dmsans-regular);
   font-size: var(--elewa-group-website-font-size-description);
 }
+
+.icon-container a {
+  background-color: var(--elewa-group-website-color-bg);
+  color: var(--elewa-group-website-color);
+}
+.elewa-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.elewa-text img{
+  margin-left: 1rem;
+}
 .social-icons {
   display: flex;
   justify-content: end;
   margin-top: 30px;
-  margin-right: 100px;
 }
 .social-icons i {
   font-size: 20px;
@@ -95,48 +109,38 @@ h3 {
 .icon-container {
   margin-right: 1rem;
 }
-.icon-container a {
-  background-color: var(--elewa-group-website-color-bg);
-  color: var(--elewa-group-website-color);
-}
-// .only-icons {
-//   display: flex;
-//   width: 40%;
-//   float: right;
-// }
-.elewa-text {
-  margin-left: 7%;
-  float: left;
-  
-}
 p {
-    font-size: 0.9em;
-    // text-overflow: ellipsis;
-    white-space: nowrap;
-    //overflow: hidden;
+  font-size: var(--elewa-group-website-font-size-heading);
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  //overflow: hidden;
 }
 
 @media (max-width: 767px) {
-    // .mobile-text {
-    //     display: block;
-    //     margin-top: 1rem;
-    // }
+  // .mobile-text {
+  //     display: block;
+  //     margin-top: 1rem;
+  // }
 
-    .non-mobile {
-         display: none;
-     }
-  .elewa-text {
-    margin-left: auto;
+  .non-mobile {
+    display: none;
   }
   .footer {
     padding: 10px;
+    max-width: 100vw;
   }
   .line {
     display: none;
   }
- .section {
-  padding: 0;
- }
+  .section {
+    padding: 0;
+  }
+  .elewa-text{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+  }
   .social-icons {
     display: block;
     text-align: center;
