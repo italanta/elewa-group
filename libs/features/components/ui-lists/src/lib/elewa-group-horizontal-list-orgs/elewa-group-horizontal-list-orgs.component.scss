@@ -1,0 +1,19 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    height: 20px;
+    width: 30px;
+    padding: 30px;
+}
+
