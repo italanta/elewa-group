@@ -1,0 +1,122 @@
+.footer{
+    height: auto;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: DMSans-Regular;
+    overflow: hidden;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+}
+
+.footer-intro-content h1{
+    font-weight: lighter;
+    // word-spacing: 0.5em;
+    font-size: 3em;
+    text-align: center;
+}
+.footer-intro{
+    padding: 20px;
+}
+.footer-intro-content{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+.footer-button{
+    padding: 10px;
+    border-radius: 50px;
+    border-color: #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-content{
+    display: flex;
+    justify-content: space-between;
+}
+.activities a{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.socia-media-icons a img{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 930px) {
+    .info-content {
+        flex-wrap: wrap;
+        // flex-direction: column;
+        
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .info-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .activities{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .activities{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    }
+    .footer-intro{
+        font-size: 1.25em;
+    }
+    hr{
+        display: none;
+    }
+    .headquaters{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .brand{
+        display: none;
+    }
+    .links{
+        // display: flex;
+        flex-direction: row;
+    }
+    .icons{
+        flex-direction: column-reverse;
+    }
+
+}

@@ -1,0 +1,66 @@
+<div class="footer">
+    <div class="footer-intro">
+        <div class="footer-intro-content">
+            <ng-content select=".footer-header"></ng-content>
+        </div>
+        <div class="footer-intro-content">
+            <a href=""><button class="footer-button">Become an investor &nbsp; <img src="data:image/png;base64,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" alt="" width="40px"></button></a>
+        </div>
+    </div>
+        <hr>
+        <div class="info-content links">
+            <div class="headquaters">
+                <h4>Headquaters</h4>
+                <br>
+                <p>The promenade, 19 General</p>
+                <p>Mathenge Rd</p>
+                <p>Nairobi Kenya</p>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <br>
+                <p>T +254 78 92 27 755</p>
+                <p>E info@elewa.co.ke</p>
+            </div>
+            <div class="navigation">
+                <h4>Navigation</h4>
+                <br>
+                <p>Projects</p>
+                <p>Company</p>
+                <p>News</p>
+                <p>Contact</p>
+            </div>
+            <div class="activities">
+                <h4>Activities</h4>
+                <br>
+                <a href="">About us</a>
+                <a href="">Social impact</a>
+                <a href="">Invest</a>
+                <a href="">News</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="brand">
+                <h4>Brand</h4>
+                <br>
+                <p>Elewa</p>
+                <p>iTalanta</p>
+                <p>Ventures lab</p>
+            </div>
+            <div class="privacy">
+                <h4>Privacy</h4>
+                <br>
+                <p>Terms and conditions</p>
+                <p>Cookies Preferences</p>
+            </div>
+        </div>
+        <div class="info-content icons">
+        <div>
+            <a href=""><img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg" alt="logo" height="30px"></a>
+        </div>
+        <div class="socia-media-icons">
+            <a href=""><img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg" alt="facebook" height="30px"></a>
+            <a href=""><img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="instagram" height="30px"></a>
+            <a href=""><img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="linked in" height="30px"></a>
+        </div>
+        </div>
+    </div>
