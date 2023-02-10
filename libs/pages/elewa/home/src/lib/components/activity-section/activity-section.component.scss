@@ -1,29 +1,25 @@
-.body{
-    background-color:white;
-    height: auto;
-    padding: 50px 150px;
+.container {
+    padding-left: 50px;
+    background: var(--elewa-group-website-color);
 }
-.title{
-    font-size: 50px;
-    font-weight: var(--elewa-group-website-font-weight-subtitle);
-    font-family: var(--elewa-group-website-dmsans-bold);
-}
-p{
-    font-size: var(--elewa-group-website-font-size-title);
-    font-weight: var(--elewa-group-website-font-weight-subtitle);
+.title {
+    font-size: var(--elewa-group-website-font-size-heading);
+    font-weight: var(--elewa-group-website-font-weight-title);
     font-family: var(--elewa-group-website-dmsans-regular);
 }
-.e-card{
+.sub-title {
+    font-size: var(--elewa-group-website-font-size-subheading);
+}
+.cards {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 20px;
     height: fit-content;
-    width: fit-content;
 }
-@media (max-width:800px){
-    .cards{
-        display: grid;
-        grid-template-columns: auto;
-        gap: 15px;
+@media (max-width: 800px) {
+    .cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
     }
 }
