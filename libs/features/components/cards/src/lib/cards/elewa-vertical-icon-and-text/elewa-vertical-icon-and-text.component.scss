@@ -1,0 +1,22 @@
+.about-card {
+    background-color: var(--elewa-group-website-color-card);
+    padding: 1rem 2rem;
+}
+
+.about-icon {
+    height: 7rem;
+    width: auto;
+    color: #808080;    
+}
+
+.about-title {
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-size: var(--elewa-group-website-font-size-title);
+}
+
+.about-description {
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-size-description);
+    max-width: 50ch;
+}
