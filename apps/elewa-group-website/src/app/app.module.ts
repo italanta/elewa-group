@@ -8,17 +8,18 @@ import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
-import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
+import {FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 
 @NgModule({
-  declarations: [AppComponent,ElewaGroupImageAndTextBannerComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule, 
     ScullyLibModule,
     HomePageModule,
     CardsModule,
+    FeaturesComponentsBannersModule,
     LayoutModule
   ],
   providers: [],
