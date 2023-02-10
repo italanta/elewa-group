@@ -93,3 +93,30 @@ You should also checkout the [Getting started](https://angular-maps.com/guides/g
 
 ---
 
+## 2. The Maps Embed API overview
+
+Place an interactive map, or Street View panorama on your web page with a simple HTTP request—no JavaScript required.
+
+All maps embeded api requests are available for free with unlimited usage. However, requests still need valid Google Cloud API key. See [billing and usage](https://developers.google.com/maps/documentation/embed/usage-and-billing) from official store.
+
+### Generating an iframe
+
+Find instructions on generating iframe [here](https://developers.google.com/maps/documentation/embed/quickstart#generating_an_iframe)
+
+```html
+<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..."></iframe>
+```
+
+### Testing your iframe
+
+* Create and save an `index.html` file
+* Add this into the file with the above generated iframe
+
+```html
+<html>
+    <!-- Place your iframe below this line -->
+</html>
+```
+* Save file
+* Load the html file in a browser by dragging to the default browser or clicking the [live-preview extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
