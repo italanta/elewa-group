@@ -5,5 +5,6 @@ import { AboutUsLocationSectionComponent } from './about-us-location-section/abo
 @NgModule({
   imports: [CommonModule],
   declarations: [AboutUsLocationSectionComponent],
+  exports: [AboutUsLocationSectionComponent]
 })
 export class AboutUsModule {}

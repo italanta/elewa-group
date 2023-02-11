@@ -1,0 +1,136 @@
+.home-about-us-location-section {
+    background-color: rgb(241, 241, 241);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .info-container {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    transform: translate(-50%, 0);
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 40px;
+    
+    }
+  
+  .info-container h2 {
+    font-family: var(--elewa-group-website-dmsans-medium);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .info-container p {
+    font-family: --elewa-group-website-dmsans-regular;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--elewa-group-website-color);
+    padding-left: 42px;
+    margin-left: -70px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+
+  button {
+    margin-top: 2rem;
+    background-color: var(--elewa-group-website-color-bg);
+    color: var(--elewa-group-website-color);
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    width: 140px;
+    height: 30px;
+    
+  }
+
+
+  .arrow-container {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .fa-arrow-right {
+    color: var(--elewa-group-website-color-primary);
+  }
+  
+  #map {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 40%;
+    height: 60%;
+    border-radius: 5% ;
+    background: white;
+  }
+
+ 
+
+  @media (max-width: 750px) {
+     .home-about-us-location-section {
+      flex-direction: column;
+       margin-top: 5%;
+       height:100%;
+       
+    }
+  
+    #map {
+      width: 100%;
+      height: 60%;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0;
+    }
+  
+    .info-container {
+    position: absolute;
+    background-color:rgb(241, 241, 241);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200%;
+    height:40%;
+    margin-top: auto;
+    padding: 30px;
+
+    }
+
+    p, h2 {
+      padding-right: 50px;
+      padding-left: 20px;
+    }
+
+    button {
+      margin-left: 52%;
+    }
+
+    .info-container h2, .info-container p {
+      margin-left: 50%;
+      width: 80;
+      
+    }
+  }
+  
