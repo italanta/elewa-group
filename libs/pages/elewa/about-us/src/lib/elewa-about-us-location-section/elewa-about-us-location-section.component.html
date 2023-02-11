@@ -1,3 +1,20 @@
+<!-- Here We import the Maps API, by adding a script tag embedding an API_KEY -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
 <p>
   elewa-about-us-location-section works!
 </p>
+<div class="side-map">
+<google-map
+  height="500px"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+>
+</google-map>
+<div class="side-text">
+  <h1>{{ How to get there input }}</h1>
+  <p>{{ description holder }}</p>
+  <reusable-button-here></reusable-button-here>
+</div>
+</div>
