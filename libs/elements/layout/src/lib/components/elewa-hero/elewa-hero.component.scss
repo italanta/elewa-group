@@ -18,3 +18,12 @@
     border: 5px;
     width: 400px;
 }
+@media (max-width: 1035px) {
+    .body {
+        padding-top: 250px;
+        width: auto;
+    }
+    .text {
+        padding-top: 370px;
+    }  
+}
