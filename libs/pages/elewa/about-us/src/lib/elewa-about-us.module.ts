@@ -4,7 +4,7 @@ import { ElewaAboutUsLocationSectionComponent } from './elewa-about-us-location-
 import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
-  imports: [CommonModule,ElewaAboutUsLocationSectionComponent],
+  imports: [CommonModule,ElewaAboutUsLocationSectionComponent,GoogleMapsModule],
   exports: [ElewaAboutUsLocationSectionComponent],
   declarations: [ElewaAboutUsLocationSectionComponent],
 })
