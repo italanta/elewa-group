@@ -7,5 +7,13 @@ import {Component} from '@angular/core'
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-   title = 'elewa-group-footer'
+   title1 = 'Headquarters'
+   title2 = 'Contact'
+   title3= 'Navigation'
+   title4 = 'Brands'
+   title5 = 'Privacy'
+
+
+
+
 }
