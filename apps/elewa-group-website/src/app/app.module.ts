@@ -11,8 +11,8 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 
-import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import {ElementsLayoutFooterModule} from '@elewa-group/elements/layout/footer'
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,9 +22,9 @@ import {ElementsLayoutFooterModule} from '@elewa-group/elements/layout/footer'
     HomePageModule,
     AboutUsModule,
 
-    ButtonsModule,
     LayoutModule,
-    ElementsLayoutFooterModule
+    ElementsLayoutFooterModule,
+    ButtonsModule
   ],
   bootstrap:[AppComponent]
 })
