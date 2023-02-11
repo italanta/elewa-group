@@ -1,0 +1,9 @@
+<section class="homepage" [ngStyle]="{'background': 'url(' + background_image + ') no-repeat 0 0 / cover'}" >
+    <div class="homepage__content">
+        <p>{{ subtitle }}</p>
+        <h1>{{ title }}</h1>
+    </div>
+    <ng-container *ngIf="footerText">
+        <footer>{{footerText}}</footer>
+    </ng-container>
+<section>
