@@ -1,0 +1,20 @@
+.container {
+    background-image: url("https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: var(--elewa-group-website-color-white);
+}
+.body {
+    padding-top: 200px;
+    padding-left: 70px;
+}
+.text {
+    padding-top: 120px;
+}
+.p2 {
+    border: 5px;
+    width: 400px;
+}
