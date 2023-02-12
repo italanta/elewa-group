@@ -151,3 +151,88 @@ p {
   font-weight: bolder;
   font-size: 100px;
 }
+
+@media (max-width: 1058px) {
+  .member-container {
+    flex-direction: column;
+  }
+  .member {
+    flex-direction: column;
+  }
+
+  .member-info {
+        order: 1;
+        width: 70%;
+        height: 30%;
+        display: block;
+       }
+
+       .member-image {
+         order: -1;
+         margin-top: 5%;
+         width: 70%;
+         height: 60%;
+         }
+   
+    .social-icon {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 365px;
+      left: 25%;
+      transform: translateX(-50%);
+    }
+ 
+    .progress-bar {
+      width: 70%;
+      height: 10px;
+      background-color: lightgrey;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 40px;
+      left: 5%;
+      transform: translateX(-50%);
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 90%;
+    }
+    
+    .member-controls {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      bottom: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      left: 45%;
+      transform: translateX(-50%);
+    }
+    
+
+
+.previous-button {
+  order: 1;
+  margin-left: 0;
+}
+
+.next-button {
+order: 2;
+}
+
+.btn {
+color: var(--elewa-group-website-color);
+font-size: 20px;
+font-weight: lighter;
+cursor: pointer;
+background: none;
+border: none;
+}
+}
