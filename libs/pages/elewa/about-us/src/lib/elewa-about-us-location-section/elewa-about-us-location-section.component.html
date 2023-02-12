@@ -1,20 +1,38 @@
 <!-- Here We import the Maps API, by adding a script tag embedding an API_KEY -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script
+  type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?sensor=false"
+></script>
 <p>
   elewa-about-us-location-section works!
 </p>
-<div class="side-map">
-<!-- <google-map
+<div class="location-main-flex">
+  <!-- <google-map
   height="500px"
   width="100%"
 
 >
 </google-map> -->
-<div class="side-text">
-  <h1>How to get there input</h1>
-  <p>description holder</p>
-  <elewa-group-button-with-animation [message]="'Learn more'" [mode]="'light'" [action]="'/'"></elewa-group-button-with-animation>
-
-</div>
+  <div class="map">
+    <img
+      src="https://i.postimg.cc/hPR51tsr/Screenshot-from-2023-02-11-11-46-03.png"
+    />
+  </div>
+  <div class="side-text">
+    <div>
+      <h1>How to get there</h1>
+      <p>
+        The secret to successful consectetur adipisicing elit. Et error sunt rem
+        quia porro quidem praesentium obcaecati quibusdam aliquam. Laudantium
+        eveniet libero enim explicabo ratione voluptate illum eum, ipsam
+        repellat!
+      </p>
+      <elewa-group-button-with-animation
+        [message]="'Get directions'"
+        [mode]="'dark'"
+        [action]="'/'"
+      ></elewa-group-button-with-animation>
+    </div>
+  </div>
 </div>
