@@ -1,6 +1,60 @@
-.side-map{
-
+.location-main-flex{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--elewa-group-website-color-card);
+    padding: 32px 0;
 }
-.side-text{
-    
+
+.location-main-flex div{
+    --location-div-size:320px;
+    min-width: var(--location-div-size);
+    min-height: var(--location-div-size);
+    max-width: 45vw;
+}
+
+.location-main-flex .side-text,
+.location-main-flex .map{
+    margin: 0 10px;
+    display: grid;
+}
+
+.location-main-flex .map img,
+.location-main-flex .side-text div{
+    justify-self: center;
+    align-self: center;
+}
+
+.location-main-flex .side-text div{
+    height: fit-content;
+    justify-self: center;
+}
+
+.location-main-flex .side-text div p{
+    max-width: 350px;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-font-size-description);
+}
+
+.location-main-flex .side-text div h1{
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-size: 30px;
+}
+
+.location-main-flex .side-text div *{
+    margin: 38px 0;
+}
+@media screen and (max-width: 400px) {
+    .location-main-flex .map img{
+        width: 95%;
+    }
+    .location-main-flex div{
+        min-width: 90%;
+    }
+    .location-main-flex .side-text div h1{
+        font-size: var(--elewa-group-website-font-size-title-medium);
+    }
 }
