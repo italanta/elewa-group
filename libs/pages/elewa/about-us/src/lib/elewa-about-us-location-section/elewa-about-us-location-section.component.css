@@ -9,7 +9,7 @@
 }
 
 .location-main-flex div{
-    --location-div-size:320px;
+    --location-div-size:40vw;
     min-width: var(--location-div-size);
     min-height: var(--location-div-size);
     max-width: 45vw;
@@ -21,19 +21,19 @@
     display: grid;
 }
 
-.location-main-flex .map img,
+.location-main-flex .map :first-child,
 .location-main-flex .side-text div{
     justify-self: center;
-    align-self: center;
 }
 
 .location-main-flex .side-text div{
     height: fit-content;
-    justify-self: center;
+    align-self: center;
+    justify-self: left;
 }
 
 .location-main-flex .side-text div p{
-    max-width: 350px;
+    max-width: 380px;
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: var(--elewa-group-website-font-size-description);
 }
@@ -47,14 +47,22 @@
 .location-main-flex .side-text div *{
     margin: 38px 0;
 }
-@media screen and (max-width: 400px) {
-    .location-main-flex .map img{
-        width: 95%;
+@media screen and (max-width: 840px) {
+    .location-main-flex .map :first-child{
+        max-width: 80vw;
+        max-height: 80vw;
+        justify-self: left;
     }
     .location-main-flex div{
-        min-width: 90%;
+        max-width: 90%;
+        justify-self: left;
     }
+}
+@media screen and (max-width: 640px) {
     .location-main-flex .side-text div h1{
-        font-size: var(--elewa-group-website-font-size-title-medium);
+    font-size: var(--elewa-group-website-font-size-title-medium);
+    }
+    .location-main-flex div{
+        justify-self: left;
     }
 }
