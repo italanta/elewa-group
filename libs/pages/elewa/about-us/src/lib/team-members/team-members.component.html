@@ -1,0 +1,71 @@
+<div class="team-wrapper">
+  <div class="header">
+    <h2>Management</h2>
+    <h2>Team</h2>
+  </div>
+  <div class="team-main">
+    <div class="team-cards" *ngFor="let member of membersArr">
+      <div class="card">
+        <img
+          src="{{ member.imageLink }}"
+          alt="{{ member.name }}"
+          class="member-image"
+        />
+        <div class="member-details">
+          <h4>{{ member.name }}</h4>
+          <h5>{{ member.role }}</h5>
+          <a href="{{ member.LinkedInProfileLink }}">
+            <svg
+              style="color: white"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.42857 8.96884H13.1429V10.8193C13.6783 9.75524 15.0503 8.79887 17.1114 8.79887C21.0623 8.79887 22 10.9167 22 14.8028V22H18V15.6878C18 13.4748 17.4646 12.2266 16.1029 12.2266C14.2143 12.2266 13.4286 13.5722 13.4286 15.6878V22H9.42857V8.96884ZM2.57143 21.83H6.57143V8.79887H2.57143V21.83ZM7.14286 4.54958C7.14286 4.88439 7.07635 5.21593 6.94712 5.52526C6.81789 5.83458 6.62848 6.11565 6.3897 6.3524C6.15092 6.58915 5.86745 6.77695 5.55547 6.90508C5.24349 7.0332 4.90911 7.09915 4.57143 7.09915C4.23374 7.09915 3.89937 7.0332 3.58739 6.90508C3.27541 6.77695 2.99193 6.58915 2.75315 6.3524C2.51437 6.11565 2.32496 5.83458 2.19574 5.52526C2.06651 5.21593 2 4.88439 2 4.54958C2 3.87339 2.27092 3.22489 2.75315 2.74675C3.23539 2.26862 3.88944 2 4.57143 2C5.25341 2 5.90747 2.26862 6.3897 2.74675C6.87194 3.22489 7.14286 3.87339 7.14286 4.54958Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-nav">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-left-circle"
+        viewBox="0 0 16 16"
+        id="btn-left"
+        (click)="leftMove()"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-right-circle"
+        viewBox="0 0 16 16"
+        id="btn-right"
+        (click)="rightMove()"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
