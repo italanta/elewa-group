@@ -5,8 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ElewaHeroComponent, HeaderComponent],
-  exports: [ElewaHeroComponent, HeaderComponent]
+  declarations: [HeaderComponent, ElewaHeroComponent],
+  exports: [HeaderComponent, ElewaHeroComponent]
 })
 
 export class LayoutModule {}
