@@ -1,0 +1,23 @@
+<div class="container" [ngStyle]="{'background-color': bgcolor}">
+  <div class="left" *ngIf="placement === 'left'">
+    <div class="left-text">
+        <h1 class="title">
+          {{title}}
+        </h1>
+        <p class="para">{{text}}</p>
+    </div>
+    <img [src]="imageUrl" alt={{title}} class="right-image"/>
+  </div>
+  <div class="right" *ngIf="placement === 'right'" >
+    <div class="right-text" >
+        <h1 class="title">
+          {{title}}
+        </h1>
+        <p class="para">{{text}}</p>
+
+    </div>
+    <div>
+      <img [src]="imageUrl" alt={{title}}  class="left-image" />
+    </div>
+  </div>
+</div>
