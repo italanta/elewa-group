@@ -3,10 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MissionComponent } from './mission/mission.component';
 import { CardsModule } from '@elewa-group/features/components/cards';
 
+import { TeamMembersCarouselComponent } from './components/team-members-carousel/team-members-carousel.component';
+
+import { NextDirective } from './directives/next.directive';
+import { PrevDirective } from './directives/prev.directive';
+
 @NgModule({
   imports: [CommonModule,CardsModule],
-  declarations: [MissionComponent],
-  exports: [MissionComponent]
 
+  declarations: [TeamMembersCarouselComponent, NextDirective, PrevDirective],
+  exports: [TeamMembersCarouselComponent,MissionComponent]
 })
-export class AboutUsModule {}
+export class AboutUsModule { }

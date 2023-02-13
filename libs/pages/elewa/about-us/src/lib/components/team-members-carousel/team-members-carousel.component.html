@@ -1,0 +1,16 @@
+<div class="container">
+  <p class="h1">Management <span>Team</span> </p>
+  <div class="dflex" >
+    <div class="team" *ngFor="let member of teamMembers">
+      <img [src]="member.imageLink" alt="">
+      <p class="name"> {{member.name}} </p>
+      <p class="title"> {{member.role}} </p>
+      <button><i class="fa-brands fa-linkedin-in"></i></button>
+    </div>
+  </div>
+  <div class="button-area">
+    <button type="button" id="prev" elewaGroupPrev><i class="fa-solid active fa-arrow-left"></i></button>
+    <button type="button" id="next" elewaGroupNext><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <hr>
+</div>
