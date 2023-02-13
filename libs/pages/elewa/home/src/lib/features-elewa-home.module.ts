@@ -13,6 +13,6 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     HomeHeroSectionComponent,
     HomeImpactSectionComponent,
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent, HomeImpactSectionComponent],
+  exports: [HomePageComponent, HomeHeroSectionComponent],
 })
 export class HomePageModule {}
