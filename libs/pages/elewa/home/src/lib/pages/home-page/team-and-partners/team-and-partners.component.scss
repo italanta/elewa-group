@@ -1,24 +1,59 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+  .elewa-teams {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg');
+    background-size: 100% 100%;
+    // border: 1px solid red;
+    border-radius: 14px;
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .elewa-teams {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg');
+    background-size: 100% 100%;
+    // border: 1px solid red;
+    border-radius: 28px;
   }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .elewa-teams {
+    width: 100%;
+    height: 600px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg');
+    background-size: 100% 100%;
+    // border: 1px solid red;
+    border-radius: 34px;
   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .elewa-teams {
+    width: 100%;
+    height: 700px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg');
+    background-size: 100% 100%;
+    // border: 1px solid red;
+    border-radius: 38px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .elewa-teams {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg');
+    background-size: 100% 100%;
+    // border: 1px solid red;
+    border-radius: 34px;
+  }
+}
