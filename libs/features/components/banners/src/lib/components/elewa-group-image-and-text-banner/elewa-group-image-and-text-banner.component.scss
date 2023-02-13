@@ -15,7 +15,6 @@
         align-content: center;
         margin-left: 50px;
         
-
         .title1{
             font-family: var(--elewa-group-website-dmsans-bold);
             font-size: x-large;
@@ -33,18 +32,12 @@
             margin-bottom: 50px;
             margin-right: 50px;
     }
-
-
-
 }
-
 
 @media only screen and (max-width: 850px) {
     .container{
         width: fit-content;
         height: fit-content;
-        
-       
         flex-direction: column;
 
         .content{
@@ -59,16 +52,4 @@
         // height: fit-content;
         margin: 10px 0;
     }
-
-
-
 }
-
-
-
-
-
-
-
-
-
