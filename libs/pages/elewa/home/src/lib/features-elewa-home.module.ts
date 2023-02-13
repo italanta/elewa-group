@@ -12,6 +12,6 @@ import { HomeJobSectionComponent } from './components/home-job-section/home-job-
     HomeHeroSectionComponent,
     HomeJobSectionComponent,
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobSectionComponent],
+  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobSectionComponent],
 })
 export class HomePageModule {}
