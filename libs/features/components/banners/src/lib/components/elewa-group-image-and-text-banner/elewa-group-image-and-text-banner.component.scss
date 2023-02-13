@@ -29,13 +29,12 @@
     font-size: 20px;
     padding-top: 20px;
 }
-@media  (max-width:1250px) {
+@media  (max-width:1000px) {
     .cards {
         display: grid;
         grid-template-columns: auto;
-        gap: 30px;
-        justify-content: center;
-        padding-top: 20px;
+        gap: 20px;
+        padding-top: 10px;
     }
     .container {
         height: 100vh;
@@ -46,5 +45,5 @@
     }
     .title {
         padding-top: 20px;
-    }   
+    }  
 }
