@@ -1,0 +1,80 @@
+.container {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  padding-bottom: 10px;
+  border-radius: 0 0 30px 30px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6%;
+}
+
+.left-text,
+.right-text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 120px;
+  .title {
+    justify-content: center;
+    font-size: 50px;
+  }
+  .para {
+    font-size: 30px;
+  }
+}
+
+.left-image,
+.right-image {
+  display: flex;
+  width: 30%;
+  margin-left: 40px;
+  border-radius: 5%;
+  height: 60vh;
+}
+
+.right {
+  .right-text {
+    order: 1;
+  }
+  .left-image {
+    order: 0;
+    width: 460px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .container .left,
+  .container .right {
+    flex-direction: column;
+    padding: 2%;
+    padding-bottom: 5px;
+  }
+
+  .container .left .left-text,
+  .container .right .right-text {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    .title{
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    .para{
+      font-size: 18px;
+      justify-content: center;
+      margin-left: 10px;
+    }
+  }
+
+  .container .left .right-image,
+  .container .right .left-image {
+    width: 100%;
+    margin-left: 0;
+    height: 50vh;
+  }
+}
