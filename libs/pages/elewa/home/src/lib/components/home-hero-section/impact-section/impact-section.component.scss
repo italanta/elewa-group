@@ -1,0 +1,58 @@
+img{
+    height:60%;
+    width:40%;
+    border-radius: 2%;
+    object-fit: cover ;
+}
+
+*{
+    font-family: var(--elewa-group-website-dmsans-medium);
+}
+
+.buttons-div{
+   display: flex;
+   gap: 4em;  
+
+}
+
+.main{
+    display: flex;
+    padding: 6em;
+    gap: 100px;
+}
+
+
+
+@media screen and (max-width: 840px) {
+    * {
+        margin: 0;
+    }
+
+    .main{
+        display: inline-flex;
+        flex-direction: column;
+        gap : .5em;
+        padding: .3em;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .buttons-div {
+        display: inline-flex; 
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap : 1em;
+    }
+
+    img { 
+        height : 100%;
+        width: 80%;
+    }
+
+    p { 
+        padding: .5em;;
+    }
+
+  }
