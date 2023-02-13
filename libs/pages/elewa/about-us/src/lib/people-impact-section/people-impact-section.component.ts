@@ -34,7 +34,7 @@ export class PeopleImpactSectionComponent {
     if(this.projectCount == 200){
       clearInterval(this.projectCountStop)
     }
-  }, 20)
+  }, 27)
 
   investors = 0;
 

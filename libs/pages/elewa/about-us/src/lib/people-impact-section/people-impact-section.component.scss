@@ -15,3 +15,14 @@
     display: flex;
     flex-direction: column;
 }
+@media only screen and (max-width: 600px) {
+    .stats {
+      //background-color: lightblue;
+      padding-left: 10px;
+      width: 100%;
+    }
+    .values{
+        justify-content: center;
+        text-align: center;
+    }
+  }
