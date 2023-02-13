@@ -1,6 +1,51 @@
 
 
 
+h2 {
+    font-size: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    height: 20%;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
+  }
+  
+
+img {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  
+
+p {
+    width: 80%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    height: max-content;
+    font-size: 14px;
+    text-align: justify;
+    font-family: var(--elewa-group-website-dmsans-medium);
+    font-size: var(--elewa-group-website-font-size-subheading);
+  }
+  
+  
+  .outer-p {
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 8vw;
+    margin-bottom: 4vh;
+    font-family: var(--elewa-group-website-dmsans-medium);
+    font-size: var(--elewa-group-website-font-size-subheading);
+  }
+  
+  
+  h1 {
+    margin-left: 10vw;
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-size: var(--elewa-group-website-font-size-heading);
+    font-weight: var(--elewa-group-website-font-weight-title-medium);
+  }
+
 
 
 /* Media Queries */
