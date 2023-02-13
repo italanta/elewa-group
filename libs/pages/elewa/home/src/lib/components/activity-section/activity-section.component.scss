@@ -11,7 +11,7 @@
 }
 .activityDescriptionSummary{
     padding: 5px;
-    width:auto;
+    width:25%;
     margin-left: 5%;
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-weight-subtitle);
@@ -24,12 +24,29 @@
     column-gap: 20px;
     height: fit-content;
 }
-
+.educationCard{
+    margin-left: 16%;
+}
+.technologyCard{
+    margin-left: 7%;
+}
 @media (max-width: 800px) {
     .activityCards {
     margin-left:10%;
     display: grid;
     grid-template-columns: auto;
     gap: 15px;
+    }
+    .educationCard{
+        margin-left: 0;
+    }
+    .technologyCard{
+        margin-left: 0;
+    }
+    .activityDescriptionSummary{
+        padding: 5px;
+        width:auto;
+   
+        
     }
 }
