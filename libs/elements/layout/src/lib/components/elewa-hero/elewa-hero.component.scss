@@ -22,6 +22,19 @@
   position: relative;
 }
 
+// This is the black overlay with 20% opacity to
+// make the text visible on bright backgrounds.
+#elewa-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
 #elewa-hero .content {
   position: absolute;
   top: 50%;
