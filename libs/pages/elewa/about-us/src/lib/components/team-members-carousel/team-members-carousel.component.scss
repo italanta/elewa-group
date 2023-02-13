@@ -1,0 +1,121 @@
+.container{
+  background-color: var(--elewa-group-website-team-and-members-background-color);
+  padding: 40px 80px;
+}
+
+.h1{
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+  margin-bottom: 60px;
+}
+
+p{
+  color: var(--elewa-group-website-team-and-members-color-white);
+}
+
+span {
+  color: var(--elewa-group-website-team-and-members-color-grey);
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 3px solid var(--elewa-group-website-team-and-members-color-white);
+}
+
+.dflex{
+  display: flex;
+  overflow-x: hidden;
+}
+
+.team{
+  min-width: 21vw;
+  margin-right: 10px;
+}
+
+.team img{
+  width: 100%;
+  height: 50vh;
+  border-radius: 15px;
+}
+
+.button-area{
+font-weight: var(--elewa-group-website-team-and-members-button-area-font-weight);
+margin:20px 0;
+text-align: right;
+}
+
+.button-area button{
+  background-color: var(--elewa-group-website-team-and-members-background-color);
+}
+
+.fa-arrow-left, .fa-arrow-right{
+  color: var(--elewa-group-website-team-and-members-color-white);
+}
+
+#prev, #next{
+  border: 1px solid var(--elewa-group-website-team-and-members-color-white);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
+#next{
+  margin-left: 5px;
+}
+
+.button-area .active{
+  opacity: 0.5;
+}
+
+#prev i {
+  color: var(--elewa-group-website-team-and-members-color-white);
+}
+
+.name{
+  font-family: var(--elewa-group-website-dmsans-medium);
+  font-size: var(--elewa-group-website-team-and-members-name-font-size);
+}
+
+.title{
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: var(--elewa-group-website-team-and-members-title-font-size);
+}
+
+.name, .title, button{
+  margin: 5px 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 850px){
+  span{
+    display: none;
+  }
+
+  .container{
+    position:absolute;
+    left: 0;
+    right: 0;
+    padding: 20px 20px;
+    overflow-x:hidden;
+  }
+
+  .h1{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-team-and-members-h1-font-size-responsive);
+    margin-bottom: 25px;
+  }
+
+  .dflex{
+    width:100%;
+  }
+
+  .team{
+    min-width: 60vw;
+    margin-right: 10px;
+  }
+
+  .team img{
+    width: 100%;
+    height: 38vh;
+    border-radius: 15px;
+  }
+
+}
