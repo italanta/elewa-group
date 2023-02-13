@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+
+import { MaterialDesignModule } from '@iote/bricks-angular';
 
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
@@ -12,6 +15,7 @@ import { HomePageModule } from '@elewa-group/pages/elewa/home';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +27,13 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
     ButtonsModule,
     LayoutModule
+
+    MaterialDesignModule,
+
+    RouterModule,
+    ScullyLibModule,
+
+    AppRoutingModule
   ],
   bootstrap:[AppComponent]
 })
