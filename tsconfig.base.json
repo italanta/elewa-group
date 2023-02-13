@@ -15,18 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
       "@elewa-group/features/components/buttons": [
         "libs/features/components/buttons/src/index.ts"
       ],
       "@elewa-group/features/components/cards": [
         "libs/features/components/cards/src/index.ts"
       ],
+      "@elewa-group/features/components/ui-lists": [
+        "libs/features/components/ui-lists/src/index.ts"
+      ],
       "@elewa-group/pages/elewa/about-us": [
         "libs/pages/elewa/about-us/src/index.ts"
       ],
       "@elewa-group/pages/elewa/home": ["libs/pages/elewa/home/src/index.ts"],
-      "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
-      "@elewa-group/features/components/ui-lists": ["libs/features/components/ui-lists/src/index.ts"],
       "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
       "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],
       "@iote/bricks": ["libs/util/iote/bricks/src/index.ts"],
