@@ -11,6 +11,7 @@ import { CardsModule } from '@elewa-group/features/components/cards';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners'
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     HomePageModule,
     CardsModule,
     ButtonsModule,
-    LayoutModule
+    LayoutModule,
+    FeaturesComponentsBannersModule
   ],
   providers: [],
   bootstrap: [AppComponent],
