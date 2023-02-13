@@ -52,6 +52,12 @@
     }
 }
 
+map-marker{
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 840px) {
     .location-main-flex .map :first-child{
         max-width: 80vw;
