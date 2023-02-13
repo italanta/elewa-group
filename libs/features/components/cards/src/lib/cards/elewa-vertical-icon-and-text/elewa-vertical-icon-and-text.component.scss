@@ -1,28 +1,53 @@
 .cards-main{
   width: 100%;
   margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 
   .card {
-    // background-color: var(--elewa-group-website-color-card);
+    background-color: var(--elewa-group-website-color-card);
     width:100%;
     margin-bottom: 2rem;
+    position: relative;
+
     .about-icon {
-      height: 5rem;
-      width: 30%;
-      color: #808080;
-      margin-bottom: -1rem;
+      margin: 0;
+      padding: 0;
+      height: 98px;
+      img{
+        height: 150px;
+        width: 90px;
+      }
     }
 
-    .about-title {
-      font-family: var(--elewa-group-website-dmsans-bold);
-      font-weight: var(--elewa-group-website-font-weight-title);
-      font-size: var(--elewa-group-website-font-size-title);
-  }
+    .title-desc{
+        background-color: var(--elewa-group-website-color-card);
+        z-index: 9999;
+        position: sticky;
 
-  .about-description {
-      font-family: var(--elewa-group-website-dmsans-regular);
-      font-weight: var(--elewa-group-website-font-size-description);
-  }
+
+         h3 {
+          font-family: var(--elewa-group-website-dmsans-bold);
+          font-weight: var(--elewa-group-website-font-weight-title);
+          font-size: var(--elewa-group-website-team-and-members-h1-font-size-responsive);
+          margin-bottom: 2rem;
+          background-color: var(--elewa-group-website-color-card);
+
+
+      }
+
+       p {
+        font-family: var(--elewa-group-website-dmsans-regular);
+        font-weight: var(--elewa-group-website-font-size-description-medium);
+        max-width: 100%;
+
+    }
+
+    }
+
+
+
+
 
 
   }
@@ -43,6 +68,15 @@
     .card{
     width: 32%;
     }
+
+    // .title-desc{
+    //   background-color: var(--elewa-group-website-color-card);
+    //   position: absolute;
+    //   top: 10%;
+    //   padding: 0;
+    //   margin: 0;
+
+    // }
 
 }
 }
