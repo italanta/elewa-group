@@ -8,8 +8,8 @@
 
     a {
         font-family: var(--elewa-group-website-dmsans-bold);
-        text-decoration: none;
         color: inherit;
+        cursor: pointer;
     }
     span{
         margin:none;
@@ -46,7 +46,11 @@
         :last-child{
             font-size: 1.1rem;
         }
-    }
-  
-    
+    }   
+}
+.homeLink:hover {
+    transition: all .3s;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: .2rem;
 }
