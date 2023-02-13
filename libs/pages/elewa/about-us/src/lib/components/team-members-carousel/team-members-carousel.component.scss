@@ -37,11 +37,17 @@ span {
 }
 
 .button-area{
-color: var(--elewa-group-website-team-and-members-color-white);
 font-weight: var(--elewa-group-website-team-and-members-button-area-font-weight);
 margin:20px 0;
 text-align: right;
+}
 
+.button-area button{
+  background-color: var(--elewa-group-website-team-and-members-background-color);
+}
+
+.fa-arrow-left, .fa-arrow-right{
+  color: var(--elewa-group-website-team-and-members-color-white);
 }
 
 #prev, #next{
@@ -49,6 +55,7 @@ text-align: right;
   padding: 5px;
   border-radius: 50%;
 }
+
 
 #next{
   margin-left: 5px;
