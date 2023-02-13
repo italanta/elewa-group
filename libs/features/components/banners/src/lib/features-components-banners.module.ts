@@ -6,4 +6,4 @@ import { TeamMemberComponent } from './components/team-member/team-member.compon
   imports: [CommonModule],
   declarations: [TeamMemberComponent],
 })
-export class FeaturesComponentsBannersModule {}
+export class BannersModule {}
