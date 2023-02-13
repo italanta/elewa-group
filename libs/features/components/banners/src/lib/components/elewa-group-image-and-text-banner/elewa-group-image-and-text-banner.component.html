@@ -1,9 +1,23 @@
-<div class="container">
+<div class="banner" [ngStyle]="{ 'background-color': backgroundColor }">
+    <div class="banner-inner">
+      <div class="banner-text-section" [ngClass]="{ left: imagePlacement === 'right' }">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+      </div>
+      <div class="banner-image-section" [ngClass]="{ left: imagePlacement === 'right' }">
+        <img [src]="img" alt="Banner Image">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- <div class="container">
+    <div class="banner-img">
+        <img src="{{img}}" class="banner-img" alt="">
+    </div>
     <div class="content">
         <p class="title1">{{title}}</p>
         <p class="description1">{{description}}</p>
     </div>
-    <div class="banner-img">
-        <img src="{{img}}" class="banner-img" alt="">
-    </div>
-</div>
+</div> -->
