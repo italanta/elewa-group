@@ -38,10 +38,4 @@ export class ElewaGroupTeamMemberComponent {
     return (this.currentBannerIndex + 1) / this.banners.length * 100;
   }
   
-  goBackToMultiUserView() {
-
-    console.log("clicked")
-    // code to change state back to multi-user view
-  }
-
 }

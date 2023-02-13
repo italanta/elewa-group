@@ -7,5 +7,5 @@ import { ElewaGroupTeamMemberComponent } from './banners/elewa-group-team-member
   declarations: [ElewaGroupTeamMemberComponent],
   exports: [ElewaGroupTeamMemberComponent]
 })
-export class FeaturesComponentsBannersModule {}
+export class BannersModule {}
 
