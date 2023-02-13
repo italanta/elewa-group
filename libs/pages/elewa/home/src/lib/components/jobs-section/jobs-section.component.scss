@@ -2,7 +2,7 @@
     min-width: 70vw;
     min-height: 70vh;
     font-family: var(--elewa-group-website-dmsans-regular);
-    font-size: var(--elewa-group-website-font-size-paragraph);
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,16 @@
     text-decoration: none;
     font-family: var(--elewa-group-website-dmsans-bold);
   }
+
+  .jobs a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
   
   
   @media only screen and (max-width: 515px) {
     .jobs{
-      font-size: var(--elewa-group-website-font-size-paragraph-medium);
+      font-size: 1.8rem;
       min-height: 55vh;
     }
   }
