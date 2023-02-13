@@ -9,6 +9,6 @@ import { ElewaHorizontalTimelineCarouselComponent } from './elewa-horizontal-tim
     ElewaGroupVerticalListOneComponent,
     ElewaHorizontalTimelineCarouselComponent,
   ],
-  exports: [ElewaGroupVerticalListOneComponent],
+  exports: [ElewaGroupVerticalListOneComponent, ElewaHorizontalTimelineCarouselComponent],
 })
 export class UiListsModule {}
