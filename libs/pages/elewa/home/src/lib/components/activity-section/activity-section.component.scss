@@ -1,33 +1,35 @@
 .activitySection{
-    background-color: white;
+    background-color: var(--elewa-group-website-color);
     width: 100vw;
 }
 .heading{
     margin-left: 5%;
     margin-bottom:4px;
+    font-size: var(--elewa-group-website-font-size-heading);
+    font-weight: var(--elewa-group-website-font-weight-title);
     font-family: var(--elewa-group-website-dmsans-regular);
-    font-weight: var(--elewa-group-website-font-weight-subtitle);
 }
 .activityDescriptionSummary{
-    display:flex;
-    flex-wrap: nowrap;
-    max-width: 25%;
     padding: 5px;
+    width:auto;
     margin-left: 5%;
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-weight-subtitle);
     
 }
 .activityCards{
+
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
-
+    column-gap: 20px;
+    height: fit-content;
 }
-.educationCard{
-margin-left: 10%;
-font-family: var(--elewa-group-website-dmsans-regular);
-font-size: var(--elewa-group-website-font-size-title);
-font-weight: var(--elewa-group-website-font-weight-title);
 
+@media (max-width: 800px) {
+    .activityCards {
+    margin-left:10%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    }
 }
