@@ -4,7 +4,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
 import{ButtonsModule}from '@elewa-group/features/components/buttons'
 
 
-import { ImpactSectionComponent } from './impact-section/impact-section.component';
+import { ImpactSectionComponent } from './components/home-hero-section/impact-section/impact-section.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 @NgModule({
