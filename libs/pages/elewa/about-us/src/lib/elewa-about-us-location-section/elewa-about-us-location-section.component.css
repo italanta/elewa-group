@@ -26,6 +26,10 @@
     justify-self: center;
 }
 
+.location-main-flex .map :first-child {
+  border-radius: 24px;
+}
+
 .location-main-flex .side-text div{
     height: fit-content;
     align-self: center;
