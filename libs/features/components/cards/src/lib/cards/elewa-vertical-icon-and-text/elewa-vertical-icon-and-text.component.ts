@@ -8,17 +8,18 @@ import { Component } from '@angular/core';
 export class ElewaVerticalIconAndTextComponent {
   properties=[
     {
-      icon:"fa fa-user-group",
+      icon:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Holistic_id4kra.png",
       title:"Holistic solutions",
       description:"We go beyond a simple patch-up but develop lasting solutions through holistic design"
     },
     {
-      icon:"fa-solid fa-repeat",
+
+      icon:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
       title:"Impact",
       description:"Impact as a direct or distinct result. All our respective organizations have underlying theories of change."
     },
     {
-      icon:"fa-solid fa-globe",
+      icon:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/ownership_yno4a2.png",
       title:"Cooperative",
       description:"Sharing is caring. We share what we learn. All through our internal projects are open source."
     },
