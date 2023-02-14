@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+#text-and-image-banner .banner-container.left {
+    flex-direction: row-reverse;
+}
+
 #text-and-image-banner .content {
     display: grid;
     place-items: center;
@@ -71,6 +75,10 @@ $breakpoint-low-res-desktops: 1360px;
         max-width: none;
         max-height: none;
         margin: 1.5rem;
+    }
+
+    #text-and-image-banner .banner-container.left {
+        flex-direction: column-reverse;
     }
 }
 
