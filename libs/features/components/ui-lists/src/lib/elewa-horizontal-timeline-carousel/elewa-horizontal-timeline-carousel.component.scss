@@ -8,17 +8,19 @@
 }
 
 .horizontal-timeline{
-    display: flex;
+    display: none;
     justify-content: flex-start;
     padding-left: 50px;
     transition: transform 0.4s ease-out;
     
     @media (min-width: 801px) {
+      display: flex;
       width: calc(300em * 3);
     }
 
     @media (max-width: 800px) {
-        width: calc(100em * 1);
+        display: flex;
+        width: calc(300em * 1);
     }
 }
 
@@ -90,4 +92,15 @@ button:hover{
   top: -15px;
   left: calc(2% - 10px); // align circle to left end
   transition: all 200ms ease-in;
+}
+
+@media (max-width: 660px){
+  .carousel{
+    padding-left: 10px;
+  }
+  .horizontal-timeline{
+    display: flex;
+    flex-direction: row;
+    width: calc(600px * 3);
+  }
 }
