@@ -14,6 +14,6 @@ export class ElewaGroupImageAndTextBannerComponent {
                             towards teh growth of others, the group and their
                             communities.`
   @Input() titleText = `A cooperative mindset`
-  @Input() imagePlacement = 'left'
+  @Input() imagePlacement = 'right'
   @Input() backgroundColor = 'grey'
 }
