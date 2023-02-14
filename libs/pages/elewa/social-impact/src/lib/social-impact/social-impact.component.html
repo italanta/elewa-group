@@ -1,1 +1,12 @@
-<p>social-impact works!</p>
+<div class="container">
+    <div *ngFor="let hero of heroes">
+        <div>
+    <elewa-group-elewa-hero 
+    [title]="hero.title"
+    [subtitle]="hero.subtitle"
+    [footerText]="hero.footerText"
+    [backgroundImg]="hero.backgroundImg"
+    ></elewa-group-elewa-hero>
+</div>
+    </div>
+</div>
