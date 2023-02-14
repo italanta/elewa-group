@@ -1,0 +1,101 @@
+.elewa-hero {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      height: 100vh;
+       
+}
+    
+.elewa-hero-content {    
+      color: var(--text-color);
+      position: absolute;
+      width: 50%;
+      align-items: left;
+      margin: 16px 0;
+    }
+
+.subtitle {
+      font-size: large;
+      font-weight: var(--elewa-group-website-font-weight-subtite);
+      color: white;
+      margin-top: 380px;
+      margin-left: 38px;
+      text-transform: uppercase;
+      }
+      
+.title {
+      font-weight: var(--elewa-group-website-font-weight-title);
+      margin-top: 10px;
+      font-size: 50px;
+      color: white;
+      margin-left:38px;
+      }    
+
+.footer-text {    
+      margin-top: 60px;    
+      color: white;
+      margin-left:38px;     
+      margin-top: 320px;       
+      font-size: var(--elewa-group-website-font-size-small);
+      font-family: var(--elewa-group-website-dmsans-bold);
+      position: relative; 
+      font-size: 20px;  
+      font-weight: var(--elewa-group-website-font-weight-title);
+      text-transform: uppercase;
+      
+       }
+
+
+@media only screen and (max-width: 850px) {
+    .elewa-hero-content{
+      height: 4vh;
+      width: 100%;    
+      margin-left: 0 !important;       
+
+      }
+    .elewa-hero {
+      height: 320px;    
+      }
+
+    .elewa-hero-content {    
+      color: var(--text-color);
+      position: absolute;
+      width: 100%;
+      align-items: left;
+      margin: 16px 0;
+        }
+  
+    .subtitle {
+      font-size: small;
+      font-weight: var(--font-weight-light);
+      width: 80%;
+      margin-top: 100px;
+      color: white;
+      font-size: 12px;
+      font-family: var(--elewa-group-website-dmsans-italic);
+      text-transform: uppercase;
+      }
+  
+    .title {
+      font-weight: var(--font-weight-bold);
+      font-size: 20px;
+      font-weight: 800;
+      width: 80%;
+      color: white;
+      } 
+  
+    .footer-text{
+      font-size: small;
+      font-weight: var(--font-weight-light);
+      width: 80%;
+      margin-top: 85px;
+      color: white;
+      font-size: 12px;
+      text-transform: capitalize;
+      font-family: var(--elewa-group-website-dmsans-italic);
+      
+    }
+}
