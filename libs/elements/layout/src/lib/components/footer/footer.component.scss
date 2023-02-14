@@ -1,0 +1,106 @@
+.footer{
+    height: auto;
+    margin: 0px;
+    background-color: var(--elewa-group-website-color-primary);
+    color: #ffffff;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    overflow: hidden;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.info-content-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.info-content{
+    display: flex;
+    justify-content: space-between;
+}
+.activities a{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.social-media-icons a img{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 930px) {
+    .info-content {
+        flex-wrap: wrap;
+        // flex-direction: column;
+        
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .info-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .activities{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .activities{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    }
+    .footer-intro{
+        font-size: 1.25em;
+    }
+    hr{
+        display: none;
+    }
+    .social-media-icons{
+        padding-left: 65%;
+    }
+    .headquaters{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .brand{
+        display: none;
+    }
+    .links{
+        // display: flex;
+        flex-direction: row;
+    }
+    .icons{
+        flex-direction: column-reverse;
+    }
+
+}

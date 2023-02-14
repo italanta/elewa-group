@@ -10,3 +10,19 @@
   z-index: 10;
   background-color: black;
 }
+.footer-button{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+h4{
+    font-size: 3em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+    font-size: 1.50em;
+    }
+}
