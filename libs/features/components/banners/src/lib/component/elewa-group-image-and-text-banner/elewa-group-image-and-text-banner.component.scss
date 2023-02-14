@@ -1,0 +1,51 @@
+.parent-banner {
+    background-color: #000;
+    color: white;
+}
+
+.parent-banner-1 {
+    background-color: #ffffff;
+}
+
+.parent-banner-2 {
+    background-color: #999595f6;
+}
+
+.parent-banner-3 {
+    background-color: #000;
+    color: white;
+}
+
+#border {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.child-banner {
+    display: flex;
+    font-family: var( --elewa-group-website-dmsans-regular);
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .child-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+.text-div {
+    padding: 30px 200px;
+}
+
+.image {
+    padding: 60px;
+    height: 400px;
+}
+
+.paragraph {
+    white-space: normal;
+    font-size: var(--elewa-group-website-font-size-description);
+}
+
