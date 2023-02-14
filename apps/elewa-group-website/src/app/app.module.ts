@@ -26,7 +26,7 @@ import { AppRoutingModule } from './app.routing';
     AboutUsModule,
 
     ButtonsModule,
-    LayoutModule
+    LayoutModule,
 
     MaterialDesignModule,
 
