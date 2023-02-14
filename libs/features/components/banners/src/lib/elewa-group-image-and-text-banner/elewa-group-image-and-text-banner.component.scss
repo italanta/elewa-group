@@ -1,0 +1,54 @@
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 30px 30px;
+  padding: 1rem;
+  height: 100vh;
+
+}
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.image-left {
+  flex-direction: row-reverse;
+}
+
+.image-right {
+  flex-direction: row;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  margin: 1rem;
+}
+
+.description {
+  width: 40%;
+  font-weight: var(--elewa-group-website-font-size-description);
+  color: var(--elewa-group-website-color-card-item3);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+h1{
+  font-weight: var(--elewa-group-website-font-weight-title-medium);
+  font-size: var(--elewa-group-website-font-size-title-medium);
+  }
+  
+  @media screen and (max-width: 767px) {
+   
+    .section-content {
+      width: 100%;
+    }
+    
+    .description {
+      width: 100%;
+    }   
+  }

@@ -1,0 +1,9 @@
+<div [ngStyle]="{'background-color': bgColor}" class="section">
+    <div class="section-content" [ngClass]="{'image-left': placement === 'left', 'image-right': placement === 'right'}">
+      <img [src]="imageUrl" alt="section image">
+      <div class="description">
+        <h2>{{ title }}</h2>
+        <p>{{ text }}</p>
+      </div>
+    </div>
+</div>
