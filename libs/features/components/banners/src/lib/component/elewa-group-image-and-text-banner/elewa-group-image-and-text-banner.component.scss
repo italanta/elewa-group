@@ -1,0 +1,55 @@
+.parent-banner {
+    background-color: #000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white; 
+
+}
+.parent-banner-1 {
+    background-color: #ebe5e5f6;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.parent-banner-2 {
+    background-color: #999595f6;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.parent-banner-3 {
+    background-color: #000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}
+
+.child-banner {
+    display: flex;
+    flex-direction: row;
+    font-family: var( --elewa-group-website-dmsans-regular);
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .child-banner {
+      flex-direction: column;
+    }
+  }
+
+.text-div {
+    padding: 30px 100px;
+}
+
+.image-div {
+    padding: 60px;
+}
+
+.image {
+    height: 400px;
+}
+
+.paragraph {
+    white-space: normal;
+    font-size: var(--elewa-group-website-font-size-description);
+}
+
