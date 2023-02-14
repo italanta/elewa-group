@@ -1,1 +1,12 @@
-<p>elewa-group-image-and-text-banner works!</p>
+<div id="text-and-image-banner" [ngStyle]="{'background-color': backgroundColor}">
+    <div class="banner-container {{imagePlacement}}">
+        <div class="text-content">
+            <h1 class="title">{{titleText}}</h1>
+            <p>{{paragraphText}}</p>
+        </div>
+
+        <div class="image-content">
+            <img [src]="imageURL"/>
+        </div>
+    </div>
+</div>
