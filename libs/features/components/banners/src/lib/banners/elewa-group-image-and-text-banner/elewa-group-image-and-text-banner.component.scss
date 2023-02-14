@@ -42,6 +42,10 @@
     width: 60%;
 }
 
+#text-and-image-banner #text-content .title {
+    margin-bottom: 2rem;
+}
+
 #text-and-image-banner .content#img-content img {
     border-radius: 2rem;
 }
@@ -86,7 +90,12 @@ $breakpoint-low-res-desktops: 1360px;
         width: calc(min(90vw, 480px) - 3rem);
         max-width: none;
         max-height: none;
-        margin: 1.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #text-and-image-banner #text-content .title {
+        margin-bottom: 1rem;
     }
 
     #text-and-image-banner .banner-container.left {
@@ -94,6 +103,6 @@ $breakpoint-low-res-desktops: 1360px;
     }
 
     #text-and-image-banner .content#img-content img {
-        border-radius: 1.5rem;
+        border-radius: 1.2rem;
     }
 }
