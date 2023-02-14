@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
+import {BannersModule} from '@elewa-group/features/components/banners';
+
+
 
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
@@ -14,6 +17,7 @@ import { HomeRoutingModule } from './home.routing';
     CommonModule,
     LayoutModule,
     HomeRoutingModule
+    BannersModule
   ],
   declarations: [
     HomePageComponent,
@@ -21,5 +25,6 @@ import { HomeRoutingModule } from './home.routing';
     HomeJobsSectionComponent,
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
+
 })
 export class HomePageModule {}
