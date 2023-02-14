@@ -5,7 +5,7 @@
     place-items: center;
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-regular);
-    border: solid 2rem white;
+    border: solid 2rem var( --elewa-group-website-team-and-members-color-white);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
 }
@@ -49,6 +49,12 @@ $breakpoint-low-res-desktops: 1360px;
 
 @media (max-width: $breakpoint-low-res-desktops){
     #text-and-image-banner {
+        border: solid 1.5rem var( --elewa-group-website-team-and-members-color-white);
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+
+    #text-and-image-banner {
         font-size: var(--elewa-group-website-font-size-elewa-text-medium);
     }
 
@@ -74,7 +80,7 @@ $breakpoint-low-res-desktops: 1360px;
 
     #text-and-image-banner #text-content,
     #text-and-image-banner .content img {
-        width: calc(min(90vw, 480px) - 4rem);
+        width: calc(min(90vw, 480px) - 3rem);
         max-width: none;
         max-height: none;
         margin: 1.5rem;
