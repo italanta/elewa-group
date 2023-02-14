@@ -9,6 +9,6 @@ import { ElewaGroupImageAndTextBannerComponent } from './banners/elewa-group-ima
     ElewaGroupTeamMemberComponent,
     ElewaGroupImageAndTextBannerComponent,
   ],
-  exports: [ElewaGroupTeamMemberComponent],
+  exports: [ElewaGroupTeamMemberComponent, ElewaGroupImageAndTextBannerComponent],
 })
 export class BannersModule {}
