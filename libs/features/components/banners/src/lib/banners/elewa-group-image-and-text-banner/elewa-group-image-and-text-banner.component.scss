@@ -42,6 +42,10 @@
     width: 60%;
 }
 
+#text-and-image-banner .content#img-content img {
+    border-radius: 2rem;
+}
+
 
 // RESPONSIVENESS
 $breakpoint-tablet: 768px;
@@ -49,7 +53,7 @@ $breakpoint-low-res-desktops: 1360px;
 
 @media (max-width: $breakpoint-low-res-desktops){
     #text-and-image-banner {
-        border: solid 1.5rem var( --elewa-group-website-team-and-members-color-white);
+        border: solid 1.5rem var(--elewa-group-website-team-and-members-color-white);
         border-bottom-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
     }
@@ -73,7 +77,6 @@ $breakpoint-low-res-desktops: 1360px;
 
     #text-and-image-banner .banner-container {
         flex-direction: column;
-        // width: 95%;
         max-height: none;
         justify-content: space-around;
     }
@@ -88,6 +91,10 @@ $breakpoint-low-res-desktops: 1360px;
 
     #text-and-image-banner .banner-container.left {
         flex-direction: column-reverse;
+    }
+
+    #text-and-image-banner .content#img-content img {
+        border-radius: 1.5rem;
     }
 }
 
