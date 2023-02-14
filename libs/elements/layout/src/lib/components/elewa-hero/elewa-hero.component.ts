@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 export class ElewaHeroComponent {
   @Input() title = 'HOW TO RECOGNIZE AN ELEWA MEMBER';
   @Input() subTitle = 'Dependable, Creative, Supportive, Open Minded and Fun*';
-  @Input() paragraph = '*SERIOUS WHEN IT MATTERS';
+  @Input()  footer = '*SERIOUS WHEN IT MATTERS';
 }
