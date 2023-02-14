@@ -1,1 +1,27 @@
-<p>elewa-group-image-and-text-banner works!</p>
+<div *ngFor="let details of bannerData; let index = index"
+[ngClass]="index < 1 ? 'parent-banner' : 'parent-banner-'+index"
+id="border"
+>
+    <div *ngIf="index%2 < 1"
+    class="child-banner">
+        <div class="text-div">
+            <h1>{{details.title}}</h1>
+            <p class="paragraph">{{details.paragraph}}</p>
+            <p *ngIf="details.paragraph2" class="paragraph" >{{details.paragraph2}}</p>
+        </div>
+        <div class="image-div">
+            <img src={{details.imageUrl}} class="image"/>
+        </div>
+    </div>
+    <div *ngIf="index%2 > 0"
+        class="child-banner">
+        <div class="image-div">
+            <img src={{details.imageUrl}} class="image"/>
+        </div>
+        <div class="text-div">
+            <h1>{{details.title}}</h1>
+            <p class="paragraph">{{details.paragraph}}</p>
+            <p *ngIf="details.paragraph2" class="paragraph" >{{details.paragraph2}}</p>
+        </div>
+    </div>
+</div>
