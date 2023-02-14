@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class ElewaHeroComponent {
   @Input() subtitle = 'HOW TO RECOGNIZE AN ELEWA MEMBER';
   @Input() title = 'Dependable, Creative, Supportive, Open Minded and Fun*';
-  @Input() backgroundImg = 'https://img.freepik.com/free-photo/abstract-flowing-neon-wave-background_53876-101942.jpg';
+  @Input() backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png';
   @Input() footerText = '*SERIOUS WHEN IT MATTERS';
 }
