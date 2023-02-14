@@ -5,6 +5,9 @@
     place-items: center;
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-regular);
+    border: solid 2rem white;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 
 #text-and-image-banner .banner-container {
@@ -71,7 +74,7 @@ $breakpoint-low-res-desktops: 1360px;
 
     #text-and-image-banner #text-content,
     #text-and-image-banner .content img {
-        width: min(90vw, 400px);
+        width: calc(min(90vw, 480px) - 4rem);
         max-width: none;
         max-height: none;
         margin: 1.5rem;
