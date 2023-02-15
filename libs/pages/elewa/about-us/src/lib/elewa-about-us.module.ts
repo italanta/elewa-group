@@ -12,20 +12,17 @@ import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
+import { WeCareComponent } from './components/we-care/we-care.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
-
-    AboutUsRoutingModule
-  ],
+  imports: [CommonModule, LayoutModule, AboutUsRoutingModule],
   declarations: [
     TeamMembersCarouselComponent,
     NextDirective,
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
+    WeCareComponent,
   ],
   exports: [TeamMembersCarouselComponent],
 })
