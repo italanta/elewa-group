@@ -14,8 +14,6 @@
             color: black;
         }
     }
-
-
     &.dark{
         background-color: var(--elewa-group-website-color-bg);
         color: white;
@@ -26,11 +24,8 @@
             color: white;
         }
     }
-
-
     &.pleft{
    flex-direction: row-reverse;
-
    .col8{
     width: 60%;
     padding-left: 0%;
@@ -40,7 +35,6 @@
     justify-content: center;
    
 }
-  
    .col4{
     width: 40%;
     padding-left:10%;
@@ -53,8 +47,6 @@
     border-radius: 20px;
 }
     }
-
-
     &.pright{
         flex-direction: row;
         .col4{
@@ -78,28 +70,21 @@
         }
 
          }
-  
-
     .ml {
         margin-left: 50px;
     }
-
-      .heading{
+ .heading{
         font-size: var(--elewa-group-website-font-size-heading);
         width: 80%;
         padding-bottom: 20px;
         font-family: var(--elewa-group-website-dmsans-regular);
     }
-
     .left{
         padding-left: 80px;
     }
-
     .right{
         padding-left: 10px;
     }
-   
-   
     .title{
         font-size: var(--elewa-group-website-font-size-title);
         font-family: var(--elewa-group-website-dmsans-medium);
@@ -127,7 +112,6 @@
                 justify-content: center;
                 padding-bottom: 10px;
             }
-
             .col4 img{
                 height: 400px;
                 width: 90%;
@@ -136,8 +120,6 @@
                 border-radius: 20px;
             }
         }
-
-    
         &.pright{
             .col8{
                 width: 100%;
@@ -157,22 +139,16 @@
                 border-radius: 20px;
             }
         }
-
-    
         .ml{
             margin-left: 0px;
         }
-
         .heading{
             width: 100%;
             font-size: var( --elewa-group-website-font-size-heading-medium);
         }
-
-
         .left{
             padding-right: 0;
         }
-    
         .right{
             padding-left: 0;
         }

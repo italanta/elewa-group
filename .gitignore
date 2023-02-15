@@ -39,6 +39,7 @@ testem.log
 Thumbs.db
 
 .angular
+.package-lock
 scully.log
 apps/elewa-group-website/src/environments/environment.prod.ts
 apps/elewa-group-website/src/environments/environment.ts

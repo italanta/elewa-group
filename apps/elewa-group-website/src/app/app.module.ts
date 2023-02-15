@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
-import {FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners'
+import {BannersModule } from '@elewa-group/features/components/banners'
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
@@ -20,7 +20,7 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     ScullyLibModule,
     HomePageModule,
     CardsModule,
-    FeaturesComponentsBannersModule,
+    BannersModule,
     ButtonsModule,
     LayoutModule
   ],

@@ -6,9 +6,9 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./elewa-group-image-and-text-banner.component.scss'],
 })
 export class ElewaGroupImageAndTextBannerComponent {
-  @Input() title:string | undefined
-  @Input() paragraph:string| undefined
-  @Input() imgSrc:string | undefined 
-  @Input() position:string | undefined
-  @Input() color:string | undefined
+  @Input() title:string = ""
+  @Input() paragraph:string = ""
+  @Input() imgSrc:string = ""
+  @Input() position: "pleft"| "pright" = "pright" 
+  @Input() color: "dark"| "light" = "dark"
 }

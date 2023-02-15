@@ -7,4 +7,4 @@ import { ElewaGroupImageAndTextBannerComponent } from './banners/elewa-group-ima
   declarations: [ElewaGroupImageAndTextBannerComponent],
   exports: [ElewaGroupImageAndTextBannerComponent]
 })
-export class FeaturesComponentsBannersModule {}
+export class BannersModule {}
