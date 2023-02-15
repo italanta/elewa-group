@@ -23,6 +23,9 @@
       "@elewa-group/features/components/cards": [
         "libs/features/components/cards/src/index.ts"
       ],
+      "@elewa-group/features/components/elewa-group-image-and-text-banner": [
+        "libs/features/components/elewa-group-image-and-text-banner/src/index.ts"
+      ],
       "@elewa-group/features/components/ui-lists": [
         "libs/features/components/ui-lists/src/index.ts"
       ],
