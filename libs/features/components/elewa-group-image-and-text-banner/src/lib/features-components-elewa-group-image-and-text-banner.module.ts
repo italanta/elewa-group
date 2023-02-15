@@ -5,5 +5,6 @@ import { ElewaGroupImageAndTextBannerComponent } from './elewa-group-image-and-t
 @NgModule({
   imports: [CommonModule],
   declarations: [ElewaGroupImageAndTextBannerComponent],
+  exports: [ElewaGroupImageAndTextBannerComponent]
 })
-export class FeaturesComponentsElewaGroupImageAndTextBannerModule {}
+export class ElewaGroupImageAndTextBannerModule {}
