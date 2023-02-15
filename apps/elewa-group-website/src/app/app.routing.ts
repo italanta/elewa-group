@@ -6,7 +6,13 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // { path: '*', redirectTo: 'home', pathMatch: 'full' },
   { path: '', redirectTo: 'home/en', pathMatch: 'full' },
+
+  { path: 'home', redirectTo: 'home/en' },
   { path: 'home/en', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
+
+  // about us page route
+  { path: 'about', redirectTo: 'about/en' },
+  { path: 'about/en', loadChildren: () => import('libs/pages/elewa/about-us/src/lib/elewa-about-us.module').then(m => m.AboutUsModule) },
 
 ];
 
