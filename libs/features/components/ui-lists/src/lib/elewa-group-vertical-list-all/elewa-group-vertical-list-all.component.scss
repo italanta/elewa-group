@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+.title{
+    text-align: center;
+    // font-weight: 200;
+    font-size: 50px;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    margin: 100px;
+}
+
+.project-list{
+    margin: 10px;
+    padding: 0px 80px;
+}
+
+.org-partners{
+    margin: 10px 0;
+    padding: 100px 0;
+    height: min-content;
+    min-width: min-content;
+}
+
+.action-text{
+    text-align: center;
+    // font-weight: 200;
+    font-size: 50px;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    margin: 120px;
+}
+
+.action-text span{
+    font-family: var(--elewa-group-website-dmsans-bold);
+}
+
+@media screen and (max-width: 480px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 22px;
+        margin: 0px 25px;
+        padding: 5px;
+    }
+
+    .project-list{
+        justify-content: center;
+        margin: 10px;
+        padding: 0px 0px;
+    }
+
+    .org-partners{
+        justify-content: baseline;
+        padding-left: 58px;
+    }
+
+    .action-text{
+        font-size: 22px;
+        padding: 0px 0px;
+        margin: 30px 10px;
+    }
+
+  }
