@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, Input, OnInit } from '@angular/core';
-
 
 @Component({
   selector: 'elewa-group-elewa-horizontal-timeline-carousel',
@@ -8,7 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./elewa-horizontal-timeline-carousel.component.scss'],
 })
 
-export class ElewaHorizontalTimelineCarouselComponent implements OnInit  {
+export class ElewaHorizontalTimelineCarouselComponent implements OnInit {
+
+  @Input() currentIndex: number = 0;
+
   @Input() items = [
     {
       date: "2013",
@@ -37,12 +38,8 @@ export class ElewaHorizontalTimelineCarouselComponent implements OnInit  {
     }
   ];
 
-  @Input()
-  currentIndex!: number;
-
   constructor() { }
 
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {
     this.currentIndex = 0;
   }
