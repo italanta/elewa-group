@@ -15,7 +15,7 @@ import { AboutUsRoutingModule } from './about-us.routing';
 
 @NgModule({
   imports: [
-    CommonModule, 
+    CommonModule,
     LayoutModule,
 
     AboutUsRoutingModule

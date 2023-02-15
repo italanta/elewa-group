@@ -1,12 +1,51 @@
 .container {
 	margin: 0;
-	margin-left: 2px;
+	padding: 50px 5%;
+}
+
+.title-section {
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 20px;
+		font-family: var(--elewa-group-website-dmsans-bold);
+	}
+
+	p {
+		margin-bottom: 20px;
+		font-family: var(--elewa-group-website-dmsans-medium);
+	}
+}
+
+.culture-row {
+
+	img {
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+		font-family: var(--elewa-group-website-dmsans-bold);
+	}
+
+	p {
+		margin-bottom: 20px;
+		font-family: var(--elewa-group-website-dmsans-regular);
+	}
 }
 
 @media only screen and (min-width: 850px) {
 	.title-section {
 		padding: 10px;
 		margin-left: 40px;
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		p {
+			width: 60%;
+		}
 	}
 
 	.cultures-section {
@@ -17,8 +56,7 @@
 
 	.culture-row {
 		width: calc(50% - 10px);
-		padding-top: 15px;
-		padding-bottom: 0px;
+		padding: 20px;
 
 		&:nth-child(5) {
 			width: 100%;
@@ -43,7 +81,6 @@
 		}
 
 		&:nth-child(n + 3) {
-			flex-grow: 1;
 			display: flex;
 			flex-direction: column;
 			justify-content: left;
