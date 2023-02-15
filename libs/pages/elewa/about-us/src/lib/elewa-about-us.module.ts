@@ -5,10 +5,16 @@ import { TeamMembersCarouselComponent } from './components/team-members-carousel
 
 import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
+import { AboutUsCultureComponent } from './components/about-us-culture/about-us-culture.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [TeamMembersCarouselComponent, NextDirective, PrevDirective],
-  exports: [TeamMembersCarouselComponent]
+  declarations: [
+    TeamMembersCarouselComponent,
+    NextDirective,
+    PrevDirective,
+    AboutUsCultureComponent,
+  ],
+  exports: [TeamMembersCarouselComponent],
 })
-export class AboutUsModule { }
+export class AboutUsModule {}
