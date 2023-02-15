@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ElewaGroupImageAndTextBannerComponent } from './components/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
+import { ElewaGroupTeamMemberComponent } from './banners/elewa-group-team-member/elewa-group-team-member.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ElewaGroupImageAndTextBannerComponent],
-  exports: [ElewaGroupImageAndTextBannerComponent]
+  declarations: [ElewaGroupTeamMemberComponent],
+  exports: [ElewaGroupTeamMemberComponent]
 })
-export class FeaturesComponentsBannersModule {}
+export class BannersModule {}
+

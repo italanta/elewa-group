@@ -17,9 +17,6 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
-      "@elewa-group/features/components/banner": [
-        "libs/features/components/banner/src/index.ts"
-      ],
       "@elewa-group/features/components/banners": [
         "libs/features/components/banners/src/index.ts"
       ],
