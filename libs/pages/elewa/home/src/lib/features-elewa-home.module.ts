@@ -28,6 +28,5 @@ import { ElewaGroupHorizontalListOrgsComponent } from 'libs/features/components/
     ElewaGroupHorizontalListOrgsComponent
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
-
 })
 export class HomePageModule {}
