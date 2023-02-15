@@ -9,6 +9,9 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ElewaGroupVerticalListAllComponent } from 'libs/features/components/ui-lists/src/lib/elewa-group-vertical-list-all/elewa-group-vertical-list-all.component';
+import { ElewaGroupVerticalListOneComponent } from 'libs/features/components/ui-lists/src/lib/elewa-group-vertical-list-one/elewa-group-vertical-list-one.component';
+import { ElewaGroupHorizontalListOrgsComponent } from 'libs/features/components/ui-lists/src/lib/elewa-group-horizontal-list-orgs/elewa-group-horizontal-list-orgs.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -20,6 +23,9 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    ElewaGroupVerticalListAllComponent,
+    ElewaGroupVerticalListOneComponent,
+    ElewaGroupHorizontalListOrgsComponent
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
 
