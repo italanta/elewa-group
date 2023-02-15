@@ -1,1 +1,23 @@
-<p>we-care works!</p>
+<section id="weCareContainer">
+    <section id="weCare-content">
+        <h1>We Care!</h1>
+        <section id="weCareTopHalf">
+            <p>
+                Elewa is a mission-driven organization. 
+                We make use of our cooperative and shared culture to drive the needle for the development of people and our environment.
+                We care for our own, but also care deeply about the context surrounding us.
+            </p>
+            <p>
+                Our investments are therefore not limited to internal ones but contribure heavily to our community and environment.
+                From training the next scout leaders on sustainable practices, to bridging the employment gap for junior software developers.
+            </p>
+        </section>
+        <section id="weCare-icons">
+            <elewa-group-elewa-vertical-icon-and-text
+            *ngFor="let icon of icons"
+            
+            [icon]="icon.icon" [title]="icon.title" [description]="icon.description"
+            />
+        </section>
+    </section>
+</section>
