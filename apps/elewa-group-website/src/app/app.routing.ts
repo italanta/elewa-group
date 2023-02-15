@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Route } from '@angular/router';
+import { RouterModule, Route }  from '@angular/router';
 
+export const ELEWA_GROUP_WEBSITE_ROUTES: Route[] = [
 
-export const ELEWA_GROUP_ROUTES: Route[] = [
+  // App Entry-Point
 
-  // { path: '*', redirectTo: 'home', pathMatch: 'full' },
-  { path: '', redirectTo: 'home/en', pathMatch: 'full' },
-  { path: 'home/en', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
+  { path: '', redirectTo: `home`, pathMatch: 'full' },
+  {  path: 'home', redirectTo: 'home/en'  },
 
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(
-      ELEWA_GROUP_ROUTES,
+      ELEWA_GROUP_WEBSITE_ROUTES,
       {
         scrollPositionRestoration: 'enabled',
-        enableTracing: true,
+        enableTracing: true, 
         onSameUrlNavigation: 'reload'
-      },
+      }
     )
   ],
   exports: [
