@@ -1,0 +1,17 @@
+<div class=”container”>
+	<div class="title-section">
+		<h1>Our Culture & Values</h1>
+		<p>Our culture ,our CODE-(T),is our light,it protects and guides us to
+			success.it keeps our team and management accountable to itself ,its
+			objective, and its long-term mission
+		</p>
+	</div>
+	<div class="cultures-section">
+		<div class="culture-row" *ngFor="let culture of cultures">
+
+			<img [src]="culture.img" alt=””>
+			<h2 class="culture-title">{{ culture.title }}</h2>
+			<p class="culture-desc"> {{culture.description}} </p>
+		</div>
+	</div>
+</div>
