@@ -1,49 +1,49 @@
 .container {
-    background-color: #dbd6d6;
-    border-radius: 0px 0px 50px 50px;
-    height: 98vh;
-    justify-content: center;
+  background-color: #dbd6d6;
+  border-radius: 0px 0px 50px 50px;
+  height: 98vh;
+  justify-content: center;
 }
 .cards {
-    padding-top: 80px;
-    display: grid;
-    grid-template-columns:  auto auto;
-    padding-right: 50px;
-    padding-left: 100px;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-right: 50px;
+  padding-left: 100px;
 }
 .card1 {
-    padding-top: 40px;
-    padding-left: 100px;
+  padding-top: 40px;
+  padding-left: 100px;
 }
-.img {
-    border-radius: 20px; 
-    height: 500px; 
-    width: 350px;
+.picture {
+  border-radius: 20px;
+  height: 500px;
+  width: 350px;
 }
-.title {
-    font-size: 50px;
-    padding-top: 90px;
+.heading {
+  font-size: 50px;
+  padding-top: 90px;
 }
-.text {
-    width: 450px;
-    font-size: 20px;
+.para {
+  width: 450px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+@media (max-width: 1000px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .container {
+    height: 100vh;
+  }
+  .card1 {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  .heading {
     padding-top: 20px;
-}
-@media  (max-width:1000px) {
-    .cards {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 20px;
-        padding-top: 10px;
-    }
-    .container {
-        height: 100vh;
-    }
-    .card1 {
-        padding-left: 0px;
-        padding-top: 10px; 
-    }
-    .title {
-        padding-top: 20px;
-    }  
+  }
 }
