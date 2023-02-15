@@ -1,74 +1,42 @@
-.container{
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .banner-inner {
     display: flex;
     align-items: center;
-    background-color: #f4f4f4;
-    margin-top: 30px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    // max-width: fit-content;
-    // max-height: fit-content;
+    flex-direction: row;
+    width: 100%;
+  }
 
-    .content {
-        padding: 20px 30px;
-        font-family: var( --elewa-group-website-dmsans-regular);
-        border: 0;
-        align-content: center;
-        margin-left: 50px;
-        
+  .banner-text-section {
+    width: 50%;
+    align-content: center;
+    margin-left: 50px;
+    font-family: var( --elewa-group-website-dmsans-regular);
+  }
 
-        .title1{
-            font-family: var(--elewa-group-website-dmsans-bold);
-            font-size: x-large;
-            font-weight: var(--elewa-group-website-font-weight-title);
-        }
+  .banner-image-section {
+    width: 50%;
+    text-align: center;
+  }
 
-        .description1 {
-            font-size: var(--elewa-group-website-font-size-description);
-            
-        }
-   }
+  .right {
+    order: -1;
+  }
 
-   .banner-img{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-right: 50px;
+  @media (max-width: 767px) {
+    .banner-inner {
+      flex-direction: column;
     }
 
-
-
-}
-
-
-@media only screen and (max-width: 850px) {
-    .container{
-        width: fit-content;
-        height: fit-content;
-        
-       
-        flex-direction: column;
-
-        .content{
-
-            margin: 0;
-            padding: 0 0;
-        }
+    .banner-text-section,
+    .banner-image-section {
+      width: 100%;
     }
-
-    .banner-img{
-        // width: fit-content;
-        // height: fit-content;
-        margin: 10px 0;
-    }
-
-
-
-}
-
-
-
-
-
-
-
-
-
+  }
