@@ -10,8 +10,6 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app.routing';
 
-import { FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners'
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,11 +19,7 @@ import { FeaturesComponentsBannersModule } from '@elewa-group/features/component
 
     RouterModule,
     ScullyLibModule,
-    HomePageModule,
-    CardsModule,
-    ButtonsModule,
-    LayoutModule,
-    FeaturesComponentsBannersModule,
+
     AppRoutingModule
   ],
   providers: [],
