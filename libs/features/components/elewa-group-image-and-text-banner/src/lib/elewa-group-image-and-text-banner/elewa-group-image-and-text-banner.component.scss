@@ -3,4 +3,26 @@
     font-size: var(--elewa-group-website-font-size-title);
     color: whitesmoke;
     height: 900px;
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    height: 500px;
+    width: 400px;
+    float: right;
+    border-radius: 5%;
+}
+.content{
+    padding: 80px;
+    justify-items: center;
+    width: 60%;
+}
+.paragraph__text{
+    font-size: 16px;
+}
+.title{
+    font-size: 30px;
 }
