@@ -1,24 +1,33 @@
 .main__div{
-    background-color: var(--elewa-group-website-color-primary);
+    background-color: "#00000";
     font-size: var(--elewa-group-website-font-size-title);
-    color: whitesmoke;
+    color: black;
     height: 900px;
     padding: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 50px;
+    border-radius: 5%;
 }
 
 img{
     height: 500px;
     width: 400px;
-    float: right;
     border-radius: 5%;
 }
+ .left{
+    flex: 0; 
+}
+
+
+
 .content{
-    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     justify-items: center;
     width: 60%;
+    height: 420px;
 }
 .paragraph__text{
     font-size: 16px;
