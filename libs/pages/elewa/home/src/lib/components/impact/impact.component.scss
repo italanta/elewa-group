@@ -1,0 +1,104 @@
+#text-and-image-banner {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    border: solid 2rem var( --elewa-group-website-team-and-members-color-white);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+
+    .title{
+      width: 70%;
+    }
+}
+#text-and-image-banner .banner-container {
+    display: flex;
+    gap: 10%;
+    width: 80%;
+    max-height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+  padding: 20px 0;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  .first{
+    margin-right: 30px;
+  }
+
+}
+
+
+$breakpoint-tablet: 768px;
+$breakpoint-low-res-desktops: 1360px;
+
+@media (max-width: $breakpoint-low-res-desktops){
+    #text-and-image-banner {
+        border: solid 1.5rem var(--elewa-group-website-team-and-members-color-white);
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+
+    #text-and-image-banner {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+    }
+
+    #text-and-image-banner .banner-container {
+        gap: 5%;
+        width: 90%;
+        max-height: 80vh;
+    }
+    .button{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+
+      .second{
+        margin-top: 10px;
+      }
+    }
+}
+
+@media (max-width: $breakpoint-tablet), (max-aspect-ratio: 1.1) {
+    #text-and-image-banner {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+    }
+
+    #text-and-image-banner .banner-container {
+        flex-direction: column;
+        max-height: none;
+        justify-content: space-around;
+    }
+
+    #text-and-image-banner #text-content,
+    #text-and-image-banner .content img {
+        width: calc(min(90vw, 480px) - 3rem);
+        max-width: none;
+        max-height: none;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #text-and-image-banner #text-content .title {
+        margin-bottom: 1rem;
+    }
+
+    #text-and-image-banner .content#img-content img {
+        border-radius: 1.2rem;
+    }
+    .button{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+       .second{
+        margin-top: 10px;
+      }
+    }
+}
