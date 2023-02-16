@@ -3,14 +3,14 @@ import { RouterModule, Route } from '@angular/router';
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
-export const ELEWA_HOME_ROUTES: Route[] = [
+export const ELEWA_SOCIAL_ROUTES: Route[] = [
 
   { path: '', component: SocialImpactPageComponent },
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(ELEWA_HOME_ROUTES)],
+  imports: [RouterModule.forChild(ELEWA_SOCIAL_ROUTES)],
   exports: [RouterModule]
 })
-export class SocialImpactModule { }
+export class SocialImpactRoutingModule { }
