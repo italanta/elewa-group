@@ -12,6 +12,7 @@ import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
+import { WeCareSectionComponent } from './components/we-care-section/we-care-section.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { AboutUsRoutingModule } from './about-us.routing';
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
+    WeCareSectionComponent,
   ],
   exports: [TeamMembersCarouselComponent],
 })
