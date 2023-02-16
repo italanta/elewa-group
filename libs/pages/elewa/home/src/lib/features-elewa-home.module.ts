@@ -6,8 +6,14 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
 
+import { HomeRoutingModule } from './home.routing';
 @NgModule({
-  imports: [CommonModule, LayoutModule, NgOptimizedImage],
+  imports: [
+    CommonModule,
+    LayoutModule,
+    NgOptimizedImage,
+    HomeRoutingModule
+  ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
