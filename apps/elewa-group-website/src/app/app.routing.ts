@@ -5,8 +5,15 @@ export const ELEWA_GROUP_WEBSITE_ROUTES: Route[] = [
 
   // App Entry-Point
 
-  { path: '', redirectTo: `home`, pathMatch: 'full' },
-  {  path: 'home', redirectTo: 'home/en'  },
+  // { path: '*', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home/en', pathMatch: 'full' },
+
+  { path: 'home', redirectTo: 'home/en' },
+  { path: 'home/en', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
+
+  // about us page route
+  { path: 'about', redirectTo: 'about/en' },
+  { path: 'about/en', loadChildren: () => import('libs/pages/elewa/about-us/src/lib/elewa-about-us.module').then(m => m.AboutUsModule) },
 
 ];
 
@@ -16,7 +23,7 @@ export const ELEWA_GROUP_WEBSITE_ROUTES: Route[] = [
       ELEWA_GROUP_WEBSITE_ROUTES,
       {
         scrollPositionRestoration: 'enabled',
-        enableTracing: true, 
+        enableTracing: true,
         onSameUrlNavigation: 'reload'
       }
     )

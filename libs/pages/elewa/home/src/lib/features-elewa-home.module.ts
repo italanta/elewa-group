@@ -24,6 +24,5 @@ import { HomeRoutingModule } from './home.routing';
     HomeJobsSectionComponent,
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
-
 })
 export class HomePageModule {}
