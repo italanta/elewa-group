@@ -16,9 +16,10 @@
 }
 .cards {
   display: flex;
-  column-gap: 20px;
+  column-gap: 250px;
   padding: 90px;
   margin-left: -80px;
+  justify-content: space-around;
 }
 .button-area {
   visibility: hidden;
