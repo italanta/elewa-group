@@ -13,7 +13,6 @@ import { HomeRoutingModule } from './home.routing';
   imports: [
     CommonModule,
     LayoutModule,
-
     HomeRoutingModule
   ],
   declarations: [
