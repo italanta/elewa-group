@@ -8,5 +8,6 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
   imports: [CommonModule, BannersModule],
 
   declarations: [SocialImpactOpenKnowledgeComponent, SocialImpactPageComponent],
+  exports:[SocialImpactPageComponent]
 })
 export class PagesElewaSocialImpactModule {}
