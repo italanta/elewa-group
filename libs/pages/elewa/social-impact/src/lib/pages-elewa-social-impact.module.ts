@@ -1,12 +1,13 @@
-import { NgModule,Input } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SocialImpactComponent } from './social-impact/social-impact.component';
-import { LayoutModule } from '@elewa-group/elements/layout'; 
+import { LayoutModule } from '@elewa-group/elements/layout';
+import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
+import { SocialImpactSectionComponent } from './components/social-impact-section/social-impact-section.component';
+import { SocialImpactModule } from './social-impact.routing';
 
 @NgModule({
-  imports: [CommonModule, LayoutModule],
-  declarations: [SocialImpactComponent],
-  exports: [SocialImpactComponent]
+  imports: [CommonModule, LayoutModule, SocialImpactModule],
+  declarations: [SocialImpactPageComponent, SocialImpactSectionComponent],
+  exports: [SocialImpactPageComponent],
 })
 export class PagesElewaSocialImpactModule {}
-

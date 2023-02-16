@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'elewa-group-social-impact',
-  templateUrl: './social-impact.component.html',
-  styleUrls: ['./social-impact.component.scss'],
+  selector: 'elewa-group-social-impact-section',
+  templateUrl: './social-impact-section.component.html',
+  styleUrls: ['./social-impact-section.component.scss'],
 })
-export class SocialImpactComponent {
+export class SocialImpactSectionComponent {
   heroes = [
     {
       title: 'A vehicle for rapid & schalable human development',

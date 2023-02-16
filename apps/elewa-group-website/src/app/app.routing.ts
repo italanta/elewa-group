@@ -8,6 +8,10 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
   { path: '', redirectTo: 'home/en', pathMatch: 'full' },
   { path: 'home/en', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
 
+  // { path: '*', redirectTo: 'social-impact', pathMatch: 'full'}
+  { path: 'social-impact', redirectTo: 'social-impact/en', pathMatch: 'full' },
+  { path: 'social-impact/en', loadChildren: () => import('libs/pages/elewa/social-impact/src/lib/pages-elewa-social-impact.module').then(m => m.PagesElewaSocialImpactModule ) },
+
 ];
 
 @NgModule({
