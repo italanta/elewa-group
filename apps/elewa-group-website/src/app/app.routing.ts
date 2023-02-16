@@ -28,7 +28,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // news page route
   {  path: 'news', redirectTo: 'news/en'  },
-  {  path: 'news/en', loadChildren: () => import('libs/pages/elewa/news/src/lib/features-elewa-news.module').then(m => m.NewsPageModule)},
+  {  path: 'news/en', loadChildren: () => import('libs/pages/elewa/news/src/lib/pages-elewa-news.module').then(m => m.NewsPageModule)},
 
   // contact page route
   {  path: 'contact', redirectTo: 'contact/en'  },
