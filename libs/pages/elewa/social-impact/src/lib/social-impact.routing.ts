@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page/social-impact-page.component';
+import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
 
 
