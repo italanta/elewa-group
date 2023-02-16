@@ -32,7 +32,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // contact page route
   {  path: 'contact', redirectTo: 'contact/en'  },
-  {  path: 'contact/en', loadChildren: () => import('libs/pages/elewa/contact/src/lib/features-elewa-contact.module').then(m => m.ContactPageModule)},
+  {  path: 'contact/en', loadChildren: () => import('libs/pages/elewa/contact/src/lib/pages-elewa-contact.module').then(m => m.ContactPageModule)},
 ];
 
 @NgModule({
