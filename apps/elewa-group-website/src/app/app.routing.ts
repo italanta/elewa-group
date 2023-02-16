@@ -1,6 +1,6 @@
-
 import { NgModule } from '@angular/core';
-import { RouterModule, Route }  from '@angular/router';
+import { RouterModule, Route } from '@angular/router';
+
 
 export const ELEWA_GROUP_ROUTES: Route[] = [
 
@@ -51,21 +51,3 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
   ]
 })
 export class AppRoutingModule { }
-
-
-@NgModule({
-  imports: [
-    RouterModule.forRoot(
-      ELEWA_GROUP_WEBSITE_ROUTES,
-      {
-        scrollPositionRestoration: 'enabled',
-        enableTracing: true, 
-        onSameUrlNavigation: 'reload'
-      }
-    )
-  ],
-  exports: [
-    RouterModule
-  ]
-})
-export class AppRoutingModule { } 

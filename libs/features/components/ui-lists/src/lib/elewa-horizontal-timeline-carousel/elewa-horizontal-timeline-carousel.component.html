@@ -1,0 +1,19 @@
+<div class="carousel">
+  <div class="horizontal-timeline" [ngStyle]="{ 'transform': 'translateX(' + -50 * currentIndex + 'vh)' }">
+    <div class="item-wrapper" *ngFor="let item of items">
+      <div class="status">
+        <p class="item-date">{{ item.date }}</p>
+        <h3 class="item-title">{{ item.title }}</h3>
+        <p class="item-description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="buttons-container">
+    <button (click)="previous()">
+      <img src="https://cdn-icons-png.flaticon.com/512/158/158772.png" alt="prev timeline arrow" />
+    </button>
+    <button (click)="next()"><img src="https://cdn-icons-png.flaticon.com/512/126/126567.png"
+        alt="next timeline arrow" />
+    </button>
+  </div>
+</div>
