@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-import { NewsPageComponent } from './pages/news-page/news-page/news-page.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 
 
