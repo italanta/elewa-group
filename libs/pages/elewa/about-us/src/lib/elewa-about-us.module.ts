@@ -12,20 +12,18 @@ import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
+import { AboutUsHistoryCarouselComponent } from './components/about-us-history-carousel/about-us-history-carousel.component';
+import { UiListsModule } from '@elewa-group/features/components/ui-lists';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
-
-    AboutUsRoutingModule
-  ],
+  imports: [CommonModule, LayoutModule, AboutUsRoutingModule, UiListsModule],
   declarations: [
     TeamMembersCarouselComponent,
     NextDirective,
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
+    AboutUsHistoryCarouselComponent,
   ],
   exports: [TeamMembersCarouselComponent],
 })
