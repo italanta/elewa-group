@@ -10,6 +10,7 @@
     color: var(--elewa-group-website-color-card);
     background-color: var(--elewa-group-website-color-primary);
     cursor: pointer;
+    min-width: 100%;
 }
 
 .button-with-animation span{
