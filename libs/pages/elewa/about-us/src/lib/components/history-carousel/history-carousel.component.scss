@@ -1,0 +1,38 @@
+.wrapper{
+    background-color: var(--elewa-group-website-color-primary);
+    margin-top: 20px;
+    margin-right: 19px;
+    margin-left: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-regular);
+}
+
+.counter-col{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    margin: 0px 40px;
+}
+
+count-text{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {   
+    .wrapper {
+    padding-left: 10px;  
+    width: 100%;
+    font-size: small;
+    } 
+    .counter-col h2{
+    justify-content: center;
+    text-align: center;
+    }  
+ }
