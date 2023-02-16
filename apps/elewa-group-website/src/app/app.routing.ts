@@ -24,7 +24,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // invest page route
   {  path: 'invest', redirectTo: 'invest/en'  },
-  {  path: 'invest/en', loadChildren: () => import('libs/pages/elewa/invest/src/lib/features-elewa-invest.module').then(m => m.InvestPageModule)},
+  {  path: 'invest/en', loadChildren: () => import('libs/pages/elewa/invest/src/lib/pages-elewa-invest.module').then(m => m.InvestPageModule)},
 
   // news page route
   {  path: 'news', redirectTo: 'news/en'  },
