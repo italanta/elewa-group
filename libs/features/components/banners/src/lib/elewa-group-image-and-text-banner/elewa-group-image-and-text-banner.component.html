@@ -1,0 +1,11 @@
+<div class="banner" [ngStyle]="{ 'background-color': backgroundColor }">
+    <div class="banner-inner">
+      <div class="banner-text-section" [ngClass]="{ right: imagePlacement === 'right' }">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+      </div>
+      <div class="banner-image-section" [ngClass]="{ right: imagePlacement === 'right' }">
+        <img [src]="img" alt="Banner Image">
+      </div>
+    </div>
+  </div>

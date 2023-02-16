@@ -1,0 +1,42 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .banner-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .banner-text-section {
+    width: 50%;
+    align-content: center;
+    margin-left: 50px;
+    font-family: var( --elewa-group-website-dmsans-regular);
+  }
+
+  .banner-image-section {
+    width: 50%;
+    text-align: center;
+  }
+
+  .right {
+    order: -1;
+  }
+
+  @media (max-width: 767px) {
+    .banner-inner {
+      flex-direction: column;
+    }
+
+    .banner-text-section,
+    .banner-image-section {
+      width: 100%;
+    }
+  }
