@@ -32,7 +32,6 @@ import { NextDirective } from './components/Directives/next.directive';
     PrevDirective,
     
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent,ActivitySectionComponent],
-
+  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
 })
 export class HomePageModule {}
