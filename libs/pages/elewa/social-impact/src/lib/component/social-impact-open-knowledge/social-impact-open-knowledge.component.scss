@@ -3,3 +3,9 @@
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-regular);
 }
+
+@media (max-width: 767px) {
+    .open-knowledge{
+        flex-direction: column;
+    }
+  }
