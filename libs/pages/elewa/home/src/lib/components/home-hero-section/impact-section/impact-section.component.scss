@@ -1,6 +1,7 @@
 *{
     font-family: var(--elewa-group-website-dmsans-medium);
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 img{
@@ -13,7 +14,6 @@ img{
 .buttons-div{
    display: flex;
    gap: 4em;  
-
 }
 
 .main{
@@ -55,5 +55,4 @@ img{
     p { 
         padding: .5em;;
     }
-
   }
