@@ -2,6 +2,10 @@
     color: white;
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-regular);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
 }
 
 @media (max-width: 767px) {
