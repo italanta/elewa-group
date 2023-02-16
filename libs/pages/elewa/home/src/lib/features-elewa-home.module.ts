@@ -9,6 +9,7 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { SocialImpactFooterSectionComponent } from 'libs/pages/elewa/social-impact/src/lib/social-impact-footer-section/social-impact-footer-section.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -20,6 +21,7 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    SocialImpactFooterSectionComponent
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
 })
