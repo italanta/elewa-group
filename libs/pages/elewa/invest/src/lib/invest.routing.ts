@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-import { InvestPageComponent } from './invest-page/invest-page.component';
+import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 
 
 
