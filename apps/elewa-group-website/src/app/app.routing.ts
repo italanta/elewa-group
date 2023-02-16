@@ -20,7 +20,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // social-impact page route
   { path: 'social-impact', redirectTo: 'social-impact/en' },
-  { path: 'social-impact/en', loadChildren: () => import('libs/pages/elewa/social-impact/src/lib/elewa-social-impact.module').then(m => m.SocialImpactModule) },
+  { path: 'social-impact/en', loadChildren: () => import('libs/pages/elewa/social-impact/src/lib/pages-elewa-social-impact.module').then(m => m.SocialImpactModule) },
 
   // invest page route
   {  path: 'invest', redirectTo: 'invest/en'  },

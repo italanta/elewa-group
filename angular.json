@@ -8,6 +8,7 @@
     "pages-elewa-home": "libs/pages/elewa/home",
     "pages-elewa-invest": "libs/pages/elewa/invest",
     "pages-elewa-news": "libs/pages/elewa/news",
+    "pages-elewa-social-impact": "libs/pages/elewa/social-impact",
     "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql",
     "util-iote-bricks": "libs/util/iote/bricks",
