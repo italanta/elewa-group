@@ -16,7 +16,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // activities page route
   { path: 'activities', redirectTo: 'activities/en' },
-  { path: 'activities/en', loadChildren: () => import('libs/pages/elewa/activities/src/lib/elewa-activities.module').then(m => m.ActivitiesModule) },
+  { path: 'activities/en', loadChildren: () => import('libs/pages/elewa/activities/src/lib/pages-elewa-activities.module').then(m => m.ActivitiesModule) },
 
   // social-impact page route
   { path: 'social-impact', redirectTo: 'social-impact/en' },

@@ -21,6 +21,9 @@
       "@elewa-group/pages/elewa/about-us": [
         "libs/pages/elewa/about-us/src/index.ts"
       ],
+      "@elewa-group/pages/elewa/activities": [
+        "libs/pages/elewa/activities/src/index.ts"
+      ],
       "@elewa-group/pages/elewa/contact": [
         "libs/pages/elewa/contact/src/index.ts"
       ],
