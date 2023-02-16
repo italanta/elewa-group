@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class SocialImpactOpenKnowledgeComponent {
   titleText = "Open knowledge"
   paragraphText = "What we learn, we share. Through community events, open knowledge repositories, regular teaching moments(everyone a teacher) and academic partnerships. We build for today, with a lens for tomorrow."
-  backgroundColor = "black"
+  backgroundColor = "var(--elewa-group-website-color-bg)"
   imageURL = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/unnamed_1_m3dvll.png"
+  color = "var(--elewa-group-website-color)"
 }
