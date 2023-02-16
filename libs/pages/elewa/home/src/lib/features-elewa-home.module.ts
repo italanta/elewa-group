@@ -9,18 +9,22 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
-@NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
+import { SocialImpactComponent } from './pages/elewa/social-impact/social-impact.component';
+import { BannersModule } from '@elewa-group/features/components/banners';
 
-    HomeRoutingModule
-  ],
+@NgModule({
+  imports: [CommonModule, LayoutModule, HomeRoutingModule, BannersModule ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    SocialImpactComponent,
+    
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
+  exports: [
+    HomePageComponent,
+    HomeHeroSectionComponent,
+    HomeJobsSectionComponent,
+  ],
 })
 export class HomePageModule {}
