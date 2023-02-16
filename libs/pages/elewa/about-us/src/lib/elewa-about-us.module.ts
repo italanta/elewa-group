@@ -12,21 +12,20 @@ import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
+import { HistoryCarouselComponent } from './components/history-carousel/history-carousel.component';
+import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
-
-    AboutUsRoutingModule
-  ],
+  imports: [CommonModule, LayoutModule, AboutUsRoutingModule],
   declarations: [
     TeamMembersCarouselComponent,
     NextDirective,
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
+    HistoryCarouselComponent,
+    ElewaGroupImageAndTextBannerComponent
   ],
-  exports: [TeamMembersCarouselComponent],
+  exports: [TeamMembersCarouselComponent, HistoryCarouselComponent],
 })
 export class AboutUsModule {}
