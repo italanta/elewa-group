@@ -9,13 +9,12 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
-import { FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners';
 @NgModule({
   imports: [
     CommonModule,
     LayoutModule,
-    HomeRoutingModule,
-    FeaturesComponentsBannersModule
+
+    HomeRoutingModule
   ],
   declarations: [
     HomePageComponent,
