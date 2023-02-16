@@ -13,15 +13,19 @@
     </p>
   </div>
 
-  <div class="cards" >
-    <div *ngFor="let card of cards">
-    <elewa-group-card
-      [subtitle]="card.subtitle"
-      [description]="card.description"
-      [imgSrc]="card.imgSrc"
-      [title]="card.title"
-    >
+  <div class="cards">
+    <div class="carousel" *ngFor="let card of cards">
+      <elewa-group-card [subtitle]="card.subtitle" [description]="card.description" [imgSrc]="card.imgSrc"
+        [title]="card.title">
       </elewa-group-card>
+    </div>
   </div>
+  <div class="button-area">
+    <button type="button" id="prev" elewaGroupPrev>
+      <i class="fa-solid active fa-arrow-left"></i>
+    </button>
+    <button type="button" id="next" elewaGroupNext>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
   </div>
 </div>
