@@ -13,11 +13,14 @@ import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
 import { WeCareSectionComponent } from './components/we-care-section/we-care-section.component';
+import { CardsModule } from '@elewa-group/features/components/cards';
+ 
 
 @NgModule({
   imports: [
     CommonModule,
     LayoutModule,
+    CardsModule,
 
     AboutUsRoutingModule
   ],
@@ -29,6 +32,6 @@ import { WeCareSectionComponent } from './components/we-care-section/we-care-sec
     AboutUsPageComponent,
     WeCareSectionComponent,
   ],
-  exports: [TeamMembersCarouselComponent],
+  exports: [TeamMembersCarouselComponent,WeCareSectionComponent],
 })
 export class AboutUsModule {}

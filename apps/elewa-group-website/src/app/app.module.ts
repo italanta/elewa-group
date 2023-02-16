@@ -9,6 +9,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app.routing';
+ 
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +22,9 @@ import { AppRoutingModule } from './app.routing';
     RouterModule,
     ScullyLibModule,
 
-    AppRoutingModule
+    AppRoutingModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
