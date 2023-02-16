@@ -1,0 +1,22 @@
+<div id="text-and-image-banner">
+    <div class="banner-container">
+        <div id="text-content" class="content">
+            <h1 class="title">{{title}}</h1>
+            <p>{{ paragraph1 }}</p>
+            <p>{{ paragraph2 }}</p>
+
+            <div class="button">
+              <elewa-group-button-with-animation [mode]="'dark'" message="Learn more" class="first">
+
+              </elewa-group-button-with-animation>
+              <elewa-group-button-with-animation [mode]="'light'" message="Become and angel investor" class="second">
+
+              </elewa-group-button-with-animation>
+            </div>
+        </div>
+
+        <div id="img-content" class="content">
+            <img [src]="image" alt="Elewa Group Impact Image"/>
+        </div>
+    </div>
+</div>
