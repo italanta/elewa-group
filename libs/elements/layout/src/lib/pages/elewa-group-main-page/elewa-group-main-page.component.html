@@ -1,0 +1,19 @@
+<div class="main-page">
+  <div class="header">
+    <elewa-group-header></elewa-group-header>
+  </div>
+  <div class="page">
+    <ng-content select="[mainPage]"></ng-content>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer">
+    <elewa-group-footer>
+      <div footer class="footer-content">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation [message]="'Become an investor'" [mode]="'dark'" [action]="'/'"></elewa-group-button-with-animation>
+        </div>
+      </div>
+    </elewa-group-footer>
+  </div>
+</div>

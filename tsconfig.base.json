@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -16,6 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
+      "@elewa-group/features/components/banners": [
+        "libs/features/components/banners/src/index.ts"
+      ],
       "@elewa-group/features/components/buttons": [
         "libs/features/components/buttons/src/index.ts"
       ],
