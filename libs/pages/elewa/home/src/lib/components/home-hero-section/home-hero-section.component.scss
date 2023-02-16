@@ -2,16 +2,16 @@
 	background-color: var(--elewa-group-website-color-bg);
 	border-radius: 0 0 30px 30px;
 	margin: 0 0;
-	padding: 50px 10%;
+	padding: 50px 5%;
 	display: flex;
-	align-items: center;
+	align-items: start;
 
 	p {
 		color: var(--elewa-group-website-color);
 	}
 
 	.col4 {
-		width: 40%;
+		width: 30%;
 		padding: 60px 0;
 	}
 
@@ -21,7 +21,7 @@
 	}
 
 	.col8 {
-		width: 60%;
+		width: 70%;
 	}
 
 	.cards {
@@ -29,19 +29,22 @@
 	}
 
 	.heading {
-		font-size: var(--elewa-group-website-font-size-heading);
-		width: 80%;
+		font-size: 3rem;
+		width: 50%;
+		margin-bottom: 20px;
 		font-family: var(--elewa-group-website-dmsans-regular);
 	}
 
 	.sub-heading {
-		font-size: var(--elewa-group-website-font-size-subheading);
+		font-size: 1.5rem;
+		width: 80%;
 		font-family: var(--elewa-group-website-dmsans-regular);
 		padding-bottom: 40px;
 	}
 
 	.card-one {
 		width: 40%;
+		margin-bottom: 20px;
 	}
 
 	.left {
@@ -53,13 +56,14 @@
 	}
 
 	.title {
-		font-size: var(--elewa-group-website-font-size-title);
+		margin-bottom: 20px;
+		font-size: 1.2rem;
 		font-family: var(--elewa-group-website-dmsans-medium);
 	}
 
 	.description {
 		font-family: var(--elewa-group-website-dmsans-regular);
-		font-size: var(--elewa-group-website-font-size-description);
+		font-size: 1rem;
 	}
 
 }
