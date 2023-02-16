@@ -1,88 +1,108 @@
-.container{
+#text-and-image-banner {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    border: solid 2rem var( --elewa-group-website-team-and-members-color-white);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+#text-and-image-banner .banner-container {
     display: flex;
+    gap: 10%;
+    width: 80%;
+    max-height: 80vh;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
-    margin-top: 30px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+}
 
-    .content {
-        padding: 20px 30px;
-        font-family: var( --elewa-group-website-dmsans-regular);
-        border: 0;
-        align-content: center;
-        margin-left: 50px;
+#text-and-image-banner .banner-container.left {
+    flex-direction: row-reverse;
+}
 
-        .title1{
-            font-family: var(--elewa-group-website-dmsans-bold);
-            font-size: x-large;
-            font-weight: var(--elewa-group-website-font-weight-title);
-        }
+#text-and-image-banner .content {
+    display: grid;
+    place-items: center;
+}
 
-        .description1 {
-            font-size: var(--elewa-group-website-font-size-description);
-            
-        }
-   }
+#text-and-image-banner #text-content,
+#text-and-image-banner .content img {
+    max-height: max(70vh, 500px);
+    max-width: 45vw;
+    object-fit: cover;
+}
 
-   .banner-img{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-right: 50px;
-    }
+#text-and-image-banner #text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
 
+#text-and-image-banner #text-content .title {
+    margin-bottom: 2rem;
+}
 
-
+#text-and-image-banner .content#img-content img {
+    border-radius: 2rem;
 }
 
 
+// RESPONSIVENESS
+$breakpoint-tablet: 768px;
+$breakpoint-low-res-desktops: 1360px;
 
+@media (max-width: $breakpoint-low-res-desktops){
+    #text-and-image-banner {
+        border: solid 1.5rem var(--elewa-group-website-team-and-members-color-white);
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
 
+    #text-and-image-banner {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+    }
 
+    #text-and-image-banner .banner-container {
+        gap: 5%;
+        width: 90%;
+        max-height: 80vh;
+    }
+}
 
+@media (max-width: $breakpoint-tablet), (max-aspect-ratio: 1.1) {
+    #text-and-image-banner {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+    }
 
+    #text-and-image-banner .banner-container {
+        flex-direction: column;
+        max-height: none;
+        justify-content: space-around;
+    }
 
+    #text-and-image-banner #text-content,
+    #text-and-image-banner .content img {
+        width: calc(min(90vw, 480px) - 3rem);
+        max-width: none;
+        max-height: none;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
 
+    #text-and-image-banner #text-content .title {
+        margin-bottom: 1rem;
+    }
 
-// .container{
-//     display: flex;
-    
-//     margin-top: 30px;
-//     .row{
-//         display: flex;
-//         background-color: #f4f4f4;
-//         border-bottom-right-radius: 40px;
-//         border-bottom-left-radius: 40px;
-//         align-content: center;
-//     }
-//         .column{
-//             flex: 50%;
-//         }
-//         .content{
-            
-//             padding: 20px 30px;
-//             font-family: var( --elewa-group-website-dmsans-regular);
-//             border: 0;
-//             align-content: center;
+    #text-and-image-banner .banner-container.left {
+        flex-direction: column-reverse;
+    }
 
-//             .title1{
-//             font-family: var(--elewa-group-website-dmsans-bold);
-//             font-size: var(--elewa-group-website-font-size-title);
-//             font-weight: var(--elewa-group-website-font-weight-title);
-//             }
-
-//             .description1{
-//                 text-align: justify;
-//                 margin-left: px;
-//             }
-
-            
-//         }
-
-//         .banner-img{
-//             margin-top: 50px;
-//             margin-bottom: 50px;
-//         }
-        
-
-// }
+    #text-and-image-banner .content#img-content img {
+        border-radius: 1.2rem;
+    }
+}
