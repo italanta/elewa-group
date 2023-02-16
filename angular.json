@@ -7,6 +7,7 @@
     "features-components-ui-lists": "libs/features/components/ui-lists",
     "pages-elewa-about-us": "libs/pages/elewa/about-us",
     "pages-elewa-home": "libs/pages/elewa/home",
+    "pages-elewa-social-impact": "libs/pages/elewa/social-impact",
     "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql",
     "util-iote-bricks": "libs/util/iote/bricks",
