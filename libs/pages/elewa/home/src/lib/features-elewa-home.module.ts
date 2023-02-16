@@ -7,12 +7,13 @@ import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jo
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
-
+import {PagesElewaSocialImpactModule} from '@elewa-group/pages/elewa/social-impact';
 import { HomeRoutingModule } from './home.routing';
 @NgModule({
   imports: [
     CommonModule,
     LayoutModule,
+    PagesElewaSocialImpactModule,
 
     HomeRoutingModule
   ],
