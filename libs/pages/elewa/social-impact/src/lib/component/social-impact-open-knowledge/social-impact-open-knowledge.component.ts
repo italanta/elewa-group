@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './social-impact-open-knowledge.component.html',
   styleUrls: ['./social-impact-open-knowledge.component.scss'],
 })
-export class SocialImpactOpenKnowledgeComponent {}
+export class SocialImpactOpenKnowledgeComponent {
+ imageURL = ""
+ paragraphText = ""
+ titleText = ""
+ imagePlacement = "right"
+ backgroundColor = ""
+}
