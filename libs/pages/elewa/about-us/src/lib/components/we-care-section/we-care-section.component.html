@@ -1,30 +1,22 @@
-<!-- <div>
-  <h1>We care!</h1>
-  <div>
-    <p>Elewa is a mission-driven organization. We make use of our cooperative and shared culture to mission-driven
-      the needle for the development of people and our environment. We care for our own, but also
-      care deeply about the context surrounding us.
-    </p>
-    <p>Our investments are therefore not limited to internal ones but contribute heavily to our community and
-      environment. From training the next scout leaders on sustainable practices, to bridging the employment gap
-      for junior software developers.
-    </p> -->
+<p>
+  Elewa is a mission-driven organization. We make use of our cooperative and shared culture to mission-driven
+  the needle for the development of people and our environment. We care for our own, but also
+  care deeply about the context surrounding us.
+  Our investments are therefore not limited to internal ones but contribute heavily to our community and
+  environment. From training the next scout leaders on sustainable practices, to bridging the employment gap
+  for junior software developers"
+ </p>
+
+ <div *ngFor="let card of cards">
+   <elewa-group-elewa-vertical-icon-and-text icon="{{ card.icon }}" title="{{ card.title }}" description="{{ card.description}}">
+
+  </elewa-group-elewa-vertical-icon-and-text>
+  <!-- <img src="{{ card.icon }}" alt="" /> -->
+   
+ </div>
+
   
   
-    <elewa-group-elewa-vertical-icon-and-text title="We care!"
-     description="Elewa is a mission-driven organization. We make use of our cooperative and shared culture to mission-driven
-    the needle for the development of people and our environment. We care for our own, but also
-    care deeply about the context surrounding us.
-    Our investments are therefore not limited to internal ones but contribute heavily to our community and
-    environment. From training the next scout leaders on sustainable practices, to bridging the employment gap
-    for junior software developers"
-    
-
     
     
-    
-    ></elewa-group-elewa-vertical-icon-and-text>
-
-
-
-
+  
