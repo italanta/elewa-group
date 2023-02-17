@@ -1,4 +1,4 @@
-.cooperative-section{
+.container{
     display: flex;
     flex-direction: row;
     font-size: var(--elewa-group-website-font-size-title);
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 767px) {
-    .cooperative-section{
+    .container{
         flex-direction: column;
     }
   }
