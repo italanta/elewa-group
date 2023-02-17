@@ -22,8 +22,8 @@
         "assets": [
           "apps/elewa-group-website/src/favicon.ico",
           "apps/elewa-group-website/src/assets",
-          "src/robots.txt",
-          "src/sitemap.xml"
+          "robots.txt",
+          "sitemap.xml"
         ],
         "styles": [
           "apps/elewa-group-website/src/styles.scss"
