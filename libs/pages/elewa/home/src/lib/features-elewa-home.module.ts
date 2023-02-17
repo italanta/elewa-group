@@ -9,18 +9,21 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 @NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
-
-    HomeRoutingModule
-  ],
+  imports: [CommonModule, LayoutModule, HomeRoutingModule, ButtonsModule],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    HomeImpactSectionComponent,
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
+  exports: [
+    HomePageComponent,
+    HomeHeroSectionComponent,
+    HomeJobsSectionComponent,
+    HomeImpactSectionComponent,
+  ],
 })
 export class HomePageModule {}
