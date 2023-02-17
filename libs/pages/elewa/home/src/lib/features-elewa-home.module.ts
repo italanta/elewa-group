@@ -3,6 +3,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { CardsModule } from '@elewa-group/features/components/cards';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
@@ -15,7 +16,7 @@ import { PrevDirective } from './directives/prev.directive';
 import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
-
+import { CtaMissionComponent } from './components/cta-mission/cta-mission.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ButtonsModule
   ],
   declarations: [
     HomePageComponent,
@@ -32,8 +34,17 @@ import { HomeRoutingModule } from './home.routing';
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
-    PrevDirective
+    PrevDirective,
+    CtaMissionComponent,
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
+  exports: [
+    HomePageComponent,
+    HomeHeroSectionComponent,
+    HomeJobsSectionComponent,
+    TeamAndPartnersComponent,
+    ActivitySectionComponent,
+    NextDirective,
+    PrevDirective,
+  ],
 })
-export class HomePageModule { }
+export class HomePageModule {}
