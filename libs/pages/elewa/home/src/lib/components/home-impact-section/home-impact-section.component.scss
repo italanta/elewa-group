@@ -1,0 +1,36 @@
+.impact-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--elewa-group-website-dmsans-regular);
+
+  .impact-section__description {
+    width: 40%;
+  }
+
+  .impact-section__description p {
+    padding-bottom: 40px;
+    font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+  }
+
+  .impact-section__description p:nth-child(1) {
+    width: 60%;
+    font-size: var(--elewa-group-website-font-size-hero-heading);
+  }
+
+  .impact-section__buttons {
+    display: flex;
+  }
+
+  .impact-section__photo img {
+    max-height: max(70vh, 500px);
+    max-width: 45vw;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+}
