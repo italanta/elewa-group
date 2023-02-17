@@ -1,28 +1,70 @@
 .container{
     width: 100vw;
-    background-color: rgba(128, 128, 128, 0.329);
-    margin: 40px;
-    // height: 100vh;
+    background-color: var(--elewa-group-website-container-background);
+    margin: 40px 0;
 }
-.section{
-    font-family: var(--elewa-group-website-dmsans-regular);
+.p-title{
+    font-family: var(--elewa-group-website-dmsans-medium);
 }
 
 .title{
-    margin-left: 90px;
-    margin-right: 90px;
-    padding: 100px;
-    font-size: 40px;
+    padding: 50px 11%;
+    font-size: var(--elewa--group-website-title-font-size);
+}
+
+.carousel{
+    width: 100%;
+    padding: 0 5%;
 }
 
 .action-message{
     justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-size: var(--elewa--group-website-action-message-font-size);
     padding-bottom: 200px;
-    font-weight: 100;
+    font-weight: var(--elewa--group-website-action-message-font-weight);
+}
+
+.learn{
+    font-family: var(--elewa-group-website-dmsans-regular);
 }
 
 .action-message .h2{
     font-family: var(--elewa-group-website-dmsans-bold);
 }
+
+@media screen and (max-width: 850px){
+    .container{
+        padding: 0px 0px;
+        margin: 0px;
+    }
+
+    .p-title{
+        font-family: var(--elewa-group-website-dmsans-bold);
+    }    
+
+    .title{
+        padding: 30px 0;
+        font-size: var(--elewa--group-website-title-font-size-media);
+        margin: 0 20px;
+    }
+
+    .carousel{
+        width: 95%;
+        padding: 0 0;
+        margin-left: -8%;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .action-message{
+        justify-content: center;
+        text-align: center;
+        font-size: var(--elewa--group-website-action-message-font-size-media);
+        padding-bottom: 200px;
+        font-weight: var(--elewa--group-website-action-message-font-weight-media);
+    }
+
+  }
