@@ -27,12 +27,12 @@ careersCountStop = setInterval(() => {
   }
 }, 1000)
 
-projectCount = 0;
+projects = 0;
 
 projectCountStop = setInterval(() => {
-  this.projectCount++;
+  this.projects++;
 
-  if (this.projectCount == 200) {
+  if (this.projects == 200) {
     clearInterval(this.projectCountStop)
   }
 }, 27)
