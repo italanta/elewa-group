@@ -7,11 +7,18 @@ import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jo
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ActivitySectionComponent } from './components/activity-section/activity-section.component';
+import { CardsModule } from '@elewa-group/features/components/cards';
+import { PrevDirective } from './components/Directives/prev.directive';
+import { NextDirective } from './components/Directives/next.directive';
+
+
 @NgModule({
   imports: [
     CommonModule,
     LayoutModule,
     NgOptimizedImage,
+    CardsModule,
     HomeRoutingModule
   ],
   declarations: [
@@ -19,7 +26,10 @@ import { HomeRoutingModule } from './home.routing';
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
     TeamAndPartnersComponent,
+    ActivitySectionComponent,
+    NextDirective,
+    PrevDirective    
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent],
+  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
 })
 export class HomePageModule {}
