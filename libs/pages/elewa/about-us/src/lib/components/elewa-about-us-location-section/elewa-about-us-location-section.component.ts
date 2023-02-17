@@ -20,10 +20,11 @@ export class ElewaAboutUsLocationSectionComponent implements OnInit {
     streetViewControl: false,
     fullscreenControl: false,
   };
-}
 
-constructor() {}
+  constructor() { }
 
-ngOnInit(): void {
-  this.markerPositions = new google.maps.LatLng(this.latitude, this.longitude)
+  ngOnInit(): void {
+    this.markerPositions = new google.maps.LatLng(this.latitude, this.longitude)
+  }
+
 }
