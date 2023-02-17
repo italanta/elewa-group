@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div class="cards" >
-
+    <div class="cards" *ngFor="let card of cards">
+        <elewa-group-elewa-vertical-icon-and-text [icon]="card.icon" [title]="card.title" [description]="card.description"></elewa-group-elewa-vertical-icon-and-text>
     </div>
 </div>
