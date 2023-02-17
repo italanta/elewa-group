@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-inferrable-types */
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
