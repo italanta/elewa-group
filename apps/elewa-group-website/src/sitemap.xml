@@ -36,14 +36,14 @@
   </url>
 
   <url>
-    <loc>http://elewa-group.com/impact</loc>
+    <loc>http://elewa-group.com/social-impact</loc>
     <lastmod>2023-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://elewa-group.com/impact/en</loc>
+    <loc>http://elewa-group.com/social-impact/en</loc>
     <lastmod>2023-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -86,6 +86,20 @@
 
   <url>
     <loc>http://elewa-group.com/contact/en</loc>
+    <lastmod>2023-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://elewa-group.com/invest</loc>
+    <lastmod>2023-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://elewa-group.com/invest/en</loc>
     <lastmod>2023-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
