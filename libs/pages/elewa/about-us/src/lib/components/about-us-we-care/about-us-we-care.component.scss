@@ -1,0 +1,44 @@
+.we-care-container {
+  background-color: var(--elewa-group-website-color-card);
+  .inner-container {
+    padding: 0px 100px;
+    .title {
+      font-weight: var(--elewa-group-website-font-weight-title);
+      font-family: var(--elewa-group-website-dmsans-regular);
+      font-size: var(--elewa-group-website-font-size-hero-heading);
+      margin-bottom: 1%;
+    }
+
+    .description {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      gap: 3%;
+      .mission,
+      .investments {
+        font-size: var(--elewa-group-website-font-size-title-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+      }
+    }
+  }
+
+  .card-section {
+    margin-top: 5%;
+    display: flex;
+    .cards {
+      width: 40%;
+      padding: 30px;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      h2 {
+        margin-bottom: 1%;
+        font-family: var(--elewa-group-website-dmsans-regular);
+      }
+      p {
+        margin-bottom: 20px;
+        font-family: var(--elewa-group-website-dmsans-regular);
+      }
+    }
+  }
+}
