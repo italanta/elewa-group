@@ -28,6 +28,7 @@ import { SocialImpactComponent } from './social-impact/social-impact.component';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
+    BannersModule,
     HomeRoutingModule
   ],
   declarations: [
@@ -35,16 +36,21 @@ import { SocialImpactComponent } from './social-impact/social-impact.component';
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
     SocialImpactComponent,
-  ],
-  exports: [
-    HomePageComponent,
-    HomeHeroSectionComponent,
-    HomeJobsSectionComponent,
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
     PrevDirective
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
+  exports: [
+    HomePageComponent,
+    HomeHeroSectionComponent,
+    HomeJobsSectionComponent,
+    SocialImpactComponent,
+    TeamAndPartnersComponent,
+    ActivitySectionComponent,
+    NextDirective,
+    PrevDirective
+  ],
+  // exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
 })
 export class HomePageModule { }
