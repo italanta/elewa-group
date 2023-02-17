@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app.routing';
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,6 +19,7 @@ import { AppRoutingModule } from './app.routing';
 
     RouterModule,
     ScullyLibModule,
+
     AppRoutingModule
   ],
   providers: [],
