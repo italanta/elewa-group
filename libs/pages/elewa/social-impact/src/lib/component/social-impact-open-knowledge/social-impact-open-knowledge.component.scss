@@ -1,8 +1,9 @@
 .open-knowledge{
-    color: white;
-    font-size: var(--elewa-group-website-font-size-elewa-text);
-    font-family: var(--elewa-group-website-dmsans-regular);
     display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: var(--elewa-group-website-font-size-title);
+    font-family: var(--elewa-group-website-dmsans-regular);
     justify-content: center;
     align-items: center;
     white-space: pre-line;
