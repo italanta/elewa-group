@@ -22,10 +22,10 @@ careers = 0;
 careersCountStop = setInterval(() => {
   this.careers++;
 
-  if (this.careers == 1300) {
+  if (this.careers == 13000) {
     clearInterval(this.careersCountStop)
   }
-}, 5)
+}, 1000)
 
 projectCount = 0;
 
