@@ -10,8 +10,8 @@ export class NextDirective {
   @HostListener('click')
   nextFunction(){
     const elm = this.el.nativeElement.parentElement.parentElement.children[1];
-    const team = elm.getElementsByClassName("team");
-    elm.append(team[0]);
-    console.log(team);
+    const carousel = elm.getElementsByClassName("carousel");
+    elm.append(carousel[0]);
+    console.log(carousel);
   }
 }
