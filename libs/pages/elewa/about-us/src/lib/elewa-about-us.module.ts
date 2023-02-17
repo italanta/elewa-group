@@ -38,6 +38,6 @@ import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-w
     ElewaAboutUsLocationSectionComponent,
     AboutUsWeCareComponent,
   ],
-  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent],
+  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent, AboutUsWeCareComponent],
 })
 export class AboutUsModule {}
