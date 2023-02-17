@@ -9,21 +9,33 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { ActivitySectionComponent } from './components/activity-section/activity-section.component';
+import { CardsModule } from '@elewa-group/features/components/cards';
+import { PrevDirective } from './components/Directives/prev.directive';
+import { NextDirective } from './components/Directives/next.directive';
+
 import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
+
+
 @NgModule({
-  imports: [CommonModule, LayoutModule, HomeRoutingModule, ButtonsModule],
+  imports: [
+    CommonModule,
+    LayoutModule,
+    CardsModule,
+    ButtonsModule,
+
+    HomeRoutingModule
+  ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    ActivitySectionComponent,
+    NextDirective,
+    PrevDirective,
     HomeImpactSectionComponent,
-  ],
-  exports: [
-    HomePageComponent,
-    HomeHeroSectionComponent,
-    HomeJobsSectionComponent,
-    HomeImpactSectionComponent,
+    
   ],
 })
 export class HomePageModule {}
