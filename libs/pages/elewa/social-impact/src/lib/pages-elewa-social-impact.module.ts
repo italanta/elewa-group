@@ -9,5 +9,6 @@ import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/
 @NgModule({
   imports: [CommonModule, SocialImpactRoutingModule],
   declarations: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent, ElewaGroupImageAndTextBannerComponent],
+  exports: [SocialImpactPageComponent]
 })
 export class SocialImpactModule {}
