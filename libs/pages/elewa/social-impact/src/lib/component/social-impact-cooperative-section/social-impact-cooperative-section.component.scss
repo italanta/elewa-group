@@ -3,4 +3,14 @@
     flex-direction: row;
     font-size: var(--elewa-group-website-font-size-title);
     font-family: var(--elewa-group-website-dmsans-regular);
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
+@media (max-width: 767px) {
+    .cooperative-section{
+        flex-direction: column;
+    }
+  }
