@@ -1,5 +1,6 @@
 <div class="we-care-container">
-    <p class="title">We care!</p>
+   <div class="inner-container">
+     <p class="title">We care!</p>
     <div class="description">
         <div class="mission">
             <p>
@@ -22,7 +23,12 @@
         </div>
     </div>
 
-    <div class="cards" *ngFor="let card of cards">
-        <elewa-group-elewa-vertical-icon-and-text [icon]="card.icon" [title]="card.title" [description]="card.description"></elewa-group-elewa-vertical-icon-and-text>
+   <div class="card-section">
+     <div class="cards" *ngFor="let card of cards">
+        <img [src] = "card.icon">
+        <h2>{{card.title}}</h2>
+        <p>{{card.description}}</p>
     </div>
+   </div>
+   </div>
 </div>
