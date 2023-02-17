@@ -38,7 +38,7 @@ import { HomeRoutingModule } from './home.routing';
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
 
-    HomeImpactSectionComponent
+    HomeImpactSectionComponent,
 
     TeamAndPartnersComponent,
     ActivitySectionComponent,
