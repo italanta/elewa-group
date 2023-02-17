@@ -5,9 +5,8 @@
     place-items: center;
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-regular);
-    border: solid 2rem var( --elewa-group-website-team-and-members-color-white);
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #text-and-image-banner .banner-container {
@@ -57,9 +56,8 @@ $breakpoint-low-res-desktops: 1360px;
 
 @media (max-width: $breakpoint-low-res-desktops){
     #text-and-image-banner {
-        border: solid 1.5rem var(--elewa-group-website-team-and-members-color-white);
-        border-bottom-left-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     #text-and-image-banner {
