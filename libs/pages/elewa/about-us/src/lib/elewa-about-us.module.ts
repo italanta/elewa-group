@@ -22,9 +22,9 @@ import { UiListsModule } from '@elewa-group/features/components/ui-lists';
     NextDirective,
     PrevDirective,
     AboutUsCultureComponent,
-    AboutUsPageComponent,
     AboutUsHistoryCarouselComponent,
+    AboutUsPageComponent,
   ],
-  exports: [TeamMembersCarouselComponent],
+  exports: [TeamMembersCarouselComponent,AboutUsHistoryCarouselComponent],
 })
 export class AboutUsModule {}
