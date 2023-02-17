@@ -9,6 +9,7 @@ import { HomeHeroSectionComponent } from './components/home-hero-section/home-he
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { HomeRoutingModule } from './home.routing';
+import { HomePageLanderComponent} from './pages/home-page-lander/home-page-lander.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +21,8 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    HomePageLanderComponent
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent],
+  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent,HomePageLanderComponent],
 })
 export class HomePageModule {}
