@@ -1,17 +1,17 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[elewaGroupNext]'
+  selector: '[elewaGroupPrev]'
 })
-export class NextDirective {
+export class PrevDirective {
 
   constructor(private el:ElementRef) {}
 
   @HostListener('click')
   nextFunction(){
     const elm = this.el.nativeElement.parentElement.parentElement.children[1];
-    const team = elm.getElementsByClassName("team");
-    elm.append(team[0]);
-    console.log(team);
+    const carousel = elm.getElementsByClassName("carousel");
+    elm.prepend(carousel[carousel.length - 1]);
+    console.log(carousel);
   }
 }
