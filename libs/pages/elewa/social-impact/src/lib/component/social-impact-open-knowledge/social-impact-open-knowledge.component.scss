@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     white-space: pre-line;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @media (max-width: 767px) {
