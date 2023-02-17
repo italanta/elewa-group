@@ -7,3 +7,12 @@ import { PeopleSectionComponent } from './component/people-section/people-sectio
   declarations: [PeopleSectionComponent],
 })
 export class PagesElewaSocialImpactModule {}
+import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
+
+import { SocialImpactRoutingModule } from './social-impact.routing';
+
+@NgModule({
+  imports: [CommonModule,SocialImpactRoutingModule],
+  declarations: [SocialImpactPageComponent],
+})
+export class SocialImpactModule {}

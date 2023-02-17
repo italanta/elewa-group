@@ -13,6 +13,5 @@
     "jest.config.ts",
     "src/**/*.test.ts"
   ],
-  // "include": ["src/**/*.ts"]
-  "include": ["src/**/*.ts", "../news/src/lib/pages-elewa-news.module.ts"]
+  "include": ["src/**/*.ts"]
 }
