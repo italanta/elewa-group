@@ -1,22 +1,28 @@
-<p>
-  Elewa is a mission-driven organization. We make use of our cooperative and shared culture to mission-driven
-  the needle for the development of people and our environment. We care for our own, but also
-  care deeply about the context surrounding us.
-  Our investments are therefore not limited to internal ones but contribute heavily to our community and
-  environment. From training the next scout leaders on sustainable practices, to bridging the employment gap
-  for junior software developers"
- </p>
+<div class="container">
+  <h1>We care!</h1>
+  <div class="row">
+      <p class="column">
+       Elewa is a mission-driven organization. We make <br> use of our cooperative and shared culture to drive <br>
+       the needle for the development of people and our <br> environment. We care for our own, but also
+       care <br> deeply about the context surrounding us.
+      </p>
 
- <div *ngFor="let card of cards">
-   <elewa-group-elewa-vertical-icon-and-text icon="{{ card.icon }}" title="{{ card.title }}" description="{{ card.description}}">
+      <p class="column">
+        Our investments are therefore not limited to <br> internal ones but contribute heavily to our <br> community and
+        environment. From training the <br> next scout leaders on sustainable practices, to <br> bridging the employment gap
+        for junior software developers"
+      </p>
+  </div>
 
-  </elewa-group-elewa-vertical-icon-and-text>
-  <!-- <img src="{{ card.icon }}" alt="" /> -->
-   
- </div>
+  <div class="bottom">
+    <div class="card-roww" *ngFor="let card of cards">
+      <elewa-group-elewa-vertical-icon-and-text class="card-column" icon="{{ card.icon }}" title="{{ card.title }}" description="{{ card.description}}">
 
-  
-  
-    
-    
-  
+      </elewa-group-elewa-vertical-icon-and-text>
+
+    </div>
+  </div>
+</div>
+
+
+
