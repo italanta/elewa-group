@@ -20,6 +20,8 @@ import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
 import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-we-care.component';
+import { ElewaVerticalIconAndTextComponent } from 'libs/features/components/cards/src/lib/cards/elewa-vertical-icon-and-text/elewa-vertical-icon-and-text.component';
+import { CardsModule } from '@elewa-group/features/components/cards';
 
 @NgModule({
   imports: [
@@ -28,6 +30,7 @@ import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-w
     CommonModule,
     LayoutModule,
     AboutUsRoutingModule,
+    CardsModule
   ],
   declarations: [
     TeamMembersCarouselComponent,
@@ -38,6 +41,6 @@ import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-w
     ElewaAboutUsLocationSectionComponent,
     AboutUsWeCareComponent,
   ],
-  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent, AboutUsWeCareComponent],
+  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent, AboutUsWeCareComponent, ElewaVerticalIconAndTextComponent],
 })
 export class AboutUsModule {}
