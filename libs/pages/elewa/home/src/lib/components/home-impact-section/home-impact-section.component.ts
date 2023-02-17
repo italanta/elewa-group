@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-impact-section.component.scss'],
 })
 export class HomeImpactSectionComponent {
-  message1 = 'Learn more';
+  message1 = '  Learn more  ';
   message2 = 'Become an angel investor';
   light = 'light'
 

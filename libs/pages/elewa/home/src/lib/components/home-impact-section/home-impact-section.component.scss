@@ -50,7 +50,7 @@
 .btn {
   display: flex;
   padding-top: 50px;
-  margin: 0%;
+ 
 
 }
 
@@ -62,14 +62,14 @@
   .container {
     height: fit-content;
     border: 5px;
-    max-width: 100%;
+    width: auto;
     padding-top: 10%;
   }
 
   .items {
     display: block;
     gap: 0;
-    padding: 0 10px;
+    padding: 0 0px;
     justify-content: center;
     display: -webkit-box;
     display: -moz-box;
@@ -98,14 +98,17 @@
   }
 
   .card1 {
-    padding-left: 10px;
-    padding-top: 10px;
+    margin: 20px 20px;
+    padding-left: 0;
   }
 
   .img img {
-    width: 100%;
-    height: 100%;
+    width: 670px;
+    height: 700px;
     border-radius: 30px;
+    margin: 20px 20px;
+  
+    
   }
 
   .p1 {
@@ -134,21 +137,24 @@
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-weight-subtitle);
   }
+  .items {
 
   .btn {
     display: block;
     margin-left: 5%;
     padding-top: 50px;
     margin-right: 5%;
+    width: 80%;
+    padding-left: 120px;
+    padding-right: 120px;
+    }
   }
 
-  .btn1 {
-    margin-left: 15%;
-  }
 
   .btn2 {
     margin: 20px 0;
     padding-left: 0;
+
   }
 
 }
