@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 
 import { ElewaAboutUsLocationSectionComponent } from './components/elewa-about-us-location-section/elewa-about-us-location-section.component';
 
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
 
-import { ButtonsModule } from "@elewa-group/features/components/buttons"
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { TeamMembersCarouselComponent } from './components/team-members-carousel/team-members-carousel.component';
@@ -19,6 +19,7 @@ import { NextDirective } from './directives/next.directive';
 import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
+import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-we-care.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { AboutUsRoutingModule } from './about-us.routing';
     ButtonsModule,
     CommonModule,
     LayoutModule,
-    AboutUsRoutingModule
+    AboutUsRoutingModule,
   ],
   declarations: [
     TeamMembersCarouselComponent,
@@ -34,11 +35,9 @@ import { AboutUsRoutingModule } from './about-us.routing';
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
-    ElewaAboutUsLocationSectionComponent
+    ElewaAboutUsLocationSectionComponent,
+    AboutUsWeCareComponent,
   ],
-  exports: [
-    TeamMembersCarouselComponent,
-    ElewaAboutUsLocationSectionComponent
-  ],
+  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent],
 })
 export class AboutUsModule {}
