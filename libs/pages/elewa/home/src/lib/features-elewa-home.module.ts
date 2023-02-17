@@ -16,6 +16,10 @@ import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
 
+import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+
+
 
 @NgModule({
   imports: [
@@ -23,13 +27,17 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ButtonsModule
   ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    ActivitySectionComponent,
+    TeamAndPartnersComponent,
+    HomeImpactSectionComponent
   ],
-  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
+  exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent],
 })
 export class HomePageModule { }
