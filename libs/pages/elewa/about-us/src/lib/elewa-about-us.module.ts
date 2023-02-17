@@ -14,6 +14,8 @@ import { PrevDirective } from './directives/prev.directive';
 import { AboutUsRoutingModule } from './about-us.routing';
 import { HistoryCarouselComponent } from './components/history-carousel/history-carousel.component';
 import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
+import { AboutUsHistoryCarouselComponent } from './components/about-us-history-carousel/about-us-history-carousel.component';
+import { ElewaHorizontalTimelineCarouselComponent } from 'libs/features/components/ui-lists/src/lib/elewa-horizontal-timeline-carousel/elewa-horizontal-timeline-carousel.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, AboutUsRoutingModule],
@@ -24,8 +26,10 @@ import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/
     AboutUsCultureComponent,
     AboutUsPageComponent,
     HistoryCarouselComponent,
-    ElewaGroupImageAndTextBannerComponent
+    ElewaGroupImageAndTextBannerComponent,
+    AboutUsHistoryCarouselComponent,
+    ElewaHorizontalTimelineCarouselComponent
   ],
-  exports: [TeamMembersCarouselComponent, HistoryCarouselComponent],
+  exports: [TeamMembersCarouselComponent, HistoryCarouselComponent, AboutUsHistoryCarouselComponent],
 })
 export class AboutUsModule {}
