@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--elewa-group-website-dmsans-regular);
 
   .impact-section__description {
@@ -26,11 +26,56 @@
   .impact-section__photo img {
     max-height: max(70vh, 500px);
     max-width: 45vw;
-
   }
 
 }
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+  .impact-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: center;
+    font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+    font-family: var(--elewa-group-website-dmsans-regular);
+
+    .impact-section__description {
+      width: 50%;
+    }
+  
+    .impact-section__description p {
+      padding-bottom: 0;
+      font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+    }
+  
+    .impact-section__description p:nth-child(1) {
+      width: 100%;
+      font-size: var(--elewa-group-website-font-size-title);
+      padding-bottom: 20px;
+    }
+
+    .impact-section__buttons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .impact-section__photo img {
+      width: calc(min(90vw, 480px) - 3rem);
+      max-width: none;
+      max-height: none;
+    }
+
+  }
+}
+
+@media (max-width: 376px) {
+  .impact-section{
+
+    .impact-section__description {
+      width: 70%;
+    }
+
+  }
 }
