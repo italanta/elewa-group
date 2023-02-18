@@ -1,19 +1,27 @@
 .container{
   background-color: #f4f4f4;
+  width: 100%;
+  padding-left: 65px;
+  margin-bottom: .5rem;
+  padding-bottom: 2px;
+}
+
+.container h1{
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-size: var(--elewa-group-website-font-size-title);
 }
 
 .row {
   display: flex;
-
 }
 
 
- .row p {
-		margin-bottom: 20px;
-		font-family: var(--elewa-group-website-dmsans-medium);
+ .column p {
+		/* margin-bottom: 20px; */
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-size-description);
 	}
-
-
 
 .column {
   flex: 25%;
@@ -32,44 +40,18 @@
   /* width: 30%; */
   margin-top: 10%;
 }
-/* .card-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.card-column {
-  width: 30%;
+.card-roww title{
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-weight: var(--elewa-group-website-font-weight-title);
+  font-size: var(--elewa-group-website-font-size-title);
 }
-
-.card-column:nth-child(3n+1) {
-  margin-right: 5%;
-}
-
-.card-column:nth-child(3n) {
-  margin-left: 5%;
-}
+/*
 
 @media (max-width: 768px) {
-  .card-column {
-    width: 100%;
-    margin: 0 0 20px 0;
-  }
 
-  .card-column:nth-child(3n+1) {
-    margin-right: 0;
-  }
-
-  .card-column:nth-child(3n) {
-    margin-left: 0;
-  }
 } */
 
 
 /* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}  */
+  */
