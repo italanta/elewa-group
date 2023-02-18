@@ -15,5 +15,5 @@ export class SocialImpactCooperativeSectionComponent {
                             communities.`
   @Input() titleText = `A cooperative mindset`
   @Input() imagePlacement = 'right'
-  @Input() backgroundColor = '#fffdd0'
+  @Input() backgroundColor = '#d3d3d3'
 }
