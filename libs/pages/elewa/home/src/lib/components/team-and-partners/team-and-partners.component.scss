@@ -1,5 +1,14 @@
+.team-image {
+	height: auto;
+	min-width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
 img {
-    height: auto;
-    width: 100%;
-    border-radius: 2rem;
+	height: auto;
+	width: 90%;
+	margin: auto;
+	border-radius: 2rem;
 }
