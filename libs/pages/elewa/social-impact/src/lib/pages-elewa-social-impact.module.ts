@@ -4,8 +4,11 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 
 import { SocialImpactRoutingModule } from './social-impact.routing';
 
+import { LayoutModule } from '@elewa-group/elements/layout';
+
+
 @NgModule({
-  imports: [CommonModule,SocialImpactRoutingModule],
+  imports: [CommonModule,SocialImpactRoutingModule, LayoutModule],
   declarations: [SocialImpactPageComponent],
 })
 export class SocialImpactModule {}
