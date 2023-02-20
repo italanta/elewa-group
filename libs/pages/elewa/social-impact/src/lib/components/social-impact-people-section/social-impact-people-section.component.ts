@@ -21,10 +21,10 @@ export class SocialImpactPeopleSectionComponent {
   careersCountStop = setInterval(() => {
     this.careers++;
 
-    if (this.careers == 644) {
+    if (this.careers == 13) {
       clearInterval(this.careersCountStop)
     }
-  }, 5)
+  }, 200)
 
   projectCount = 0;
 

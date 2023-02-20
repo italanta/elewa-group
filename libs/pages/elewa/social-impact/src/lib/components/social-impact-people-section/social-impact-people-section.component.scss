@@ -23,19 +23,24 @@
     font-family: var(--elewa-group-website-dmsans-regular);
  }
 
- .sections{ 
+ .counts{ 
     display: flex;
     flex-direction: column;
+    margin: 5px 0;
 }  
 
  @media only screen and (max-width: 621px) {   
     .stats {
-    padding-left: 2rem;  
-    width: 100%;
-    font-size: 17px;
-    } 
-    .values{
-    justify-content: center;
-    text-align: center;
-    }  
+      padding: 40px 50px;  
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 0;
+      align-items: center;
+      font-size: 16px;
+      margin: 0;
+    }
+    .counts { 
+      width: 100%;
+   }  
  }
