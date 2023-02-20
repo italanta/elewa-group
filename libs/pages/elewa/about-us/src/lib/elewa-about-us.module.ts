@@ -20,6 +20,9 @@ import { PrevDirective } from './directives/prev.directive';
 
 import { AboutUsRoutingModule } from './about-us.routing';
 
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { ElewaHorizontalTimelineCarouselComponent } from 'libs/features/components/ui-lists/src/lib/elewa-horizontal-timeline-carousel/elewa-horizontal-timeline-carousel.component';
+
 @NgModule({
   imports: [
     GoogleMapsModule,
@@ -34,7 +37,8 @@ import { AboutUsRoutingModule } from './about-us.routing';
     PrevDirective,
     AboutUsCultureComponent,
     AboutUsPageComponent,
-    ElewaAboutUsLocationSectionComponent
+    ElewaAboutUsLocationSectionComponent,
+    ElewaHorizontalTimelineCarouselComponent
   ],
   exports: [
     TeamMembersCarouselComponent,
