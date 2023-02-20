@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';
 
 import { ElewaAboutUsLocationSectionComponent } from './components/elewa-about-us-location-section/elewa-about-us-location-section.component';
 
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
 
-import { ButtonsModule } from "@elewa-group/features/components/buttons"
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { TeamMembersCarouselComponent } from './components/team-members-carousel/team-members-carousel.component';
@@ -22,6 +22,7 @@ import { AboutUsRoutingModule } from './about-us.routing';
 
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ElewaHorizontalTimelineCarouselComponent } from 'libs/features/components/ui-lists/src/lib/elewa-horizontal-timeline-carousel/elewa-horizontal-timeline-carousel.component';
+import { TimelineCarouselComponent } from './components/timeline-carousel/timeline-carousel.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { ElewaHorizontalTimelineCarouselComponent } from 'libs/features/componen
     ButtonsModule,
     CommonModule,
     LayoutModule,
-    AboutUsRoutingModule
+    AboutUsRoutingModule,
   ],
   declarations: [
     TeamMembersCarouselComponent,
@@ -38,11 +39,9 @@ import { ElewaHorizontalTimelineCarouselComponent } from 'libs/features/componen
     AboutUsCultureComponent,
     AboutUsPageComponent,
     ElewaAboutUsLocationSectionComponent,
-    ElewaHorizontalTimelineCarouselComponent
+    ElewaHorizontalTimelineCarouselComponent,
+    TimelineCarouselComponent,
   ],
-  exports: [
-    TeamMembersCarouselComponent,
-    ElewaAboutUsLocationSectionComponent
-  ],
+  exports: [TeamMembersCarouselComponent, ElewaAboutUsLocationSectionComponent],
 })
 export class AboutUsModule {}
