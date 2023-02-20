@@ -5,6 +5,7 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 import { SocialImpactRoutingModule } from './social-impact.routing';
 import { SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
 
 @NgModule({
