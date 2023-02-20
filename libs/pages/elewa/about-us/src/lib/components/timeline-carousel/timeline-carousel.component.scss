@@ -1,0 +1,20 @@
+.wrapper{
+    padding: 10px;
+    padding-top: 50px;
+}
+.title{
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    padding-left: 100px;
+}
+.paragraph{
+    text-align: center;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var(--elewa-group-website-font-size-title);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+span{
+    font-family: var(--elewa-group-website-dmsans-bold);
+}
