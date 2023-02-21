@@ -5,10 +5,15 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 import { SocialImpactRoutingModule } from './social-impact.routing';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/banners/src/lib/banners/elewa-group-image-and-text-banner/elewa-group-image-and-text-banner.component';
+import { SocialImpactPeopleSectionComponent } from './social-impact-people-section/social-impact-people-section.component';
 
 @NgModule({
-  imports: [CommonModule,SocialImpactRoutingModule],
-  declarations: [SocialImpactPageComponent, ElewaGroupImageAndTextBannerComponent],
-  exports: [SocialImpactPageComponent]
+  imports: [CommonModule, SocialImpactRoutingModule],
+  declarations: [
+    SocialImpactPageComponent,
+    ElewaGroupImageAndTextBannerComponent,
+    SocialImpactPeopleSectionComponent,
+  ],
+  exports: [SocialImpactPageComponent],
 })
 export class SocialImpactModule {}
