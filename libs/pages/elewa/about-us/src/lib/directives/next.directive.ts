@@ -14,5 +14,4 @@ export class NextDirective {
     elm.append(team[0]);
     console.log(team);
   }
-
 }
