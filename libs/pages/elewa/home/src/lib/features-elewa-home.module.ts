@@ -20,7 +20,7 @@ import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
 
-import { SocialImpactComponent } from './social-impact/social-impact.component';
+import { CooperativeSectionComponent } from './components/cooperative-section/cooperative-section.component';
  
 @NgModule({
   imports: [
@@ -35,7 +35,7 @@ import { SocialImpactComponent } from './social-impact/social-impact.component';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
-    SocialImpactComponent,
+    CooperativeSectionComponent,
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
@@ -45,12 +45,12 @@ import { SocialImpactComponent } from './social-impact/social-impact.component';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
-    SocialImpactComponent,
+    CooperativeSectionComponent,
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
     PrevDirective
   ],
-  // exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
+ 
 })
 export class HomePageModule { }
