@@ -19,7 +19,9 @@ img{
 .main{
     display: flex;
     padding: 6em;
-    gap: 100px;
+    gap: 200px;
+    margin : 6em; 
+    flex-grow: unset;
 }
 
 
