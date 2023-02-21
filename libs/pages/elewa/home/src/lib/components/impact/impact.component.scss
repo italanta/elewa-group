@@ -97,6 +97,9 @@ $breakpoint-low-res-desktops: 1360px;
       display: flex;
       flex-direction: column;
       padding-top: 20px;
+      .first{
+        width: 100%;
+      }
        .second{
         margin-top: 10px;
       }
