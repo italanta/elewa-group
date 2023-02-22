@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'elewa-group-home-jobs-section',
@@ -11,7 +10,6 @@ export class HomeJobsSectionComponent {
   @Input() callToAction = 'investing';
   @Input() url = 'https://italanta.net/';
   @Input() textAlign = 'center';
-  constructor(private router: Router) {}
   // Function to navigate when call to action link is clicked
   navigate() {
     window.location.href = this.url;
