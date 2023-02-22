@@ -1,8 +1,8 @@
 <div class="jobs-section-wrapper">
-  <section class="home-jobs-section" [ngStyle]="{ textAlign: textAlign}">
+  <section class="home-jobs-section" [ngStyle]="{ textAlign: textAlign }">
     <span>
       {{ message }}
-      <a class="homeLink" routerLink="{{ url }}">{{callToAction}}</a>
+      <span class="homeLink" (click)="navigate(url)">{{ callToAction }}</span>
     </span>
   </section>
 </div>
