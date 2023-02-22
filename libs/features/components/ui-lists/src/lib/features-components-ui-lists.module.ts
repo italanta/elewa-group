@@ -11,8 +11,13 @@ import { ElewaGroupVerticalListAllComponent } from './elewa-group-vertical-list-
   declarations: [
     ElewaGroupVerticalListOneComponent,
     ElewaGroupHorizontalListOrgsComponent,
+    ElewaGroupVerticalListAllComponent,
+  ],
+  exports: [
+    ElewaGroupVerticalListOneComponent,
+    ElewaGroupHorizontalListOrgsComponent,
+    ElewaGroupVerticalListAllComponent,
     ElewaHorizontalTimelineCarouselComponent
   ],
-  exports: [ElewaGroupVerticalListOneComponent, ElewaGroupHorizontalListOrgsComponent, ElewaHorizontalTimelineCarouselComponent],
 })
 export class UiListsModule { }
