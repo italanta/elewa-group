@@ -3,6 +3,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { CardsModule } from '@elewa-group/features/components/cards';
+import { SocialImpactModule } from '@elewa-group/pages/elewa/social-impact'
 
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
@@ -22,7 +23,8 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SocialImpactModule
   ],
   declarations: [
     HomePageComponent,
