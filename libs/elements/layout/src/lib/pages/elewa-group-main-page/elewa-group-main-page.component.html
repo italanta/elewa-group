@@ -7,11 +7,75 @@
     <router-outlet></router-outlet>
   </div>
   <div class="footer">
-    <elewa-group-footer>
-      <div footer class="footer-content">
+    <elewa-group-footer [ngSwitch]="route">
+      <div footer class="footer-content" *ngSwitchCase="'/home/en'">
         <h4>do you want to be part of our mission?</h4>
         <div class="mission">
-          <elewa-group-button-with-animation [message]="'Become an investor'" [mode]="'dark'" [action]="'/'"></elewa-group-button-with-animation>
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/about/en'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/activities/en'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/invest/en/'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/social-impact/en'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/news/en'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div footer class="footer-content" *ngSwitchCase="'/contact/en'">
+        <h4>do you want to be part of our mission?</h4>
+        <div class="mission">
+          <elewa-group-button-with-animation
+            [message]="'Become an investor'"
+            [mode]="'dark'"
+            [action]="'/'"
+          ></elewa-group-button-with-animation>
         </div>
       </div>
     </elewa-group-footer>
