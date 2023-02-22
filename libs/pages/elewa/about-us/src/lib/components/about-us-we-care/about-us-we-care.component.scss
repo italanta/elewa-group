@@ -1,43 +1,84 @@
-.we-care-container {
+.background-holder {
   background-color: var(--elewa-group-website-color-card);
-  .inner-container {
-    padding: 0px 100px;
-    .title {
-      font-weight: var(--elewa-group-website-font-weight-title);
-      font-family: var(--elewa-group-website-dmsans-regular);
-      font-size: var(--elewa-group-website-font-size-hero-heading);
-      margin-bottom: 1%;
+  border-radius: 0px 0px 30px 30px;
+
+  .we-care-container {
+    margin: 0% 5%;
+
+    .inner-container {
+      padding: 0% 3%;
+
+      .heading {
+        font-weight: var(--elewa-group-website-font-weight-title);
+        font-family: var(--elewa-group-website-dmsans-regular);
+        font-size: var(--elewa-group-website-font-size-hero-heading);
+        padding-top: 20px;
+      }
+
+      .description {
+        display: flex;
+        flex-direction: row;
+        gap: 30%;
+        width: 90%;
+        font-size: var(--elewa-group-website-font-size-description);
+
+        .mission,
+        .investments {
+          font-size: var(--elewa-group-website-font-size-title-medium);
+          font-family: var(--elewa-group-website-dmsans-regular);
+        }
+      }
     }
 
-    .description {
-      display: grid;
-      grid-template-columns: 45% 45%;
-      gap: 3%;
-      .mission,
-      .investments {
-        font-size: var(--elewa-group-website-font-size-title-medium);
-        font-family: var(--elewa-group-website-dmsans-regular);
+    .card-section {
+      margin-top: 2%;
+      display: flex;
+      gap: 5%;
+
+      .cards {
+        padding: 30px 0px;
+        width: 50%;
+
+        img {
+          height: 100px;
+          width: 100px;
+        }
+
+        h2,
+        p {
+          margin-bottom: 1%;
+          font-family: var(--elewa-group-website-dmsans-regular);
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .heading {
+    font-family: var(--elewa-group-website-dmsans-bold) !important;
+    font-size: var(--elewa-group-website-font-size-title) !important;
+  }
+
+  .description {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--elewa-group-website-font-size-description-medium);
+
+    .mission {
+      margin-bottom: 3%;
     }
   }
 
   .card-section {
-    margin-top: 5%;
-    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+
     .cards {
-      width: 40%;
-      padding: 30px;
       img {
-        height: 100px;
-        width: 100px;
-      }
-      h2 {
-        margin-bottom: 1%;
-        font-family: var(--elewa-group-website-dmsans-regular);
-      }
-      p {
-        margin-bottom: 20px;
-        font-family: var(--elewa-group-website-dmsans-regular);
+        height: 130px !important;
+        width: 130px !important;
       }
     }
   }
