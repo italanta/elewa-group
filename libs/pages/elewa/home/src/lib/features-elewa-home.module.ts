@@ -10,6 +10,7 @@ import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jo
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
 import { ActivitySectionComponent } from './components/activity-section/activity-section.component';
 import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
+import { HomePageLanderComponent} from './components/home-page-lander/home-page-lander.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
@@ -17,7 +18,6 @@ import { PrevDirective } from './directives/prev.directive';
 import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
-
 
 @NgModule({
   imports: [
@@ -35,9 +35,11 @@ import { HomeRoutingModule } from './home.routing';
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     HomeImpactSectionComponent,
+    HomePageLanderComponent,
     NextDirective,
     PrevDirective,
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, HomeImpactSectionComponent, NextDirective, PrevDirective],
+
 })
 export class HomePageModule { }
