@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './elewa-invest-hero.component.html',
   styleUrls: ['./elewa-invest-hero.component.scss'],
 })
-export class ElewaInvestHeroComponent {}
+export class ElewaInvestHeroComponent {
+  subtitle = 'Trade, not aid';
+  title = 'Southern innovations that address global problems';
+  footerText = '';
+}
