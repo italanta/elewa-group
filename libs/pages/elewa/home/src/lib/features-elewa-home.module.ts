@@ -2,7 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
+
+import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { CardsModule } from '@elewa-group/features/components/cards';
+
 
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
@@ -21,18 +25,26 @@ import { HomeRoutingModule } from './home.routing';
   imports: [
     CommonModule,
     LayoutModule,
+
+    ButtonsModule,
+
     NgOptimizedImage,
     CardsModule,
+
     HomeRoutingModule
   ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+
+    HomeImpactSectionComponent,
+
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
     PrevDirective
+
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent, HomeJobsSectionComponent, TeamAndPartnersComponent, ActivitySectionComponent, NextDirective, PrevDirective],
 })
