@@ -10,8 +10,6 @@
     color: var(--elewa-group-website-color-card);
     background-color: var(--elewa-group-website-color-primary);
     cursor: pointer;
-    min-width: 100%;
-    justify-content: center;
 }
 
 .button-with-animation span{
@@ -19,7 +17,6 @@
     transition: all 0.3s;
     transition-delay: 0.05;
     letter-spacing: 0px;
-    margin-left: auto;
 }
 
 .button-with-animation .right-arrow-container{
@@ -32,8 +29,6 @@
     align-items: center;
     left: 0%;
     transition: all 0.3s;
-    margin-left: auto;
-    margin-right: 0;
 }
 
 .button-with-animation:hover  .right-arrow-container{
