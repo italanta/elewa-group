@@ -5,6 +5,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
 import { BannersModule } from '@elewa-group/features/components/banners';
 
 import { SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
+import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
@@ -14,6 +15,7 @@ import { SocialImpactRoutingModule } from './social-impact.routing';
   imports: [CommonModule, LayoutModule, BannersModule, SocialImpactRoutingModule],
   declarations: [
     SocialImpactPageComponent,
+    SocialImpactHeroSectionComponent,
     SocialImpactPeopleSectionComponent,
   ],
   exports: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent],
