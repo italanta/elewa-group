@@ -12,8 +12,24 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
-    .container{
-        flex-direction: column;
+/* styles for screens smaller than 768px (mobile devices) */
+@media only screen and (max-width: 767px) {
+    .component {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .component imageUrl {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .component titleText paragraphTexts{
+      font-size: 1rem;
+      margin-top: 20px;
+      text-align: center;
     }
   }
