@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--elewa-group-website-about-us-history-background);
+  font-family: var(--elewa-group-website-dmsans-regular);
+
+  h1 {
+    margin-left: 100px;
+    padding: 90px 0px;
+    font-size: var(--elewa-group-website-font-size-hero-heading);
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
+  }
+
+  .container-2 {
+    font-size: 54px;
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+
+    .bold {
+      font-family: var(--elewa-group-website-dmsans-bold);
+    }
+  }
+
+  /* Add a media query for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .container-2 {
+      font-size: 36px;
+    }
+  }
+}
