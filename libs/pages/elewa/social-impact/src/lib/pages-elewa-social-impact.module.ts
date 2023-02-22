@@ -18,8 +18,9 @@ import { SocialImpactRoutingModule } from './social-impact.routing';
   declarations: [
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
+    SocialImpactPeopleSectionComponent,
     SocialImpactCooperativeSectionComponent,
   ],
-  exports: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent],
+  exports: [SocialImpactPageComponent],
 })
 export class SocialImpactModule {}
