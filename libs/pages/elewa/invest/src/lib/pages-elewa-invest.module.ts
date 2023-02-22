@@ -4,9 +4,10 @@ import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 
 import { InvestRoutingModule } from './invest.routing';
 import { ElewaInvestHeroComponent } from './components/elewa-invest-hero/elewa-invest-hero.component';
+import { LayoutModule } from '@elewa-group/elements/layout';
 
 @NgModule({
-  imports: [CommonModule, InvestRoutingModule],
+  imports: [CommonModule, InvestRoutingModule,LayoutModule],
   declarations: [InvestPageComponent, ElewaInvestHeroComponent],
 })
 export class InvestPageModule {}
