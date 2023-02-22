@@ -14,7 +14,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { PrevDirective } from './directives/prev.directive';
 import { NextDirective } from './directives/next.directive';
-
+import { SocialImpactModule } from  '@elewa-group/pages/elewa/social-impact';
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
@@ -23,7 +23,8 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SocialImpactModule
   ],
   declarations: [
     HomePageComponent,
