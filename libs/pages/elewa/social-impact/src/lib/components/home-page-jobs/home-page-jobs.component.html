@@ -1,8 +1,10 @@
-<section class="home-jobs-section">
-    <span >
-        Become part of the family
-    </span>
-    <span >
-        View <a class="homeLink" routerLink="/jobs">open opportunities.</a>
-    </span>
+
+<section id="home-jobs-section-container">
+    <div class="home-jobs-section">
+        <p class="align-{{align}}">{{message}}</p>
+        <p class="align-{{align}}">
+            {{callToActionIntroducer}}
+            <a class="homeLink" routerLink="/{{callToActionURL}}">{{callToAction}}</a>
+        </p>
+    </div>
 </section>

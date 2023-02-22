@@ -1,9 +1,14 @@
-.home-jobs-section{
+#home-jobs-section-container {
+    display: grid;
+    place-items: center;
     height:60vh;
+
+}
+
+.home-jobs-section{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
     font-family:var(--elewa-group-website-dmsans-regular);
 
     a {
@@ -11,9 +16,26 @@
         color: inherit;
         cursor: pointer;
     }
-    span{
+
+    p{
         margin:none;
+        display: inline-block;
+        width: 100%;
     }
+    p.align-left {
+        text-align: left;
+    }
+    p.align-right {
+        text-align: right;
+    }
+    p.align-center {
+        text-align: center;
+    }
+    p.align-justified {
+        text-align: justify;
+    }
+
+
     :last-child{
         font-size: 2.1rem;
     }
