@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './home-jobs-section.component.html',
   styleUrls: ['./home-jobs-section.component.scss'],
 })
-export class HomeJobsSectionComponent {}
+export class HomeJobsSectionComponent {
+  message = 'Become part of our mission. And start ';
+  callToAction = 'investing';
+  url = '/jobs';
+  textAlign = 'center';
+}
