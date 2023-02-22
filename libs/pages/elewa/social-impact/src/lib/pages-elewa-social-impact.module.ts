@@ -5,9 +5,10 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 import { SocialImpactRoutingModule } from './social-impact.routing';
 import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
+import { BannersModule } from '@elewa-group/features/components/banners';
 
 @NgModule({
-  imports: [CommonModule, LayoutModule, SocialImpactRoutingModule],
+  imports: [CommonModule, LayoutModule, SocialImpactRoutingModule, BannersModule],
   declarations: [
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
