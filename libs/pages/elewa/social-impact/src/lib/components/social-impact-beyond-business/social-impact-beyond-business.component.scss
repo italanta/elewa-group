@@ -33,3 +33,24 @@
       text-align: center;
     }
   }
+
+  /* styles for screens larger than 768px (tablets and desktops) */
+@media only screen and (min-width: 768px) {
+    .component {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    .component imageUrl {
+      width: 50%;
+      max-width: 500px;
+    }
+  
+    .component titleText paragrapghTexts {
+      font-size: 1.2rem;
+      margin-left: 20px;
+    }
+  }
