@@ -34,7 +34,7 @@ export class SocialImpactPeopleSectionComponent {
     if (this.projectCount == 200) {
       clearInterval(this.projectCountStop)
     }
-  }, 27)
+  }, 25)
 
   investors = 0;
 
@@ -44,5 +44,5 @@ export class SocialImpactPeopleSectionComponent {
     if (this.investors == 56) {
       clearInterval(this.investorsCountStop)
     }
-  }, 100)
+  }, 90)
 }

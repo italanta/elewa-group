@@ -14,6 +14,6 @@ import { SocialImpactPeopleSectionComponent } from './social-impact-people-secti
     ElewaGroupImageAndTextBannerComponent,
     SocialImpactPeopleSectionComponent,
   ],
-  exports: [SocialImpactPageComponent],
+  exports: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent],
 })
 export class SocialImpactModule {}
