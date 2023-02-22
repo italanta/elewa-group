@@ -1,8 +1,8 @@
-<section class="home-jobs-section">
-    <span >
-        Become part of the family
+<div class="jobs-section-wrapper">
+  <section class="home-jobs-section" [ngStyle]="{ textAlign: textAlign}">
+    <span>
+      {{ message }}
+      <a class="homeLink" routerLink="{{ url }}">investing</a>
     </span>
-    <span >
-        View <a class="homeLink" routerLink="/jobs">open opportunities.</a>
-    </span>
-</section>
+  </section>
+</div>
