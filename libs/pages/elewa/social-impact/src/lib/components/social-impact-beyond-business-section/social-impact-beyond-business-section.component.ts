@@ -4,11 +4,6 @@ import { Component } from '@angular/core';
   selector: 'elewa-group-social-impact-beyond-business-section',
   templateUrl: './social-impact-beyond-business-section.component.html',
   styleUrls: ['./social-impact-beyond-business-section.component.scss'],
-  template: `
-    <div *ngFor="let paragraphtext of paragraphtexts">
-      {{ paragraphtext }}
-    </div>
-  `,
 })
 export class SocialImpactBeyondBusinessSectionComponent {
   imageUrl = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/IMG_0764_twyo3k.png'
