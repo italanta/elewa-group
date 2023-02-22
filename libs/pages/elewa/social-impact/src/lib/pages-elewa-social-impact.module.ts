@@ -13,6 +13,6 @@ import { HomePageJobsComponent } from './components/home-page-jobs/home-page-job
     SocialImpactHeroSectionComponent,
     HomePageJobsComponent,
   ],
-  exports: [SocialImpactPageComponent],
+  exports: [SocialImpactPageComponent, HomePageJobsComponent],
 })
 export class SocialImpactModule {}
