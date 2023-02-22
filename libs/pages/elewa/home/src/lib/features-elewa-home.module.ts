@@ -16,6 +16,10 @@ import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
 
+import { HomePageLanderComponent} from './pages/home-page-lander/home-page-lander.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -29,6 +33,14 @@ import { HomeRoutingModule } from './home.routing';
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    TeamAndPartnersComponent,
+    ActivitySectionComponent,
+    HomePageLanderComponent,
+    NextDirective,
+    PrevDirective
+  ],
+  exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent,HomePageLanderComponent],
+
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     NextDirective,
