@@ -10,7 +10,7 @@ import { ElewaGroupImageAndTextBannerComponent } from 'libs/features/components/
 
 @NgModule({
   imports: [CommonModule, LayoutModule, SocialImpactRoutingModule],
-  declarations: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent, ElewaGroupImageAndTextBannerComponent],
+  declarations: [SocialImpactPageComponent, SocialImpactHeroSectionComponent, SocialImpactPeopleSectionComponent, ElewaGroupImageAndTextBannerComponent],
   exports: [SocialImpactPageComponent]
 })
 export class SocialImpactModule {}
