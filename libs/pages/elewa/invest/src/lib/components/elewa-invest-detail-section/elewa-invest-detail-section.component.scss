@@ -1,0 +1,61 @@
+.body {
+  background-color: #f4f4f4;
+  border-radius: 2%;
+  margin: 0 0;
+  width: 100%;
+}
+
+.container {
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.title {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-weight: var(--elewa-group-website-font-weight-subtitle);
+  font-size: 60px;
+
+}
+
+.text {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+.img {
+  border-radius: 2%;
+  width: 100%;
+  padding-top: 7%;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #f4f4f4;
+    text-overflow: hidden;
+  }
+
+  .title {
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-weight: var(--elewa-group-website-font-weight-subtitle);
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: medium;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .img {
+    border-radius: 2%;
+    width: 100%;
+    padding-top: 7%;
+  }
+
+}
