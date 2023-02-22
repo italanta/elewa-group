@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: row;
-    white-space: pre-line;
     font-size: var(--elewa-group-website-font-size-title);
     font-family: var(--elewa-group-website-dmsans-regular);
     justify-content: center;
@@ -9,3 +8,9 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+@media (max-width: 767px) {
+    .container{
+        flex-direction: column;
+    }
+  }
