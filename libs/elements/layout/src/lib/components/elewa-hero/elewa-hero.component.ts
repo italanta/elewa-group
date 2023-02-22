@@ -10,4 +10,5 @@ export class ElewaHeroComponent {
   @Input() title = 'Dependable, Creative, Supportive, Open Minded and Fun*';
   @Input() backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png';
   @Input() footerText = '*SERIOUS WHEN IT MATTERS';
+  @Input () description = '';
 }
