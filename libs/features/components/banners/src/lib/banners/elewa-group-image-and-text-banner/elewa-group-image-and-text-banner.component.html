@@ -3,6 +3,7 @@
         <div id="text-content" class="content">
             <h1 class="title">{{titleText}}</h1>
             <p class="paragraph" *ngFor="let paragraph of paragraphTexts">{{paragraph}}</p>
+            <ng-content select="[banner]"></ng-content>
         </div>
 
         <div id="img-content" class="content">
