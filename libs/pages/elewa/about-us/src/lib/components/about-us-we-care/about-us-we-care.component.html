@@ -1,34 +1,36 @@
-<div class="we-care-container">
-   <div class="inner-container">
-     <p class="title">We care!</p>
-    <div class="description">
+<div class="background-holder">
+  <div class="we-care-container">
+    <div class="inner-container">
+      <p class="heading">We care!</p>
+      <div class="description">
         <div class="mission">
-            <p>
-                Elewa is a mission-driven organization. We make <br>
-                use of our cooperative and shared culture to drive <br>
-                the needle for the development of people and our <br>
-                environment. We care for our own, but also care <br>
-                deeply about the context surrounding us.
-            </p>
+          <p>
+            Elewa is a mission-driven organization. We make <br />
+            use of our cooperative and shared culture to drive <br />
+            the needle for the development of people and our <br />
+            environment. We care for our own, but also care <br />
+            deeply about the context surrounding us.
+          </p>
         </div>
         <div class="investments">
-            <p>
-                Our investments are therefore not limited to <br>
-                internal ones but contribute heavily to our <br>
-                community and environment. From training the <br>
-                next scout leaders on sustainable practices, to <br>
-                bridging the employment gap for junior software <br>
-                developers.
-            </p>
+          <p>
+            Our investments are therefore not limited to <br />
+            internal ones but contribute heavily to our <br />
+            community and environment. From training the <br />
+            next scout leaders on sustainable practices, to <br />
+            bridging the employment gap for junior software <br />
+            developers.
+          </p>
         </div>
-    </div>
+      </div>
 
-   <div class="card-section">
-     <div class="cards" *ngFor="let card of cards">
-        <img [src] = "card.icon">
-        <h2>{{card.title}}</h2>
-        <p>{{card.description}}</p>
+      <div class="card-section">
+        <div class="cards" *ngFor="let card of cards">
+          <img [src]="card.icon" />
+          <h2 class="title">{{ card.title }}</h2>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
     </div>
-   </div>
-   </div>
+  </div>
 </div>
