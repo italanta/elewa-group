@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./investing-in-elewa.component.scss'],
 })
 export class InvestingInElewaComponent {
-  paragraphText = ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla vitae recusandae doloremque. Consectetur quia dolores rerum, error laudantium eligendi, nesciunt id quam corporis, magni aliquam consequuntur eos doloribus eum.']
+  paragraphText : string[] = ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla vitae recusandae doloremque. Consectetur quia dolores rerum, error laudantium eligendi, nesciunt id quam corporis, magni aliquam consequuntur eos doloribus eum.']
   Url = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/f2b2ea6afc31e9720638da1bbd0d2d69_p58coq.png'
   placement = 'left'
   bgColor = 'white'
