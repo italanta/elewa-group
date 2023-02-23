@@ -3,12 +3,14 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { CardsModule } from '@elewa-group/features/components/cards';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
 import { ActivitySectionComponent } from './components/activity-section/activity-section.component';
 import { HomePageLanderComponent} from './components/home-page-lander/home-page-lander.component';
+import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
@@ -23,7 +25,8 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ButtonsModule
   ],
   declarations: [
     HomePageComponent,
@@ -33,7 +36,8 @@ import { HomeRoutingModule } from './home.routing';
     ActivitySectionComponent,
     HomePageLanderComponent,
     NextDirective,
-    PrevDirective
+    PrevDirective,
+    HomeImpactSectionComponent
   ],
   exports: [HomePageComponent, HomeHeroSectionComponent,HomeJobsSectionComponent,HomePageLanderComponent],
 })
