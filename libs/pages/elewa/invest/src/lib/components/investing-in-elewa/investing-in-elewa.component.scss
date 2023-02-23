@@ -1,0 +1,115 @@
+#investing-wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#investing-wrapper .invest-container {
+    display: flex;
+    gap: 10%;
+    width: 80%;
+    max-height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 2rem;
+}
+
+#investing-wrapper .invest-container.left {
+    flex-direction: row-reverse;
+}
+
+#investing-wrapper .content {
+    display: grid;
+    place-items: center;
+}
+
+#investing-wrapper #text-content,
+#investing-wrapper .content img {
+    max-height: max(70vh, 500px);
+    max-width: 45vw;
+    object-fit: cover;
+}
+
+#investing-wrapper #text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
+
+#investing-wrapper #text-content .title {
+    margin-bottom: 2rem;
+}
+
+#investing-wrapper #text-content .paragraph {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#investing-wrapper .content#img-content img {
+    border-radius: 2rem;
+}
+
+
+// RESPONSIVENESS
+$breakpoint-tablet: 768px;
+$breakpoint-low-res-desktops: 1360px;
+
+@media (max-width: $breakpoint-low-res-desktops){
+    #investing-wrapper {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #investing-wrapper {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+    }
+
+    #investing-wrapper .invest-container {
+        gap: 5%;
+        width: 90%;
+        max-height: 80vh;
+    }
+}
+
+@media (max-width: $breakpoint-tablet), (max-aspect-ratio: 1.1) {
+    #investing-wrapper {
+        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
+        font-family: var(--elewa-group-website-dmsans-regular);
+    }
+
+    #investing-wrapper .invest-container {
+        flex-direction: column;
+        max-height: none;
+        justify-content: space-around;
+    }
+
+    #investing-wrapper #text-content,
+    #investing-wrapper .content img {
+        width: calc(min(90vw, 480px) - 3rem);
+        max-width: none;
+        max-height: none;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #investing-wrapper #text-content .title {
+        margin-bottom: 1rem;
+    }
+
+    #investing-wrapper .invest-container.left {
+        flex-direction: column-reverse;
+    }
+
+    #investing-wrapper .content#img-content img {
+        border-radius: 1.2rem;
+    }
+}
