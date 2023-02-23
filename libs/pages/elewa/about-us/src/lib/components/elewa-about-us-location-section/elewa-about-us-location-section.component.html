@@ -1,0 +1,27 @@
+<div class="location-main-flex">
+  <!-- Used an image placeholder for the map. Append the key and comment out the img tag -->
+  <div class="map">
+    <google-map height="400px" width="400px" [options]="mapOptions">
+      <map-marker [position]="markerPositions"></map-marker>
+    </google-map>
+  </div>
+
+  <div class="side-text">
+    <div>
+      <h1>How to get there</h1>
+
+      <p>
+        The secret to successful consectetur adipisicing elit. Et error sunt rem
+        quia porro quidem praesentium obcaecati quibusdam aliquam. Laudantium
+        eveniet libero enim explicabo ratione voluptate illum eum, ipsam
+        repellat!
+      </p>
+
+      <elewa-group-button-with-animation
+        [message]="'Get directions'"
+        [mode]="'dark'"
+        [action]="'/'"
+      ></elewa-group-button-with-animation>
+    </div>
+  </div>
+</div>
