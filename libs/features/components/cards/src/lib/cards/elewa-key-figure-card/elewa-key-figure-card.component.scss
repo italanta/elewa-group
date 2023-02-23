@@ -3,93 +3,79 @@
     margin-left: 20px;
 }
 .key-figure-card{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     font-size: 20px;
     border: 1px rgb(167, 166, 166) solid;
     border-radius: 22px;
-    height: 62vh;
-    width: 31.5vw;
+    height: 32vw;
+    width: 32vw;
+    min-width: 16rem;
+    min-height: 16rem;
+    position: relative;
 }
 .container2{
-    text-align: center;
-    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+
 }
-.figure{
+.number{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'DMSans-Bold';
-    padding-bottom: 30px;
+    padding-top: 200px;
+    padding-left: 180px;
+    font-family: var(--elewa-group-website-dmsans-bold);
 }
-
-.ten {
-    font-family: 'DMSans-Bold';
-    font-size: 60px;
-}
-
 .m{
-    margin-top: 27px;
-
+    margin-top: 10px;
 }
 .description{
-    font-family: 'DMSans-Bold';
-    font-size: 20px;
-    padding-bottom: 80px;
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-size:var(--elewa-group-website-font-size-description);
+    padding-top: 30px;
+    padding-bottom: 50px;
     margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-.key-fig-image-card{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    font-size: 20px;
-    border: 1px rgb(167, 166, 166) solid;
-    border-radius: 22px;
-    height: 62vh;
-    width: 31.5vw;
-    margin-top: 20px;
+    margin-right: auto;
+    width: 70%;
 }
-.logo-image{
-    margin-top: 25%;
+
+.figure {
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate((-50%, -50%
+    ));
+
 }
-.logo-image img{
-    width: 60%;
-    height: 80%;
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    min-width: 12.5rem;
 }
 
 
-@media only screen and (max-width: 850px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
     .container{
-        border: 1px rgb(167, 166, 166) solid;
-        margin: 20px;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
     }
-    .key-figure-card{
-        height: 17vh;
+    .pic{
+        width: 350px;
+        height: 350px;
     }
-    .container2{
-        text-align: center;
-        margin: 10px 10px;
-    }
-    .figure{
-        font-size: 8px;
-        padding: 0 0;
-    }
-    
-    .ten {
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    
-    .description{
-        font-size: 10px;
-        padding-top: 12px;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-    .description p{
-        padding-bottom: 100px;
+}
+@media screen and (min-device-width: 480px) and (orientation: portrait) {
+
+    .container{
+       display: flex;
+       flex-direction: column;
+       margin-left: 100px;
     }
 }
