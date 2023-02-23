@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-group-image-and-text-banner.component.scss'],
 })
 export class ElewaGroupImageAndTextBannerComponent {
+<<<<<<< HEAD
 
   @Input() imageURL = ''
   @Input() paragraphTexts: string[]
@@ -13,3 +14,11 @@ export class ElewaGroupImageAndTextBannerComponent {
   @Input() imagePlacement = ''
   @Input() backgroundColor = ''
 }
+=======
+  @Input() imageURL = '';
+  @Input() paragraphTexts : string[] = [];
+  @Input() titleText = '';
+  @Input() imagePlacement = 'right';
+  @Input() backgroundColor = 'grey';
+}
+>>>>>>> main

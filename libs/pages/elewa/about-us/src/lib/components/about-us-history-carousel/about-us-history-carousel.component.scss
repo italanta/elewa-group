@@ -1,0 +1,57 @@
+ .history-main{
+    background-color: var(--elewa-group-website-color-card);
+ }
+
+ .carousel {
+    height: 80vh;
+ }
+ 
+.title {
+    background-color: var(--elewa-group-website-color-card);
+    font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+    padding-left: 90px;
+    padding-top: 80px;
+}
+
+.history-container{
+    display: flex;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.heading{
+    font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+    padding-top: 90px;
+}
+
+.sub-heading{
+    font-size: var(--elewa-group-website-font-size-hero-heading);
+    font-family: var(--elewa-group-website-dmsans-bold);
+    padding-bottom: 75px;
+   
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .title{
+        font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+        padding-left: 50px;
+    }
+  
+
+    .heading{
+        font-size: var(--elewa-group-website-team-and-members-title-font-size);
+        
+    }
+     
+    .sub-heading{
+        font-size: var(--elewa-group-website-font-size-description);
+        font-family: var(--elewa-group-website-dmsans-bold);
+    }
+
+   
+}
