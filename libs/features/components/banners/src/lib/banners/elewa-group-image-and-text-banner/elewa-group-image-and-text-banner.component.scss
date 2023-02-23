@@ -88,6 +88,11 @@ $breakpoint-low-res-desktops: 1360px;
         justify-content: space-around;
     }
 
+    .title{
+        width: 100%;
+        font-size: 2rem;
+    }
+
     #text-and-image-banner #text-content,
     #text-and-image-banner .content img {
         width: calc(min(90vw, 480px) - 3rem);
@@ -107,5 +112,12 @@ $breakpoint-low-res-desktops: 1360px;
 
     #text-and-image-banner .content#img-content img {
         border-radius: 1.2rem;
+    }
+}
+
+@media (max-width: 450px ){
+    .title{
+        width: 100%;
+        font-size: 1.5rem;
     }
 }
