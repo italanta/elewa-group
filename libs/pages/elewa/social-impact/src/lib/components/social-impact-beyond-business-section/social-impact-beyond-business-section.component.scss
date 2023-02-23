@@ -1,0 +1,35 @@
+.social-impact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Add any other desired styles */
+  }
+  
+  .social-impact-image-container {
+    width: 50%; /* Adjust as needed */
+    /* Add any other desired styles */
+  }
+  
+  .social-impact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px; /* Rounded corners */
+    /* Add any other desired styles */
+  }
+  
+  .social-impact-text-container {
+    width: 50%; /* Adjust as needed */
+    /* Add any other desired styles */
+  }
+  
+  .social-impact-title {
+    font-size: var(--font-size-large);
+    color: var(--color-primary);
+    /* Add any other desired styles */
+  }
+  
+  .social-impact-paragraph {
+    font-size: var(--font-size-medium);
+    color: var(--color-text);
+    /* Add any other desired styles */
+  }

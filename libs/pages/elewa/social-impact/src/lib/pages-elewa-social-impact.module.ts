@@ -8,18 +8,24 @@ import { SocialImpactPeopleSectionComponent } from './components/social-impact-p
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 import { SocialImpactCooperativeSectionComponent } from './components/social-impact-cooperative-section/social-impact-cooperative-section.component';
 
-
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
 import { SocialImpactRoutingModule } from './social-impact.routing';
+import { SocialImpactBeyondBusinessSectionComponent } from './components/social-impact-beyond-business-section/social-impact-beyond-business-section.component';
 
 @NgModule({
-  imports: [CommonModule, LayoutModule, BannersModule, SocialImpactRoutingModule],
+  imports: [
+    CommonModule,
+    LayoutModule,
+    BannersModule,
+    SocialImpactRoutingModule,
+  ],
   declarations: [
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
     SocialImpactPeopleSectionComponent,
     SocialImpactCooperativeSectionComponent,
+    SocialImpactBeyondBusinessSectionComponent,
   ],
   exports: [SocialImpactPageComponent],
 })
