@@ -5,4 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './social-impact-beyond-business-section.component.html',
   styleUrls: ['./social-impact-beyond-business-section.component.scss'],
 })
-export class SocialImpactBeyondBusinessSectionComponent {}
+export class SocialImpactBeyondBusinessSectionComponent {
+  imageURL = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png'
+  paragraphTexts = [`Some of that youthful energy is channeled beyond
+  business. Through projects such as our coding school
+  in Kakuma refugee camo, training teachers in pastoral Samburu and our open-source coding initiatives
+  providing entry-level opportunities to hundreds of 
+  junior engineers.
+  
+  These projects dont't necessarily have an immediate 
+  financial return, but their impact can be tangibly
+  measured in the long-term.`]
+  titleText = `Beyond business`
+  imagePlacement = 'left'
+  backgroundColor = 'white'
+}
