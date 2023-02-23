@@ -7,11 +7,12 @@ import { BannersModule } from '@elewa-group/features/components/banners';
 import { SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 import { SocialImpactCooperativeSectionComponent } from './components/social-impact-cooperative-section/social-impact-cooperative-section.component';
-import { SocialImpactBeyondBusinessComponent } from './components/social-impact-beyond-business/social-impact-beyond-business.component';
+
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
 import { SocialImpactRoutingModule } from './social-impact.routing';
+import { SocialImpactBeyondBusinessComponent } from './components/social-impact-beyond-business/social-impact-beyond-business.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { SocialImpactRoutingModule } from './social-impact.routing';
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
     SocialImpactPeopleSectionComponent,
-    SocialImpactCooperativeSectionComponent
+    SocialImpactCooperativeSectionComponent,
     SocialImpactBeyondBusinessComponent,
   ],
   exports: [SocialImpactPageComponent],
