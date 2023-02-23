@@ -12,10 +12,22 @@ import { InvestingInElewaComponent } from './components/investing-in-elewa/inves
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-detail-section/elewa-invest-detail-section.component';
 import { BannersModule } from '@elewa-group/features/components/banners';
+import { CreativeHubSectionComponent } from './components/creative-hub-section/creative-hub-section.component';
 
 @NgModule({
-  imports: [CommonModule, InvestRoutingModule, ButtonsModule,BannersModule,LayoutModule],
-  declarations: [InvestPageComponent, InvestingInElewaComponent,ElewaInvestDetailSectionComponent,ElewaInvestHeroComponent],
-
+  imports: [
+    CommonModule,
+    InvestRoutingModule,
+    ButtonsModule,
+    BannersModule,
+    LayoutModule,
+  ],
+  declarations: [
+    InvestPageComponent,
+    InvestingInElewaComponent,
+    ElewaInvestDetailSectionComponent,
+    ElewaInvestHeroComponent,
+    CreativeHubSectionComponent,
+  ],
 })
 export class InvestPageModule {}
