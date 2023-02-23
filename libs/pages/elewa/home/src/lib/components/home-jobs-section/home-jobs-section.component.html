@@ -1,8 +1,9 @@
 <section class="home-jobs-section">
-    <span >
-        Become part of the family
-    </span>
-    <span >
-        View <a class="homeLink" routerLink="/jobs">open opportunities.</a>
-    </span>
-</section>
+    <section class="home-jobs-section">
+        <span >
+            {{message}}
+        </span>
+        <span [ngStyle]="{ 'text-align':text }">
+            {{callToActionIntro}} <a class="homeLink" routerLink={{redirectUrl}}>{{urlLink}}</a>
+        </span>
+    </section>
