@@ -86,6 +86,11 @@ $breakpoint-low-res-desktops: 1360px;
         font-family: var(--elewa-group-website-dmsans-regular);
     }
 
+    .title{
+        width: 100%;
+        font-size: 2rem;
+    }
+
     #investing-wrapper .invest-container {
         flex-direction: column;
         max-height: none;
@@ -111,5 +116,11 @@ $breakpoint-low-res-desktops: 1360px;
 
     #investing-wrapper .content#img-content img {
         border-radius: 1.2rem;
+    }
+}
+@media (max-width: 450px ){
+    .title{
+        width: 100%;
+        font-size: 1.5rem;
     }
 }
