@@ -17,6 +17,7 @@ import { ElewaInvestInvestingInElewaSectionComponent } from './components/elewa-
 @NgModule({
   imports: [
     CommonModule, 
+    LayoutModule,
     InvestRoutingModule, 
     ButtonsModule,
     BannersModule
