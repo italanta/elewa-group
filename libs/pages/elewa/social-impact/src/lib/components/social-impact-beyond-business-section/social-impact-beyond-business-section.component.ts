@@ -11,9 +11,7 @@ export class SocialImpactBeyondBusinessSectionComponent {
   business. Through projects such as our coding school
   in Kakuma refugee camo, training teachers in pastoral Samburu and our open-source coding initiatives
   providing entry-level opportunities to hundreds of 
-  junior engineers.
-  
-  These projects dont't necessarily have an immediate 
+  junior engineers.`,`These projects dont't necessarily have an immediate 
   financial return, but their impact can be tangibly
   measured in the long-term.`]
   titleText = `Beyond business`
