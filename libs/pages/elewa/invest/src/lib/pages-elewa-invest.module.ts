@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { LayoutModule } from '@elewa-group/elements/layout';
+
+import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-detail-section/elewa-invest-detail-section.component';
+import { ElewaInvestHeroComponent } from './components/elewa-invest-hero/elewa-invest-hero.component';
+
 import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 import { BannersModule } from '@elewa-group/features/components/banners';
 import { InvestRoutingModule } from './invest.routing';
@@ -8,9 +14,11 @@ import { ElewaInvestCreativeHubSectionComponent } from './pages/elewa-invest-cre
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-detail-section/elewa-invest-detail-section.component';
 @NgModule({
+
   imports: [CommonModule, InvestRoutingModule, BannersModule, LayoutModule],
-  declarations: [InvestPageComponent, ElewaInvestCreativeHubSectionComponent, ElewaInvestDetailSectionComponent],
+  declarations: [InvestPageComponent, ElewaInvestCreativeHubSectionComponent, ElewaInvestDetailSectionComponent, ElewaInvestHeroComponent],
   exports: [ElewaInvestCreativeHubSectionComponent],
+
 
 })
 export class InvestPageModule {}
