@@ -1,13 +1,10 @@
 .container {
   height: 100vh;
-  border: 5px;
-  max-width: 100%;
+  width: auto;
 }
 
 .items {
   display: flex;
-  gap: 100px;
-
   padding-top: 25px;
   padding-right: 50px;
   justify-content: center;
@@ -50,15 +47,13 @@
 .btn {
   display: flex;
   padding-top: 50px;
-
-
 }
 
 .btn2 {
   padding-left: 50px;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .container {
     height: fit-content;
     border: 5px;
@@ -103,17 +98,15 @@
   }
 
   .img img {
-    width: 670px;
-    height: 700px;
+    width: 300%;
+    height: 70%;
     border-radius: 30px;
     margin: 20px 20px;
-
-
+    overflow: hidden;
   }
 
   .p1 {
     width: auto !important;
-    ;
     text-align: center;
     font-size: 30px;
     padding-bottom: 20px;
@@ -139,7 +132,6 @@
   }
 
   .items {
-
     .btn {
       display: block;
       margin-left: 5%;
@@ -151,11 +143,30 @@
     }
   }
 
-
   .btn2 {
     margin: 20px 0;
     padding-left: 0;
+  }
+}
 
+@media screen and (max-width: 672px) {
+  .container {
+    height: fit-content;
+    width: 100%;
+    margin: 0 0;
+    padding: 0;
   }
 
+  .items {
+    .btn {
+      width: 310px;
+      padding-left: 0px;
+      padding-right: 20px;
+    }
+  }
+
+  .img {
+    width: 30%;
+    height: 20%;
+  }
 }
