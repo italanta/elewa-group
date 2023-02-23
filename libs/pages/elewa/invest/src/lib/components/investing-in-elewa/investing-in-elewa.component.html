@@ -1,14 +1,27 @@
-<div id="investing-wrapper" [ngStyle]="{'background-color': backgroundColor}">
-    <div class="invest-container {{imagePlacement}}">
-        <div id="text-content" class="content">
-            <h1 class="title">{{titleText}}</h1>
-            <p class="paragraph" *ngFor="let paragraph of paragraphTexts">{{paragraph}}</p>
+<div id="investing-wrapper" [ngStyle]="{ 'background-color': backgroundColor }">
+  <div class="invest-container {{ imagePlacement }}">
+    <div id="text-content" class="content">
+      <h1 class="title">{{ titleText }}</h1>
+      <p class="paragraph" *ngFor="let paragraph of paragraphTexts">
+        {{ paragraph }}
+      </p>
 
-            <elewa-group-button-with-animation message="Join the waiting list" class="btn" [action]="'/jobs'"></elewa-group-button-with-animation>
-        </div>
-
-        <div id="img-content" class="content">
-            <img [src]="imageURL"/>
-        </div>
+      <elewa-group-button-with-animation
+        message="Join the waiting list"
+        class="btn"
+        [action]="'/jobs'"
+      ></elewa-group-button-with-animation>
     </div>
+
+    <div id="img-content" class="content">
+      <img [src]="imageURL" />
+    </div>
+  </div>
 </div>
+
+<elewa-group-elewa-group-image-and-text-banner
+  titleText="Investing in Elewa NV"
+  backgroundColor="white"
+  imagePlacement="left"
+  imageURL="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/f2b2ea6afc31e9720638da1bbd0d2d69_p58coq.png"
+></elewa-group-elewa-group-image-and-text-banner>
