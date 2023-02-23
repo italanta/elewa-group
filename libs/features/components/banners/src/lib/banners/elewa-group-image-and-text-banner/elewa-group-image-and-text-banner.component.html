@@ -2,7 +2,7 @@
     <div class="banner-container {{imagePlacement}}">
         <div id="text-content" class="content">
             <h1 class="title">{{titleText}}</h1>
-            <p>{{paragraphText}}</p>
+            <p class="paragraph" *ngFor="let paragraph of paragraphTexts">{{paragraph}}</p>
         </div>
 
         <div id="img-content" class="content">
