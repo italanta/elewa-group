@@ -12,15 +12,17 @@ import { SocialImpactCooperativeSectionComponent } from './components/social-imp
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
 
 import { SocialImpactRoutingModule } from './social-impact.routing';
-import { SocialImpactCallToActionSectionComponent } from './components/social-impact-call-to-action-section/social-impact-call-to-action-section.component';
 
+import { SocialImpactCallToActionSectionComponent } from './components/social-impact-call-to-action-section/social-impact-call-to-action-section.component';
+import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
 @NgModule({
 
   imports: [CommonModule, LayoutModule,BannersModule, SocialImpactRoutingModule],
-  declarations: [SocialImpactPageComponent, SocialImpactHeroSectionComponent,SocialImpactCallToActionSectionComponent,SocialImpactPeopleSectionComponent,
+  declarations: [SocialImpactPageComponent, SocialImpactHeroSectionComponent,SocialImpactCallToActionSectionComponent,SocialImpactPeopleSectionComponent,SocialImpactOpenKnowledgeComponent,
     SocialImpactCooperativeSectionComponent],
   exports: [SocialImpactPageComponent,SocialImpactCallToActionSectionComponent],
 
   
+
 })
 export class SocialImpactModule {}
