@@ -6,6 +6,8 @@ import { BannersModule } from '@elewa-group/features/components/banners';
 
 import { SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
+import { SocialImpactCooperativeSectionComponent } from './components/social-impact-cooperative-section/social-impact-cooperative-section.component';
+import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
 import { SocialImpactBeyondBusinessSectionComponent } from './components/social-impact-beyond-business-section/social-impact-beyond-business-section.component';
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
@@ -18,7 +20,10 @@ import { SocialImpactRoutingModule } from './social-impact.routing';
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
     SocialImpactBeyondBusinessSectionComponent,
+    SocialImpactPeopleSectionComponent,
+    SocialImpactOpenKnowledgeComponent,
+    SocialImpactCooperativeSectionComponent,
   ],
-  exports: [SocialImpactPageComponent, SocialImpactPeopleSectionComponent],
+  exports: [SocialImpactPageComponent],
 })
 export class SocialImpactModule {}
