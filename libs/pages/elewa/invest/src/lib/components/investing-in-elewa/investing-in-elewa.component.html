@@ -1,6 +1,15 @@
-<elewa-group-elewa-group-image-and-text-banner
-  titleText="Investing in Elewa NV"
-  backgroundColor="white"
-  imagePlacement="left"
-  imageURL="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/f2b2ea6afc31e9720638da1bbd0d2d69_p58coq.png"
-></elewa-group-elewa-group-image-and-text-banner>
+  <elewa-group-elewa-group-image-and-text-banner
+    [titleText]="textTitle"
+    [backgroundColor]="bgColor"
+    [imagePlacement]="placement"
+    [imageURL]="Url"
+    [paragraphTexts]="paragraphText"
+  >
+  <div class="placement">
+    <elewa-group-button-with-animation
+    message="Join the waiting list"
+    action="/jobs"
+  ></elewa-group-button-with-animation>
+  </div>
+  
+</elewa-group-elewa-group-image-and-text-banner>
