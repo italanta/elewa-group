@@ -5,9 +5,10 @@ import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 import { InvestRoutingModule } from './invest.routing';
 import { InvestingInElewaComponent } from './components/investing-in-elewa/investing-in-elewa.component';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-detail-section/elewa-invest-detail-section.component';
 
 @NgModule({
   imports: [CommonModule, InvestRoutingModule, ButtonsModule],
-  declarations: [InvestPageComponent, InvestingInElewaComponent],
+  declarations: [InvestPageComponent, InvestingInElewaComponent,ElewaInvestDetailSectionComponent],
 })
 export class InvestPageModule {}
