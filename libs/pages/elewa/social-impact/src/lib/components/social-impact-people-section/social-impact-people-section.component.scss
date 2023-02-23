@@ -1,0 +1,41 @@
+.impact__section{
+    background-color: var(--elewa-group-website-color-primary);
+    padding: 10px;
+    }
+
+.stats{ 
+    width: 100%;
+    padding: 0px 260px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 3;
+    color: var(--elewa-group-website-color-card);
+    font-size: var(--elewa-group-website-font-size-elewa-text);
+    font-family: var(--elewa-group-website-dmsans-regular);
+}
+
+.sections{ 
+    display: flex;
+    flex-direction: column;
+   }  
+
+@media only screen and (max-width: 600px) {   
+    .stats {
+    padding: 40px 50px;  
+    margin: 0;
+    width: 100%;
+    font-size: small;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0 ;
+    align-items: center;
+   }  
+
+    .sections{
+        width: 100%;  
+        margin: 20px 0  ;   
+   }
+ }
