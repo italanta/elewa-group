@@ -10,5 +10,5 @@ export class CreativeHubSectionComponent {
   position = 'right'
   bgColor = 'white'
   titleText = 'Elewa Creative Hub'
-  graphText : string[] = ['Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quisquam consequuntur nisi, pariatur dignissimos itaque aliquid ullam reprehenderit vel quas est quae atque assumenda dolor, ab expedita sequi mollitia sed?','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quisquam consequuntur nisi, pariatur dignissimos itaque aliquid ullam reprehenderit vel quas est quae atque assumenda dolor, ab expedita sequi mollitia sed?']
+  graphText : string[] = ['Lorem ipsum dolor sit amete consectetur, adipisicing elit. Ut quisquam consequuntur nisi, pariatur dignissimos itaque aliquid ullam reprehenderit vel quas est quae atque assumenda dolor, ab expedita sequi mollitia sed?','Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quisquam consequuntur nisi, pariatur dignissimos itaque aliquid ullam reprehenderit vel quas est quae atque assumenda dolor, ab expedita sequi mollitia sed?']
 }
