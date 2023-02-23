@@ -15,6 +15,8 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 import { SocialImpactRoutingModule } from './social-impact.routing';
 import { ImpactProjectsComponent } from './components/impact-projects/impact-projects.component';
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
+import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
+
 
 @NgModule({
   imports: [CommonModule, LayoutModule,  UiListsModule, BannersModule, SocialImpactRoutingModule],
@@ -22,6 +24,7 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
     SocialImpactPageComponent,
     SocialImpactHeroSectionComponent,
     SocialImpactPeopleSectionComponent,
+    SocialImpactOpenKnowledgeComponent,
     SocialImpactCooperativeSectionComponent,
     ImpactProjectsComponent,
   ],

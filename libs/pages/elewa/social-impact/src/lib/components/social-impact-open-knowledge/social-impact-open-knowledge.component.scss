@@ -1,0 +1,56 @@
+.container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--elewa-group-website-font-size-title);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* styles for screens smaller than 768px (mobile devices) */
+@media only screen and (max-width: 767px) {
+    .component {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .component imageUrl {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .component titleText paragraphTexts{
+      font-size: 1rem;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+/* styles for screens larger than 768px (tablets and desktops) */
+@media only screen and (min-width: 768px) {
+    .component {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    .component imageUrl {
+      width: 50%;
+      max-width: 500px;
+    }
+  
+    .component titleText paragrapghTexts {
+      font-size: 1.2rem;
+      margin-left: 20px;
+    }
+  }
