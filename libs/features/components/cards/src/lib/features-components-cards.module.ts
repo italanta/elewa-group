@@ -11,6 +11,6 @@ import { ElewaKeyFigureCardComponent } from './cards/elewa-key-figure-card/elewa
     ElewaVerticalIconAndTextComponent,
     ElewaKeyFigureCardComponent,
   ],
-  exports: [ElewaGroupCardComponent, ElewaVerticalIconAndTextComponent],
+  exports: [ElewaGroupCardComponent, ElewaVerticalIconAndTextComponent, ElewaKeyFigureCardComponent],
 })
 export class CardsModule {}

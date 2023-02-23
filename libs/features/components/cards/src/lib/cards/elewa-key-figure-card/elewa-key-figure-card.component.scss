@@ -1,0 +1,39 @@
+.wrapper{
+    align-items: center;
+}
+.figure{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    border: 1px solid gray;
+    padding-top: 100px;  
+    text-align: center;
+}
+img{
+    text-align: center;
+}
+.desc{
+    font-weight: var(--elewa-group-website-font-size-description);
+    font-family: var(--elewa-group-website-dmsans-regular);
+    padding-top: 20px;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+    }
+    .figure{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (min-device-width: 480px) and (orientation: portrait) {
+
+    .container{
+       display: flex;
+       flex-direction: column;
+       margin-left: 100px;
+    }
+}
