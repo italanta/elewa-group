@@ -10,7 +10,7 @@ import { SocialImpactCooperativeSectionComponent } from './components/social-imp
 import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
-import { BeyondBusinessComponent } from './pages/components/beyond-business/beyond-business.component';
+import { BeyondBusinessComponent } from './components/beyond-business/beyond-business.component';
 import { SocialImpactRoutingModule } from './social-impact.routing';
 
 @NgModule({
