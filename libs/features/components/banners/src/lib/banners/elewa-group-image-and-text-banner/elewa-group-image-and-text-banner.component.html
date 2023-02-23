@@ -3,6 +3,9 @@
         <div id="text-content" class="content">
             <h1 class="title">{{titleText}}</h1>
             <p class="paragraph" *ngFor="let paragraph of paragraphTexts">{{paragraph}}</p>
+            <div *ngIf="!showButton">
+                <elewa-group-button-with-animation [message]="buttonText" [action]="url"></elewa-group-button-with-animation>
+            </div>
         </div>
 
         <div id="img-content" class="content">
