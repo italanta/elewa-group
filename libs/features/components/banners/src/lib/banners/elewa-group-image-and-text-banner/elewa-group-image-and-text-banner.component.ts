@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'elewa-group-elewa-group-image-and-text-banner',
@@ -11,4 +11,7 @@ export class ElewaGroupImageAndTextBannerComponent {
   @Input() titleText = '';
   @Input() imagePlacement = 'right';
   @Input() backgroundColor = 'grey';
+  buttonText = "Join the waiting list";
+  url = "home/en";
+  showButton = false;
 }
