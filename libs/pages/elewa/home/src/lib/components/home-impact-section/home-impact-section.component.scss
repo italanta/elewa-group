@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     padding-bottom: 10%;
-    padding-top: 10%;
-    height: 1000px;
+    padding-top: 15%;
+    height: 60vh;
     
 }
 .column2,img{
@@ -41,7 +41,8 @@
 }
 .button{
     padding-right: 20px;
-    
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 850px)  {
