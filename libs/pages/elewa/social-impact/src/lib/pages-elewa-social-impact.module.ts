@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { BannersModule } from '@elewa-group/features/components/banners';
-import {  SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
+import { SocialImpactPeopleSectionComponent } from './components/social-impact-people-section/social-impact-people-section.component';
 import { SocialImpactHeroSectionComponent } from './components/social-impact-hero-section/social-impact-hero-section.component';
 import { SocialImpactCooperativeSectionComponent } from './components/social-impact-cooperative-section/social-impact-cooperative-section.component';
 
@@ -11,7 +11,8 @@ import { SocialImpactPageComponent } from './pages/social-impact-page/social-imp
 
 import { SocialImpactRoutingModule } from './social-impact.routing';
 import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
-import { SocialImpactJobSectionComponent } from './components/social-impact-job-section/social-impact-job-section.component';
+
+import { SocialCallToActionComponent } from './components/social-call-to-action/social-call-to-action.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { SocialImpactJobSectionComponent } from './components/social-impact-job-
     SocialImpactPeopleSectionComponent,
     SocialImpactOpenKnowledgeComponent,
     SocialImpactCooperativeSectionComponent,
-    SocialImpactJobSectionComponent,
+    SocialCallToActionComponent,
   ],
   exports: [SocialImpactPageComponent],
 })
