@@ -1,0 +1,15 @@
+<section class="home-jobs-section">
+    <span >
+        {{message}}
+    </span>
+    <ng-container *ngIf = "acceptable_text_align.includes(textAlign); else noValidClass ">
+        <span [ngStyle] = "{'text-align':textAlign}">
+            {{callToActionIntro}} <a class="homeLink" routerLink={{destinationUrl}}>{{callToAction}}</a>
+        </span>
+    </ng-container>
+    <ng-template #noValidClass>
+        <span [ngStyle] = "{'text-align':'center'}">
+            {{callToActionIntro}} <a class="homeLink" routerLink={{destinationUrl}}>{{callToAction}}</a>
+        </span>
+    </ng-template>
+</section>
