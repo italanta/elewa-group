@@ -10,6 +10,6 @@ export class ElewaGroupMainPageComponent implements OnInit {
   route: string;
   constructor(public router: Router) {}
   ngOnInit(): void {
-    this.route = this.router.url;
+    this.route = this.router.url.split('/')[1];
   }
 }
