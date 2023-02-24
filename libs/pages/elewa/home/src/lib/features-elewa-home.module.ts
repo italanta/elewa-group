@@ -27,8 +27,7 @@ import { HomeRoutingModule } from './home.routing';
     CardsModule,
     BannersModule,
     ButtonsModule,
-    HomeRoutingModule
-    ButtonsModule,
+    HomeRoutingModule,
     HomeRoutingModule,
   ],
   declarations: [
