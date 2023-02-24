@@ -4,11 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "deploy-elewa-group-website": "nx build elewa-group-website --prod && npx scully --project elewa-group-website --noPrompt",
+    "build-prod": "nx build elewa-group-website --skip-nx-cache --prod && npx scully --project elewa-group-website --noPrompt",
     "scully:serve": "npx scully serve --project elewa-group-website",
     "scully": "npx scully --project elewa-group-website"
   },
@@ -39,7 +38,7 @@
     "moment": "^2.29.4",
     "ng-packagr": "^15.2.2",
     "postcss-preset-env": "^8.0.1",
-    "puppeteer": "^19.6.0",
+    "puppeteer": "^13.4.1",
     "rxjs": "~7.5.0",
     "subsink": "^1.0.2",
     "tslib": "^2.3.0",

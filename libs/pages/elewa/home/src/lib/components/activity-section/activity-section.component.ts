@@ -33,4 +33,3 @@ export class ActivitySectionComponent {
     },
   ];
 }
-//  https:res.cloudinary.com/dyl3rncv3/image/upload/v1675690296/elewa-group-website/Icons/SVG/venturelabs_icon_vfnmpj.svg"
