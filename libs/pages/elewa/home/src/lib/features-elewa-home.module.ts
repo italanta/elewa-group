@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { CardsModule } from '@elewa-group/features/components/cards';
-
+import { BannersModule} from '@elewa-group/features/components/banners';
 import { HomeHeroSectionComponent } from './components/home-hero-section/home-hero-section.component';
 import { HomeJobsSectionComponent } from './components/home-jobs-section/home-jobs-section.component';
 import { TeamAndPartnersComponent } from './components/team-and-partners/team-and-partners.component';
@@ -23,6 +22,7 @@ import { HomeRoutingModule } from './home.routing';
     LayoutModule,
     NgOptimizedImage,
     CardsModule,
+    BannersModule,
     HomeRoutingModule
   ],
   declarations: [
