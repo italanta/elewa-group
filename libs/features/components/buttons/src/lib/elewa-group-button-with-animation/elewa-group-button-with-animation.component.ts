@@ -18,6 +18,6 @@ export class ElewaGroupButtonWithAnimationComponent {
   @Input() action: string | undefined;
 
   btnClick= ()=> {
-    this.router.navigateByUrl(`${this.action}`);
+    this.router.navigate([this.action]);
   };
 }
