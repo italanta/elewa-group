@@ -11,7 +11,7 @@ export class ElewaGroupImageAndTextBannerComponent {
   @Input() titleText = '';
   @Input() imagePlacement = 'right';
   @Input() backgroundColor = 'grey';
-  buttonText = "Join the waiting list";
-  url = "home/en";
-  showButton = false;
+  @Input() buttonText = '';
+  @Input() url = '';
+  @Input() showButton = false;
 }
