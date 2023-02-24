@@ -11,4 +11,7 @@ export class ElewaInvestInvestingInElewaSectionComponent {
   backgroundColor = "var(--elewa-group-website-color)"
   paragraph: string[] = ['From time to time, we offer investment opportunities (private equity & debt) to out community of investors. Interested to take part when this opportunity arrives?'];
   imagePlacement = 'left'
+  buttonText = "Join the waiting list";
+  url = "home/en";
+  showButton = true;
 }
