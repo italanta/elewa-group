@@ -17,6 +17,7 @@ import { ElewaCallToActionBannerComponent } from './banners/elewa-call-to-action
   exports: [
     ElewaGroupTeamMemberComponent,
     ElewaGroupImageAndTextBannerComponent,
+    ElewaCallToActionBannerComponent,
   ],
 })
 export class BannersModule {}
