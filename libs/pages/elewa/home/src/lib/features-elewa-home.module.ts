@@ -15,6 +15,7 @@ import { PrevDirective } from './directives/prev.directive';
 import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { HomeRoutingModule } from './home.routing';
     NgOptimizedImage,
     CardsModule,
     BannersModule,
+    ButtonsModule,
     HomeRoutingModule
   ],
   declarations: [
