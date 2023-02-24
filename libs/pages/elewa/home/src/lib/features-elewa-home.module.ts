@@ -10,6 +10,8 @@ import { ActivitySectionComponent } from './components/activity-section/activity
 import { HomePageLanderComponent} from './components/home-page-lander/home-page-lander.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';
 
 import { PrevDirective } from './directives/prev.directive';
 import { NextDirective } from './directives/next.directive';
@@ -26,14 +28,18 @@ import { ButtonsModule } from '@elewa-group/features/components/buttons';
     BannersModule,
     ButtonsModule,
     HomeRoutingModule
+    ButtonsModule,
+    HomeRoutingModule,
   ],
   declarations: [
     HomePageComponent,
     HomeHeroSectionComponent,
     HomeJobsSectionComponent,
+    ActivitySectionComponent,
     TeamAndPartnersComponent,
     ActivitySectionComponent,
     HomePageLanderComponent,
+    HomeImpactSectionComponent,
     NextDirective,
     PrevDirective
   ],
