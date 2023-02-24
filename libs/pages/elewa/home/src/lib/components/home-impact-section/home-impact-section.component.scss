@@ -1,18 +1,20 @@
 .container {
   height: 100vh;
-  width: auto;
+  max-width: 90%;
+  margin: auto;
 }
 
 .items {
   display: flex;
   padding-top: 25px;
-  padding-right: 50px;
+  width: 100%;
   justify-content: center;
 }
 
 .card1 {
   padding-left: 50px;
   padding-top: 50px;
+  margin-right: 50px;
 }
 
 .img img {
@@ -155,6 +157,7 @@
     width: 100%;
     margin: 0 0;
     padding: 0;
+    max-width: 100%;
   }
 
   .items {
