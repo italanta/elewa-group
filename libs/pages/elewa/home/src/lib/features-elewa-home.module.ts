@@ -18,6 +18,7 @@ import { NextDirective } from './directives/next.directive';
 
 import { HomeRoutingModule } from './home.routing';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -25,8 +26,8 @@ import { HomeRoutingModule } from './home.routing';
     NgOptimizedImage,
     CardsModule,
     BannersModule,
-    HomeRoutingModule
     ButtonsModule,
+    HomeRoutingModule,
     HomeRoutingModule,
   ],
   declarations: [
