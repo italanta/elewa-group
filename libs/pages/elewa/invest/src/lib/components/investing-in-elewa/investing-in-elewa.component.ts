@@ -11,4 +11,7 @@ export class InvestingInElewaComponent {
   placement = 'left'
   bgColor = 'white'
   textTitle = 'Investing in Elewa NV'
+  btnText = 'Join the waiting list'
+  linkUrl = 'social-impact/en'
+  toggleButton = true;
 }

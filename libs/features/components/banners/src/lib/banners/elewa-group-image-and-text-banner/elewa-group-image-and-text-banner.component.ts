@@ -7,8 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ElewaGroupImageAndTextBannerComponent {
   @Input() imageURL = '';
-  @Input() paragraphTexts : string[] = [];
+  @Input() paragraphTexts: string[] = [];
   @Input() titleText = '';
   @Input() imagePlacement = 'right';
   @Input() backgroundColor = 'grey';
+  @Input() buttonTitle = '';
+  @Input() actionRoute = '';
+  @Input() showButton = false;
 }
