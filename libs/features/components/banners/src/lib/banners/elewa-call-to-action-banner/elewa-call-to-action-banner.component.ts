@@ -6,6 +6,7 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./elewa-call-to-action-banner.component.scss'],
 })
 export class ElewaCallToActionBannerComponent {
+  acceptable_text_align = ["center","left","right","justified"]
   @Input() message:string
   @Input() callToAction:string
   @Input() textAlign:string
