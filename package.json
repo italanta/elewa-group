@@ -7,7 +7,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "deploy-elewa-group-website": "nx build elewa-group-website --prod && npx scully --project elewa-group-website --noPrompt",
+    "deploy-elewa-group-website": "nx build elewa-group-website --skip-nx-cache --prod && npx scully --project elewa-group-website --noPrompt",
+    "build-prod": "node deploy-elewa-group-website",
     "scully:serve": "npx scully serve --project elewa-group-website",
     "scully": "npx scully --project elewa-group-website"
   },
