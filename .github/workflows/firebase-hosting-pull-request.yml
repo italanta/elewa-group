@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ELEWA_GROUP }}'
           projectId: elewa-group
+        env: '${{ secrets.GITHUB_TOKEN }}'
