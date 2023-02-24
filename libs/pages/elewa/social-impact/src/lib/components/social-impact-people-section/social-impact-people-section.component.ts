@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./social-impact-people-section.component.scss'],
 })
 export class SocialImpactPeopleSectionComponent {
+
+  imageURL = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png';
+
   peopleTrained = 0;
 
   peopleTrainedCountStop = setInterval(() => {
