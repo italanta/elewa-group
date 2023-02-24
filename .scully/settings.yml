@@ -4,8 +4,8 @@ staticPort: 1668
 reloadPort: 2667
 hostName: localhost
 projectName: elewa-group-website
-homeFolder: /Users/ianodhiambo/Documents/elewa/elewa-group
+homeFolder: /Users/jrosseel/Documents/GitHub/elewa-group-2
 distFolder: ./dist/apps/elewa-group-website
-outDir: /Users/ianodhiambo/Documents/elewa/elewa-group/dist/static
+outDir: /Users/jrosseel/Documents/GitHub/elewa-group-2/dist/static
 handle404: ''
 allowErrorCollect: false
