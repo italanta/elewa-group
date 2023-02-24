@@ -10,6 +10,4 @@ export class HomeJobsSectionComponent {
     @Input() callToActionText ="open opportunities.";
     @Input() word ="View";
     @Input() url ="/jobs";
-  
-
 } 
