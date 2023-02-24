@@ -4,7 +4,7 @@
             <h1 class="title">{{titleText}}</h1>
             <p class="paragraph" *ngFor="let paragraph of paragraphTexts">{{paragraph}}</p>
 
-            <div *ngIf="showButton">
+            <div *ngIf="showButton" class="btnStyle">
                 <elewa-group-button-with-animation [message]="buttonTitle" [action]="actionRoute"></elewa-group-button-with-animation>
             </div>
         </div>
