@@ -5,6 +5,7 @@
     "elewa-group-website": "apps/elewa-group-website",
     "features-components-banners": "libs/features/components/banners",
     "features-components-ui-lists": "libs/features/components/ui-lists",
+    "features-components-cards": "libs/features/components/cards",
     "pages-elewa-about-us": "libs/pages/elewa/about-us",
     "pages-elewa-activities": "libs/pages/elewa/activities",
     "pages-elewa-contact": "libs/pages/elewa/contact",
