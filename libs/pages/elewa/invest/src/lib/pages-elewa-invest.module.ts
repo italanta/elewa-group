@@ -12,20 +12,17 @@ import { ElewaInvestInvestingInElewaSectionComponent } from './components/elewa-
 import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 
 import { InvestRoutingModule } from './invest.routing';
+import { ElewaInvestStakeholderSectionComponent } from './components/elewa-invest-stakeholder-section/elewa-invest-stakeholder-section.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    LayoutModule,
-
-    BannersModule,
-
-    InvestRoutingModule
-  ],
+  imports: [CommonModule, LayoutModule, BannersModule, InvestRoutingModule],
   declarations: [
-    InvestPageComponent, 
-    ElewaInvestHeroComponent, 
-    ElewaInvestDetailSectionComponent, 
-    ElewaInvestCreativeHubSectionComponent,ElewaInvestInvestingInElewaSectionComponent],
+    InvestPageComponent,
+    ElewaInvestHeroComponent,
+    ElewaInvestDetailSectionComponent,
+    ElewaInvestCreativeHubSectionComponent,
+    ElewaInvestInvestingInElewaSectionComponent,
+    ElewaInvestStakeholderSectionComponent,
+  ],
 })
-export class InvestPageModule { }
+export class InvestPageModule {}
