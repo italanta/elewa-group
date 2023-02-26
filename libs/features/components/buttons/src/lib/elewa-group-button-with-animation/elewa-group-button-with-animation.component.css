@@ -59,3 +59,23 @@
 .light .right-arrow-container #arrow-right{
     color: var(--elewa-group-website-color-card);
 }
+
+@media screen and (max-width: 850px) {
+    .button-with-animation{
+        width: 100%;
+    }
+    .button-with-animation span{
+        width: 80%;
+        justify-self: center center;
+    }
+    .button-with-animation:hover  .right-arrow-container{
+        justify-self: center right;
+    }
+    .button-with-animation:hover  .right-arrow-container{
+        left: -85%;
+    }
+    .button-with-animation:hover span{
+        position: relative;
+        left: 2.5%;
+    }
+}
