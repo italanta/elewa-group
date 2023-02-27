@@ -1,0 +1,38 @@
+.career-hero{
+    padding-top: 2rem;
+    padding-inline: 1rem;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    color: var(--elewa-group-website-color-primary);
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+        font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+    }
+    p{
+        font-size: var(--elewa-group-website-team-and-members-h1-font-size-responsive);
+        margin-block: 1.5rem;
+
+    }
+    .hero-btn{
+        width: 96%;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .career-hero{
+        margin-top: 2rem;
+        max-width: 90%;
+        margin-inline: 5rem;
+        font-family: var(--elewa-group-website-dmsans-regular);
+        color: var(--elewa-group-website-color-primary);
+        .content h2{
+            font-size: var(--elewa-group-website-timeline-header);
+            font-weight: var(--elewa-group-website-font-weight-title-medium);
+        }
+        p{
+            font-size: var(--elewa-group-website-font-size-elewa-text);
+            margin-block: 1.5rem;
+            max-width: 75%;
+            font-weight: var(--elewa-group-website-font-weight-title);
+        }
+    }
+}
