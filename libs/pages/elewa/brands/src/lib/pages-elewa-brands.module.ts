@@ -11,6 +11,7 @@ import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands
 import { BrandsRoutingModule } from './brands.routing';
 import { ElewaBrandsElewaEducationComponent } from './components/elewa-brands-elewa-education/elewa-brands-elewa-education.component';
 import { ElewaBrandsItalantaComponent } from './components/elewa-brands-italanta/elewa-brands-italanta.component';
+import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creative-hub/elewa-brands-creative-hub.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
@@ -19,6 +20,7 @@ import { ElewaBrandsItalantaComponent } from './components/elewa-brands-italanta
     ElewaBrandsOpportunitiesComponent,
     ElewaBrandsElewaEducationComponent,
     ElewaBrandsItalantaComponent,
+    ElewaBrandsCreativeHubComponent,
   ],
 })
 export class BrandsModule {}
