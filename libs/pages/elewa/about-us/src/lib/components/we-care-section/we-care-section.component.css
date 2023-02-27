@@ -1,4 +1,4 @@
-.container{
+.container {
   background-color: #f4f4f4;
   width: 100%;
   padding-left: 65px;
@@ -6,29 +6,25 @@
   padding-bottom: 2px;
 }
 
-.container h1{
-    font-family: var(--elewa-group-website-dmsans-bold);
-    font-weight: var(--elewa-group-website-font-weight-title);
-    font-size: var(--elewa-group-website-font-size-title);
+.container h1 {
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-weight: var(--elewa-group-website-font-weight-title);
 }
 
 .row {
   display: flex;
 }
 
-
- .column p {
-		/* margin-bottom: 20px; */
-    font-family: var(--elewa-group-website-dmsans-regular);
-    font-weight: var(--elewa-group-website-font-size-description);
-	}
+.column p {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-weight: var(--elewa-group-website-font-size-description);
+}
 
 .column {
   flex: 25%;
 }
 
-
-.bottom{
+.bottom {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 20px 20px;
@@ -36,22 +32,55 @@
   background-color: #f4f4f4;
 }
 
-.card-roww{
-  /* width: 30%; */
+.card-roww {
   margin-top: 10%;
 }
 
-.card-roww title{
+.card-roww title {
   font-family: var(--elewa-group-website-dmsans-bold);
   font-weight: var(--elewa-group-website-font-weight-title);
-  font-size: var(--elewa-group-website-font-size-title);
 }
-/*
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 15px;
+  }
+  .row {
+    display: block;
 
-} */
+  }
 
+  .column {
+    flex: 100%;
+    padding: 15px;
 
-/* @media screen and (max-width: 600px) {
-  */
+  }
+  .bottom {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding-left: 25px;
+  }
+  .column {
+    flex: 50%;
+  }
+  .bottom {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .container {
+    padding-left: 65px;
+  }
+  .column {
+    flex: 25%;
+  }
+  .bottom {
+    grid-template-columns: auto auto auto;
+  }
+}
