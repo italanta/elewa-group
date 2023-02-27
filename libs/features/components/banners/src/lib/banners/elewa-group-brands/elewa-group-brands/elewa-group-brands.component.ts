@@ -11,5 +11,6 @@ export class ElewaGroupBrandsComponent {
   @Input () name: string;
   @Input () brandDescription: string
   @Input () buttonText: string
+  @Input() url = '';
   @Input () logoPlacement: string
 }
