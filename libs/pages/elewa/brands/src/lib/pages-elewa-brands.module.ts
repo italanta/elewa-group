@@ -10,6 +10,6 @@ import { ElewaBrandsOpportunitiesComponent } from './components/elewa-brands-opp
 @NgModule({
   imports: [CommonModule, BrandsRoutingModule, LayoutModule, BannersModule],
   declarations: [ElewaBrandsPageComponent, ElewaBrandsOpportunitiesComponent],
-  exports: [ElewaBrandsOpportunitiesComponent]
+  // exports: [ElewaBrandsOpportunitiesComponent]
 })
 export class PagesElewaBrandsModule {}
