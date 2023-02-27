@@ -17,7 +17,6 @@ describe('ContactBannerComponent', () => {
   });
 
   it('should create', () => {
-    
     expect(component).toBeTruthy();
   });
 });

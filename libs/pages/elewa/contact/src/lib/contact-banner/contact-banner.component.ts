@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './contact-banner.component.html',
   styleUrls: ['./contact-banner.component.scss'],
 })
-export class ContactBannerComponent {
-  
-}
+export class ContactBannerComponent {}
