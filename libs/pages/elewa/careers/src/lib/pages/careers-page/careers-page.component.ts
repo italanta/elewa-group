@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './careers-page.component.html',
   styleUrls: ['./careers-page.component.scss'],
 })
-export class CareersPageComponent {}
+export class CareersPageComponent {
+  message1= 'Apply Now'
+}
