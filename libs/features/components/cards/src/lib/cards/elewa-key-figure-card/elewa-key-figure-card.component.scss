@@ -19,6 +19,15 @@ img{
     padding: 30px 30px;
     text-align: center;
 }
+.text{
+    font-weight: var(--elewa-group-website-font-weight-title-medium);
+    font-family: var(--elewa-group-website-dmsans-bold);
+}
+h1,h3 {
+      margin: 0;
+      padding: 0;
+      display: inline;
+}
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     .container{
