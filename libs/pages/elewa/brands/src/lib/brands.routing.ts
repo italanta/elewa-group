@@ -16,4 +16,3 @@ export const ELEWA_BRANDS_ROUTES: Route[] = [
 })
 export class BrandsRoutingModule { }
 
-
