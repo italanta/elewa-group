@@ -1,0 +1,61 @@
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact-banner h1 {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-weight: var(--elewa-group-website-font-weight-title-medium);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: var(--elewa-group-website-font-size-description-medium);
+  color: var(--elewa-group-website-team-and-members-color-grey);
+}
+
+.input-group input[type=text], .input-group input[type=email], .input-group textarea {
+  padding: 10px;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .input-group {
+    margin: 0;
+    width: 100%;
+  }
+}
