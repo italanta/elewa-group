@@ -6,6 +6,7 @@ import { ContactBannerComponent } from './contact-banner/contact-banner.componen
 
 @NgModule({
   imports: [CommonModule, ContactRoutingModule],
-  declarations: [ContactPageComponent, ContactBannerComponent],
+  declarations: [ContactPageComponent, 
+    ContactBannerComponent],
 })
 export class ContactPageModule {}
