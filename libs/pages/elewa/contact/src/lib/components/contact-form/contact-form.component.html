@@ -1,0 +1,22 @@
+<form [formGroup]="contactData" (submit)="handleSubmit()">
+    <section class="form_section">
+        <label for="name">Your name</label>
+        <input type="text" formControlName="name">
+    </section>
+    <section class="form_section">
+        <label for="name">Your name</label>
+        <input type="text" formControlName="name">
+    </section>
+    <section class="form_section">
+        <label for="name">Your name</label>
+        <input type="text" formControlName="name">
+    </section>    
+    <section class="form_section">
+        <label for="name">Your name</label>
+        <input type="text" formControlName="name">
+    </section>
+    <section class="form__bottom-section">
+        <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>
+        <elewa-group-button-with-animation [message]="message"></elewa-group-button-with-animation>
+    </section>
+</form>
