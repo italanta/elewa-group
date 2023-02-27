@@ -1,0 +1,98 @@
+.contact-main {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100vw;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.contact-form {
+  margin: auto;
+}
+h1 {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 50px;
+  font-weight: 100;
+}
+
+p {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  margin-top: 9%;
+  font-size: medium;
+  width: 60%;
+}
+.contact-info {
+  margin-left: 110px;
+  padding-left: 80px;
+  padding-top: 1%;
+  height: auto;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  width: 30%;
+  margin-top: 65%;
+}
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 90%;
+  background: black;
+  color: #fff;
+  margin-top: 20px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: blue;
+}
+
+.input-wrapper .placeholder {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  position: absolute;
+  top: 40%;
+  left: 0px;
+  font-size: 26px;
+  color: #ccc;
+  pointer-events: none;
+  transform: translateY(-20%, -10%);
+  transition: all 0.4s ease-in-out;
+}
+
+.input-wrapper input:focus + .placeholder,
+.input-wrapper input:not(:placeholder-shown) + .placeholder {
+  top: 10px;
+  left: 0;
+  font-size: 17px;
+  color: white;
+}
+
+#category {
+  padding-right: 400px;
+  background: black;
+  border: black;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 26px;
+  margin-top: 20px;
+}
+.terms {
+  width: 70%;
+}
+.terms-send {
+  display: flex;
+}
+.btn {
+  margin-top: 6%;
+}
