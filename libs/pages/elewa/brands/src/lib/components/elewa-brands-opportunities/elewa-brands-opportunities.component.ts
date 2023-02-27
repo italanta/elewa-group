@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./elewa-brands-opportunities.component.scss'],
 })
 export class ElewaBrandsOpportunitiesComponent {
+
   message = "Become part of the family";
   callToActionText = "open opportunities.";
   word = "View";
+
 }
