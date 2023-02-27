@@ -1,20 +1,39 @@
 #project_section {
     display: flex;
     flex-direction: column;
-    min-height: 72vh;
+    min-height: 90vh;
     justify-content: space-between;
     text-align: center;
     font-family: var(--elewa-group-website-dmsans-regular);
     h1 {
         font-weight: 500;
-        font-size:2.2rem;
+        font-size:2.5rem;
     }
 }
+.project_section-vertical {
+    padding-top:3rem;
+}
 .project_section-horizontal {
+    padding-top:4rem;
     padding-left:1.5rem;
+}
+.project_section-cta{
+    font-size:2.5rem;
+    padding-top:8rem;
 }
 @media (max-width:480px){
     #project_section {
        gap:3rem;
+    }
+    .project_section-cta{
+        font-size:2rem;
+        padding-top:8rem;
+    }
+    .project_section-vertical {
+        padding-top:2rem;
+    }
+    .project_section-horizontal {
+        padding-top:3rem;
+        padding-left:1.5rem;
     }
 }
