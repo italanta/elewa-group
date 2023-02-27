@@ -8,7 +8,7 @@ import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-det
 import { ElewaInvestHeroComponent } from './components/elewa-invest-hero/elewa-invest-hero.component';
 import { ElewaInvestCreativeHubSectionComponent } from './components/elewa-invest-creative-hub-section/elewa-invest-creative-hub-section.component';
 import { ElewaInvestInvestingInElewaSectionComponent } from './components/elewa-invest-investing-in-elewa-section/elewa-invest-investing-in-elewa-section.component';
-
+import { ElewaInvestCallToActionSectionComponent  } from './components/elewa-invest-call-to-action-section/elewa-invest-call-to-action-section.component';
 import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 
 import { InvestRoutingModule } from './invest.routing';
@@ -24,9 +24,10 @@ import { ElewaInvestStakeholderSectionComponent } from './components/elewa-inves
     InvestRoutingModule
   ],
   declarations: [
-    InvestPageComponent, 
-    ElewaInvestHeroComponent, 
-    ElewaInvestDetailSectionComponent, 
-    ElewaInvestCreativeHubSectionComponent,ElewaInvestInvestingInElewaSectionComponent, ElewaInvestStakeholderSectionComponent],
+    InvestPageComponent,
+    ElewaInvestHeroComponent,
+    ElewaInvestDetailSectionComponent,
+    ElewaInvestCreativeHubSectionComponent,ElewaInvestInvestingInElewaSectionComponent, ElewaInvestStakeholderSectionComponent,
+    ElewaInvestCallToActionSectionComponent],
 })
 export class InvestPageModule { }
