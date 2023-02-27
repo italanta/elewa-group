@@ -7,10 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ElewaGroupBrandsComponent {
 
-  @Input () logo: string = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/Elewa_education_pp1gnc.svg';
-  @Input () name: string = '';
-  @Input () brandDescription: string = ''
-  @Input () buttonText: string = ''
+  @Input () logo = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/Elewa_education_pp1gnc.svg';
+  @Input () name = '';
+  @Input () brandDescription = ''
+  @Input () buttonText = ''
   @Input() url = '';
   @Input () logoPlacement: 'right' | 'left' = 'right';
 }
