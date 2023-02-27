@@ -1,0 +1,49 @@
+.main{
+  display: flex;
+  margin-top: 10%;
+  padding: 30px;
+  margin-bottom: 10%;
+}
+
+h1{
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 12%;
+}
+p{
+  font-family: var(--elewa-group-website-dmsans-regular);
+  line-height: 22px;
+  width: 570px;
+  margin-top: 12%;
+
+}
+.pic {
+  width: 570px;
+  height: 400px;
+overflow: hidden;
+border-radius: 40px;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-section{
+  margin-left: 7%;
+}
+.sub-section2{
+  width: 500px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.sub-section2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 15%;
+  border-radius: 40px;
+}
+
+
