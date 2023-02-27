@@ -11,5 +11,5 @@ export class ElewaGroupBrandsComponent {
   @Input () brandDescription: string;
   @Input () buttonText: string;
   @Input() url:string;
-  @Input () logoPlacement: 'right' | 'left' = 'left';
+  @Input () logoPlacement: 'right' | 'left' = 'right';
 }
