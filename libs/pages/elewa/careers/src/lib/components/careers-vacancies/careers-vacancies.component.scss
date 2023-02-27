@@ -1,0 +1,51 @@
+.main{
+ margin: 30px;
+ margin-top: 20%;
+}
+.main-vacancy{
+  border: 1px solid black;
+  // margin: 10px;
+}
+.vacancy-1{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  border: white;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding-top: 40px;
+margin-left: 60px;
+margin-right: 60px;
+}
+.vacancy-2{
+ display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  margin-top: 5%;
+  margin-left: 60px;
+  margin-left: 60px;
+}
+
+p{
+  width: 50%;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  line-height: 22px;
+}
+.btn {
+  margin-right: -2%;
+}
+h1{
+  margin-left: 7%;
+  padding-bottom: 40px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 40px;
+  font-weight: 100;
+}
+.title{
+  margin-left: -60px;
+  font-family: var(
+    --elewa-group-website-dmsans-medium
+  );
+  font-size: 20px;
+  font-weight: 100;
+}
