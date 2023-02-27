@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="cardSection">
+        <div class="figure" *ngIf="isImage; else noImage">
+            <img src={{figure}} alt="">
+            <p class="desc">{{description}}</p>
+        </div>
+        <ng-template #noImage>
+            <div class="text">
+                <h1>10</h1>
+                <h3>M</h3>
+            </div>
+        </ng-template>
+    </div>    
+</div>
