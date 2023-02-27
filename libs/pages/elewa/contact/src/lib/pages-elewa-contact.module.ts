@@ -4,7 +4,7 @@ import { ContactRoutingModule } from './contact.routing';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 @NgModule({
-  imports: [CommonModule, ContactRoutingModule, ContactFormComponent],
+  imports: [CommonModule, ContactRoutingModule],
   declarations: [ContactPageComponent, ContactFormComponent],
 
 })
