@@ -1,1 +1,85 @@
-<p>contact-form works!</p>
+<div class="contact-main">
+  <div class="contact-info">
+    <h1 class="heading">Contact</h1>
+    <p>
+      Looking for a quick answer to your question? Check out our FAQs. <br />
+      <br />
+      <br />
+      For everything else, drop us a line and we'll get back to you.
+    </p>
+    <div class="icons">
+      <img
+        src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"
+        alt=""
+      />
+      <img
+        src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"
+        alt=""
+      />
+      <img
+        src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="contact-form">
+    <form [formGroup]="contactForm">
+      <div class="input-wrapper">
+        <input type="text" id="name" formControlName="name" placeholder="*" />
+        <span class="placeholder">Your name</span>
+      </div>
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="companyName"
+          formControlName="companyName"
+          placeholder="*"
+        />
+        <span class="placeholder">Company name</span>
+      </div>
+      <div class="input-wrapper">
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="*"
+        />
+        <span class="placeholder">E-mail</span>
+      </div>
+      <div class="input-wrapper">
+        <select
+          id="category"
+          formControlName="category"
+          placeholder="Select option"
+        >
+          <option value="">Select Option</option>
+          <option value="sales">Option1</option>
+          <option value="support">Option2</option>
+          <option value="general">Option3</option>
+        </select>
+        <span class="placeholder"></span>
+      </div>
+      <div class="input-wrapper">
+        <textarea
+          id="message"
+          formControlName="message"
+          placeholder="Message"
+        ></textarea>
+        <span class="placeholder"></span>
+      </div>
+    </form>
+    <div class="terms-send">
+      <div class="terms">
+        <p>
+          By clicking the submit button, you agree to our
+          <a href="#">Privacy Policy</a> terms
+        </p>
+      </div>
+      <div class="btn">
+        <elewa-group-button-with-animation
+          [message]="message1"
+        ></elewa-group-button-with-animation>
+      </div>
+    </div>
+  </div>
+</div>
