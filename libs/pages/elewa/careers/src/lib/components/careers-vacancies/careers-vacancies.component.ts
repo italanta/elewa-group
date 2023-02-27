@@ -9,7 +9,7 @@ export class CareersVacanciesComponent {
   message1 = 'Apply Now';
   constructor(private router: Router) {}
   btnClick = () => {
-    this.router.navigate([]);
+    this.router.navigate(['/careers/careerId']);
   };
   
 }
