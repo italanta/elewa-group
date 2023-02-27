@@ -35,6 +35,9 @@
       "@elewa-group/pages/elewa/activities": [
         "libs/pages/elewa/activities/src/index.ts"
       ],
+      "@elewa-group/pages/elewa/careers": [
+        "libs/pages/elewa/careers/src/index.ts"
+      ],
       "@elewa-group/pages/elewa/contact": [
         "libs/pages/elewa/contact/src/index.ts"
       ],
