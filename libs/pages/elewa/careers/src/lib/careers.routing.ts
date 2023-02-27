@@ -4,7 +4,7 @@ import { RouterModule, Route } from '@angular/router';
 import { CareersPageComponent } from './pages/careers-page/careers-page.component';
 
 export const ELEWA_CAREERS_ROUTES: Route[] = [
-    {path: '', component:CareersPageComponent}
+    {path: '', component: CareersPageComponent}
 ]
 @NgModule({
     imports: [RouterModule.forChild(ELEWA_CAREERS_ROUTES)],
