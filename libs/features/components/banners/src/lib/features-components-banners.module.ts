@@ -21,6 +21,7 @@ import { ElewaGroupBrandsComponent } from './banners/elewa-group-brands/elewa-gr
     ElewaGroupTeamMemberComponent,
     ElewaGroupImageAndTextBannerComponent,
     ElewaCallToActionBannerComponent,
+    ElewaGroupBrandsComponent
   ],
 })
 export class BannersModule {}
