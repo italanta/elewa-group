@@ -60,6 +60,7 @@ border-radius: 40px;
   }
 
   p {
+    font-family: var(--elewa-group-website-dmsans-regular);
     line-height: 18px;
     width: 100%;
     margin-top: 8%;
@@ -75,11 +76,17 @@ border-radius: 40px;
     width: 100%;
     height: 360px;
     border-radius: 20px;
+    overflow: hidden;
+    margin-top: 8%;
+    
   }
 
   .sub-section2 img {
-    margin-top: 5%;
-    margin-left: 10px;
+    
+     margin-left: 15px;
+    margin-right: 15px;
     border-radius: 20px;
+    object-fit: cover;
+    
   }
 }
