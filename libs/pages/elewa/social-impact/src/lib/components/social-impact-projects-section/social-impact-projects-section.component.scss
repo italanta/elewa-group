@@ -21,3 +21,17 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+#social-impact-projects-section #elewa-group-call-cta {
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+}
+
+#social-impact-projects-section #the-cta-itself {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+}
