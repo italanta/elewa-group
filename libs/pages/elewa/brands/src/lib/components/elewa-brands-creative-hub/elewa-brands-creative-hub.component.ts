@@ -10,5 +10,6 @@ export class ElewaBrandsCreativeHubComponent {
   @Input () name  = 'Elewa Creative Hub';
   @Input () brandDescription = "Elewa Creative Hub is a two-acre creative space, located in the heart of Nairobi, offering refuge to Elewa talents and creatives to explore and grow.";
   @Input () buttonText  = 'Learn more';
+  @Input() url =''
   @Input () logoPlacement: 'right' | 'left' = 'right';
 }
