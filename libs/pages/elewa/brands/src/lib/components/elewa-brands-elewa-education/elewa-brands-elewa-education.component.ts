@@ -10,6 +10,6 @@ export class ElewaBrandsElewaEducationComponent {
   @Input () name  = 'Elewa Education';
   @Input () brandDescription = "The secret to successful education is empathy.By understanding people holistic contexts they operate,Elewa education develops proffessional training programs that are measured,sustainable,effective,and highly scalable.";
   @Input () buttonText  = 'Visit website';
-  @Input() url = '';
+  @Input() url = '/home';
   @Input () logoPlacement: 'right' | 'left' = 'right';
 }

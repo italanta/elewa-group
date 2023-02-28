@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-group-brands.component.scss'],
 })
 export class ElewaGroupBrandsComponent {
-
   @Input () logo: string;
   @Input () name: string;
   @Input () brandDescription: string;
