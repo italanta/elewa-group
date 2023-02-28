@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: var(--elewa-group-website-dmsans-regular);
-    background-color: var(--elewa-group-website-color-hero-image2);
     position: relative;
 }
 
@@ -30,6 +29,7 @@
 
 #careers-hero .paragraph{
     font-size: var( --elewa-group-website-font-size-title-medium);
+    width: 60%;
 }
 
 #careers-hero .btn{
