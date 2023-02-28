@@ -30,10 +30,10 @@
 
 #social-impact-projects-section #the-cta-itself {
     position: absolute;
-    top: -8rem;
+    top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 }
 @media screen and (max-width:850px){
     #social-impact-projects-section h1{
