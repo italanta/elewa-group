@@ -26,8 +26,26 @@ margin-right: 60px;
   padding-bottom: 30px;
   margin-top: 5%;
   margin-left: 60px;
-  margin-left: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid black;
 }
+
+
+.vacancy-3{
+   display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  border: white;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+margin-left: 60px;
+margin-right: 60px;
+
+}
+.vacancy-3 p{
+  width: 50%;
+}
+
 
 p{
   width: 50%;
@@ -60,7 +78,7 @@ h1{
     margin-top: 15%;
     padding-top: 80px;
   }
-  .vacancy-1, .vacancy-2 {
+  .vacancy-1, .vacancy-2 , .vacancy-3 {
     display: block;
     margin-left: 10px;
     margin-right: 10px;
@@ -89,8 +107,8 @@ h1{
     margin-top: 10%;
     padding-top: 60px;
   }
-  .vacancy-1, .vacancy-2 {
-    margin-left: 5px;
+  .vacancy-1, .vacancy-2 , .vacancy-3 {
+    margin-left: 50px;
     margin-right: 5px;
   }
   .title {
