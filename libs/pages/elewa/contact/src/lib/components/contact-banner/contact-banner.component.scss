@@ -33,3 +33,57 @@ p{
   font-family: var(--elewa-group-website-dmsans-regular);
   font-size: 27px;
 }
+
+
+@media (max-width: 768px) { /* adjust styles for tablet screens */
+  .main-banner {
+    margin-top: 5%;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions,
+  .press,
+  .phone {
+    margin: 5% 0;
+  }
+
+  .press,
+  .phone {
+    border-top: 1px solid black;
+    padding-top: 2%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) { /* adjust styles for mobile screens */
+  .main-banner {
+    margin-top: 4%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
