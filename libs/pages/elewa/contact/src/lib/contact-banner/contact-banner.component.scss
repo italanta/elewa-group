@@ -1,13 +1,14 @@
 .container {
-    background-color: var(--elewa-group-website-color-card);
     border-radius: 30px 30px 0 0;
+    font-family: var(--elewa-group-website-dmsans-regular);
   }
   .container h2 {
-    font-family: var(--elewa-group-website-dmsans-bold);
+    font-family: var(--elewa-group-website-dmsans-regular);
     font-size: var(--elewa-group-website-team-and-members-h1-font-size);
     text-align: center;
     margin-bottom: 40px;
     padding-top: 30px;
+    font-weight: 100;
   }
   .row {
     display: flex;
@@ -20,8 +21,10 @@
     color: var(--elewa-group-website-team-and-members-color-grey);
   }
   .title {
-    font-size: var(--elewa-group-website-font-size-elewa-text);
-    margin-bottom: 10px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  margin-bottom: 5px;
+    
+  
   }
   
   hr {
