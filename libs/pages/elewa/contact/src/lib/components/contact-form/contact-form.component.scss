@@ -27,14 +27,17 @@
     }
 }
 .social_media_icons {
-    height: 37%;
+    height: 47%;
     display: flex;
     gap: 1.2rem;
     flex-direction: row;
     width: 100%;
     align-items: end;
     @media screen and (max-width:768px) {
-        height: 45%;
+        height: 37%;
+    }
+    @media screen and (max-width:488px) {
+        height: 32%;
     }
 }
 .fa-instagram,.fa-facebook-f,.fa-linkedin{
@@ -44,7 +47,7 @@
 
 .contact__form {
     padding-top: 1.5rem;
-    height: 80%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
