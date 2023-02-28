@@ -98,3 +98,104 @@ textarea:focus {
   margin-top: 6%;
   width: 40%;
 }
+
+@media only screen and (max-width: 767px) {
+.contact-main {
+  width: 100vw;
+flex-direction: column;
+justify-content: center;
+margin-right: 0;
+}
+
+.contact-info {
+margin-left: 0;
+padding-left: 0;
+text-align: center;
+margin-bottom: 5%;
+}
+p{
+  padding-right: 3%;
+  width: 100%;
+}
+
+.icons {
+margin-top: 30px;
+margin-left: 35%;
+justify-content: space-evenly;
+width: 30%;
+}
+
+.contact-form {
+margin-right: 0;
+margin-bottom: 10%;
+}
+
+input,
+textarea,
+select {
+font-size: 20px;
+}
+
+.input-wrapper .placeholder {
+font-size: 20px;
+top: 20%;
+}
+
+.btn {
+width: 30%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.contact-main {
+  width: 100vw;
+flex-direction: column;
+justify-content: center;
+margin-right: 0;
+}
+h1{
+ padding-right: 10%;
+}
+p{
+  padding-right: 10%;
+  width: 100%;
+}
+
+.contact-info {
+margin-left: 30px;
+padding-left: 0;
+text-align: center;
+margin-bottom: 5%;
+}
+
+.icons {
+margin-top: 30px;
+justify-content: space-evenly;
+margin-left: 35%;
+width: 20%;
+}
+
+.contact-form {
+margin-right: 0;
+margin-bottom: 10%;
+}
+
+input,
+textarea,
+select {
+font-size: 20px;
+}
+
+.input-wrapper .placeholder {
+font-size: 20px;
+top: 20%;
+}
+
+.btn {
+width: 30%;
+padding-left: 1%;
+}
+.terms {
+width: 50%;
+}
+}
