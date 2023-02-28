@@ -12,6 +12,7 @@ import { BeyondBusinessComponent } from './components/beyond-business/beyond-bus
 import { SocialImpactRoutingModule } from './social-impact.routing';
 
 import { SocialCallToActionComponent } from './components/social-call-to-action/social-call-to-action.component';
+import { SocialImpactProjectsSectionComponent } from './components/social-impact-projects-section/social-impact-projects-section.component';
 
 @NgModule({
   imports: [
@@ -27,8 +28,8 @@ import { SocialCallToActionComponent } from './components/social-call-to-action/
     SocialImpactOpenKnowledgeComponent,
     SocialImpactCooperativeSectionComponent,
     SocialCallToActionComponent,
-    BeyondBusinessComponent
-
+    BeyondBusinessComponent,
+    SocialImpactProjectsSectionComponent,
   ],
   exports: [SocialImpactPageComponent],
 })
