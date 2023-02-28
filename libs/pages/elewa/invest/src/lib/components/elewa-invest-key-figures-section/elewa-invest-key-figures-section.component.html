@@ -1,1 +1,11 @@
-<p>elewa-invest-key-figures-section works!</p>
+<div class="main">
+  <h1>Key Figures</h1>
+<div class="grid-container">
+<elewa-group-elewa-key-figure-card 
+*ngFor="let card of cards" 
+[figure]="card.figure2"
+[description]="card.description2"
+[isImage]="card.isImage2"
+></elewa-group-elewa-key-figure-card>
+</div>
+</div>
