@@ -3,7 +3,7 @@
  margin-top: 20%;
  border: 1px solid rgb(233, 230, 230);
  padding-top: 120px;
- 
+
 }
 .main-vacancy{
   border: 1px solid black;
@@ -51,4 +51,60 @@ h1{
   );
   font-size: 20px;
   font-weight: 100;
+}
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 10px;
+    margin-top: 15%;
+    padding-top: 80px;
+  }
+  .vacancy-1, .vacancy-2 {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .title {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  p {
+    width: 100%;
+    line-height: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .btn{
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .main {
+    margin: 5px;
+    margin-top: 10%;
+    padding-top: 60px;
+  }
+  .vacancy-1, .vacancy-2 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  p {
+    width: 100%;
+    line-height: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .btn{
+    width: 50%;
+    margin-left: 30%;
+  }
 }
