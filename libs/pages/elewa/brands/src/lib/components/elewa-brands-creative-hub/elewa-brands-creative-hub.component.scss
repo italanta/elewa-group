@@ -6,8 +6,9 @@
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
   .hub-content{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     h1{
       font-size: 2rem;
       font-weight: var(--elewa-group-website-font-weight-subtitle);
@@ -43,7 +44,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-    width: 95%;
+    width: 80%;
+    padding-bottom: 5rem;
     .hub-content{
       width: 50%;
       h1{
@@ -51,7 +53,6 @@
       }
       p{
         max-width: 28rem;
-        margin-block: 1.5rem;
       }
     }
     .hub-img{
