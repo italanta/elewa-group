@@ -13,8 +13,9 @@ import { InvestPageComponent } from './pages/invest-page/invest-page.component';
 
 import { InvestRoutingModule } from './invest.routing';
 import { ElewaInvestStakeholderSectionComponent } from './components/elewa-invest-stakeholder-section/elewa-invest-stakeholder-section.component';
+import { ElewaInvestKeyFiguresSectionComponent } from './components/elewa-invest-key-figures-section/elewa-invest-key-figures-section.component';
 import { CardsModule} from '@elewa-group/features/components/cards';
-import {ElewaInvestKeyFiguresSectionComponent} from './components/elewa-invest-key-figures-section/elewa-invest-key-figures-section.component';
+
 @NgModule({
   imports: [
     CommonModule,
