@@ -47,7 +47,7 @@
         margin-bottom: 1rem;
       }
   
-      .brands-stakeholder-paragraphs {
+      .brands-stakeholder-content {
         margin: 2rem 0;
         max-width: 100%;
   
@@ -57,7 +57,7 @@
       }
     }
   
-      .brands-stakeholder-link {
+      .brands-stakeholder-anchor {
         text-decoration: underline;
         font-weight: var(--elewa-group-website-font-weight-title);
         cursor: pointer;
@@ -69,17 +69,18 @@
       justify-content: space-between;
       align-items: center;
       padding: 5rem 3rem;
-
+  
       
   
       .brands-stakeholder-img {
         width: 40%;
+        margin-top: 1rem;
       }
   
       .brands-stakeholder-text {
         width: 60%;
   
-        .brands-stakeholder-paragraphs {
+        .brands-stakeholder-content {
           display: flex;
           justify-content: space-between;
           align-items: start;
