@@ -38,6 +38,8 @@
     }
     .container h2 {
       margin-bottom: 5px;
+      margin-right: 80px;
+     
     }
   
     .row {
@@ -46,7 +48,7 @@
       align-items: center;
     }
     hr {
-      width: 180px;
+      width: 190px;
     }
     .subtitle {
       font-size: var(--elewa-group-website-team-and-members-title-font-size);
@@ -56,5 +58,6 @@
     .title {
       font-size: var(--elewa-group-website-timeline-description);
       margin-bottom: 10px;
+    
     }
   }
