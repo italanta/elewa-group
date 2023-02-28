@@ -1,128 +1,94 @@
-.main{
- margin: 30px;
- margin-top: 20%;
- border: 1px solid rgb(233, 230, 230);
- padding-top: 120px;
-
-}
-.main-vacancy{
-  border: 1px solid black;
-  // margin: 10px;
-}
-.vacancy-1{
+.vacancy {
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  border: white;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  padding-top: 40px;
-margin-left: 60px;
-margin-right: 60px;
+  margin-top: 40px;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 40px 0;
+  border-top: 1px solid rgb(182, 170, 170);
 }
-.vacancy-2{
- display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  margin-top: 5%;
-  margin-left: 60px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid black;
+.main-vacancies {
+  margin-top: 10%;
 }
-
-
-.vacancy-3{
-   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  border: white;
-  border-bottom: 1px solid black;
-  padding-top: 10px;
-margin-left: 60px;
-margin-right: 60px;
-
-}
-.vacancy-3 p{
-  width: 50%;
-}
-
-
-p{
-  width: 50%;
+p {
+  width: 55%;
   font-family: var(--elewa-group-website-dmsans-regular);
-  line-height: 22px;
 }
-.btn {
-  margin-right: -2%;
+.title:first-child {
+  margin-right: auto;
 }
-h1{
-  margin-left: 7%;
-  padding-bottom: 40px;
+.btn:last-child {
+  margin-left: auto;
+}
+h1 {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 40px;
+  font-weight: 200;
+  margin-left: 8%;
+}
+h2{
+  font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 100;
 }
-.title{
-  margin-left: -60px;
-  font-family: var(
-    --elewa-group-website-dmsans-medium
-  );
-  font-size: 20px;
-  font-weight: 100;
-}
-
-/* For tablets */
-@media screen and (max-width: 768px) {
-  .main {
-    margin: 10px;
-    margin-top: 15%;
-    padding-top: 80px;
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 767px) {
+  .vacancy {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 20px 0;
   }
-  .vacancy-1, .vacancy-2 , .vacancy-3 {
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
+  
+  .title:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  .title {
-    margin-left: 0px;
-    font-size: 18px;
+  
+  .btn:last-child {
+    margin-left: 0;
+    margin-top: 10px;
   }
+  
   p {
     width: 100%;
-    line-height: 20px;
   }
+  
   h1 {
-    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    text-align: center;
   }
   .btn{
-    width: 30%;
-    margin-left: 35%;
+    width: 40%;
+    margin-left: 100%;
+  }
+  .main-vacancies {
+    margin-top: 5%;
   }
 }
 
-/* For mobile devices */
-@media screen and (max-width: 480px) {
-  .main {
-    margin: 5px;
-    margin-top: 10%;
-    padding-top: 60px;
+/* For screens smaller than 576px (mobile) */
+@media (max-width: 575px) {
+  .vacancy {
+    padding: 10px 0;
   }
-  .vacancy-1, .vacancy-2 , .vacancy-3 {
-    margin-left: 50px;
-    margin-right: 5px;
-  }
-  .title {
-    font-size: 16px;
-  }
+  
   p {
-    width: 100%;
-    line-height: 18px;
+    font-size: 0.9em;
   }
+  
   h1 {
-    font-size: 24px;
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1em;
   }
   .btn{
-    width: 50%;
+    width: 40%;
     margin-left: 30%;
   }
 }
