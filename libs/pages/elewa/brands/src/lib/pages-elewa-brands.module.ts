@@ -8,15 +8,21 @@ import { ElewaBrandsOpportunitiesComponent } from './components/elewa-brands-opp
 
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 
-import { BrandsRoutingModule } from './brands.routing';
 import { ElewaBrandsVentureLabsComponent } from './components/elewa-brands-venture-labs/elewa-brands-venture-labs.component';
+import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
+
+import { BrandsRoutingModule } from './brands.routing';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
   declarations: [
     ElewaBrandsPageComponent,
     ElewaBrandsOpportunitiesComponent,
+
     ElewaBrandsVentureLabsComponent,
+
+    ElewaBrandsHeroComponent,
+
   ],
 })
 export class BrandsModule {}
