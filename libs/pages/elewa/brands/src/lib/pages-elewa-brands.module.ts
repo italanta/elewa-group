@@ -10,6 +10,7 @@ import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands
 
 import { BrandsRoutingModule } from './brands.routing';
 import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stakeholder/elewa-brands-stakeholder.component';
+import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
@@ -17,6 +18,8 @@ import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stake
     ElewaBrandsPageComponent,
     ElewaBrandsOpportunitiesComponent,
     ElewaBrandsStakeholderComponent,
+    ElewaBrandsHeroComponent,
+
   ],
 })
 export class BrandsModule {}
