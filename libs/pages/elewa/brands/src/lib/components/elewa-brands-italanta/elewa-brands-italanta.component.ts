@@ -10,5 +10,6 @@ export class ElewaBrandsItalantaComponent {
   @Input () name  = 'ITalanta';
   @Input () brandDescription = "From Silicon Savannah to the world,iTalanta is an offshore tech development agency that doubles as a tech accelerator. Italanta has a portfolio of clients consisting out of the some of the hottest global startups.";
   @Input () buttonText  = 'Visit website';
+  @Input() url = '/home';
   @Input()  logoPlacement: 'right'| 'left' = 'right'
 }
