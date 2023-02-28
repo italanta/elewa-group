@@ -1,0 +1,68 @@
+.creative-hub{
+  font-family: var(--elewa-group-website-dmsans-regular);
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  .hub-content{
+    margin-bottom: 2rem;
+    h1{
+      font-size: 2rem;
+      font-weight: var(--elewa-group-website-font-weight-subtitle);
+      font-weight: var(--elewa-group-website-font-weight-subtitle);
+      margin: 0;
+    }
+    p{
+      font-size: var(--elewa-group-website-font-size-description);
+      padding-block: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  .hub-img{
+    div{
+      background-color: #191919;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 16rem;
+      width: 78%;
+      border-radius: 25px;
+      padding-left:2rem;
+      img{
+        width: 16rem;
+        height: 8rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 850px) {
+  .creative-hub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 95%;
+    .hub-content{
+      width: 50%;
+      h1{
+        font-size: 3.2rem;
+      }
+      p{
+        max-width: 28rem;
+        margin-block: 1.5rem;
+      }
+    }
+    .hub-img{
+      width: 50%;
+      div{
+        width: 45%;
+        float: right;
+        img{
+          width: 18rem;
+        }
+      }
+    }
+  }
+}
