@@ -8,7 +8,7 @@
   .stakeholder-img{
     margin-bottom: 1rem;
     img{
-      width: 80%;
+      width: 70%;
       height: 20rem;
       transform: rotate(45deg);
       opacity: .5;
@@ -19,7 +19,7 @@
     font-family: var(--elewa-group-website-dmsans-regular);
     padding-bottom: 1.5rem;
     h1{
-      font-size: 2.8rem;
+      font-size: 1.8rem;
       font-weight: var(--elewa-group-website-font-weight-title);
       max-width: 80%;
       margin-bottom: 1rem;
@@ -48,9 +48,15 @@
     padding:5rem 3rem;
     .stakeholder-img{
       width: 40%;
+      img{
+        width: 80%;
+      }
     }
     .stakeholder-text{
       width: 60%;
+      h1{
+        font-size: 2.8rem;
+      }
       .stakeholder-paragraphs{
         display: flex;
         justify-content: space-between;
