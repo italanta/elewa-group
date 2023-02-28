@@ -8,7 +8,7 @@ import { Component, Input, Output } from '@angular/core';
 export class ElewaGroupImageAndTextBannerComponent {
   @Input() imageURL = '';
   @Input() paragraphTexts : string[] = [];
-  @Input() titleText = '';
+  @Input() titleText = 'Elewa NV, a multi - stakeholder coo(r)peration';
   @Input() imagePlacement = 'right';
   @Input() backgroundColor = 'grey';
   @Input() buttonText = '';

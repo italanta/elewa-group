@@ -1,112 +1,98 @@
-#text-and-image-banner {
-    width: 100vw;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    font-size: var(--elewa-group-website-font-size-elewa-text);
-    font-family: var(--elewa-group-website-dmsans-regular);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: var(--elewa-group-website-brands-stakeholder-background-color);
-}
+.brands-stakeholder {
+    background-color: var(--elewa-group-website-color-card);
+    border-radius: 0 0 25px 25px;
+    margin: 2rem;
+    padding: 1rem;
+    background-image: url('https://pbs.twimg.com/media/FqDHdlEWcAA9eGV?format=png&name=900x900');
+    background-repeat: repeat-x; 
 
-#text-and-image-banner .banner-container {
-    display: flex;
-    gap: 10%;
-    width: 80%;
-    max-height: 80vh;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#text-and-image-banner .banner-container.left {
-    flex-direction: row-reverse;
-}
-
-#text-and-image-banner .content {
-    display: grid;
-    place-items: center;
-}
-
-#text-and-image-banner #text-content,
-#text-and-image-banner .content img {
-    max-height: max(70vh, 500px);
-    max-width: 45vw;
-    object-fit: cover;
-}
-
-#text-and-image-banner #text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 60%;
-}
-
-#text-and-image-banner #text-content .title {
-    margin-bottom: 2rem;
-}
-
-#text-and-image-banner #text-content .paragraph {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-#text-and-image-banner .content#img-content img {
-    border-radius: 2rem;
-}
-
-
-// RESPONSIVENESS
-$breakpoint-tablet: 768px;
-$breakpoint-low-res-desktops: 1360px;
-
-@media (max-width: $breakpoint-low-res-desktops){
-    #text-and-image-banner {
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+    // .brands-stakeholder-top-accent {
+    //     display: flex;
+    //     position: absolute; /* Set position of top image to absolute */
+    //     // top: 0; /* Position at top of container */
+    //     // margin-top: 0px;
+    //     // // left: 0; /* Position at left of container */
+    //     // right: 0;
+    //     width: 100%; /* Span the entire width of the container */
+    //     height: 4%; /* Set height to less than 5px */
+    //     // background-image: url('https://pbs.twimg.com/media/FqDHdlEWcAA9eGV?format=png&name=900x900'); /* Set background image */
+    //     // margin-left: 2rem;
+    //     // margin-right: 2rem;
+        
+    //     transform: translate(-5%, -20% );
+    //     // background-repeat: repeat-x; /* Repeat the image horizontally */
+    //   }
+        
+    
+    .brands-stakeholder-img {
+      margin-bottom: 1rem;
+  
+      img {
+        width: 100%;
+        height: 20rem;
+        transform: rotate(45deg);
+        opacity: .5;
+      }
     }
-
-    #text-and-image-banner {
-        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-    }
-
-    #text-and-image-banner .banner-container {
-        gap: 5%;
-        width: 90%;
-        max-height: 80vh;
-    }
-}
-
-@media (max-width: $breakpoint-tablet), (max-aspect-ratio: 1.1) {
-    #text-and-image-banner {
-        font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-        font-family: var(--elewa-group-website-dmsans-regular);
-    }
-
-    #text-and-image-banner .banner-container {
-        flex-direction: column;
-        max-height: none;
-        justify-content: space-around;
-    }
-
-    #text-and-image-banner #text-content,
-    #text-and-image-banner .content img {
-        width: calc(min(90vw, 480px) - 3rem);
-        max-width: none;
-        max-height: none;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
-
-    #text-and-image-banner #text-content .title {
+  
+    .brands-stakeholder-text {
+      width: 90%;
+      font-family: var(--elewa-group-website-dmsans-regular);
+      padding-bottom: 1.5rem;
+  
+      .brands-stakeholder-heading {
+        font-size: 2.8rem;
+        font-weight: var(--elewa-group-website-font-weight-title);
+        max-width: 80%;
         margin-bottom: 1rem;
+      }
+  
+      .brands-stakeholder-paragraphs {
+        margin: 2rem 0;
+        max-width: 100%;
+  
+        .brands-stakeholder-paragraph {
+          font-weight: var(--elewa-group-website-font-size-description);
+          margin-right: 2rem;
+      }
     }
+  
+      .brands-stakeholder-link {
+        text-decoration: underline;
+        font-weight: var(--elewa-group-website-font-weight-title);
+        cursor: pointer;
+      }
+    }
+  
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 3rem;
 
-    #text-and-image-banner .banner-container.left {
-        flex-direction: column-reverse;
+      
+  
+      .brands-stakeholder-img {
+        width: 40%;
+      }
+  
+      .brands-stakeholder-text {
+        width: 60%;
+  
+        .brands-stakeholder-paragraphs {
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          max-width: 90%;
+          padding-right: 7rem;
+  
+          .brands-stakeholder-paragraph {
+            max-width: 17rem;
+          }
+        }
+      }
     }
+  }
+  
+  
 
-    #text-and-image-banner .content#img-content img {
-        border-radius: 1.2rem;
-    }
-}
