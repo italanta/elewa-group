@@ -9,8 +9,7 @@ import { ElewaBrandsOpportunitiesComponent } from './components/elewa-brands-opp
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 
 import { BrandsRoutingModule } from './brands.routing';
-import { ElewaBrandsElewaEducationComponent } from './components/elewa-brands-elewa-education/elewa-brands-elewa-education.component';
-import { ElewaBrandsItalantaComponent } from './components/elewa-brands-italanta/elewa-brands-italanta.component';
+
 import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creative-hub/elewa-brands-creative-hub.component';
 
 @NgModule({
@@ -18,8 +17,6 @@ import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creat
   declarations: [
     ElewaBrandsPageComponent,
     ElewaBrandsOpportunitiesComponent,
-    ElewaBrandsElewaEducationComponent,
-    ElewaBrandsItalantaComponent,
     ElewaBrandsCreativeHubComponent,
   ],
 })
