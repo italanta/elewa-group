@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
+import {ButtonsModule} from '@elewa-group/features/components/buttons'
 
 import { CareersPageComponent } from './pages/careers-page/careers-page.component';
 import { CareersHeroComponent } from './components/careers-hero/careers-hero.component';
@@ -9,7 +10,7 @@ import { CareersHeroComponent } from './components/careers-hero/careers-hero.com
 import { CareersRoutingModule } from './careers.routing';
 
 @NgModule({
-  imports: [CommonModule,LayoutModule, CareersRoutingModule],
+  imports: [CommonModule,LayoutModule, CareersRoutingModule,ButtonsModule],
   declarations: [CareersPageComponent, CareersHeroComponent],
 
 })
