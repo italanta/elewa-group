@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class ContactFormComponent {
   message = "Send Message"
+  url = "contact"
   contactData = new FormGroup({ 
     name: new FormControl(''),
     company_name: new FormControl(''),
@@ -16,6 +17,6 @@ export class ContactFormComponent {
     message: new FormControl(''),
   })
   handleSubmit(){
-    return('')
+    this.contactData.value
   }
 }
