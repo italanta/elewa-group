@@ -1,0 +1,54 @@
+.container{
+    margin: 40px;
+    font-family: var(--elewa-group-website-dmsans-regular) ; 
+}
+.title{
+    font-size: var(--elewa-group-website-font-size-title);
+    padding-bottom: 20px;
+    font-weight: 400; 
+}
+.job{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap:40px;
+    margin-bottom:40px;
+    border-top: 2px solid gray;
+    padding-top: 40px;
+}
+.job h2{
+    font-weight: 400;
+    font-size: 15px;
+}
+.job p{
+    font-size: 14px;
+}
+.button{
+    margin-left: 90px;
+}
+h6{
+    font-family: var(--elewa-group-website-dmsans-medium);
+    padding: 20px 0px;
+}
+ul.dash {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+ul.dash > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+li{
+    font-size: 13px;
+}
+@media  (max-width:768px){
+    .job{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        margin-left: 20px;
+    }
+}
