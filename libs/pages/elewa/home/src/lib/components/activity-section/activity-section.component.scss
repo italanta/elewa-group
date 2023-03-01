@@ -1,6 +1,6 @@
 .container {
   background: var(--elewa-group-website-color);
-  height: 1000px;
+  height: fit-content;
   max-width: 90%;
   margin: auto;
   padding-top: 50px;
@@ -33,7 +33,7 @@
     display: block;
     padding-left: 10px;
     background: var(--elewa-group-website-color);
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .cards {
