@@ -17,4 +17,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ELEWA_GROUP }}'
+          expires: 1d
           projectId: elewa-group
