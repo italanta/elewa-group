@@ -1,0 +1,26 @@
+.project-section {
+    display: flex;  
+    flex-direction: column;  
+    justify-content: space-between;
+    font-family: var(--elewa-group-website-dmsans-medium);
+    font-weight: var(--elewa-group-website-font-weight-title);
+    font-size: var(--elewa-group-website-font-size-title); 
+    padding: 0px 20px;
+    overflow-x: hidden;
+  
+    .title {    
+      text-align: center;
+      padding: 80px 0px;    
+    }
+    .list-of-projects, 
+    .list-of-org-partners {
+      margin: 10px 0px;
+      padding: 40px 0px;
+    }
+  
+    .call-to-action {
+      text-align: center;
+      padding: 80px 0px;    
+    }
+  
+  }
