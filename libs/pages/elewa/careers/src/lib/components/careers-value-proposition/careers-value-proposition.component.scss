@@ -8,7 +8,7 @@
     align-items: end;
     justify-content: end;
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 10%;
 
 }
 .image1{
@@ -50,4 +50,41 @@ h1{
 p{
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: 20px;
+}
+@media (max-width:1000px ){
+    .componentdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+    }
+    .container1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .second-image{
+        min-width: 80vw;
+        height: 40vh;
+    }
+    .first-image{
+        min-width: 80vw;
+        border-radius: 20px;
+    }
+    h{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .infodiv{
+        min-width: 80vw;
+    }
 }
