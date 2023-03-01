@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="title">{{ title }}</h1>
+    <div class="job" *ngFor="let job of jobs">
+      <div>
+        <h2>{{ job.title }}</h2>
+      </div>
+      <div>
+        <p>{{ job.description }}</p>
+        <div *ngIf="job.responsibilities">
+          <h6>Key responsibilities:</h6>
+          <ul *ngFor="let responsibility of job.responsibilities" class="dash">
+            <li>{{ responsibility }}</li>
+          </ul>
+        </div>
+        <div *ngIf="job.qualifications">
+          <h6>Qualifications:</h6>
+          <ul *ngFor="let qualification of job.qualifications" class="dash">
+            <li>{{ qualification }}</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="button">
+        <elewa-group-button-with-animation
+          [message]="buttontext"
+          [action]="'/careers/careerId'"
+        ></elewa-group-button-with-animation>
+      </div>
+    </div>
+  </div>
