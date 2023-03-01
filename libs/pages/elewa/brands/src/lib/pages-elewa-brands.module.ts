@@ -9,6 +9,7 @@ import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creat
 
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 import { BrandsRoutingModule } from './brands.routing';
+import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BrandsRoutingModule } from './brands.routing';
     ElewaBrandsPageComponent,
     ElewaBrandsOpportunitiesComponent,
     ElewaBrandsCreativeHubComponent,
+    ElewaBrandsHeroComponent,
   ],
 })
 export class BrandsModule {}
