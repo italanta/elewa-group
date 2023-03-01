@@ -1,0 +1,53 @@
+.componentdiv{
+    display:flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.container1{
+    display: inline;
+    align-items: end;
+    justify-content: end;
+    margin-left: 10%;
+    margin-right: 5%;
+
+}
+.image1{
+    padding-right: 10%;
+
+}
+.image2{
+    margin-right: 10%;
+}
+.first-image{
+    height: 50vh;
+    object-fit: cover;
+    overflow: hidden;
+    width: 40vw;
+    border-radius: 30px;
+} 
+.second-image{
+    height: 70vh;
+    border-radius: 20px;
+    width: 25vw;
+    object-fit: cover;
+}
+.container2{
+    margin-right: 10%;
+    margin-top: 0%;
+}
+.infodiv{
+    width: 40vw;
+    margin-top: 10%;
+}
+.h1div{
+    margin-bottom: 5%;
+}
+h1{
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-size: 34px ;
+    
+}
+p{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: 20px;
+}
