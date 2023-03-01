@@ -7,10 +7,15 @@ import { CareersPageComponent } from './pages/careers-page/careers-page.componen
 
 import { CareersRoutingModule } from './careers.routing';
 import { CareersHeroComponent } from './components/careers-hero/careers-hero.component';
-import {ButtonsModule} from '@elewa-group/features/components/buttons';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { CareersVacanciesComponent } from './components/careers-vacancies/careers-vacancies.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, CareersRoutingModule, ButtonsModule],
-  declarations: [CareersPageComponent, CareersHeroComponent],
+  declarations: [
+    CareersPageComponent,
+    CareersHeroComponent,
+    CareersVacanciesComponent,
+  ],
 })
 export class CareersModule {}
