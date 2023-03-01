@@ -9,6 +9,7 @@ import { TeamAndPartnersComponent } from './components/team-and-partners/team-an
 import { ActivitySectionComponent } from './components/activity-section/activity-section.component';
 import { HomePageLanderComponent} from './components/home-page-lander/home-page-lander.component';
 
+
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { HomeImpactSectionComponent } from './components/home-impact-section/home-impact-section.component';

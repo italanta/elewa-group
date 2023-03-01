@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './elewa-brands-page.component.html',
   styleUrls: ['./elewa-brands-page.component.scss'],
 })
-export class ElewaBrandsPageComponent {}
+export class ElewaBrandsPageComponent {
+  
+}
