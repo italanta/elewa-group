@@ -1,0 +1,47 @@
+<div class="contact">    
+    <div class="contact-left">
+        <div class="contactleft-up">
+            <h1>Contact</h1>
+            <p class="point1">Looking for a quick answer to your <br>questions?Check out our <span>FAQs.</span></p>
+            <p class="point">For everything else drop us a line <br> we'll get back to you</p>  
+        </div>
+        <div class="contactleft-down">
+            <div class="icon">
+                <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg" alt="">
+                <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
+                <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact-right">
+        <div class="contact-form">
+            <form>
+                <div class="form-wrapper">
+                    <input type="text" id="name" formControlName="yourName"value="Your Name" placeholder="*"/>
+                  </div>
+                  <div class="form-wrapper1">
+                    <input type="text" id="companyName"formControlName="companyName" value="Company Name"placeholder="*"/>
+                  </div>
+                  <div class="form-wrapper1">
+                    <input type="email"id="email"formControlName="e-mail" value="E-mail"placeholder="*"/>
+                  </div>
+                  <div class="form-wrapper1">
+                    <select name="selectoption" id="select-option"> 
+                        <option value="Select Option" id="select-option" formControlName="selectOption" >Select Option</option>
+                    </select>
+                  </div>
+                  <div class="form-wrapper1">
+                    <input id="message"formControlName="message"placeholder="Message" value="Message">
+                  </div>
+            </form> 
+            <div class="contactform-footer" >
+                <div class="contactform-footer-left">
+                    <p>By clicking the Submit Button you agree to <br> our <span>Privacy Policy </span>terms</p>
+                </div>
+                <div class="contactform-footer-right">
+                    <elewa-group-button-with-animation [message]="message"></elewa-group-button-with-animation>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

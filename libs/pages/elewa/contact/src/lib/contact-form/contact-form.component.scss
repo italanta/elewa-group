@@ -1,0 +1,133 @@
+.contact{
+    background-color: black;
+    color:white;
+    height: 100vh;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+      @media (min-width: 600px) {
+        .column {
+          width: 50%;
+        }
+    }    
+}
+h1{
+    font-family:var(--elewa-group-website-dmsans-regular);
+    font-size: 60px;
+}
+p{
+    font-family:var(--elewa-group-website-dmsans-regular);
+}
+.point1{
+    padding-top: 5vh;
+}
+.point{
+    padding-top: 4vh;
+}
+span{
+    font-size: 35px;
+    font-weight: bold;
+}
+.contact-left{
+    width: 30%; 
+    float: left; 
+    font-size: 30px; 
+    margin-top: 12vh;
+    margin-left:10%;
+}
+.contact-right{
+    width: 70%; 
+    float: right;
+    font-size: 30px;
+    margin-top: 12vh;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    width: 30%;
+    padding-top: 70%;
+    margin-left: 4%;
+}
+#name{
+    background-color: black;
+    transform: translateY(-20%, -10%);
+    color: #ccc;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70%;
+    padding: 15px;
+    
+
+}
+#companyName{
+    background-color: black;
+    transform: translateY(-20%, -10%);
+    color: #ccc;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70%;
+    padding: 15px;    
+}
+#email{
+    background-color: black;
+    transform: translateY(-20%, -10%);
+    color: #ccc;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70%;
+    padding: 15px;
+}
+#select-option{
+    background-color: black;
+    transform: translateY(-20%, -10%);
+    color: #ccc;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70%;
+    padding: 15px;    
+}
+#message{
+    background-color: black;
+    transform: translateY(-20%, -10%);
+    color: #ccc;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 70%; 
+    padding: 15px;   
+}
+.form-wrapper1{
+    padding-top: 45px;   
+}
+.form-wrapper{
+    font-family: var(--elewa-group-website-dmsans-regular);
+}
+.placeholder{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.button{
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+.contactform-footer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 12%;
+}
+.contactform-footer-left{
+    float: left;
+    width: 70%;
+}
+.contactform-footer-right{
+    float: right;
+    width: 30%;
+}
