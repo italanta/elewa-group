@@ -1,26 +1,82 @@
-#careers-why{
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: var(--elewa-group-website-dmsans-regular);
-    background-color: var(--elewa-group-website-color-hero-image2);
-    position: relative;
+#careers-why {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  position: relative;
 }
 
-#careers-why .container{
-    width: 90%;
-    margin: auto;
-    position: relative;
-    background-color: var( --elewa-group-website-color-white);
-    height: 90%;
-    top: 1%;
-    border-radius: 2px;
+#careers-why .container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  background-color: var(--elewa-group-website-color-white);
+  top: 5%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.content {
+  margin-left: 10%;
+  padding-top: 25%;
+}
+
+.title {
+  font-size: var(--elewa-group-website-font-size-hero-heading);
+  font-weight: var(--elewa-group-website-font-weight-title);
+}
+
+.paragraph {
+  font-size: var(--elewa-group-website-font-size-title-medium);
+  width: 60%;
 }
 
 .img1 {
-    object-fit: cover;
-    margin-left: 5%;
-    height: 350px;
-    width: 600px;
-    border-radius: 1px 1px 20px 20px;
+  object-fit: cover;
+  margin-left: 10%;
+  height: 300px;
+  width: 450px;
+  position: absolute;
+  border-radius: 1px 1px 20px 20px;
+  transform: translateY(-25%);
+}
+
+.img2 {
+  object-fit: cover;
+  margin-left: 65%;
+  height: 330px;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  #careers-why {
+    max-width: 90%;
+    flex-direction: column;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    color: var(--elewa-group-website-color-primary);
+    padding-top: 5%;
+    margin-inline: 5%;
+
+    .content {
+      margin-top: 45%;
+    }
+
+    .paragraph {
+      line-height: 18px;
+      width: 100%;
+    }
+
+    .img1 {
+      width: 90%;
+    }
+
+    .img2 {
+      margin-top: 170%;
+      margin-left: 10%;
+      padding-top: 10%;
+    }
+  }
 }
