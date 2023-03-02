@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="we-care">
+    <h1>We care!</h1>
+    <div class="paragraphs">
+      <div class="paragraph-1">
+        Elewa is a mission-driven organization. We make use of our cooperative
+        and shared culture to drive the needle for the development of people and
+        our environment. We care for our own, but also care deeply about the
+        context surrounding us.
+      </div>
+      <div class="paragraph-2">
+        Our investments are therefore not limited to. internal ones but
+        contribute heavily to our community and environment. From training the
+        next scout leaders on sustainable practices, to bridging the employment
+        gap for junior software developers.
+      </div>
+    </div>
+    <div class="cards">
+      <elewa-group-elewa-vertical-icon-and-text
+        *ngFor="let card of cards"
+        [icon]="card.icon"
+        [title]="card.title"
+        [description]="card.description"
+        class="card"
+      ></elewa-group-elewa-vertical-icon-and-text>
+    </div>
+  </div>
+</div>
