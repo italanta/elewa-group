@@ -11,4 +11,5 @@ export class ElewaBrandsVentureLabsComponent {
   name = 'Venture Labs'
   brandDescription = 'A moonshot factory. Elewa Venture Labs invests and incubates global SaaS startups with high potential. Developed and grown by Elewa talents and our network.'
   buttonText = 'Explore our startups'
+  url = ''
 }
