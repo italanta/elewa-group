@@ -8,27 +8,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid gray 2px ;
+    border-bottom: solid rgb(209, 202, 202) 2px ;
     padding: 1rem 0 1rem 0;
+    height: 6.5em;
+
 }
 
 .item-title {
     font-family: var(--elewa-group-website-dmsans-bold);
-    font-weight: var(--elewa-group-website-font-weight-title);
-    font-size: var(--elewa-group-website-font-size-title);
+    font-weight: 100;
+    font-size: 20px;
+    opacity: .7;
+    flex: 1;
+    padding-right: -20%;
 }
 
 .item-description {
     display: inline-block;
     color: gray;
     font-family: var(--elewa-group-website-dmsans-medium);
-    font-weight: var(--elewa-group-website-font-weight-subtitle);
+    font-weight: var(100);
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 50ch;
     white-space: nowrap;
+    opacity: .7;
+    flex: 1.5;
 }
 
 .item-date {
     font-family: var(--elewa-group-website-dmsans-bold);
+    opacity: .8;
+  
 }
