@@ -11,6 +11,7 @@ import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands
 import { BrandsRoutingModule } from './brands.routing';
 import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stakeholder/elewa-brands-stakeholder.component';
 import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
+import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creative-hub/elewa-brands-creative-hub.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
@@ -19,7 +20,7 @@ import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-b
     ElewaBrandsOpportunitiesComponent,
     ElewaBrandsStakeholderComponent,
     ElewaBrandsHeroComponent,
-
+    ElewaBrandsCreativeHubComponent,
   ],
 })
 export class BrandsModule {}
