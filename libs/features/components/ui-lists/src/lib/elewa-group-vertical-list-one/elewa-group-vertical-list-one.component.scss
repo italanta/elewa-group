@@ -40,3 +40,17 @@
     opacity: .8;
   
 }
+
+@media screen and (max-width: 1024px) {
+    .list-item {
+        height: 8em;
+        display: block;
+    }
+    .item-title {
+        font-size: 18px;
+    }
+    .item-description {
+        font-size: 14px;
+    }
+}
+  
