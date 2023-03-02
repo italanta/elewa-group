@@ -7,6 +7,7 @@
 ul {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 li {
@@ -15,8 +16,8 @@ li {
 }
 
 img {
-  width: 75px;
-  height: 50px;
+  width: 140px;
+  height: 60px;
 }
 
 @media screen and (max-width: 480px) {
