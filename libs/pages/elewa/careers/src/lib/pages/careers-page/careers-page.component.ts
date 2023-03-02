@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./careers-page.component.scss'],
 })
 export class CareersPageComponent {
-  message1= 'Apply Now'
 }
