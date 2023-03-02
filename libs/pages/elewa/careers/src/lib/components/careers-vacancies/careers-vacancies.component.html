@@ -3,10 +3,10 @@
     <h1>Vacancies</h1>
     <div class="vacancy" *ngFor="let vacancy of vacancies">
       <h2 class="title">{{ vacancy.title }}</h2>
-      <p>{{ vacancy.description }}</p>
+      <p [innerHTML]="vacancy.description">{{ vacancy.description }}</p>
       <div class="btn">
         <elewa-group-button-with-animation
-          [message]="message1"
+          class="btn1"  [message]="message1"
         ></elewa-group-button-with-animation>
       </div>
     </div>

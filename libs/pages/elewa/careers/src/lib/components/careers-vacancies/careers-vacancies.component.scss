@@ -1,25 +1,23 @@
 .vacancy {
   display: flex;
   margin-top: 40px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-right: 5%;
   margin-left: 5%;
-  padding: 40px 0;
+  padding: 20px 0;
   border-top: 1px solid rgb(182, 170, 170);
 }
 .main-vacancies {
   margin-top: 10%;
 }
 p {
-  width: 55%;
+  width: 35%;
   font-family: var(--elewa-group-website-dmsans-regular);
+  flex: 1.7;
+  margin-right: 14%;
+  line-height: 22px;
 }
-.title:first-child {
-  margin-right: auto;
-}
-.btn:last-child {
-  margin-left: auto;
-}
+
 h1 {
   font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 200;
@@ -28,6 +26,9 @@ h1 {
 h2{
   font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 100;
+  flex: 1;
+  font-size: 25px;
+  padding-top: 0;
 }
 /* For screens smaller than 768px (tablets) */
 @media (max-width: 767px) {
@@ -37,26 +38,29 @@ h2{
     margin-left: 0;
     padding: 20px 0;
   }
-  
+
   .title:first-child {
     margin-right: 0;
     margin-bottom: 10px;
   }
-  
+
   .btn:last-child {
     margin-left: 0;
     margin-top: 10px;
+    flex: 1.7;
   }
-  
+
   p {
     width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  
+
   h1 {
     margin-left: 0;
     text-align: center;
   }
-  
+
   h2 {
     font-size: 1.2em;
     text-align: center;
@@ -75,20 +79,24 @@ h2{
   .vacancy {
     padding: 10px 0;
   }
-  
+
   p {
     font-size: 0.9em;
   }
-  
+
   h1 {
     font-size: 1.5em;
   }
-  
+
   h2 {
     font-size: 1em;
   }
   .btn{
-    width: 40%;
+    width: 100%;
     margin-left: 30%;
+    display: block;
+  }
+  .btn1{
+    margin-left:40%;
   }
 }
