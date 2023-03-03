@@ -9,7 +9,7 @@ export class ElewaGroupBrandsComponent {
   @Input () logo: string;
   @Input () name: string;
   @Input () brandDescription: string;
-  @Input () buttonText: string;
-  @Input() url:string;
-  @Input () logoPlacement: 'right' | 'left' = 'left';
+  @Input () buttonText: string ;
+  @Input() url: string;
+  @Input () logoPlacement: 'right' | 'left' = 'right';
 }

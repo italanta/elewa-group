@@ -10,6 +10,7 @@ import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stake
 import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
 import { ElewaBrandsOpportunitiesComponent } from './components/elewa-brands-opportunities/elewa-brands-opportunities.component';
 import { ElewaBrandsVentureLabsComponent } from './components/elewa-brands-venture-labs/elewa-brands-venture-labs.component';
+import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creative-hub/elewa-brands-creative-hub.component';
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 
 import { BrandsRoutingModule } from './brands.routing';
@@ -24,6 +25,7 @@ import { BrandsRoutingModule } from './brands.routing';
     ElewaBrandsElewaEducationComponent,
     ElewaBrandsStakeholderComponent,
     ElewaBrandsHeroComponent,
+    ElewaBrandsCreativeHubComponent,
   ],
 })
 export class BrandsModule {}
