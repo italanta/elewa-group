@@ -1,1 +1,48 @@
-<p>contact-form works!</p>
+<div id="contact-form-container">
+    <section class="contact-side">
+        <section class="contact-side-text">
+            <h1>Contact</h1>
+            <p>Looking for  a quick answer to your question? Check out our <strong>FAQs</strong></p>
+            <p>For everything else, drop us a line and we'll get back to you</p>
+        </section> 
+        <section class="media-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </section>
+    </section>
+
+    <form class="contact-form"  (submit)="">
+        <section class="form-section">
+            <label for="name">Your name</label>
+            <input type="text" formControlName="name">
+        </section>
+        <section class="form_section">
+            <label for="name">Company name</label>
+            <input type="text" formControlName="company_name">
+        </section>
+        <section class="form-section">
+            <label for="email">E-mail</label>
+            <input type="email"  formControlName="email">
+        </section>    
+        <section class="form-section">
+            <label for="option">Select option</label>
+            <select name="option" id="" formControlName="option">
+                <option>Option one</option>
+                <option>Option two</option>
+            </select>
+        </section>
+        <section class="form-section">
+            <label for="name">Message</label>
+            <input name="" id="" formControlName="message" />
+        </section>
+        <section class="form-bottom-section">
+            <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>
+            <elewa-group-button-with-animation class="button"
+            [message]="message"
+            [action]="url"
+            ></elewa-group-button-with-animation>
+        </section>
+    </form>
+
+</div>
