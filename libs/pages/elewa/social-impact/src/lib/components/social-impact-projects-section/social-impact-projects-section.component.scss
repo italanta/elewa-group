@@ -2,9 +2,6 @@
     display: flex;  
     flex-direction: column;  
     justify-content: space-between;
-    font-family: var(--elewa-group-website-dmsans-medium);
-    font-weight: var(--elewa-group-website-font-weight-title);
-    font-size: var(--elewa-group-website-font-size-title); 
     padding: 0px 20px;
     overflow-x: hidden;
   
@@ -12,6 +9,12 @@
       text-align: center;
       padding: 80px 0px;    
     }
+
+    .title p {
+      font-size: 3rem;
+      font-family: var(--elewa-group-website-dmsans-regular);
+    }
+
     .list-of-projects, 
     .list-of-org-partners {
       margin: 10px 0px;
