@@ -4,13 +4,18 @@ import { CommonModule } from '@angular/common';
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { BannersModule } from '@elewa-group/features/components/banners';
 
+
+import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
+import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stakeholder/elewa-brands-stakeholder.component';
+import { ElewaBrandsItalantaComponent } from './components/elewa-brands-italanta/elewa-brands-italanta.component';
 import { ElewaBrandsOpportunitiesComponent } from './components/elewa-brands-opportunities/elewa-brands-opportunities.component';
 
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 
 import { BrandsRoutingModule } from './brands.routing';
-import { ElewaBrandsStakeholderComponent } from './components/elewa-brands-stakeholder/elewa-brands-stakeholder.component';
-import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-brands-hero.component';
+
+
+
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
@@ -19,7 +24,7 @@ import { ElewaBrandsHeroComponent } from './components/elewa-brands-hero/elewa-b
     ElewaBrandsOpportunitiesComponent,
     ElewaBrandsStakeholderComponent,
     ElewaBrandsHeroComponent,
-
+    ElewaBrandsItalantaComponent,
   ],
 })
 export class BrandsModule {}
