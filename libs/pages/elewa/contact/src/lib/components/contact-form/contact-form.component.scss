@@ -4,11 +4,13 @@
   display: flex;
   width: 100vw;
   padding-bottom: 10%;
-  padding-top: 5%;
+  padding-top: 12%;
   margin-right: 40%;
+  // margin-top: 10%;
 }
 .contact-form {
   margin: auto;
+  margin-right: 15%;
 }
 h1 {
   font-family: var(--elewa-group-website-dmsans-regular);
@@ -20,7 +22,7 @@ p {
   font-family: var(--elewa-group-website-dmsans-regular);
   margin-top: 9%;
   font-size: medium;
-  width: 60%;
+  width: 80%;
 }
 .contact-info {
   margin-left: 110px;
@@ -33,7 +35,7 @@ p {
   justify-content: space-between;
   margin-bottom: 0px;
   width: 30%;
-  margin-top: 63%;
+  margin-top: 73%;
 }
 .input-wrapper {
   position: relative;
@@ -48,8 +50,8 @@ textarea {
   font-size: 25px;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #f1efef;
-  width: 90%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+  width: 100%;
   background: black;
   color: #fff;
   margin-top: 20px;
@@ -60,9 +62,6 @@ textarea {
   font-size: 20px;
 
    margin-top: 40px;
-}
-.input-wrapper #message{
-  color: #fff;
 }
 
 input:focus,
@@ -95,12 +94,12 @@ textarea:focus {
   padding-right: 400px;
   background: black;
   border: black;
-  border-bottom: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
   color: rgb(228, 219, 219);
-  font-size: 20px;
+  font-size: 19px;
   font-family: var(--elewa-group-website-dmsans-regular);
   margin-top: 40px;
-  width: 90%;
+  width: 100%;
 }
 .terms {
   width: 70%;
