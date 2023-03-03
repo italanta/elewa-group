@@ -33,7 +33,7 @@ p {
   justify-content: space-between;
   margin-bottom: 0px;
   width: 30%;
-  margin-top: 65%;
+  margin-top: 63%;
 }
 .input-wrapper {
   position: relative;
@@ -48,17 +48,27 @@ textarea {
   font-size: 25px;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #f1efef;
   width: 90%;
   background: black;
   color: #fff;
   margin-top: 20px;
 }
+ #message{
+  padding: 6px 0;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 20px;
+
+   margin-top: 40px;
+}
+.input-wrapper #message{
+  color: #fff;
+}
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-bottom-color: blue;
+  border-bottom-color: rgb(193, 193, 201);
 }
 
 .input-wrapper .placeholder {
@@ -66,11 +76,11 @@ textarea:focus {
   position: absolute;
   top: 40%;
   left: 0px;
-  font-size: 26px;
+  font-size: 20px;
   color: #ccc;
   pointer-events: none;
   transform: translateY(-20%, -10%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .input-wrapper input:focus + .placeholder,
@@ -85,16 +95,19 @@ textarea:focus {
   padding-right: 400px;
   background: black;
   border: black;
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 26px;
-  margin-top: 20px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  color: rgb(228, 219, 219);
+  font-size: 20px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  margin-top: 40px;
+  width: 90%;
 }
 .terms {
   width: 70%;
 }
 .terms-send {
   display: flex;
+  margin-top: 6%;
 }
 .btn {
   margin-top: 6%;
