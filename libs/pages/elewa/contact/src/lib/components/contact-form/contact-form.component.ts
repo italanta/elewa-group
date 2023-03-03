@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'elewa-group-contact-form',
@@ -13,6 +13,20 @@ export class ContactFormComponent {
 
   handleSubmit(){
     console.log(this.contactData.value)
+  }
+
+  buildContactForm(){
+    this.contactData = new FormGroup({ 
+      name: new FormControl(''),
+      company_name: new FormControl(''),
+      email: new FormControl(''),
+      option: new FormControl(''),
+      message: new FormControl(''),
+    })
+  }
+
+  ngOnInit(){
+    this.buildContactForm()
   }
  
 }
