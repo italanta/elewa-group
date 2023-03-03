@@ -6,7 +6,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
 import { LayoutModule } from '@elewa-group/elements/layout';
-
+import { ContactBannerComponent } from './contact-banner/contact-banner.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +15,6 @@ import { LayoutModule } from '@elewa-group/elements/layout';
     ButtonsModule,
     LayoutModule,
   ],
-  declarations: [ContactPageComponent, ContactFormComponent],
+  declarations: [ContactPageComponent, ContactFormComponent, ContactBannerComponent],
 })
 export class ContactPageModule {}
