@@ -19,8 +19,9 @@
   }
   
   p{
-  border-bottom: 1px solid rgb(180, 175, 175);
-  }
+    margin: 5% 0;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(180, 175, 175);  }
   
   h2{
   font-family: var(--elewa-group-website-dmsans-regular);
@@ -66,6 +67,10 @@
   
   p {
   font-size: 20px;
+  margin: 5% 0;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgb(180, 175, 175);
+  box-sizing: border-box;
   }
   }
   
@@ -84,5 +89,9 @@
   
   p {
   font-size: 25px;
+  margin: 5% 0;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgb(180, 175, 175);
+  box-sizing: border-box;
   }
   }
