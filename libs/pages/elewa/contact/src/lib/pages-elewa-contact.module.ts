@@ -5,9 +5,10 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ContactBannerComponent } from './components/contact-banner/contact-banner.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [CommonModule, ContactRoutingModule,ButtonsModule],
+  imports: [CommonModule, ContactRoutingModule,ButtonsModule,ReactiveFormsModule],
   declarations: [
     ContactPageComponent,
     ContactBannerComponent,
