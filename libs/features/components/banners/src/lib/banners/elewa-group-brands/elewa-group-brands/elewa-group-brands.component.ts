@@ -6,11 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-group-brands.component.scss'],
 })
 export class ElewaGroupBrandsComponent {
-
-  @Input () logo: string = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/Elewa_education_pp1gnc.svg';
-  @Input () name: string = '';
-  @Input () brandDescription: string = ''
-  @Input () buttonText: string = ''
-  @Input() url = '';
+  @Input () logo: string;
+  @Input () name: string;
+  @Input () brandDescription: string;
+  @Input () buttonText: string ;
+  @Input() url: string;
   @Input () logoPlacement: 'right' | 'left' = 'right';
 }

@@ -14,4 +14,6 @@ export const ELEWA_BRANDS_ROUTES: Route[] = [
   imports: [RouterModule.forChild(ELEWA_BRANDS_ROUTES)],
   exports: [RouterModule]
 })
-export class BrandsRoutingModule { }
+export class BrandsRoutingModule { };
+
+
