@@ -15,5 +15,5 @@ export class SocialImpactCooperativeSectionComponent {
                             communities.`]
   titleText = `A cooperative mindset`
   imagePlacement = 'right'
-  backgroundColor = 'grey'
+  backgroundColor = '#ECECEC'
 }

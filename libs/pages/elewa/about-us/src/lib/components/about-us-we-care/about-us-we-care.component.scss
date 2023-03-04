@@ -1,0 +1,52 @@
+.container{ 
+    border-radius: 0 0 30px 30px;
+    background-color: var(--elewa-group-website-color-card);
+}
+
+.container h2{
+    font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+    padding-left: 90px;
+    padding-top: 80px;
+    
+}
+.paragraphs{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: var( --elewa-group-website-timeline-description);
+}
+.paragraph{
+    flex-basis: 38%;
+}
+.iconcol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    padding-bottom: 100px;
+   
+}
+
+@media (max-width: 768px) {
+    .container h2{
+        padding-left: 40px;
+       
+    }
+    .iconcol {
+      flex-direction: column;
+      align-items: stretch;
+      margin: 10px;
+      padding-top:70px;
+    }
+
+    .paragraphs {
+         flex-direction: column;
+         margin: auto;
+         width: 80%;
+        
+    }
+    p:nth-child(1){
+      margin-bottom: 20px;
+    }
+}
