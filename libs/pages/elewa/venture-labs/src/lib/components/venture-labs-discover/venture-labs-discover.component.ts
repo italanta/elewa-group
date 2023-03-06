@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './venture-labs-discover.component.html',
   styleUrls: ['./venture-labs-discover.component.scss'],
 })
-export class VentureLabsDiscoverComponent {}
+export class VentureLabsDiscoverComponent {
+  message = "Discover what VentureLabs"
+  word = "can do for"
+  callToActionText = "your Startup"
+  url = ""
+}
