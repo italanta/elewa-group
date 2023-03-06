@@ -15,7 +15,6 @@ export class ContactFormComponent {
   handleSubmit(){
     console.log(this.contactData.value)
   }
-
   buildContactForm(){
     this.contactData = new FormGroup({ 
       name: new FormControl(''),
