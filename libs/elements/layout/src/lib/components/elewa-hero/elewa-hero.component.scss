@@ -55,13 +55,25 @@
   }
 
   #elewa-hero .title {
-    font-size: var(--elewa-group-website-font-size-hero-heading);
+    font-size: 4.5rem;
   }
 
   #elewa-hero .subtitle {
-    font-size: var(--elewa-group-website-font-size-hero-subheading);
+    font-size: 1.2rem;
+    font-family: var(--elewa-group-website-dmsans-regular);
   }
 
   #elewa-hero .description{
     margin: auto;
+  }
+
+  @media (max-width: 500px) {
+    #elewa-hero .title {
+      font-size: 3rem;
+    }
+  
+    #elewa-hero .subtitle {
+      font-size: 1rem;
+      font-family: var(--elewa-group-website-dmsans-regular);
+    }
   }
