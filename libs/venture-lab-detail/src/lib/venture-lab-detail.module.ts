@@ -5,5 +5,6 @@ import { VentureDetailFoundersComponent } from './venture-detail-founders/ventur
 @NgModule({
   imports: [CommonModule],
   declarations: [VentureDetailFoundersComponent],
+  exports: [VentureDetailFoundersComponent]
 })
 export class VentureLabDetailModule {}
