@@ -1,0 +1,159 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-bottom: -15rem;
+    height: 40rem;
+  }
+  
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30rem;
+    margin-bottom: 300px;
+    margin-left: 5rem;
+    margin-left: 3rem;
+  }
+  
+  .contact-left h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .contact-left p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .contact-left .icon img {
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 13rem;
+    padding: 5px;
+    
+  }
+  
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 3rem;
+    margin-top: -22rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .form-wrapper,
+  .form-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form-wrapper input,
+  .form-wrapper1 input,
+  .form-wrapper1 select {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 0;
+    width: 100%;
+  }
+  
+  .form-wrapper input::placeholder,
+  .form-wrapper1 input::placeholder,
+  .form-wrapper1 select::placeholder {
+    color: white;
+  }
+  
+  .form-wrapper select {
+    cursor: pointer;
+  }
+  
+  .form-wrapper1 select option {
+    color: black;
+    background-color: white;
+  }
+  
+  .contactform-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contactform-footer p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .contactform-footer p span {
+    color: #e6ac00;
+    font-weight: bold;
+  }
+  
+  .contactform-footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 10rem;
+  }
+
+  .contactform-footer-right elewa-group-button-with-animation {
+    margin-right: 1rem;
+  }
+  
+  .contactform-footer-left span {
+    margin-left: 1rem;
+  }
+  
+  .contactform-footer-right button {
+    background-color: #e6ac00;
+    color: black;
+    border: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .contactform-footer-right button:hover {
+    background-color: #d39800;
+  }
+  
+  .form-wrapper label,
+  .form-wrapper1 label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .form-wrapper input:focus,
+  .form-wrapper1 input:focus,
+  .form-wrapper1 select:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+  }
+  
