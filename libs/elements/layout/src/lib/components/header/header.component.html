@@ -1,5 +1,5 @@
 <div class="container">
-  <header class="menu-header">
+  <header [ngClass]="headerClass"class="menu-header">
     <nav class="navbars-mobile">
       <div class="elewa-mobile">
         <a routerLink="#" class="home-logo"><img
@@ -46,7 +46,7 @@
     </nav>
   </header>
 
-  <header class="header fixed-top">
+  <header [ngClass]="headerClass" class="header fixed-top">
     <nav class="navbars">
       <div class="border">
         <div class="elewa-text">
