@@ -5,7 +5,6 @@ import { VentureLabDetailPageComponent } from './pages/venture-lab-detail-page/v
 export const ELEWA_VENTURE_DETAIL_ROUTES: Route[] = [
   { path: '', component:   VentureLabDetailPageComponent }
 ]
-
 @NgModule({
   imports:[
     RouterModule.forChild(ELEWA_VENTURE_DETAIL_ROUTES)
