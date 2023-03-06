@@ -52,6 +52,9 @@
       "@elewa-group/pages/elewa/social-impact": [
         "libs/pages/elewa/social-impact/src/index.ts"
       ],
+      "@elewa-group/pages/elewa/venture-labs": [
+        "libs/pages/elewa/venture-labs/src/index.ts"
+      ],
       "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
       "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],
       "@iote/bricks": ["libs/util/iote/bricks/src/index.ts"],
