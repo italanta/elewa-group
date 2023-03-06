@@ -11,7 +11,7 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   // Set initial values for the component's properties
   isLightHeader = false;
-  headerClass = 'header-dark';
+  headerClass = 'header-light';
 
   constructor(private router: Router) {
     // Subscribe to router events and filter for NavigationEnd events only
@@ -23,16 +23,10 @@ export class HeaderComponent implements OnInit {
       )
       .subscribe((event: NavigationEnd) => {
         const currentPage = event.urlAfterRedirects;
-        // Log the current page URL for debugging purposes
-        console.log('Current page: ', currentPage);
         // Determine if the current page should use a light header
         this.isLightHeader = this.getIsLightHeader(currentPage);
-        // Log whether the header is light or dark for debugging purposes
-        console.log('Is light header: ', this.isLightHeader);
         // Set the header class based on whether it's light or dark
         this.headerClass = this.isLightHeader ? 'header-light' : 'header-dark';
-        // Log the header class for debugging purposes
-        console.log('Header class: ', this.headerClass);
       });
   }
 
@@ -43,19 +37,19 @@ export class HeaderComponent implements OnInit {
       '/about/en',
       '/social-impact/en',
       '/invest/en',
-      '/venture-labs/en',
+      // '/venture-labs/en',
+      '/venture-lab-detail/en',
       '/brands/en',
-      '/careers/en',
+      // '/careers/en',
       '/news/en',
-      '/contact/en',
+      // '/contact/en',
     ];
     // Log the array of light header pages for debugging purposes
     console.log('Light header pages: ', lightHeaderPages);
     // Determine whether the current page is in the array of light header pages
     return lightHeaderPages.includes(page);
   }
-
-
+  
   ngOnInit() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menus');
@@ -70,10 +64,9 @@ export class HeaderComponent implements OnInit {
       hamburger?.classList.remove('active');
       navMenu?.classList.remove('active');
 
-      // Update header class
     };
-
     hamburger?.addEventListener('click', mobileMenu);
     navLink.forEach((l) => l.addEventListener('click', closeMenu));
+
   }
 }
