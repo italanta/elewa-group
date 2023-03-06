@@ -57,6 +57,17 @@
     align-items: flex-start;
     width: 100%;
   }
+  select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+    width: 100%;
+    border-top: none;
+  }
+  
   
   .form-wrapper,
   .form-wrapper1 {
@@ -119,14 +130,20 @@
     align-items: center;
     margin-top: 1rem;
     margin-left: 10rem;
+    
   }
 
-  .contactform-footer-right elewa-group-button-with-animation {
+  .contactform-footer-right elewa-group-button-with-animation:active
+  .contactform-footer-right elewa-group-button-with-animation:focus {
     margin-right: 1rem;
+    background-color: #0062cc;
+  border-color: #005cbf;
+  color: #fff;
   }
   
   .contactform-footer-left span {
     margin-left: 1rem;
+    outline: none;
   }
   
   .contactform-footer-right button {
