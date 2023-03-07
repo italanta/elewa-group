@@ -18,17 +18,21 @@ margin: 50px;
     .cards{
         grid-template-columns: repeat(2, 1fr);
         width: 90vh;  
+       
+       
     }
     h2{
         margin: 20px 0px;
     }
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:480px) {
     .cards{
-        display: inline;
+       grid-template-columns: repeat(2, 1fr);
+       width: 85%;
+       margin: 10px;
     }
-    h2{
-        margin: 20px 0px;
-    }
+   
+
 }
+
