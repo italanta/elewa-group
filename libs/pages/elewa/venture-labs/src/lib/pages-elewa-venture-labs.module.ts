@@ -6,6 +6,7 @@ import { LayoutModule } from '@elewa-group/elements/layout';
 import { VentureLabsDiscoverComponent } from './components/venture-labs-discover/venture-labs-discover.component';
 import { BannersModule } from '@elewa-group/features/components/banners';
 import { VentureLabsHeroComponent } from './components/venture-labs-hero/venture-labs-hero.component';
+import { VentureLabsInfoComponent } from './components/venture-labs-info/venture-labs-info.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { VentureLabsHeroComponent } from './components/venture-labs-hero/venture
     VentureLabsPageComponent,
     VentureLabsDiscoverComponent,
     VentureLabsHeroComponent,
+    VentureLabsInfoComponent,
   ],
 })
 export class PagesElewaVentureLabsModule {}
