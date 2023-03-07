@@ -1,0 +1,124 @@
+#contact__form-container{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: var(--elewa-group-website-color-bg);
+    color: var(--elewa-group-website-color-white);
+    height: 100vh;
+    padding: 5vh 5vw 10vh;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        height: max-content;
+    }
+}
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40%;
+    @media screen and (max-width:768px) {
+        width: 100%;
+        height: max-content;
+    }
+}
+.contact__left-text{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 8rem;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    @media screen and (max-width:768px) {
+        height: max-content;
+        gap: 1rem;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+}
+.social_media_icons {
+    height: 47%;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+    @media screen and (max-width:768px) {
+        height: 20%;
+    }
+    @media screen and (max-width:488px) {
+        height: 32%;
+    }
+}
+.fa-instagram,.fa-facebook-f,.fa-linkedin{
+    color: white;
+    height: 3vh;
+}
+
+.contact__form {
+    padding-top: 1.5rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    gap: 2rem;
+    @media screen and (max-width:768px) {
+        width: 100%;   
+    }
+}
+.form_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    input,select {
+        background-color: var(--elewa-group-website-color-bg);
+        color: white;
+        font-size: 1rem;
+        font-family: inherit;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: thin;
+    }
+}
+.form_select {
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    select {
+        border:none;
+        width: 60%;
+    }
+}
+.form__bottom-section{
+    padding-top: .3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .button{
+        width: max-content;
+    }
+    p {
+        width: 50%;
+    }
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        gap: 1rem;
+        p {
+            width: 100%;
+        }
+        .button {
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:560px) {
+        .button {
+            width: max-content;
+        }
+    }
+}
