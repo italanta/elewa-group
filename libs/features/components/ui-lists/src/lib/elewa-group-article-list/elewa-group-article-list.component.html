@@ -2,7 +2,10 @@
     <section class="carousel-container">
         <ng-container *ngFor="let article of articleList">
             <article>
+                <figure>
                     <img [src] = "article.image" alt="article image"/>
+
+                </figure>
                 <section>
                     <p class="timestamp">
                         <span> {{article.timestamp}} </span>
@@ -18,6 +21,15 @@
         </ng-container>
     </section>
 
+    <section class="arrowIcons-container">
+        <div>
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </section>
+
     <section class="buttons-container">
         <button>
             <i class="fa-solid fa-arrow-left"></i>
@@ -27,13 +39,5 @@
             <span>Next</span>
             <i class="fa-solid fa-arrow-right"></i>
         </button>
-    </section>
-    <section class="arrowIcons-container">
-        <div>
-            <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <div>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
     </section>
 </main>
