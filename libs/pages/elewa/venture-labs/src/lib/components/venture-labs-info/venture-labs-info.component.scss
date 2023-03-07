@@ -1,0 +1,39 @@
+#venture-labs-info {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  background-color: var(--elewa-group-website-color-white);
+  height: 80%;
+  top: 5%;
+  border-radius: 2px;
+}
+
+.content {
+  margin-left: 10%;
+  padding-top: 10%;
+  font-size: var(--elewa-group-website-timeline-title);
+  width: 65%;
+}
+
+@media only screen and (min-width: 850px) {
+  .venture-labs-info {
+    font-family: var(--elewa-group-website-dmsans-regular);
+    color: var(--elewa-group-website-color-primary);
+    padding-top: 5%;
+    max-width: 90%;
+    margin-inline: 5%;
+
+    .content {
+      font-size: var(--elewa-group-website-timeline-header);
+      font-weight: var(--elewa-group-website-font-weight-title-medium);
+    }
+  }
+}
