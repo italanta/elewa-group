@@ -2,17 +2,18 @@
     <section class="carousel-container">
         <ng-container *ngFor="let article of articleList">
             <article>
-                <figure class="image-container">
-                    <img [src] = "article.image"/>
-                </figure>
-                <p class="timestamp">
-                   <span> {{article.timestamp}} </span>
-                   <span class="dot"></span>
-                   <span>{{generateReadTime(article.body)}} min read </span>
-                </p>
-                <p class="title">
-                    {{article.title}}
-                </p>
+                    <img [src] = "article.image" alt="article image"/>
+                <section>
+                    <p class="timestamp">
+                        <span> {{article.timestamp}} </span>
+                        <span class="dot"></span>
+                        <span>{{generateReadTime(article.body)}} min read </span>
+                     </p>
+                     <p class="title">
+                         {{article.title}}
+                     </p>
+                </section>
+                
             </article>
         </ng-container>
     </section>
