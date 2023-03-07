@@ -1,0 +1,78 @@
+.container-startups {
+    background-color: var(--elewa-group-website-color-primary);   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-content: center;
+    margin-bottom: 0px;
+    width:100%;
+    height:100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+   
+}
+
+.section{
+   
+    width:80%;
+    height:80%;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    vertical-align: top;
+    vertical-align: bottom;
+    color: var(--elewa-group-website-color);
+  }
+
+.img {
+    width: 280px;
+    height: 310px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: var(--elewa-group-website-font-size-hero-subheading);
+    font-weight: var(--elewa-group-website-font-weight-title-medium);
+    width: 236px;
+   
+}
+
+.description {
+    margin-top: 20px;
+    font-size: var(--elewa-group-website-font-size-hero-description);
+    width: 230px;
+    margin-bottom: 0;
+
+}
+
+.underline-text{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: var(--elewa-group-website-font-size-hero-heading-medium);
+    width: 230px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        float: none;
+        width: auto;
+    }
+}
+
