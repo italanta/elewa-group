@@ -1,0 +1,73 @@
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  background-color: var(--elewa-group-website-color-primary);
+}
+
+.card {
+  flex: 0 0 calc(50% - 20px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card img {
+  margin-top: 10em;
+  width: 50%;
+  border-radius: 1em;
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: var(--elewa-group-website-dmsans-bold);
+  font-weight: var(--elewa-group-website-font-weight-title);
+  font-size: 24px;
+  color: #fff;
+
+}
+
+.card-description {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.apply-today {
+  font-size: 16px;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  text-decoration: none;
+  color: #fff;
+}
+
+.apply-today:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+}
