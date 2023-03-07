@@ -42,4 +42,19 @@ export class ElewaGroupArticleListComponent {
       });
     }
   }
+
+ 
+
+  nextBanner() {
+    this.currentIndex = (this.currentIndex + 1) % this.articles.length;
+  }
+
+  previousBanner() {
+    this.currentIndex = (this.currentIndex - 1 + this.articles.length) % this.articles.length;
+  }
+  
+  get progressPercentage() {
+    return (this.currentIndex + 1) / this.articles.length * 100;
+  }
+  
   }
