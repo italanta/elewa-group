@@ -1,9 +1,12 @@
 
 .article-wrapper {
   position: relative;
-  margin: 80px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
   justify-content: flex-start; /* change to flex-start to reduce space between articles */
- 
+
 }
 
 .article-list {
@@ -148,29 +151,3 @@
   margin: 5px; /* adjust the value to change the spacing */
 }
 
-@media (max-width: 767px) {
-  .article-list {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-
-  .article {
-    width: 100%;
-    margin-right: 20px;
-    scroll-snap-align: start;
-  }
-
-  .button-wrapper {
-    margin-top: 20px;
-  }
-
-  .prev,
-  .next {
-    margin: 10px;
-  }
-
-  .prev i,
-  .next i {
-    margin-right: 5px;
-  }
-}
