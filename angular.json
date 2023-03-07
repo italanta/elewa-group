@@ -15,6 +15,7 @@
     "pages-elewa-invest": "libs/pages/elewa/invest",
     "pages-elewa-news": "libs/pages/elewa/news",
     "pages-elewa-social-impact": "libs/pages/elewa/social-impact",
+    "pages-elewa-venture-lab-detail": "libs/pages/elewa/venture-lab-detail",
     "pages-elewa-venture-labs": "libs/pages/elewa/venture-labs",
     "state-data-cms": "libs/state/data/cms",
     "state-data-gql": "libs/state/data/gql",
