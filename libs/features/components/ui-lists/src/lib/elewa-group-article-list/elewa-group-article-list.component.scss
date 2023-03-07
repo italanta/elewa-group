@@ -10,6 +10,7 @@
     @media (max-width:578px) {
         gap: 1rem;
     }
+    overflow-x: hidden;
 }
 .carousel-container{
     display: flex;
@@ -18,19 +19,22 @@
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 1rem;
+    scroll-snap-type: mandatory;
+    overflow-x: hidden;
+
     @media (max-width:868px) {
-        overflow-x: scroll;
     }
     article {
-        min-width: 30%;
+        min-width: 40%;
         height: max-content;
         display:flex;
         flex-direction:column;
         justify-content:flex-start;
         gap:.5rem;
         padding: 1rem;
+        scroll-snap-align:start;
         @media (max-width:868px) {
-            min-width: 55%;
+            min-width: 75%;
         }
         @media (max-width:578px) {
             min-width: 75%;
@@ -48,7 +52,7 @@
     }
     figure {
         height: max-content;
-        max-height: 70%;
+        max-height: 80%;
     }
     .title {
         font-family: var(--elewa-group-website-dmsans-medium);
@@ -74,6 +78,9 @@
         display: flex;
         justify-content: space-between;
         gap: .5rem;
+    }
+    :hover {
+        cursor: pointer;
     }
     @media (max-width:578px) {
         padding: 3rem 0 1rem;
@@ -107,5 +114,22 @@
         padding: .5rem;
         border: 1px solid black;
         border-radius: 50%;
+        cursor: pointer;
+    }
+}
+.progress-bar-container {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    div {
+        height: 5px;
+        width: 50%;
+        background-color: black;
+    }
+    @media screen and (min-width:868px) {
+        display: none;
     }
 }
