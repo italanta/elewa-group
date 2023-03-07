@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'elewa-group-button-with-animation',
   templateUrl: './elewa-group-button-with-animation.component.html',
-  styleUrls: ['./elewa-group-button-with-animation.component.css']
+  styleUrls: ['./elewa-group-button-with-animation.component.scss']
 })
 
 export class ElewaGroupButtonWithAnimationComponent {

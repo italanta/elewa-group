@@ -7,7 +7,7 @@ import { Component,Input } from '@angular/core';
 })
 export class SocialCallToActionComponent {
   @Input() message = "Become part of our mission.";
-  @Input() word = "And start";
-  @Input()callToActionText ="investing";
+  @Input() word = "And join";
+  @Input()callToActionText ="Elewa";
   @Input()url= "/investing";
 }
