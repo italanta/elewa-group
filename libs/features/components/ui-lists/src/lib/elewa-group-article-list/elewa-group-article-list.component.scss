@@ -7,6 +7,9 @@
     justify-content:space-between;
     gap:4rem;
     font-family: var(--elewa-group-website-dmsans-regular);
+    @media (max-width:578px) {
+        gap: 1rem;
+    }
 }
 .carousel-container{
     display: flex;
@@ -53,11 +56,15 @@
         font-family: var(--elewa-group-website-dmsans-medium);
         font-size: 1.1rem;
     }
+    @media (max-width:578px) {
+        padding-bottom: 0;
+    }
 }
 .buttons-container {
     display:flex;
     justify-content:space-between;
     width:100%;
+    padding: 0 1rem;
     button {
         background-color:white;
         font-size:1rem;
@@ -68,6 +75,9 @@
         display: flex;
         justify-content: space-between;
         gap: .5rem;
+    }
+    @media screen and (max-width:578px) {
+        display: none;
     }
 }
 .dot {
@@ -83,4 +93,20 @@
     flex-direction: row;
     align-items: center;
     gap: .5rem;
+}
+.arrowIcons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    @media screen and (min-width:579px) {
+        display: none;
+    }
+    div {
+        background-color: white;
+        width: max-content;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
 }
