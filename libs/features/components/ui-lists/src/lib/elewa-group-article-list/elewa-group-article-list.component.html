@@ -1,1 +1,30 @@
-<p>elewa-group-article-list works!</p>
+<main id="Container">
+    <section class="carousel-container">
+        <ng-container *ngFor="let article of articleList">
+            <article>
+                <figure class="image-container">
+                    <img [src] = "article.image"/>
+                </figure>
+                <p class="timestamp">
+                   <span> {{article.timestamp}} </span>
+                   <span class="dot"></span>
+                   <span>{{generateReadTime(article.body)}} min read </span>
+                </p>
+                <p class="title">
+                    {{article.title}}
+                </p>
+            </article>
+        </ng-container>
+    </section>
+
+    <section class="buttons-container">
+        <button>
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Prev</span>
+        </button>
+        <button>
+            <span>Next</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </section>
+</main>
