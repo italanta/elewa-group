@@ -1,10 +1,9 @@
 <main id="Container">
     <section class="carousel-container">
-        <ng-container *ngFor="let article of articleList">
-            <article>
+        <ng-container *ngFor="let article of articleList;let s = index">
+            <article class="article">
                 <figure>
                     <img [src] = "article.image" alt="article image"/>
-
                 </figure>
                 <section>
                     <p class="timestamp">
@@ -21,21 +20,31 @@
         </ng-container>
     </section>
 
+    <section>
+        
+    </section>
     <section class="arrowIcons-container">
-        <div>
+        <div (click)="scroll(-1)">
             <i class="fa-solid fa-arrow-left"></i>
         </div>
-        <div>
+        <div (click)="scroll(1)">
             <i class="fa-solid fa-arrow-right"></i>
         </div>
     </section>
 
+    <section class="progress-bar-container">
+        <div class="progress-bar"[style.width.%]="width">
+            
+        </div>
+    </section>
+
     <section class="buttons-container">
-        <button>
+        
+        <button (click)="scroll(-1)">
             <i class="fa-solid fa-arrow-left"></i>
             <span>Prev</span>
         </button>
-        <button>
+        <button (click)="scroll(1)">
             <span>Next</span>
             <i class="fa-solid fa-arrow-right"></i>
         </button>
