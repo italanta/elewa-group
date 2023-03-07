@@ -260,7 +260,7 @@
       color: rgb(0, 0, 0);
     }
     .border{
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgb(32, 31, 31);
     }
      .logo-light{
       display: none;
@@ -274,21 +274,4 @@
    
   }
 
-  :host-context(.dark-mode) &.header-light {
-
-    color: rgb(2, 2, 2);
-
-    .nav-menu .nav-link {
-      color: rgb(7, 7, 7);
-    }
-  }
-
-  :host-context(.dark-mode) &.header-dark {
-    
-    color: rgb(250, 249, 249);
-
-    .nav-menu .nav-link {
-      color: rgb(255, 250, 250);
-    }
-  }
 }
