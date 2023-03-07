@@ -1,6 +1,9 @@
 
 .article-wrapper {
   position: relative;
+  margin: 80px;
+  justify-content: flex-start; /* change to flex-start to reduce space between articles */
+ 
 }
 
 .article-list {
@@ -9,8 +12,7 @@
   flex-wrap: nowrap;
   overflow-x: hidden; /* remove this to disable scrolling */
   scroll-snap-type: x mandatory;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .article {
@@ -23,8 +25,8 @@
 }
 
 .article img {
-  width: 210px;
-  height: 250px;
+  width: 275px;
+  height: 300px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -128,13 +130,13 @@
 }
 
 .next {
-  margin-right: 24%;
+  // margin-right: 24%;
   padding: 10px;
 }
 
 .prev {
-  margin-left: 22%;
-}
+//   margin-left: 22%;
+ }
 
 .prev i,
 .next i {
@@ -144,4 +146,31 @@
 }
 .btn-text {
   margin: 5px; /* adjust the value to change the spacing */
+}
+
+@media (max-width: 767px) {
+  .article-list {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .article {
+    width: 100%;
+    margin-right: 20px;
+    scroll-snap-align: start;
+  }
+
+  .button-wrapper {
+    margin-top: 20px;
+  }
+
+  .prev,
+  .next {
+    margin: 10px;
+  }
+
+  .prev i,
+  .next i {
+    margin-right: 5px;
+  }
 }
