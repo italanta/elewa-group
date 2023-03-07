@@ -14,6 +14,7 @@ import { ElewaBrandsCreativeHubComponent } from './components/elewa-brands-creat
 import { ElewaBrandsPageComponent } from './pages/elewa-brands-page/elewa-brands-page/elewa-brands-page.component';
 
 import { BrandsRoutingModule } from './brands.routing';
+import { VentureLabsInfoComponent } from './components/elewa-brands-venture-labs/venture-labs-info/venture-labs-info.component';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, BannersModule, BrandsRoutingModule],
@@ -26,6 +27,7 @@ import { BrandsRoutingModule } from './brands.routing';
     ElewaBrandsStakeholderComponent,
     ElewaBrandsHeroComponent,
     ElewaBrandsCreativeHubComponent,
+    VentureLabsInfoComponent,
   ],
 })
 export class BrandsModule {}
