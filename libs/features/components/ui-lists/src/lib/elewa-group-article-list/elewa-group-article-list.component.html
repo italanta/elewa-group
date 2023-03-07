@@ -1,1 +1,20 @@
-<p>elewa-group-article-list works!</p>
+<div class="article-wrapper">
+  <div class="article-list">
+    <ng-container *ngFor="let article of articles.slice(currentIndex, currentIndex + 3)">
+      <div class="article">
+        <img [src]="article.image" alt="">
+        <div class="info">
+          <span class="timestamp">{{ article.timestamp }} <span class="dot">·</span> <p class="read-time">{{ calculateReadTime(article.body) }} min read </p></span>
+          
+          <p class="title">{{ article.title }}</p>
+          <!-- <p class="body">{{ article.body }}</p> -->
+          
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="button-wrapper">
+    <button class="prev" (click)="scrollLeft()" [disabled]="currentIndex === 0"><i class="fas fa-arrow-left"></i><p class="btn-text">Prev</p></button>
+    <button class="next" (click)="scrollRight()" [disabled]="currentIndex === articles.length - 3"><p class="btn-text">Next</p><i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>

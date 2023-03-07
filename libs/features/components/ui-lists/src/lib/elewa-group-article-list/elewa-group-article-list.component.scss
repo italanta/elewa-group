@@ -1,0 +1,147 @@
+
+.article-wrapper {
+  position: relative;
+}
+
+.article-list {
+  position: relative; /* add this to make the position of the buttons relative to this container */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden; /* remove this to disable scrolling */
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article img {
+  width: 210px;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.article .info {
+  font-family: var(  --elewa-group-website-dmsans-regular);
+  padding: 10px;
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.article .info .title {
+  // font-family: var(  --elewa-group-website-dmsans-regular);
+  // font-size: 1.2rem;
+  // font-weight: bold;
+  // margin-bottom: 5px;
+  margin-top: 10px;
+  font-family: var(  --elewa-group-website-dmsans-regular);
+   flex-grow: 1;
+}
+
+//  .article .info .body {
+//    font-family: var(  --elewa-group-website-dmsans-regular);
+//    flex-grow: 1;
+//  }
+
+// .article .info .read-time {
+//   font-family: var(  --elewa-group-website-dmsans-regular);
+//   font-size: 0.8rem;
+//   color: gray;
+//   margin-left: 10px;
+//   display: inline-block;
+// }
+
+.article .info .timestamp {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  flex-direction: row; /* changed to row */
+
+  font-size: 0.8rem;
+  color: black;
+  margin-top: 10px;
+  display: flex; /* added */
+  align-items: center; /* added */
+}
+
+.timestamp .dot {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.article .info .read-time {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 0.6rem;
+  color: black;
+  display: flex; /* added */
+
+}
+
+
+
+
+
+
+
+
+
+.button-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: 120px;
+  height: 48px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 60px;
+  user-select: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.next {
+  margin-right: 24%;
+  padding: 10px;
+}
+
+.prev {
+  margin-left: 22%;
+}
+
+.prev i,
+.next i {
+  font-size: 20px;
+  color: gray;
+  margin-right: 10px;
+}
+.btn-text {
+  margin: 5px; /* adjust the value to change the spacing */
+}
