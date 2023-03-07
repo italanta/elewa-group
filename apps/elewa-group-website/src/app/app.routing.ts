@@ -41,6 +41,10 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
   // contact page route
   {  path: 'brands', redirectTo: 'brands/en'  },
   {  path: 'brands/en', loadChildren: () => import('libs/pages/elewa/brands/src/lib/pages-elewa-brands.module').then(m => m.BrandsModule)},
+
+  // venture-lab-detail route
+  {  path: 'venture-lab-detail', redirectTo: 'venture-lab-detail/en'  },
+  {  path: 'venture-lab-detail/en', loadChildren: () => import('libs/pages/elewa/venture-lab-detail/src/lib/pages-elewa-venture-lab-detail.module').then(m => m.PagesElewaVentureLabDetailModule)}
 ];
 
 @NgModule({
