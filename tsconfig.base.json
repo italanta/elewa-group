@@ -11,17 +11,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@elewa-group/elements/layout": [
-        "libs/elements/layout/src/index.ts"
-      ],
+      "@elewa-group/elements/layout": ["libs/elements/layout/src/index.ts"],
       "@elewa-group/features/components/banners": [
         "libs/features/components/banners/src/index.ts"
       ],
@@ -49,15 +44,11 @@
       "@elewa-group/pages/elewa/contact": [
         "libs/pages/elewa/contact/src/index.ts"
       ],
-      "@elewa-group/pages/elewa/home": [
-        "libs/pages/elewa/home/src/index.ts"
-      ],
+      "@elewa-group/pages/elewa/home": ["libs/pages/elewa/home/src/index.ts"],
       "@elewa-group/pages/elewa/invest": [
         "libs/pages/elewa/invest/src/index.ts"
       ],
-      "@elewa-group/pages/elewa/news": [
-        "libs/pages/elewa/news/src/index.ts"
-      ],
+      "@elewa-group/pages/elewa/news": ["libs/pages/elewa/news/src/index.ts"],
       "@elewa-group/pages/elewa/social-impact": [
         "libs/pages/elewa/social-impact/src/index.ts"
       ],
@@ -67,61 +58,28 @@
       "@elewa-group/pages/elewa/venture-labs": [
         "libs/pages/elewa/venture-labs/src/index.ts"
       ],
-      "@elewa-group/state/data/cms": [
-        "libs/state/data/cms/src/index.ts"
-      ],
-      "@elewa-group/state/data/gql": [
-        "libs/state/data/gql/src/index.ts"
-      ],
-      "@iote/bricks": [
-        "libs/util/iote/bricks/src/index.ts"
-      ],
-      "@iote/bricks-angular": [
-        "libs/util/iote/bricks-angular/src/index.ts"
-      ],
-      "@iote/cqrs": [
-        "libs/util/iote/cqrs/src/index.ts"
-      ],
-      "@iote/exceptions": [
-        "libs/util/iote/exceptions/src/index.ts"
-      ],
+      "@elewa-group/state/data/cms": ["libs/state/data/cms/src/index.ts"],
+      "@elewa-group/state/data/gql": ["libs/state/data/gql/src/index.ts"],
+      "@iote/bricks": ["libs/util/iote/bricks/src/index.ts"],
+      "@iote/bricks-angular": ["libs/util/iote/bricks-angular/src/index.ts"],
+      "@iote/cqrs": ["libs/util/iote/cqrs/src/index.ts"],
+      "@iote/exceptions": ["libs/util/iote/exceptions/src/index.ts"],
       "@iote/local-persistance": [
         "libs/util/iote/local-persistance/src/index.ts"
       ],
-      "@iote/state": [
-        "libs/util/iote/state/src/index.ts"
-      ],
-      "@iote/time": [
-        "libs/util/iote/time/src/index.ts"
-      ],
-      "@iote/ui-workflows": [
-        "libs/util/iote/ui-workflows/src/index.ts"
-      ],
-      "@ngfi/admin-data": [
-        "libs/util/ngfi/admin-data/src/index.ts"
-      ],
-      "@ngfi/angular": [
-        "libs/util/ngfi/angular/src/index.ts"
-      ],
+      "@iote/state": ["libs/util/iote/state/src/index.ts"],
+      "@iote/time": ["libs/util/iote/time/src/index.ts"],
+      "@iote/ui-workflows": ["libs/util/iote/ui-workflows/src/index.ts"],
+      "@ngfi/admin-data": ["libs/util/ngfi/admin-data/src/index.ts"],
+      "@ngfi/angular": ["libs/util/ngfi/angular/src/index.ts"],
       "@ngfi/firestore-qbuilder": [
         "libs/util/ngfi/firestore-qbuilder/src/index.ts"
       ],
-      "@ngfi/functions": [
-        "libs/util/ngfi/functions/src/index.ts"
-      ],
-      "@ngfi/infinite-scroll": [
-        "libs/util/ngfi/infinite-scroll/src/index.ts"
-      ],
-      "@ngfi/multi-lang": [
-        "libs/util/ngfi/multi-lang/src/index.ts"
-      ],
-      "@ngfi/state": [
-        "libs/util/ngfi/state/src/index.ts"
-      ]
+      "@ngfi/functions": ["libs/util/ngfi/functions/src/index.ts"],
+      "@ngfi/infinite-scroll": ["libs/util/ngfi/infinite-scroll/src/index.ts"],
+      "@ngfi/multi-lang": ["libs/util/ngfi/multi-lang/src/index.ts"],
+      "@ngfi/state": ["libs/util/ngfi/state/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
