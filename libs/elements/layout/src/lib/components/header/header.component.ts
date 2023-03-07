@@ -38,10 +38,10 @@ export class HeaderComponent implements OnInit {
       '/social-impact/en',
       '/invest/en',
       // '/venture-labs/en',
-      '/venture-lab-detail/en',
+      // '/venture-lab-detail/en',
       '/brands/en',
       // '/careers/en',
-      '/news/en',
+      // '/news/en',
       // '/contact/en',
     ];
     // Log the array of light header pages for debugging purposes
@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
     // Determine whether the current page is in the array of light header pages
     return lightHeaderPages.includes(page);
   }
-  
+
   ngOnInit() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menus');
