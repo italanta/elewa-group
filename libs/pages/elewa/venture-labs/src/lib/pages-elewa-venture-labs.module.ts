@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { BannersModule } from '@elewa-group/features/components/banners';
+import { CardsModule } from '@elewa-group/features/components/cards';
 
 import { VentureLabsPageComponent } from './pages/venture-labs-page/venture-labs-page.component';
 import { VentureLabsHeroComponent } from './components/venture-labs-hero/venture-labs-hero.component';
@@ -19,6 +20,7 @@ import { VentureLabsInvestmentsComponent } from './components/venture-labs-inves
     VentureLabsRoutingModule,
     LayoutModule,
     BannersModule,
+    CardsModule,
   ],
   declarations: [
     VentureLabsHeroComponent,
