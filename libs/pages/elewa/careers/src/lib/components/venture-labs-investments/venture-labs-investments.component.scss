@@ -21,11 +21,6 @@
     font-weight: var(--elewa-group-website-font-weight-title);
     width: 60%;
 }
-.container{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-}
 
 .card{
     display: grid;
@@ -35,23 +30,14 @@
 
 }
 
-@media screen and (max-width:768px) {
-    .card{
-        grid-template-columns: repeat(2, 1fr);
-        width: 90vh;  
+// @media screen and (min-width: 850px) {
+//     .card{
+//         grid-template-columns: repeat(2, 1fr);
+//         width: 90vh;  
+//     }
+    
+//     .title{
+//         margin: 20px 0px;
+//     }
+// }
 
-
-    }
-    .title{
-        margin: 20px 0px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .card{
-       grid-template-columns: repeat(2, 1fr);
-       width: 85%;
-       margin: 10px;
-    }
-
-}
