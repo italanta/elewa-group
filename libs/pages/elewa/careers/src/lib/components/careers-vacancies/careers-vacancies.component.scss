@@ -2,11 +2,11 @@
   display: flex;
   margin-top: 40px;
   justify-content: space-evenly;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin: 30px 5%;
   padding: 20px 0;
   border-top: 1px solid rgb(182, 170, 170);
 }
+
 .main-vacancies {
   margin-top: 10%;
 }
@@ -21,7 +21,7 @@ p {
 h1 {
   font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 200;
-  margin-left: 8%;
+  margin-left: 5%;
 }
 h2{
   font-family: var(--elewa-group-website-dmsans-regular);

@@ -1,0 +1,22 @@
+.venture-labs-info {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: var(--elewa-group-website-font-size-title-medium);
+  background-color: var(--elewa-group-website-color-card);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 2rem 1.5rem;
+  p {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .venture-labs-info {
+    padding: 5rem 4rem;
+    p {
+      width: 80%;
+      font-size: 2rem;
+    }
+  }
+}

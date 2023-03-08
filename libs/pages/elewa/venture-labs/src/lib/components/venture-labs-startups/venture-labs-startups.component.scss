@@ -1,0 +1,116 @@
+.startup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--elewa-group-website-color-primary);
+    height: 100vh;
+    border-radius: 0  0 30px 30px;
+}
+.section-1{
+    width: 30vw;
+    margin-right: 5%;
+    margin-left: auto;
+    display: inline;
+    align-items: end;
+    justify-content: end;
+}
+.section-2{
+    width: 30vw;
+    margin-right: auto;
+    margin-left: 5%;
+    display: inline;
+    align-items: end;
+    justify-content: end;
+}
+.image-1{
+    height: 60vh;
+    width: 20vw;
+    padding-bottom: 10%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.image-2{
+    height: 60vh;
+    width: 20vw;
+    padding-bottom: 10%;
+}
+h1{
+    font-family: var(--elewa-group-website-dmsans-bold);
+    font-size: 34px ;
+    font-weight: var(--elewa-group-website-font-weight-title);
+    padding-bottom: 10%;
+    
+}
+p{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    font-size: 20px;
+}
+.text{
+    width: 100%;
+    color: #f4f4f4;
+    padding-bottom: 10%;
+}
+.apply-now{
+    color: white;
+    text-decoration: underline;
+    width: fit-content;
+    cursor: pointer;
+}
+@media (max-width:1000px ){
+    .startup-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+        height: 170vh;
+    }
+    .section-1{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 80vw;
+        margin-bottom: 10%;
+    }
+    .section-2{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 80vw;
+      
+    }
+    img{
+        width: 80vw;
+        height: 40vh;
+        border-radius: 20px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    h1{
+        font-size: 23px;
+        font-weight: var(--elewa-group-website-font-weight-title);
+    }
+    p{
+        font-size: 15px;
+    }
+    .text{
+        min-width: 80vw;
+        text-align: center;
+    }
+    .image-1{
+        height: 40vh;
+        margin-bottom: 5%;
+    }
+    .image-2{
+        height: 40vh;
+        margin-bottom: 5%;
+
+    }
+    .apply-now{
+        width: 80px;
+    }
+}
