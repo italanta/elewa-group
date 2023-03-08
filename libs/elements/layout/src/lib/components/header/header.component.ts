@@ -60,6 +60,7 @@ export class HeaderComponent implements OnInit {
       '/invest/en',
       '/brands/en',
       '/venture-labs/en',
+      '/contact/en',
     ];
 
     // Determine whether the current page is in the array of light header pages
