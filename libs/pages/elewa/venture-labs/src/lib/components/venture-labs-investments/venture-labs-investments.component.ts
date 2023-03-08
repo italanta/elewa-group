@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './venture-labs-investments.component.html',
   styleUrls: ['./venture-labs-investments.component.scss'],
 })
-export class VentureLabsInvestmentsComponent {}
+export class VentureLabsInvestmentsComponent {
+  imgSrcList = [
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+    "https://i.postimg.cc/wxnQLbYY/nextsteps.png",
+  ]
+}
