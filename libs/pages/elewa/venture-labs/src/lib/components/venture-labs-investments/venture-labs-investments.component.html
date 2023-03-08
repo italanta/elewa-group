@@ -1,1 +1,12 @@
-<p>venture-labs-investments works!</p>
+<main id="venture-labs-investments__main">
+    <section class="venture-labs-investments__text">
+        <h1>Elewa spinouts &amp; ventures investments.</h1>
+    </section>
+    <section class="venture-labs-investments__images">
+            <elewa-group-elewa-key-figure-card *ngFor="let imageSrc of imgSrcList" class="card"
+                [figure]="imageSrc"
+                [isImage]="true"
+            >
+            </elewa-group-elewa-key-figure-card>
+    </section>
+</main>
