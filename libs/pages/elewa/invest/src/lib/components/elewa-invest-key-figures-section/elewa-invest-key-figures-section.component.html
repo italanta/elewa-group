@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>{{ title }}</h2>
+  <div class="cards">
+    <elewa-group-elewa-key-figure-card
+    *ngFor="let figure of figures"
+      [figure]="figure.string"
+      [description]="figure.description"
+    ></elewa-group-elewa-key-figure-card>
+  </div>
+</div>
