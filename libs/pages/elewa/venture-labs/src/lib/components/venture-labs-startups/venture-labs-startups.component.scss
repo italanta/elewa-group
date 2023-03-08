@@ -27,6 +27,7 @@
 .image-1{
     height: 60vh;
     width: 20vw;
+    padding-bottom: 10%;
 }
 img{
     height: 100%;
@@ -37,11 +38,13 @@ img{
 .image-2{
     height: 60vh;
     width: 20vw;
+    padding-bottom: 10%;
 }
 h1{
     font-family: var(--elewa-group-website-dmsans-bold);
     font-size: 34px ;
     font-weight: var(--elewa-group-website-font-weight-title);
+    padding-bottom: 10%;
     
 }
 p{
@@ -51,6 +54,12 @@ p{
 .text{
     width: 100%;
     color: #f4f4f4;
+    padding-bottom: 10%;
+}
+.apply-now{
+    border-bottom: 2px solid;
+    width: 100px;
+    cursor: pointer;
 }
 @media (max-width:1000px ){
     .startup-container{
@@ -61,7 +70,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         width: 100vw;
-        height: 130vh;
+        height: 170vh;
     }
     .section-1{
         margin-left: auto;
@@ -101,5 +110,8 @@ p{
         height: 40vh;
         margin-bottom: 5%;
 
+    }
+    .apply-now{
+        width: 80px;
     }
 }
