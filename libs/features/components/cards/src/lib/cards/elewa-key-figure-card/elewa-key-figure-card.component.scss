@@ -63,3 +63,16 @@ h3 {
 		margin-left: 100px;
 	}
 }
+
+@media screen and (max-width:480px){
+.desc {
+	padding: 20px 10px;
+}
+
+.text {
+	width: 150px;
+	height: 200px;
+	padding-top: 20px;
+	font-size: 13px;
+}
+}

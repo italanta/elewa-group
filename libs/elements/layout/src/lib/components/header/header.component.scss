@@ -17,8 +17,9 @@
     z-index:999;
     width: 100%;
     margin-top: 1%;
+
   }
-  
+
   .header {
     background-color: var(--elewa-group-website-header-background-color);
   }
@@ -30,11 +31,11 @@
     margin: 0 80px;
     padding-top: 20px;
   }
-  
+
   .hamburger {
     display: none;
   }
-  
+
   .nav-menus {
     display: flex;
     align-items: center;
@@ -49,11 +50,9 @@
     font-family: var(--elewa-group-website-dmsans-italic);
   }
 
-  .home-logo{
-    color: var(--elewa-group-website-color-white);
-    justify-content: space-between;
-  }
   
+ 
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -61,7 +60,7 @@
     list-style-type: none;
     width: 50%;
   }
-  
+
   .nav-item {
     margin: 10px 0;
   }
@@ -73,38 +72,38 @@
     font-family: var(--elewa-group-website-dmsans-regular);
     transition: color .25s;
     }
-  
+
   .nav-link:hover {
     color: var(--elewa-group-website-navbars-link-hover-color);
     cursor: pointer;
   }
-  
+
   .menu-header{
     background-color: var(--elewa-group-website-header-background-color);
   }
-  
+
   .bar, .bar2{
     background: var(--elewa-group-website-color-white);
   }
-  
+
   .menu-header{
     display: none;
   }
-  
+
   /* media screen  */
-  
+
   @media only screen and (max-width: 1306px) {
     .nav-item {
       margin-left: 2rem;
     }
   }
-  
+
   @media only screen and (max-width: 500px) {
     .nav-item {
       margin-left: 0 !important;
     }
   }
-  
+
   @media only screen and (max-width: 1033px) {
     .menu-header{
       display: block;
@@ -112,7 +111,7 @@
       z-index: 988;
       max-width: 100%;
     }
-  
+
     .nav-menus {
       position: fixed;
       left: -120%;
@@ -127,11 +126,11 @@
       transition: 0.3s;
       z-index: 999;
     }
-  
+
     .nav-menu{
       display: none;
     }
-  
+
     .nav-link{
         color: var(--elewa-group-website-color-white);
         text-decoration: none;
@@ -139,44 +138,46 @@
         font-family: var(--elewa-group-website-dmsans-regular);
         transition: color .25s;
     }
-    
+
     .nav-link:hover {
       color: var(--elewa-group-website-navbars-link-hover-color);
     }
-    
+
     .nav-menus.active {
       left: 0;
       margin:0 8px;
     }
-  
+
     .nav-items {
       padding: 10px 0;
       width: 80%;
       border-bottom: 1px solid var(--elewa-group-website-color-white);
     }
-  
+
     .hamburger {
       display: block;
       cursor: pointer;
     }
-  
+
+    
+
     .hamburger.active .bar:nth-child(1) {
       -webkit-transform: translateY(8px) rotate(45deg);
       transform: translateY(8px) rotate(45deg);
     }
-  
+
     .hamburger.active .bar:nth-child(2) {
       -webkit-transform: translateY(-8px) rotate(-45deg);
       transform: translateY(-8px) rotate(-45deg);
     }
   }
- 
-  
+
+
   @media only screen and (max-width: 850px) {
     .container{
       height: 5vh;
     }
-
+    
     header{
       margin-top: 6%;
     }
@@ -200,13 +201,21 @@
         width: 60%;
         margin-top: 10px;
     }
-  
+
     .hamburger {
       width: 15%;
       margin: 5px 0;
       max-height: 85px;
     }
-  
+
+    //made the hamburger menu black
+    .menu-header{
+      &.header-dark{
+        .bar, .bar2{
+          background: black;
+        }
+      }
+    }
     .bar{
       height: 2px;
       width: 50px;
@@ -215,6 +224,7 @@
     }
 
     .bar2{
+
         height: 2px;
         width: 25px;
         float: right;
@@ -223,3 +233,45 @@
   }
 
 /* end of navbar  */
+
+
+// header dark and light mode for various items
+.header {
+  &.header-light {
+
+    color: rgb(243, 241, 241);
+
+    .nav-menu .nav-link {
+      color: rgb(243, 242, 242);
+    }
+    .border{
+      border-bottom: 1px solid var(--elewa-group-website-color-white);
+    }
+    .logo-dark{
+      display: none;
+    }
+  }
+
+  &.header-dark {
+
+    color: rgb(7, 7, 7);
+
+    .nav-menu .nav-link {
+      color: rgb(0, 0, 0);
+    }
+    .border{
+      border-bottom: 1px solid rgb(32, 31, 31);
+    }
+     .logo-light{
+      display: none;
+    }
+    .elewa-text{
+      display: flex;
+    }
+    .home-logo-2{
+      order: -1;
+    }
+   
+  }
+
+}

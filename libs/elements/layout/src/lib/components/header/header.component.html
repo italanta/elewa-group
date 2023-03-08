@@ -1,10 +1,14 @@
 <div class="container">
-  <header class="menu-header">
+  <header [ngClass]="headerClass" class="menu-header">
     <nav class="navbars-mobile">
       <div class="elewa-mobile">
+        <a routerLink="#" class="home-logo-2"><img *ngIf="headerClass === 'header-dark'"
+            src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_Black_cndtcl.svg"
+            alt=""></a>
         <a routerLink="#" class="home-logo"><img
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg"
             alt=""></a>
+
       </div>
       <ul class="nav-menus">
         <li class="nav-items">
@@ -21,13 +25,8 @@
           <a class="nav-link" routerLink="/invest/en" routerLinkActive="active" ariaCurrentWhenActive="page">Invest</a>
         </li>
         <li class="nav-items">
-
-          <a class="nav-link" routerLink="/venture-lab-detail/en" routerLinkActive="active"
-            ariaCurrentWhenActive="page">Venture Lab Detail</a>
-
           <a class="nav-link" routerLink="/venture-labs/en" routerLinkActive="active"
             ariaCurrentWhenActive="page">Venture Labs</a>
-
         </li>
         <li class="nav-items">
           <a class="nav-link" routerLink="/brands/en" routerLinkActive="active" ariaCurrentWhenActive="page">Brands</a>
@@ -52,12 +51,15 @@
     </nav>
   </header>
 
-  <header class="header fixed-top">
+  <header [ngClass]="headerClass" class="header fixed-top">
     <nav class="navbars">
       <div class="border">
         <div class="elewa-text">
           <a routerLink="#" class="home-logo"><img
               src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg"
+              alt=""></a>
+          <a routerLink="#" class="home-logo-2"><img *ngIf="headerClass === 'header-dark'"
+              src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_Black_cndtcl.svg"
               alt=""></a>
         </div>
         <ul class="nav-menu">
@@ -77,13 +79,8 @@
               ariaCurrentWhenActive="page">Invest</a>
           </li>
           <li class="nav-item one">
-
-            <a class="nav-link" routerLink="/venture-lab-detail/en" routerLinkActive="active"
-              ariaCurrentWhenActive="page">Venture Lab Detail</a>
-
             <a class="nav-link" routerLink="/venture-labs/en" routerLinkActive="active"
               ariaCurrentWhenActive="page">Venture Labs</a>
-
           </li>
           <li class="nav-item one">
             <a class="nav-link" routerLink="/brands/en" routerLinkActive="active"
