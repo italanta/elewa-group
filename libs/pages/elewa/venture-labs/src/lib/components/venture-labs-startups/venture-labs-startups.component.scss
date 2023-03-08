@@ -2,14 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
     background-color: var(--elewa-group-website-color-primary);
     height: 100vh;
-    border-radius: 30px;
+    border-radius: 0  0 30px 30px;
 }
 .section-1{
-    width: 20vw;
+    width: 30vw;
     margin-right: 5%;
     margin-left: auto;
     display: inline;
@@ -17,7 +15,7 @@
     justify-content: end;
 }
 .section-2{
-    width: 20vw;
+    width: 30vw;
     margin-right: auto;
     margin-left: 5%;
     display: inline;
@@ -57,8 +55,9 @@ p{
     padding-bottom: 10%;
 }
 .apply-now{
-    border-bottom: 2px solid;
-    width: 100px;
+    color: white;
+    text-decoration: underline;
+    width: fit-content;
     cursor: pointer;
 }
 @media (max-width:1000px ){
