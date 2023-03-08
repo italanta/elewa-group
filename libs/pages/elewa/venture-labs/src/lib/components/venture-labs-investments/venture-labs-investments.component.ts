@@ -8,28 +8,28 @@ import { Component } from '@angular/core';
 export class VentureLabsInvestmentsComponent {
 cards = [
   {
-    figure: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   },
   {
-    figure: '',
+    figureUrl: 'https://i.postimg.cc/wxnQLbYY/nextsteps.png',
   }
 ]
 }

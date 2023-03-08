@@ -1,16 +1,16 @@
 $font-family: (--elewa-group-website-dmsans-regular);
-$font-weight: bold;
+$font-weight: 300;
 $font-size: 30px;
 
 .container{
     margin-left: 20px;
     margin-top: 20px;
     h2{
-        font-weight: 300;
         justify-content: left;
         font-family: $font-family;
         font-weight: $font-weight;
         font-size: $font-size;
+        margin-left: 20px;
     }
     .investments-cards{
         display: grid;
