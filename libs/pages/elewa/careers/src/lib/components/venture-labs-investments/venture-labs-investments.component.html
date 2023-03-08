@@ -1,0 +1,17 @@
+<div id="venture-labs-investment">
+  <div class="main">
+    <p class="title">Elewa spinouts & ventures investments</p>
+    <br />
+    <div class="container">
+      <div class="card">
+        <elewa-group-elewa-key-figure-card
+          *ngFor="let figure of figures"
+          [figure]="figure.Logo"
+          [isImage]="true"
+        >
+          ></elewa-group-elewa-key-figure-card
+        >
+      </div>
+    </div>
+  </div>
+</div>
