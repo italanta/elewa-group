@@ -12,6 +12,7 @@ import { VentureLabDetailRoutingModule } from './venture-lab-detail.routing';
 
 @NgModule({
   imports: [CommonModule, LayoutModule, ButtonsModule, VentureLabDetailRoutingModule],
-  declarations: [VentureLabDetailPageComponent, VentureDetailFoundersComponent, VentureDetailHeroComponent],
+  declarations: [VentureLabDetailPageComponent, VentureDetailFoundersComponent, VentureDetailHeroComponent]
+})
 
 export class PagesElewaVentureLabDetailModule {}
