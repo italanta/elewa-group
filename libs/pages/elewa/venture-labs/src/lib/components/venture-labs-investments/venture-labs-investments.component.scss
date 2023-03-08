@@ -1,0 +1,16 @@
+$font-family: (--elewa-group-website-dmsans-regular);
+.container{
+    margin-left: 20px;
+    margin-top: 20px;
+    h2{
+        font-weight: 300;
+        justify-content: left;
+        font-family: $font-family;
+    }
+    .investments-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100vh;
+    
+    }
+}
