@@ -1,0 +1,35 @@
+<div class="article-wrapper">
+  <div class="article-list">
+    <ng-container *ngFor="let article of articles.slice(currentIndex, currentIndex + 3)">
+      <div class="article">
+        <img [src]="article.image" alt="">
+        <div class="info">
+          <span class="timestamp">{{ article.timestamp }} <span class="dot">·</span> <p class="read-time">{{ calculateReadTime(article.body) }} min read </p></span>
+          
+          <p class="title">{{ article.title }}</p>
+          <!-- <p class="body">{{ article.body }}</p> -->
+          
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="banner-controls">
+    <div class="previous-button">
+      <button class="fa-arrow-left-long" (click)="previousBanner()">
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </button>
+    </div>
+    <div class="next-button">  
+      <button class="fa-arrow-right-long" (click)="nextBanner()">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+    </div> 
+  </div>
+  <div class="progress-bar">
+    <div class="progress-bar-fill" [style.width.%]="progressPercentage"></div>
+  </div> 
+  <div class="button-wrapper">
+    <button class="prev" (click)="scrollLeft()" [disabled]="currentIndex === 0"><i class="fas fa-arrow-left"></i><p class="btn-text">Prev</p></button>
+    <button class="next" (click)="scrollRight()" [disabled]="currentIndex === articles.length - 3"><p class="btn-text">Next</p><i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
