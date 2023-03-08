@@ -1,0 +1,38 @@
+
+h2{
+font-family: var(--elewa-group-website-dmsans-regular);
+font-size: 40px;
+font-weight: 100;
+text-align: center;
+margin: 50px;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100vh;
+    margin: 40px;
+   
+}
+@media screen and (max-width:768px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vh;  
+       
+       
+    }
+    h2{
+        margin: 20px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cards{
+       grid-template-columns: repeat(2, 1fr);
+       width: 85%;
+       margin: 10px;
+    }
+   
+
+}
+
