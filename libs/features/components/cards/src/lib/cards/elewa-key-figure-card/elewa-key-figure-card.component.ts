@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ElewaKeyFigureCardComponent  {
   @Input () figure = "https://i.postimg.cc/wxnQLbYY/nextsteps.png";
   @Input () description?: string;
-  @Input () isImage: boolean;
+  @Input () isImage = false;
 }
