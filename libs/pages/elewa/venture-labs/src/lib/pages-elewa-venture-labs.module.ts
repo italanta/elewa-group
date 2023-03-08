@@ -19,10 +19,10 @@ import { VentureLabsRoutingModule } from './venture-labs.routing';
     BannersModule,
   ],
   declarations: [
-    VentureLabsPageComponent,
-    VentureLabsDiscoverComponent,
-    VentureLabsInfoComponent
     VentureLabsHeroComponent,
+    VentureLabsDiscoverComponent,
+    VentureLabsInfoComponent,
+    VentureLabsPageComponent,
   ],
 })
 export class PagesElewaVentureLabsModule {}
