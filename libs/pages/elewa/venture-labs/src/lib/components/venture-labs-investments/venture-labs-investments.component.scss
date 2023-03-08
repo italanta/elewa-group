@@ -19,4 +19,18 @@ $font-size: 30px;
         margin-top: 20px;
     
     }
+
+    @media screen and (max-width:768px) {
+        .investments-cards{
+            grid-template-columns: repeat(2, 1fr);  
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .investments-cards{
+           grid-template-columns: repeat(2, 1fr);
+            width: 85px;
+        }
+
+    }
 }
