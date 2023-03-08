@@ -1,0 +1,57 @@
+#venture-labs-investments__main{
+    max-width: 100vw;
+}
+.venture-labs-investments__text {
+    height: max-content;
+    margin-bottom: 4rem;
+    h1{
+        font-family: var(--elewa-group-website-dmsans-medium);
+        width: 77%;
+        font-weight: 500;
+        @media (min-width:1200px) {
+            font-size: 2.5rem;
+            width: 65%;
+            padding-left: 4rem;
+        }
+        @media (max-width:1200px) {
+            width: 60%;
+            padding-left: 4rem;
+            font-size: 2rem;
+        }
+        @media (max-width:850px) {
+            width: 75%;
+            padding-left: 2.5rem;
+            font-size: 1.8rem;
+        }
+        @media (max-width:800px) {
+            padding-left: 3rem;
+            font-size: 1.8rem;
+        }
+        @media (max-width:500px) {
+            font-size: 1.5rem;
+            text-align: center;
+            width: 65%;
+            margin: auto;
+            padding-left: 0;
+        }
+    }
+    @media (max-width:500px) {
+        margin-bottom: 2rem;
+    }
+}
+.venture-labs-investments__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    @media screen and (min-width:1000px) {
+    }
+    @media (max-width:800px) {
+    }
+
+    @media (max-width:500px) {
+        width: 95%;
+        margin: auto;
+    }
+
+}
