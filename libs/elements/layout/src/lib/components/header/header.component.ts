@@ -9,6 +9,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+
   // Set initial values for the component's properties
   isLightHeader = false;
   headerClass = 'header-light';
@@ -30,26 +31,6 @@ export class HeaderComponent implements OnInit {
       });
   }
 
-  private getIsLightHeader(page: string): boolean {
-    // Define an array of pages that should use a light header
-    const lightHeaderPages = [
-      '/home/en',
-      '/about/en',
-      '/social-impact/en',
-      '/invest/en',
-      // '/venture-labs/en',
-      // '/venture-lab-detail/en',
-      '/brands/en',
-      // '/careers/en',
-      // '/news/en',
-      // '/contact/en',
-    ];
-    // Log the array of light header pages for debugging purposes
-    console.log('Light header pages: ', lightHeaderPages);
-    // Determine whether the current page is in the array of light header pages
-    return lightHeaderPages.includes(page);
-  }
-
   ngOnInit() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menus');
@@ -68,5 +49,19 @@ export class HeaderComponent implements OnInit {
     hamburger?.addEventListener('click', mobileMenu);
     navLink.forEach((l) => l.addEventListener('click', closeMenu));
 
+  }
+
+  private getIsLightHeader(page: string): boolean {
+    // Define an array of pages that should use a light header
+    const lightHeaderPages = [
+      '/home/en',
+      '/about/en',
+      '/social-impact/en',
+      '/invest/en',
+      '/brands/en',
+    ];
+
+    // Determine whether the current page is in the array of light header pages
+    return lightHeaderPages.includes(page);
   }
 }
