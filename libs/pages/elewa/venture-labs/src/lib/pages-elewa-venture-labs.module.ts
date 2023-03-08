@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VentureLabsPageComponent } from './pages/venture-labs-page/venture-labs-page.component';
-import { VentureLabsRoutingModule } from './venture-labs.routing';
+
 import { LayoutModule } from '@elewa-group/elements/layout';
-import { VentureLabsDiscoverComponent } from './components/venture-labs-discover/venture-labs-discover.component';
 import { BannersModule } from '@elewa-group/features/components/banners';
+
+import { VentureLabsPageComponent } from './pages/venture-labs-page/venture-labs-page.component';
 import { VentureLabsHeroComponent } from './components/venture-labs-hero/venture-labs-hero.component';
 import { VentureLabsInfoComponent } from './components/venture-labs-info/venture-labs-info.component';
-import { VentureLabsInvestmentsComponent } from './components/venture-labs-investments/venture-labs-investments.component';
+import { VentureLabsDiscoverComponent } from './components/venture-labs-discover/venture-labs-discover.component';
+
+import { VentureLabsRoutingModule } from './venture-labs.routing';
+import { VentureLabsStartupsComponent } from './components/venture-labs-startups/venture-labs-startups.component';
 
 @NgModule({
   imports: [
@@ -17,11 +20,12 @@ import { VentureLabsInvestmentsComponent } from './components/venture-labs-inves
     BannersModule,
   ],
   declarations: [
-    VentureLabsPageComponent,
-    VentureLabsDiscoverComponent,
     VentureLabsHeroComponent,
+    VentureLabsDiscoverComponent,
     VentureLabsInfoComponent,
-    VentureLabsInvestmentsComponent,
+    VentureLabsPageComponent,
+    VentureLabsStartupsComponent
   ],
+
 })
 export class PagesElewaVentureLabsModule {}

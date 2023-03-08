@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    height: 85vh;
+    margin: 150px 70px;
+}
+
+.section{
+    width: 43%;
+    padding: 100px;
+    margin-top: 50px;
+    padding-top: 250px;
+    margin-left: 5%;
+    font-size: var(--elewa-group-website-font-size-medium);
+    font-family: var(--elewa-group-website-dmsans-regular);
+}
+
+h1{
+    font-size: var(--elewa-group-website-font-size-hero-heading);
+}
+
+p{
+    margin-top: 20px;
+    font-size: var(--elewa-group-website-font-size-hero-subheading)
+}
+
+.button{
+    margin-top: 40px;
+}
+
+.image{
+   margin-top: 80px;
+    border-radius: 5%;
+    width: 750px;
+    height: 750px;
+}
+
+img{
+    background-color: black;
+    width: 750px;
+    height: 750px;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 980px){
+    .container{
+        flex-direction: column;
+        margin: 100px 60px;
+        height: 80vh;
+    }
+    
+    .section{
+        padding: 0;
+        font-family: var(--elewa-group-website-dmsans-regular);
+        width: 700px;
+        margin: 20px 0;
+    }
+    
+    h1{
+        font-size: var(--elewa-group-website-font-size-hero-subheading);
+    }
+    
+    p{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .button{
+        margin-top: 20px;
+        width: 70%;
+    }
+    
+    .image{
+        border-radius: 5%;
+        width: 700px;
+        height: 500px;
+    }
+    
+    img{
+        background-color: black;
+        width: 700px;
+        height: 500px;
+        border-radius: 5%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        margin: 50px 40px ;
+        height: 50vh;
+    }
+    
+    .section{
+        padding: 0;
+        font-family: var(--elewa-group-website-dmsans-regular);
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+    
+    p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    
+    .button{
+        margin-top: 20px;
+        width: 70%;
+    }
+    
+    .image{
+        margin-top: 20px;
+        border-radius: 5%;
+        width: 100%;
+        height: 200px;
+    }
+    
+    img{
+        background-color: black;
+        width: 100%;
+        height: 200px;
+        border-radius: 5%;
+    }
+    
+}
+

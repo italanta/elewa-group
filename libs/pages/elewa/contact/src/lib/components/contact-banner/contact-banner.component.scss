@@ -1,93 +1,86 @@
-.contact-banner {
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  margin-top: 10%;
+.main-container {
+  min-width: 100vw;
+  background-color: black;
+  height: fit-content;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 5%;
+  margin: auto;
+  border-radius: 30px 30px 0 0;
+  background-color: white;
+  font-family: var(--elewa-group-website-dmsans-regular);
+  height: fit-content;
+}
+
+.container h2 {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: var(--elewa-group-website-team-and-members-h1-font-size);
   text-align: center;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  font-weight: 100;
 }
 
-.contacts-info {
+.row {
   display: flex;
-  justify-content: space-around;
-  margin-top: 2%;
-  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  padding-bottom: 30px;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
+.row div {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: var(--elewa-group-website-team-and-members-title-font-size);
+  color: var(--elewa-group-website-team-and-members-color-grey);
+}
+
+.title {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 50px;
-  font-weight: 550;
+  margin-bottom: 5px;
+  font-size: 2rem;
 }
 
-p {
-  margin: 5% 0;
-  padding-bottom: 2%;
-  border-bottom: 1px solid rgb(180, 175, 175);
+hr {
+  width: 100%;
+  color: var(--elewa-group-website-team-and-members-color-grey);
 }
 
-h2 {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 13px;
-  opacity: .4;
-}
-
-p {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 27px;
-}
-
-@media (max-width: 767px) {
-  .banner-main {
-    margin-top: 5%;
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    margin-top: 15%;
   }
-  .contacts-info {
-    display: inline-flex;
+
+  .container h2 {
+    margin-bottom: 5px;
+    margin-right: 80px;
+
+  }
+
+  .row {
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    text-align: center;
+    align-items: center;
   }
-  .questions-info,
-  .press-info,
-  .phone-info {
-    margin: 5% 0;
-  }
-  .press-info,
-  .phone-info {
-    padding-top: 2%;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-  }
-  p {
-    font-size: 20px;
-    margin: 5% 0;
-    padding-bottom: 2%;
-    border-bottom: 1px solid rgb(180, 175, 175);
-    box-sizing: border-box;
-  }
-}
 
-@media (max-width: 480px) {
-  .banner-main {
-    margin-top: 4%;
+  hr {
+    width: 190px;
   }
-  h1 {
-    font-size: 30px;
+
+  .subtitle {
+    font-size: var(--elewa-group-website-team-and-members-title-font-size);
+    color: var(--elewa-group-website-team-and-members-color-grey);
+    padding-top: 30px;
   }
-  h2 {
-    font-size: 14px;
-  }
-  p {
-    font-size: 25px;
-    margin: 5% 0;
-    padding-bottom: 2%;
-    border-bottom: 1px solid rgb(180, 175, 175);
-    box-sizing: border-box;
+
+  .title {
+    font-size: var(--elewa-group-website-timeline-description);
+    margin-bottom: 10px;
+
   }
 }

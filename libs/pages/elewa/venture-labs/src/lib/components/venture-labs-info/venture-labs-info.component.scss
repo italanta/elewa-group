@@ -1,39 +1,22 @@
-#venture-labs-info {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+.venture-labs-info {
   font-family: var(--elewa-group-website-dmsans-regular);
-  position: relative;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  position: relative;
-  background-color: var(--elewa-group-website-color-white);
-  height: 80%;
-  top: 5%;
-  border-radius: 2px;
-}
-
-.content {
-  margin-left: 10%;
-  padding-top: 10%;
-  font-size: var(--elewa-group-website-timeline-title);
-  width: 65%;
+  font-size: var(--elewa-group-website-font-size-title-medium);
+  background-color: var(--elewa-group-website-color-card);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 2rem 1.5rem;
+  p {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 850px) {
   .venture-labs-info {
-    font-family: var(--elewa-group-website-dmsans-regular);
-    color: var(--elewa-group-website-color-primary);
-    padding-top: 5%;
-    max-width: 90%;
-    margin-inline: 5%;
-
-    .content {
-      font-size: var(--elewa-group-website-timeline-header);
-      font-weight: var(--elewa-group-website-font-weight-title-medium);
+    padding: 5rem 4rem;
+    p {
+      width: 80%;
+      font-size: 2rem;
     }
   }
 }

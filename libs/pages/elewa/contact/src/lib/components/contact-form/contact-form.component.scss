@@ -5,8 +5,9 @@
     gap: 2rem;
     background-color: var(--elewa-group-website-color-bg);
     color: var(--elewa-group-website-color-white);
-    height: 100vh;
-    padding: 5vh 5vw 10vh;
+    min-height: 100vh;
+    padding: 20vh 10%;
+
     @media screen and (max-width:768px) {
         flex-direction: column;
         height: max-content;
@@ -96,7 +97,7 @@
     }
 }
 .form__bottom-section{
-    padding-top: .3rem;
+    padding: .3rem 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
