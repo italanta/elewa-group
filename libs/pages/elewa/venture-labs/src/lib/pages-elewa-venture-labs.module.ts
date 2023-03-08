@@ -10,6 +10,7 @@ import { VentureLabsInfoComponent } from './components/venture-labs-info/venture
 import { VentureLabsDiscoverComponent } from './components/venture-labs-discover/venture-labs-discover.component';
 
 import { VentureLabsRoutingModule } from './venture-labs.routing';
+import { VentureLabsStartupsComponent } from './components/venture-labs-startups/venture-labs-startups.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,8 @@ import { VentureLabsRoutingModule } from './venture-labs.routing';
     VentureLabsDiscoverComponent,
     VentureLabsInfoComponent,
     VentureLabsPageComponent,
+    VentureLabsStartupsComponent
   ],
+
 })
 export class PagesElewaVentureLabsModule {}
