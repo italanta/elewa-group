@@ -11,6 +11,7 @@ import { VentureLabsDiscoverComponent } from './components/venture-labs-discover
 
 import { VentureLabsRoutingModule } from './venture-labs.routing';
 import { VentureLabsStartupsComponent } from './components/venture-labs-startups/venture-labs-startups.component';
+import { VentureLabsInvestmentsComponent } from './components/venture-labs-investments/venture-labs-investments.component';
 
 @NgModule({
   imports: [
@@ -24,8 +25,8 @@ import { VentureLabsStartupsComponent } from './components/venture-labs-startups
     VentureLabsDiscoverComponent,
     VentureLabsInfoComponent,
     VentureLabsPageComponent,
-    VentureLabsStartupsComponent
+    VentureLabsStartupsComponent,
+    VentureLabsInvestmentsComponent,
   ],
-
 })
 export class PagesElewaVentureLabsModule {}
