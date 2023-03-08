@@ -3,16 +3,31 @@
 }
 
 .figure {
-	width: 300px;
-	height: 300px;
+	width: max-content;
+	height: max-content;
+	padding: 2.5rem 1rem;
 	border-radius: 5%;
 	border: 1px solid gray;
-	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+
+	@media screen and (min-width:1000px) {
+		width: 22vw;
+	}
+	@media screen and (max-width:1000px) {
+		width: 30vw;
+	}
+	@media screen and (max-width:500px) {
+		width: 40vw;
+	}
 }
 
 img {
 	text-align: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .desc {
@@ -49,10 +64,10 @@ h3 {
 		align-items: center;
 	}
 
-	.figure {
-		width: 350px;
-		height: 350px;
-	}
+	// .figure {
+	// 	width: 350px;
+	// 	height: 350px;
+	// }
 }
 
 @media screen and (min-device-width: 480px) and (orientation: portrait) {
@@ -60,7 +75,7 @@ h3 {
 	.container {
 		display: flex;
 		flex-direction: column;
-		margin-left: 100px;
+		// margin-left: 100px;
 	}
 }
 
