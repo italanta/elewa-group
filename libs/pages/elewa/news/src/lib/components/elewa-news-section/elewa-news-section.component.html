@@ -1,1 +1,49 @@
-<p>elewa-news-section works!</p>
+<main id="section__wrapper">
+  <div class="section-container">
+    <div class="top__headliner">
+        <h2 class="headline">{{ headline }}</h2>
+
+        <ul class="tab-wrapper">
+          <li (click)="switchTab('All News')" class="tab-item">All News</li>
+          <li (click)="switchTab('Elewa')" class="tab-item">Elewa</li>
+          <li (click)="switchTab('ITalanta')" class="tab-item">ITalanta</li>
+          <li (click)="switchTab('VentureLabs')" class="tab-item">VentureLabs</li>
+          <li (click)="switchTab('Press')" class="tab-item">Press</li>
+        </ul>
+    </div>
+    
+
+    <div [ngSwitch]="selectedTab">
+      <div *ngSwitchCase="'All News'">
+        <elewa-group-elewa-group-article-list
+          [articles]="articlesList"
+          [isVisible]="false"
+        ></elewa-group-elewa-group-article-list>
+      </div>
+      <div *ngSwitchCase="'Elewa'">
+        <elewa-group-elewa-group-article-list
+          [articles]="ElewaList"
+          [isVisible]="false"
+        ></elewa-group-elewa-group-article-list>
+      </div>
+      <div *ngSwitchCase="'ITalanta'">
+        <elewa-group-elewa-group-article-list
+          [articles]="ITalantaList"
+          [isVisible]="false"
+        ></elewa-group-elewa-group-article-list>
+      </div>
+      <div *ngSwitchCase="'VentureLabs'">
+        <elewa-group-elewa-group-article-list
+          [articles]="VentureList"
+          [isVisible]="false"
+        ></elewa-group-elewa-group-article-list>
+      </div>
+      <div *ngSwitchCase="'Press'">
+        <elewa-group-elewa-group-article-list
+          [articles]="PressList"
+          [isVisible]="false"
+        ></elewa-group-elewa-group-article-list>
+      </div>
+    </div>
+  </div>
+</main>

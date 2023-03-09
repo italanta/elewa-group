@@ -1,0 +1,27 @@
+.tab-wrapper{
+    display: flex;
+}
+.top__headliner{
+    margin-left: 5rem;
+}
+.tab-item{
+    margin-top: 3rem;
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+}
+.section__wrapper{
+    margin-top: 5rem;
+}
+.headline{
+    margin-left: 1.2rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--elewa-group-website-dmsans-medium);
+}
