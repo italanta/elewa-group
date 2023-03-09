@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
-// import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -14,7 +13,6 @@ export class ElewaNewsSectionComponent {
       timestamp: new Date().toString(),
       title: 'Article 1',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
       topic: 'world',
       
     },
@@ -23,7 +21,6 @@ export class ElewaNewsSectionComponent {
       timestamp: new Date().toString(),
       title: 'Article 1',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
       topic: 'world',
     },
     {
@@ -31,7 +28,6 @@ export class ElewaNewsSectionComponent {
       timestamp: new Date().toString(),
       title: 'Article 1',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
       topic: 'world',
     },
     {
@@ -39,7 +35,6 @@ export class ElewaNewsSectionComponent {
       timestamp: new Date().toString(),
       title: 'Article 1',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
       topic: 'world',
     },
   ];
