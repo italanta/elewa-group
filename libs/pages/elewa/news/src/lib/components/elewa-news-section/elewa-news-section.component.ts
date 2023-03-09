@@ -44,11 +44,13 @@ export class ElewaNewsSectionComponent {
 
   constructor() {
     // Default to "All News" tab
-    this.selectedTab = 'all-news';
+    this.selectedTab = 'all-news';  //filter through the tabs after creating the filter method for the articles
     this.filterArticles();
   }
-  filterArticles() {
+
+  //method to filter articles
+  filterArticles() {  
     this.filteredArticles = this.news.filter(article => article.topic === this.selectedTab || this.selectedTab === 'all-news');
-  }
+  } 
 
 }
