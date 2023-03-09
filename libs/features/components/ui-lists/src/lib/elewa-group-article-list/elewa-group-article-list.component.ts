@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-export interface Article { image: string; timestamp: string; title: string; body: string;} //import this interface in the component you will be reusing article-list in. e.g import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
+import { Component, Input} from '@angular/core';
+export interface Article { image: string; timestamp: string; title: string; body: string; topic: string;} //import this interface in the component you will be reusing article-list in. e.g import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-group-article-list',
@@ -11,7 +11,8 @@ export class ElewaGroupArticleListComponent {
 @Input() articles: Article[];
 
 currentIndex = 0;
-  calculateReadTime(body: string): number {
+
+calculateReadTime(body: string): number {
     const wordCount = body.split(' ').length;
     const readTime = Math.round(wordCount / 200);
     return readTime;
