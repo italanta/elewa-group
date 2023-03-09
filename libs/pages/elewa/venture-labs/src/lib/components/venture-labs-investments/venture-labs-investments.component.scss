@@ -23,14 +23,14 @@ $font-size: 30px;
     @media screen and (max-width:768px) {
         .investments-cards{
             grid-template-columns: repeat(2, 1fr); 
-            width: 90px; 
+            width: 50vh; 
         }
     }
 
     @media screen and (max-width:480px) {
         .investments-cards{
            grid-template-columns: repeat(2, 1fr);
-            width: 85px;
+            width: 50vh;
         }
 
     }
