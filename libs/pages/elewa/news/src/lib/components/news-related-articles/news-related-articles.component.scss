@@ -43,5 +43,18 @@ span{
     
 }
 @media(max-width:1000px){
-    
+    .container{
+        height: 250vh;
+        width: 100vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 80vw;
+        margin-top: 5%;
+    }
 }
