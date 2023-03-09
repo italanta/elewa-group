@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
+// import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -6,46 +8,52 @@ import { Component } from '@angular/core';
   styleUrls: ['./elewa-news-section.component.scss'],
 })
 export class ElewaNewsSectionComponent {
-  activeTab = 'all';
+  news: Article []= [
+    {
+      image: 'https://picsum.photos/id/1018/800/600',
+      timestamp: new Date().toString(),
+      title: 'Article 1',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
+      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
+      topic: 'world',
+      
+    },
+    {
+      image: 'https://picsum.photos/id/1018/800/600',
+      timestamp: new Date().toString(),
+      title: 'Article 1',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
+      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
+      topic: 'world',
+    },
+    {
+      image: 'https://picsum.photos/id/1018/800/600',
+      timestamp: new Date().toString(),
+      title: 'Article 1',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
+      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
+      topic: 'world',
+    },
+    {
+      image: 'https://picsum.photos/id/1018/800/600',
+      timestamp: new Date().toString(),
+      title: 'Article 1',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
+      // srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
+      topic: 'world',
+    },
+  ];
 
-  articles = [
-    {
-      title: 'Article 1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      image: 'https://picsum.photos/id/1018/800/600',
-      srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
-      category: 'world',
-      timestamp: new Date()
-    },
-    {
-      title: 'Article 1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      image: 'https://picsum.photos/id/1018/800/600',
-      srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
-      category: 'world',
-      timestamp: new Date()
-    },
-    {
-      title: 'Article 1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      image: 'https://picsum.photos/id/1018/800/600',
-      srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
-      category: 'world',
-      timestamp: new Date()
-    },
-    {
-      title: 'Article 1',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tempor risus. Maecenas gravida felis a semper bibendum.',
-      image: 'https://picsum.photos/id/1018/800/600',
-      srcset: 'https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/800/600 800w',
-      category: 'world',
-      timestamp: new Date()
-    },
-  ]
+  filteredArticles: Article[];
+  selectedTab: string;
 
-  get filteredArticles() {
-    return this.articles.filter(article => article.category === this.activeTab);
-    }
-    
-  
+  constructor() {
+    // Default to "All News" tab
+    this.selectedTab = 'all-news';
+    this.filterArticles();
+  }
+  filterArticles() {
+    this.filteredArticles = this.news.filter(article => article.topic === this.selectedTab || this.selectedTab === 'all-news');
+  }
+
 }
