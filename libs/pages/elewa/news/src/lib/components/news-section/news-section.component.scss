@@ -1,0 +1,26 @@
+h1{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // font-family: 'DMSans-Bold';
+    font-family: var(--elewa-group-website-dmsans-bold);
+}
+
+.filter-section{
+    display: flex;
+    margin-left: 80px;
+
+}
+
+@media only screen and (min-width: 425px) {
+	.filter-section {
+		padding: 10px;
+		margin-left: 40px;
+        display: inline-block;  
+	}
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+}
