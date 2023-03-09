@@ -1,0 +1,23 @@
+button {
+    padding: 6px 12px;
+    border-radius: 16px;
+    background-color: white;
+    width: 150px;
+    transition-duration: 0.4s;
+    text-transform: capitalize;
+    margin-right: 15px;
+
+}
+
+button:hover {
+    background-color: #000000; /* Black */
+    color: #f4f4f4;
+  }
+
+  @media only screen and (min-width: 425px) {
+	button {
+		display: inline-block;
+        width: 150px;
+	}
+
+  }
