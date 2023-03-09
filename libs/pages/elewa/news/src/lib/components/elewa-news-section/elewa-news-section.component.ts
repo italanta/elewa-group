@@ -13,7 +13,7 @@ export class ElewaNewsSectionComponent implements OnInit {
   @Input() articlesList = [
     {
       title: 'All News',
-      topic: 'elewa',
+      topic: 'press',
       image:'https://www.pexels.com/photo/girl-in-white-shirt-taking-selfie-on-mobile-phone-with-pink-case-while-sitting-in-wardrobe-5705080/',
       timestamp: '12 Oct 2022',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui animi omnis eligendi optio, nihil alias illo molestias? Exercitationem, culpa? Sequi libero nam aut reiciendis officia officiis accusantium iste hic in!',
@@ -56,10 +56,6 @@ export class ElewaNewsSectionComponent implements OnInit {
   ];
 
   articleList$ = of(this.articlesList);
-
-  switchTab(tab: string) {
-    this.selectedTab = tab;
-  }
 
   ngOnInit(): void {
     this.applyFilter('all-news');
