@@ -1,4 +1,25 @@
 <div class="container">
     <h2>News $ Stories</h2>
-    
+    <div class="tabs-container">
+      <div [ngSwitch]="activeTab" class="tab" (click)="activeTab = 'All News'">
+        <span *ngSwitchCase="'All News'" class="active">All News</span>
+        <span *ngSwitchDefault>All News</span>
+      </div>
+      <div [ngSwitch]="activeTab" class="tab" (click)="activeTab = 'Elewa'">
+        <span *ngSwitchCase="'Elewa'" class="active">Elewa</span>
+        <span *ngSwitchDefault>Elewa</span>
+      </div>
+      <div [ngSwitch]="activeTab" class="tab" (click)="activeTab = 'iTalanta'">
+        <span *ngSwitchCase="'iTalanta'" class="active">iTalanta</span>
+        <span *ngSwitchDefault>iTalanta</span>
+      </div>
+      <div [ngSwitch]="activeTab" class="tab" (click)="activeTab = 'Venture Labs'">
+        <span *ngSwitchCase="'Venture Labs'" class="active">Venture Labs</span>
+        <span *ngSwitchDefault>Venture Labs</span>
+      </div>
+      <div [ngSwitch]="activeTab" class="tab" (click)="activeTab = 'Press'">
+        <span *ngSwitchCase="'Press'" class="active">Press</span>
+        <span *ngSwitchDefault>Press</span>
+      </div>
+    </div>
 </div>

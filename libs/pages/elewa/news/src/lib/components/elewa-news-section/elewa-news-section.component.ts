@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './elewa-news-section.component.html',
   styleUrls: ['./elewa-news-section.component.scss'],
 })
-export class ElewaNewsSectionComponent {}
+export class ElewaNewsSectionComponent {
+  activeTab = 'all';
+}
