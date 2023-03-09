@@ -1,1 +1,12 @@
-<p>news-related-articles works!</p>
+<h1 class="heading">Related articles</h1>
+<div class="container">
+ 
+    <div *ngFor="let article of articles">
+        <div class="col1" >
+            <img src={{article.image}} alt="">
+            <p class="articleTitle">{{article.title}}</p>
+            <p class="articleTimeStamp">{{article.timestamp}}</p>
+        </div>
+
+    </div>
+</div>

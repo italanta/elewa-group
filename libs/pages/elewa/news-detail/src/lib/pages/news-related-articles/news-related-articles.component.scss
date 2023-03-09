@@ -1,0 +1,24 @@
+.container{
+    font-family: var(--elewa-group-website-dmsans-regular);
+    margin: 2rem;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.col1 {
+    margin:1.5rem;
+}
+.heading{
+    text-align: center;
+}
+img{
+    border-radius: 5%;;
+}
+.articleTitle {
+    font-size: 1.5rem;
+}
+.articleTimeStamp{
+    font-size: 1rem;
+    color:rgb(72, 77, 77);
+}
