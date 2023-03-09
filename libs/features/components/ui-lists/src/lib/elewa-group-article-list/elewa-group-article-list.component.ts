@@ -9,6 +9,7 @@ export interface Article { image: string; timestamp: string; title: string; body
 
 export class ElewaGroupArticleListComponent {  
 @Input() articles: Article[];
+@Input() isVisible = true;
 
 currentIndex = 0;
   calculateReadTime(body: string): number {
