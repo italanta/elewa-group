@@ -43,4 +43,37 @@ h1{
   color: var( --elewa-group-website-color-primary);
 }
 
+@media only screen and (max-width: 600px) {
 
+  h1 {
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .card{
+    margin-top: 30px;
+  }
+
+  .info {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .date-info {
+    font-size: 1rem;
+  }
+
+  .card-date, .card-timestamp {
+    font-size: 1rem;
+  }
+}
