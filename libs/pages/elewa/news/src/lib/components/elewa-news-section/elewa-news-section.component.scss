@@ -26,6 +26,9 @@
     border: solid 1px grey;
     border-radius: 20px 20px 20px 20px;
   }
+  .headline-banner{
+    margin-left: 5rem;
+  }
   .tab.active {
     background-color: #000000;
     color: #fff;
@@ -62,4 +65,23 @@
       margin-bottom: 10px;
     }
   }
+
+  @media screen and (max-width: 420px)
+   {
+    .news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .headline-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 4rem;
+    }
+    h2{
+        width: 100%;
+    }
+  }
 }
+
