@@ -1,27 +1,65 @@
-.tab-wrapper{
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+  margin-left: 10px;
+  margin-bottom: 20%;
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  .tabs {
     display: flex;
-}
-.top__headliner{
-    margin-left: 5rem;
-}
-.tab-item{
-    margin-top: 3rem;
-    text-align: center;
-    list-style-type: none;
-    border: 1px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 1rem;
-    padding: 1rem;
-}
-.section__wrapper{
-    margin-top: 5rem;
-}
-.headline{
-    margin-left: 1.2rem;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .tab {
+    justify-content: space-between;
+    margin-right: 20px;
+    // align-items: flex-start;
+    font-size: 16px;
     font-weight: bold;
-    font-family: var(--elewa-group-website-dmsans-medium);
+    color: #333333;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: solid 1px grey;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .tab.active {
+    background-color: #000000;
+    color: #fff;
+    cursor: default;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* Media queries */
+
+  @media screen and (max-width: 768px) {
+    /* Reduce the size of the individual news article cards */
+    .news {
+      display: block;
+      width: 100%;
+    }
+    .new + .news {
+      margin: 20px;
+    }
+
+    /* Tabs container */
+    .tabs {
+      flex-direction: column;
+      border: none;
+      margin-bottom: 0;
+    }
+
+    /* Individual tab */
+    .tab {
+      border: none;
+      border-bottom: 1px solid #d8d8d8;
+      margin-bottom: 10px;
+    }
+  }
 }
