@@ -13,9 +13,12 @@
         <li (click)="applyFilter('press')" class="tab-item">Press</li>
       </ul>
     </div>
-    <elewa-group-elewa-group-article-list
-      [articles]="articlesList"
-      [isVisible]="false"
-    ></elewa-group-elewa-group-article-list>
+
+    <div *ngFor="let article of articleList$ | async">
+      <elewa-group-elewa-group-article-list
+        [articles]="articlesList"
+        [isVisible]="false"
+      ></elewa-group-elewa-group-article-list>
+    </div>
   </div>
 </main>
