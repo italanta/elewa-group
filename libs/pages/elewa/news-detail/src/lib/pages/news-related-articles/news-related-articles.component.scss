@@ -1,0 +1,51 @@
+h1{
+  text-align: center;
+  font-weight: var( --elewa-group-website-font-weight-title-medium);
+  font-family: var( --elewa-group-website-dmsans-regular);
+  padding-top: 40px;
+}
+
+.container{
+  display: flex;
+  gap: 2rem;
+  padding-left: 70px;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.container img{
+  border-radius: 20px ;
+}
+
+.card
+{
+  display: block;
+}
+.info {
+  font-family: var(--elewa-group-website-dmsans-medium);
+  color: var( --elewa-group-website-color-primary);
+  font-size: var(--elewa-group-website-font-size-hero-title);
+  margin-top: 30px;
+}
+.date-info{
+  margin-top: 10px;
+  font-size: var(--elewa-group-website-font-size-hero-description-medium);
+}
+
+.card-date{
+  font-family: var(  --elewa-group-website-dmsans-regular);
+  color: var( --elewa-group-website-color-primary);
+  font-size: var(--elewa-group-website-font-size-hero-subheading-medium);
+}
+
+.card-timestamp{
+  font-family: var(  --elewa-group-website-dmsans-regular);
+  color: var( --elewa-group-website-color-primary);
+  font-size: var(--elewa-group-website-font-size-hero-subheading-medium);
+}
+
+.container p {
+  font-size: var(--elewa-group-website-font-size-elewa-text);
+  padding-top: 30px;
+}
