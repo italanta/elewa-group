@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
-import { of } from 'rxjs';
 
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -63,15 +62,6 @@ export class ElewaNewsSectionComponent {
 
     this.applyFilter();
   }
-
-  // ngOnInit(): void {
-  //   this.applyFilter('all-news');
-  // }
-
-  // applyFilter(selectedTopic: string) {
-  //   this.articlesList.filter((a) => a.topic === selectedTopic);
-  // }
-
   applyFilter(){
     this.articleList = this.data.filter(a => a.topic === this.selectedTab || this.selectedTab === 'all-news')
   }
