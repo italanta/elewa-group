@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 import { of } from 'rxjs';
 
 @Component({
@@ -6,11 +7,10 @@ import { of } from 'rxjs';
   templateUrl: './elewa-news-section.component.html',
   styleUrls: ['./elewa-news-section.component.scss'],
 })
-export class ElewaNewsSectionComponent implements OnInit {
+export class ElewaNewsSectionComponent {
   @Input() headline = 'News & Stories';
-  selectedTab = 'All News';
 
-  @Input() articlesList = [
+  data: Article[] = [
     {
       title: 'All News',
       topic: 'press',
@@ -55,13 +55,24 @@ export class ElewaNewsSectionComponent implements OnInit {
     },
   ];
 
-  articleList$ = of(this.articlesList);
+  articleList: Article[];
+  selectedTab: string;
 
-  ngOnInit(): void {
-    this.applyFilter('all-news');
+  constructor() {
+    this.selectedTab = 'all-news';
+
+    this.applyFilter();
   }
 
-  applyFilter(selectedTopic: string) {
-    this.articlesList.filter((a) => a.topic === selectedTopic);
+  // ngOnInit(): void {
+  //   this.applyFilter('all-news');
+  // }
+
+  // applyFilter(selectedTopic: string) {
+  //   this.articlesList.filter((a) => a.topic === selectedTopic);
+  // }
+
+  applyFilter(){
+    this.articleList = this.data.filter(a => a.topic === this.selectedTab || this.selectedTab === 'all-news')
   }
 }
