@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    margin-left: 10px;
+    margin-bottom: 20%;
+    h2{
+      font-size: xx-large;
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .tab {
+      justify-content: space-between;
+      margin-right: 20px;
+      // align-items: flex-start;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: solid 1px grey;
+      border-radius: 20px 20px 20px 20px;
+    }
+    .tab.active {
+      background-color: #000000;
+      color: #fff;
+      cursor: default;
+    }
+    .news{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    /* Media queries */
+  @media screen and (max-width: 768px) {
+    /* Reduce the size of the individual news article cards */
+    .news{
+      display: block;
+      width: 100%;
+    }
+    .new + .news {
+      margin: 20px;
+    }
+    /* Tabs container */
+    .tabs {
+      flex-direction: column;
+      border: none;
+      margin-bottom: 0;
+    }
+    /* Individual tab */
+    .tab {
+      border: none;
+      border-bottom: 1px solid #D8D8D8;
+      margin-bottom: 10px;
+    }
+  }
+  }
