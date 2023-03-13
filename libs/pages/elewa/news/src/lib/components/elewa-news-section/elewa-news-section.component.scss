@@ -1,0 +1,54 @@
+#elewa-group-elewa-news-section h1 {
+    font-family: var(--elewa-group-website-dmsans-medium);
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#elewa-group-elewa-news-section #news-section-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    overflow: hidden;
+}
+
+#elewa-group-elewa-news-section button {
+    outline: none;
+    border: 0.1rem solid black;
+    cursor: pointer;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    white-space: nowrap;
+}
+
+#elewa-group-elewa-news-section button:hover {
+    color: white;
+    background-color: black;
+}
+
+#elewa-group-elewa-news-section button.active {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 767px) {
+    #elewa-group-elewa-news-section h1 {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    #elewa-group-elewa-news-section #news-section-options {
+        margin-left: 60px;
+        margin-right: 60px;
+    }    
+}
