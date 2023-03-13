@@ -1,1 +1,37 @@
-<p>elewa-news-section works!</p>
+<div id="elewa-group-elewa-news-section">
+    <h1>News & Stories</h1>
+    <div id="news-section-options">
+        <button class="{{activeTopic == 'all-news' ? 'active' : ''}}" (click)="makeActive('all-news')">All News</button>
+        <button class="{{activeTopic == 'elewa' ? 'active' : ''}}"  (click)="makeActive('elewa')">Elewa</button>
+        <button class="{{activeTopic == 'italanta' ? 'active' : ''}}"  (click)="makeActive('italanta')">iTalanta</button>
+        <button class="{{activeTopic == 'venture-labs' ? 'active' : ''}}"  (click)="makeActive('venture-labs')">VentureLabs</button>
+        <button class="{{activeTopic == 'press' ? 'active' : ''}}"  (click)="makeActive('press')">Press</button>
+    </div>
+    
+    <div [ngSwitch]="activeTopic">
+        <elewa-group-elewa-group-article-list 
+            *ngSwitchCase="'all-news'"
+            [articles]="articlelists">
+        </elewa-group-elewa-group-article-list>
+
+        <elewa-group-elewa-group-article-list 
+            *ngSwitchCase="'elewa'"
+            [articles]="getNews('elewa')">
+        </elewa-group-elewa-group-article-list>
+
+        <elewa-group-elewa-group-article-list 
+            *ngSwitchCase="'italanta'"
+            [articles]="getNews('italanta')">
+        </elewa-group-elewa-group-article-list>
+
+        <elewa-group-elewa-group-article-list 
+            *ngSwitchCase="'venture-labs'"
+            [articles]="getNews('venture-labs')">
+        </elewa-group-elewa-group-article-list>
+
+        <elewa-group-elewa-group-article-list 
+            *ngSwitchCase="'press'"
+            [articles]="getNews('press')">
+        </elewa-group-elewa-group-article-list>
+    </div>
+</div>
