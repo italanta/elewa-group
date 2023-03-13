@@ -4,9 +4,11 @@ import { CommonModule } from '@angular/common';
 import { LayoutModule } from '@elewa-group/elements/layout';
 
 import { NewsDetailPageComponent } from './pages/news-detail-page/news-detail-page.component';
+import { NewsArticleComponent } from './news-article/news-article.component';
+import { NgxContentfulRichTextModule } from 'ngx-contentful-rich-text';
 
 @NgModule({
-  imports: [CommonModule, LayoutModule],
-  declarations: [NewsDetailPageComponent],
+  imports: [CommonModule, LayoutModule, NgxContentfulRichTextModule ],
+  declarations: [NewsDetailPageComponent, NewsArticleComponent],
 })
 export class ElewaNewsDetailModule {}
