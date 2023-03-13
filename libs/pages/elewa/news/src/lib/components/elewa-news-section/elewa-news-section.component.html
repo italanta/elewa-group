@@ -1,0 +1,12 @@
+<div id="elewa-group-elewa-news-section">
+    <h1>News & Stories</h1>
+    <div id="news-section-options">
+        <button class="{{activeTopic == 'all-news' ? 'active' : ''}}" (click)="makeActive('all-news')">All News</button>
+        <button class="{{activeTopic == 'elewa' ? 'active' : ''}}"  (click)="makeActive('elewa')">Elewa</button>
+        <button class="{{activeTopic == 'italanta' ? 'active' : ''}}"  (click)="makeActive('italanta')">iTalanta</button>
+        <button class="{{activeTopic == 'venture-labs' ? 'active' : ''}}"  (click)="makeActive('venture-labs')">VentureLabs</button>
+        <button class="{{activeTopic == 'press' ? 'active' : ''}}"  (click)="makeActive('press')">Press</button>
+    </div>
+    
+    <elewa-group-elewa-group-article-list [articles]="getNews()"></elewa-group-elewa-group-article-list>
+</div>
