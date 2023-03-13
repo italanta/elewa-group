@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: var(--elewa-group-website-dmsans-regular);
+    background-color:var(--elewa-group-website-color);
+
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5%;
+}
+
+.card {
+    width: 20vw;
+    
+    height: 50vh;
+
+
+}
+.card-container {
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sub-container{
+    margin-bottom: 5%;
+}
+
+.texts {
+    margin-top: 5%;
+}
+
+.date{
+    margin-top: 5%;
+    font-size: var(--elewa-group-website-font-size-description-medium) ;
+}
+
+@media (max-width: 1000px) {
+    .cards{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .card{
+        width: 80vw;
+        margin-bottom: 10%;
+    }
+    .card-container{
+        height: 180px;
+    }
+    .container{
+        height: 250vh;
+    }
+    h1{
+        margin-bottom: 10%;
+    }
+}
