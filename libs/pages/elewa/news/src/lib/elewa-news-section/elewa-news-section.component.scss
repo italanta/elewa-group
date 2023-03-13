@@ -1,0 +1,45 @@
+.header-bit {
+  margin-top: 140px;
+  margin-left: 70px;
+}
+h1{
+  margin-left: 15px;
+}
+.button-item{
+  width: 100px;
+  height: 50px;
+  background-color: transparent ;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 5px;
+}
+.button-item:hover{
+  background-color: black;
+  color: white;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+li{
+  border: 1px solid black;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: 5px;
+}
+.list-item {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list-item:hover{
+  background-color: black;
+  color: white;
+
+}
