@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -32,17 +31,17 @@ export class ElewaNewsSectionComponent {
 
   @Input() activeTopic = 'all-news'
 
-  makeActive(topic: string){
-    this.activeTopic = topic
-  }
-
-  getNews(activeTopic: string) :Article[] {
-    if(activeTopic == 'all-news'){
+  getNews() :{image: string, timestamp: string, title: string, body: string}[] {
+    if(this.activeTopic == 'all-news'){
       return this.articlelists;
     }
 
     return this.articlelists.filter(article => {
-      return article.topic == activeTopic;
+      return article.topic == this.activeTopic;
     })
+  }
+
+  makeActive(topic: string){
+    this.activeTopic = topic
   }
 }
