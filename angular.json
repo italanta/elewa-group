@@ -14,6 +14,7 @@
     "pages-elewa-home": "libs/pages/elewa/home",
     "pages-elewa-invest": "libs/pages/elewa/invest",
     "pages-elewa-news": "libs/pages/elewa/news",
+    "pages-elewa-news-detail": "libs/pages/elewa/news-detail",
     "pages-elewa-social-impact": "libs/pages/elewa/social-impact",
     "pages-elewa-venture-lab-detail": "libs/pages/elewa/venture-lab-detail",
     "pages-elewa-venture-labs": "libs/pages/elewa/venture-labs",

@@ -1,0 +1,37 @@
+$font-family: (--elewa-group-website-dmsans-regular);
+$font-weight: 300;
+$font-size: 30px;
+
+.container{
+    margin-left: 20px;
+    margin-top: 20px;
+    h2{
+        justify-content: left;
+        font-family: $font-family;
+        font-weight: $font-weight;
+        font-size: $font-size;
+        margin-left: 20px;
+    }
+    .investments-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100vh;
+        margin-top: 20px;
+    
+    }
+
+    @media screen and (max-width:768px) {
+        .investments-cards{
+            grid-template-columns: repeat(2, 1fr); 
+            width: 50vh; 
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .investments-cards{
+           grid-template-columns: repeat(2, 1fr);
+            width: 50vh;
+        }
+
+    }
+}

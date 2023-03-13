@@ -8,5 +8,10 @@ import { UiListsModule } from '@elewa-group/features/components/ui-lists';
 @NgModule({
   imports: [CommonModule, NewsRoutingModule, LayoutModule, UiListsModule],
   declarations: [NewsPageComponent, NewsRelatedArticlesComponent],
+import { UiListsModule } from '@elewa-group/features/components/ui-lists';
+
+@NgModule({
+  imports: [CommonModule, NewsRoutingModule, LayoutModule,UiListsModule],
+  declarations: [NewsPageComponent],
 })
 export class NewsPageModule {}
