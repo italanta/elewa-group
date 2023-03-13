@@ -23,11 +23,16 @@ import { AboutUsRoutingModule } from './about-us.routing';
 import { AboutUsHistoryCarouselComponent } from './components/about-us-history-carousel/about-us-history-carousel.component';
 import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-we-care.component';
 import { CardsModule } from '@elewa-group/features/components/cards';
+import { MaterialBricksModule, MaterialDesignModule } from '@iote/bricks-angular';
 
 @NgModule({
   imports: [
     GoogleMapsModule,
     ButtonsModule,
+
+    MaterialDesignModule,
+    MaterialBricksModule,
+
     CommonModule,
     LayoutModule,
     AboutUsRoutingModule,

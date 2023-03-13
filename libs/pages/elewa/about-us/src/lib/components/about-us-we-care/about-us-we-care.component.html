@@ -1,17 +1,16 @@
-
-<div class="container">
-    <h2>{{ title }}</h2>
-    <div class="paragraphs">
-      <p class="paragraph">{{ paragraph1 }}</p>
-      <p class="paragraph">{{ paragraph2 }}</p>
-    </div>
-    <div class="iconcol">
-      <elewa-group-elewa-vertical-icon-and-text
-        *ngFor="let column of columns"
-        [icon]="column.icon"
-        [title]="column.title"
-        [description]="column.description"
-      >
-      </elewa-group-elewa-vertical-icon-and-text>
+<div class="section">
+  <div class="container">
+    <div class="data">
+      <h2>{{ title }}</h2>
+      <div class="paragraphs">
+        <p class="paragraph">{{ paragraph1 }}</p>
+        <p class="paragraph">{{ paragraph2 }}</p>
+      </div>
+      <div class="iconcol">
+        <elewa-group-elewa-vertical-icon-and-text *ngFor="let column of columns" [icon]="column.icon" [title]="column.title"
+          [description]="column.description">
+        </elewa-group-elewa-vertical-icon-and-text>
+      </div>
     </div>
   </div>
+</div>

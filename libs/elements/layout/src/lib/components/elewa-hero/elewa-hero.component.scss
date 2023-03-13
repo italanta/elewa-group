@@ -42,7 +42,7 @@
     transform: translate(0, -50%);
     color: var(--elewa-group-website-color);
 
-    max-width: max(60%, 32rem);
+    max-width: max(70%, 32rem);
   }
 
   #elewa-hero .footer {
@@ -55,21 +55,28 @@
   }
 
   #elewa-hero .title {
-    font-size: 4.5rem;
+    font-family: var(--elewa-group-website-jeko-title);
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
 
   #elewa-hero .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
+    font-weight: 400;
     font-family: var(--elewa-group-website-dmsans-regular);
+    margin-bottom: 20px;
   }
 
   #elewa-hero .description{
     margin: auto;
+    font-family: var(--elewa-group-website-jeko-title);
+    margin-bottom: 20px;
   }
 
   @media (max-width: 500px) {
     #elewa-hero .title {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
   
     #elewa-hero .subtitle {
