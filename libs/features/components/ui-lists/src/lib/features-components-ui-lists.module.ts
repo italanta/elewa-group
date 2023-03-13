@@ -5,9 +5,15 @@ import { ElewaGroupVerticalListOneComponent } from './elewa-group-vertical-list-
 import { ElewaHorizontalTimelineCarouselComponent } from './elewa-horizontal-timeline-carousel/elewa-horizontal-timeline-carousel.component';
 import { ElewaGroupHorizontalListOrgsComponent } from './elewa-group-horizontal-list-orgs/elewa-group-horizontal-list-orgs.component';
 import { ElewaGroupArticleListComponent } from './elewa-group-article-list/elewa-group-article-list.component';
+import { MaterialBricksModule, MaterialDesignModule } from '@iote/bricks-angular';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+
+    MaterialDesignModule,
+    MaterialBricksModule
+  ],
   declarations: [
     ElewaGroupVerticalListOneComponent,
     ElewaGroupHorizontalListOrgsComponent,
