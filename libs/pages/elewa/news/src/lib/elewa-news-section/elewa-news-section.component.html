@@ -1,0 +1,18 @@
+<!-- <p>elewa-news-section works!</p> -->
+<div class="header-bit">
+  <h1>News & Stories</h1>
+  <ul>
+    <li (click)="selectedTab='all-news'; filterTopic()" [class.active]="selectedTab==='all-news'" class="list-item">All News</li>
+    <li (click)="selectedTab='elewa'; filterTopic()" [class.active]="selectedTab==='elewa'" class="list-item">Elewa</li>
+    <li (click)="selectedTab='press'; filterTopic()" [class.active]="selectedTab==='press'" class="list-item">Press</li>
+    <li (click)="selectedTab='iTalanta'; filterTopic()" [class.active]="selectedTab==='iTalanta'" class="list-item">iTalanta</li>
+    <li (click)="selectedTab='venture-labs'; filterTopic()" [class.active]="selectedTab==='venture-labs'" class="list-item">VentureLabs</li> 
+  </ul>
+</div>
+<div [ngSwitch]="selectedTab">
+  <elewa-group-elewa-group-article-list
+  *ngSwitchCase="selectedTab"
+  [articles]="filteredArticles"
+  >
+  </elewa-group-elewa-group-article-list>
+</div>
