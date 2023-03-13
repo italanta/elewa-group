@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+export interface Article {image: string; timestamp: string; title: string; body: string; topic: string;};
 
 @Component({
   selector: 'elewa-group-elewa-group-article-list',
