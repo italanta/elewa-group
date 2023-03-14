@@ -12,7 +12,6 @@ export class PrevDirective {
     const elm = this.el.nativeElement.parentElement.parentElement.children[1];
     const team = elm.getElementsByClassName("team");
     elm.prepend(team[team.length - 1]);
-    console.log(team);
   }
 
 }

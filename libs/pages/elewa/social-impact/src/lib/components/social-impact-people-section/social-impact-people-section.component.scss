@@ -25,11 +25,16 @@
 }
 
 .title {
-	font-size: 1.5rem;
-	font-family: var(--elewa-group-website-dmsans-regular);
-	font-weight: 300;
+	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: 200;
+	font-size: 1.2rem;
 }
 
+.value {
+	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: 300;
+	font-size: 3rem;
+}
 
 
 @media only screen and (max-width: 600px) {

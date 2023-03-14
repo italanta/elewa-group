@@ -1,20 +1,20 @@
   /* start of navbar  */
 
-  .container{
+  .container {
     max-width: 100vw;
     height: 10vh;
   }
 
-  .navbars ul{
+  .navbars ul {
     list-style-type: none;
   }
 
-  header{
+  header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index:999;
+    z-index: 999;
     width: 100%;
     margin-top: 1%;
 
@@ -24,7 +24,7 @@
     background-color: var(--elewa-group-website-header-background-color);
   }
 
-  .border{
+  .border {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--elewa-group-website-color-white);
@@ -42,16 +42,13 @@
     list-style-type: none;
   }
 
-  .elewa-text{
+  .elewa-text {
     width: 50%;
     align-items: left;
     margin: 16px 0;
     font-size: var(--elewa-group-website-font-size-elewa-text);
     font-family: var(--elewa-group-website-dmsans-italic);
   }
-
-  
- 
 
   .nav-menu {
     display: flex;
@@ -65,28 +62,29 @@
     margin: 10px 0;
   }
 
-  .nav-link{
+  .nav-link {
     color: var(--elewa-group-website-color-white);
     text-decoration: none;
     font-size: var(--elewa-group-website-font-size-nav-link);
     font-family: var(--elewa-group-website-dmsans-regular);
     transition: color .25s;
-    }
+  }
 
   .nav-link:hover {
     color: var(--elewa-group-website-navbars-link-hover-color);
     cursor: pointer;
   }
 
-  .menu-header{
+  .menu-header {
     background-color: var(--elewa-group-website-header-background-color);
   }
 
-  .bar, .bar2{
+  .bar,
+  .bar2 {
     background: var(--elewa-group-website-color-white);
   }
 
-  .menu-header{
+  .menu-header {
     display: none;
   }
 
@@ -105,7 +103,7 @@
   }
 
   @media only screen and (max-width: 1033px) {
-    .menu-header{
+    .menu-header {
       display: block;
       width: 100%;
       z-index: 988;
@@ -127,16 +125,16 @@
       z-index: 999;
     }
 
-    .nav-menu{
+    .nav-menu {
       display: none;
     }
 
-    .nav-link{
-        color: var(--elewa-group-website-color-white);
-        text-decoration: none;
-        font-size: var(--elewa-group-website-font-size-nav-link-medium);
-        font-family: var(--elewa-group-website-dmsans-regular);
-        transition: color .25s;
+    .nav-link {
+      color: var(--elewa-group-website-color-white);
+      text-decoration: none;
+      font-size: var(--elewa-group-website-font-size-nav-link-medium);
+      font-family: var(--elewa-group-website-dmsans-regular);
+      transition: color .25s;
     }
 
     .nav-link:hover {
@@ -145,7 +143,7 @@
 
     .nav-menus.active {
       left: 0;
-      margin:0 8px;
+      margin: 0 8px;
     }
 
     .nav-items {
@@ -159,7 +157,7 @@
       cursor: pointer;
     }
 
-    
+
 
     .hamburger.active .bar:nth-child(1) {
       -webkit-transform: translateY(8px) rotate(45deg);
@@ -174,32 +172,31 @@
 
 
   @media only screen and (max-width: 850px) {
-    .container{
+    .container {
       height: 5vh;
     }
-    
-    header{
+
+    header {
       margin-top: 6%;
     }
 
-    .navbars-mobile{
+    .navbars-mobile {
       margin: 0;
       display: flex;
-      padding: 0 40px;
     }
 
-    .fixed-top{
+    .fixed-top {
       display: none;
     }
 
-    .elewa-mobile{
-        width: 80%;
-        padding-left: 10px;
+    .elewa-mobile {
+      width: 80%;
+      padding-left: 10px;
     }
 
-    .home-logo img{
-        width: 60%;
-        margin-top: 10px;
+    .home-logo img {
+      width: 60%;
+      margin-top: 10px;
     }
 
     .hamburger {
@@ -209,69 +206,78 @@
     }
 
     //made the hamburger menu black
-    .menu-header{
-      &.header-dark{
-        .bar, .bar2{
+    .menu-header {
+      &.header-dark {
+
+        .bar,
+        .bar2 {
           background: black;
         }
       }
     }
-    .bar{
+
+    .bar {
       height: 2px;
       width: 50px;
       margin: 5px 0;
       float: right;
     }
 
-    .bar2{
+    .bar2 {
 
-        height: 2px;
-        width: 25px;
-        float: right;
-        margin: 5px 0;
+      height: 2px;
+      width: 25px;
+      float: right;
+      margin: 5px 0;
     }
   }
 
-/* end of navbar  */
+  /* end of navbar  */
 
 
-// header dark and light mode for various items
-.header {
-  &.header-light {
+  // header dark and light mode for various items
+  .header {
+    &.header-light {
 
-    color: rgb(243, 241, 241);
+      color: rgb(243, 241, 241);
 
-    .nav-menu .nav-link {
-      color: rgb(243, 242, 242);
+      .nav-menu .nav-link {
+        color: rgb(243, 242, 242);
+      }
+
+      .border {
+        border-bottom: 1px solid var(--elewa-group-website-color-white);
+      }
+
+      .logo-dark {
+        display: none;
+      }
     }
-    .border{
-      border-bottom: 1px solid var(--elewa-group-website-color-white);
+
+    &.header-dark {
+
+      color: rgb(7, 7, 7);
+
+      .nav-menu .nav-link {
+        color: rgb(0, 0, 0);
+      }
+
+      .border {
+        border-bottom: 1px solid rgb(32, 31, 31);
+      }
+
+      .logo-light {
+        display: none;
+      }
+
+      .elewa-text {
+        display: flex;
+      }
+
+      .home-logo-2 {
+        order: -1;
+      }
+
     }
-    .logo-dark{
-      display: none;
-    }
+
   }
-
-  &.header-dark {
-
-    color: rgb(7, 7, 7);
-
-    .nav-menu .nav-link {
-      color: rgb(0, 0, 0);
-    }
-    .border{
-      border-bottom: 1px solid rgb(32, 31, 31);
-    }
-     .logo-light{
-      display: none;
-    }
-    .elewa-text{
-      display: flex;
-    }
-    .home-logo-2{
-      order: -1;
-    }
-   
-  }
-
-}
