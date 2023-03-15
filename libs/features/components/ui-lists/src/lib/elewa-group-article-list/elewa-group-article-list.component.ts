@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-export interface Article { image: string; timestamp: string; title: string; body: string;topic: "elewa" | "all-news" | "italanta" | "press" | "venture-labs";
-} //import this interface in the component you will be reusing article-list in. e.g import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
+export interface Article { image: string; timestamp: string; title: string; body: string;topic: "elewa" | "all-news" | "italanta" | "press" | "venture-labs";} //import this interface in the component you will be reusing article-list in. e.g import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-group-article-list',
