@@ -9,6 +9,6 @@ import { NewsSectionComponent } from './components/news-section/news-section.com
 
 @NgModule({
   imports: [CommonModule, NewsRoutingModule, LayoutModule, UiListsModule],
-  declarations: [NewsPageComponent, NewsSectionComponent, ButtonPlainComponent],
+  declarations: [NewsPageComponent, NewsSectionComponent, ButtonPlainComponent]
 })
 export class NewsPageModule {}

@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-key-figure-card.component.scss'],
 })
 export class ElewaKeyFigureCardComponent  {
-  @Input () figure = "https://i.postimg.cc/wxnQLbYY/nextsteps.png";
+  @Input () figure: string;
   @Input () description?: string;
   @Input () isImage: boolean;
 }

@@ -42,10 +42,16 @@
 }
 
 #text-and-image-banner #text-content .title {
+	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: 300;
+	font-size: 3rem;
 	margin-bottom: 2rem;
 }
 
 #text-and-image-banner #text-content .paragraph {
+	font-family: var(--elewa-group-website-dmsans-regular);
+	font-weight: 200;
+	font-size: 1.2rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -76,12 +82,7 @@ $breakpoint-low-res-desktops: 1360px;
 	}
 }
 
-@media (max-width: $breakpoint-tablet),
-(max-aspect-ratio: 1.1) {
-	#text-and-image-banner {
-		font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-		font-family: var(--elewa-group-website-dmsans-regular);
-	}
+@media (max-width: 600px) {
 
 	#text-and-image-banner .banner-container {
 		flex-direction: column;
@@ -99,7 +100,12 @@ $breakpoint-low-res-desktops: 1360px;
 	}
 
 	#text-and-image-banner #text-content .title {
+		font-size: 2rem;
 		margin-bottom: 1rem;
+	}
+	
+	#text-and-image-banner #text-content .paragraph {
+		font-size: 1.2rem;
 	}
 
 	#text-and-image-banner .banner-container.left {

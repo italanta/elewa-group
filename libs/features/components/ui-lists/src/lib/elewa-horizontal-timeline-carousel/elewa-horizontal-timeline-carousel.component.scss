@@ -1,7 +1,5 @@
 .carousel {
   background-color: var(--elewa-group-website-timeline-background-color);
-  padding-top: 40px;
-  padding-left: 40px;
   min-height: 100vh;
   font-family: var(--elewa-group-website-dmsans-regular);
   overflow: hidden;
@@ -10,7 +8,6 @@
 .horizontal-timeline {
   display: none;
   justify-content: flex-start;
-  padding-left: 50px;
   transition: transform 0.4s ease-out;
 
   @media (min-width: 801px) {
@@ -59,10 +56,10 @@
 }
 
 button {
-  padding: 10px 13px;
+  // padding: 10px 13px;
   margin: 10px 10px;
-  border-radius: 100%;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  // border-radius: 100%;
+  // border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 button:hover {

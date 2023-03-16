@@ -1,118 +1,124 @@
-.container{
-  background-color: var(--elewa-group-website-team-and-members-background-color);
-  padding: 40px 80px;
+.section {
+  background-color: black;
+  padding: 80px 0;
+  max-width: 100%;
+  margin: auto;
 }
 
-.h1{
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+.container {
+  background-color: var(--elewa-group-website-team-and-members-background-color);
+  max-width: 90%;
+  margin: auto;
+  border-bottom: solid .5px rgba($color: #ffff, $alpha: 0.5);
+}
+
+.h1 {
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 3rem;
   margin-bottom: 60px;
 }
 
-p{
+p {
   color: var(--elewa-group-website-team-and-members-color-white);
 }
 
 span {
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 3rem;
   color: var(--elewa-group-website-team-and-members-color-grey);
   padding-left: 20px;
   margin-left: 20px;
   border-left: 3px solid var(--elewa-group-website-team-and-members-color-white);
 }
 
-.dflex{
+.dflex {
   display: flex;
   overflow-x: hidden;
 }
 
-.team{
+.team {
   min-width: 21vw;
   margin-right: 10px;
 }
 
-.team img{
+.team img {
   width: 100%;
   height: 50vh;
-  border-radius: 15px;
+  // border-radius: 15px;
+  object-fit: contain;
 }
 
-.button-area{
-font-weight: var(--elewa-group-website-team-and-members-button-area-font-weight);
-margin:20px 0;
-text-align: right;
+.button-area {
+  font-weight: var(--elewa-group-website-team-and-members-button-area-font-weight);
+  margin: 20px 0;
+  text-align: right;
 }
 
-.button-area button{
-  background-color: var(--elewa-group-website-team-and-members-background-color);
-}
-
-.fa-arrow-left, .fa-arrow-right{
+.fa-arrow-left,
+.fa-arrow-right {
   color: var(--elewa-group-website-team-and-members-color-white);
 }
 
-#prev, #next{
-  border: 1px solid var(--elewa-group-website-team-and-members-color-white);
-  padding: 5px;
-  border-radius: 50%;
-}
-
-
-#next{
+#next {
   margin-left: 5px;
 }
 
-.button-area .active{
+.button-area .active {
   opacity: 0.5;
 }
 
-#prev i {
-  color: var(--elewa-group-website-team-and-members-color-white);
-}
-
-.name{
+.name {
   font-family: var(--elewa-group-website-dmsans-medium);
   font-size: var(--elewa-group-website-team-and-members-name-font-size);
 }
 
-.title{
+.title {
   font-family: var(--elewa-group-website-dmsans-regular);
   font-size: var(--elewa-group-website-team-and-members-title-font-size);
 }
 
-.name, .title, button{
+.name,
+.title {
   margin: 5px 0;
-  padding: 0;
 }
 
-@media screen and (max-width: 850px){
-  span{
+button {
+  margin: 5px 0;
+  padding: 0;
+  border: solid white 1px;
+}
+
+@media screen and (max-width: 850px) {
+  span {
     display: none;
   }
 
-  .container{
-    position:absolute;
+  .container {
+    position: absolute;
+    margin: none;
+    max-width: 100%;
     left: 0;
     right: 0;
     padding: 20px 20px;
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
 
-  .h1{
+  .h1 {
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: var(--elewa-group-website-team-and-members-h1-font-size-responsive);
     margin-bottom: 25px;
   }
 
-  .dflex{
-    width:100%;
+  .dflex {
+    width: 100%;
   }
 
-  .team{
+  .team {
     min-width: 60vw;
     margin-right: 10px;
   }
 
-  .team img{
+  .team img {
     width: 100%;
     height: 38vh;
     border-radius: 15px;
