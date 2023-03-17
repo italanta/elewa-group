@@ -1,4 +1,12 @@
 {
+  "functions": {
+    "source": "dist/apps/website-backend",
+    "predeploy": [
+      "nx build website-backend --skip-nx-cache",
+      "node tools/scripts/build-gc-functions-package.js"
+    ],
+    "runtime": "nodejs16"
+  },
   "hosting": {
     "public": "dist/static",
     "ignore": [
