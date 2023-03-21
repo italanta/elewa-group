@@ -39,6 +39,20 @@
 
 .button-with-animation:hover  .right-arrow-container{
     left: calc(-100% + 20px);
+    background-color: black;
+
+    #arrow-right{
+        color: #fff;
+    }
+}
+
+.light:hover  .right-arrow-container{
+    left: calc(-100% + 20px);
+    background-color: #fff;
+
+    #arrow-right{
+        color: black;
+    }
 }
 
 .button-with-animation:hover span{
@@ -59,9 +73,17 @@
     color: var(--elewa-group-website-color-primary);
     border-color: var(--elewa-group-website-color-primary);
 }
+
+.light:hover {
+    border-color: var(--elewa-group-website-color-primary);
+    color: #fff;
+    background-color:black;
+}
+
 .light .right-arrow-container{
     background-color: var(--elewa-group-website-color-primary);
 }
+
 .light .right-arrow-container #arrow-right{
     color: var(--elewa-group-website-color-card);
 }

@@ -1,57 +1,65 @@
- .history-main{
-    background-color: var(--elewa-group-website-color-card);
+.section {
+	background-color: var(--elewa-group-website-color-card);
+	max-width: 100%;
+	margin: auto;
+} 
+ 
+ .history-main {
+ 	background-color: var(--elewa-group-website-color-card);
+	max-width: 90%;
+	margin: auto;
  }
 
  .carousel {
-    height: 80vh;
+ 	height: 80vh;
  }
- 
-.title {
-    background-color: var(--elewa-group-website-color-card);
-    font-size: var(--elewa-group-website-team-and-members-h1-font-size);
-    padding-left: 90px;
-    padding-top: 80px;
-}
 
-.history-container{
-    display: flex;
-    text-align: center;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    justify-content: center;
-    flex-direction: column;
-}
+ .title {
+ 	background-color: var(--elewa-group-website-color-card);
+ 	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: 300;
+	font-size: 3rem;
+	padding-bottom: 50px;
+ }
+
+ .history-container {
+ 	display: flex;
+ 	text-align: center;
+ 	padding-top: 130px;
+ 	padding-bottom: 130px;
+ 	justify-content: center;
+ 	flex-direction: column;
+ }
 
 
-.heading{
-    font-size: var(--elewa-group-website-team-and-members-h1-font-size);
-    padding-top: 90px;
-}
+ .heading {
+ 	font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+ 	padding-top: 90px;
+ }
 
-.sub-heading{
-    font-size: var(--elewa-group-website-font-size-hero-heading);
-    font-family: var(--elewa-group-website-dmsans-bold);
-    padding-bottom: 75px;
-   
-}
+ .sub-heading {
+ 	font-size: var(--elewa-group-website-font-size-hero-heading);
+ 	font-family: var(--elewa-group-website-dmsans-bold);
+ 	padding-bottom: 75px;
 
-@media only screen and (max-width: 768px) {
-    
-    .title{
-        font-size: var(--elewa-group-website-team-and-members-h1-font-size);
-        padding-left: 50px;
-    }
-  
+ }
 
-    .heading{
-        font-size: var(--elewa-group-website-team-and-members-title-font-size);
-        
-    }
-     
-    .sub-heading{
-        font-size: var(--elewa-group-website-font-size-description);
-        font-family: var(--elewa-group-website-dmsans-bold);
-    }
+ @media only screen and (max-width: 768px) {
 
-   
-}
+ 	.title {
+ 		font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+ 	}
+
+
+ 	.heading {
+ 		font-size: var(--elewa-group-website-team-and-members-title-font-size);
+
+ 	}
+
+ 	.sub-heading {
+ 		font-size: var(--elewa-group-website-font-size-description);
+ 		font-family: var(--elewa-group-website-dmsans-bold);
+ 	}
+
+
+ }
