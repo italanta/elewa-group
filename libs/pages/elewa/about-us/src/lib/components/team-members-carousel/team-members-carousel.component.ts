@@ -8,20 +8,28 @@ import { Component } from '@angular/core';
 
 export class TeamMembersCarouselComponent {
 
+  showTeamMember: boolean = false;
+  currentBannerIndex: number = 0;
+
   teamMembers = [
     {
       name: 'Jente Rosseel',
       role: 'Founder, Managing Partner',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/jente-elewa_wbqyyi.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/jente-elewa_wbqyyi.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+        `I believe education can be meaningful and enjoyable. Coming from a formal education background in Belgium, 
+        I started Elewa with a mission to strengthen formal and traditional education systems. 
+        I realized that education, work, and life are indistinguishably linked.
+        <br>
+        Having diversified to many different sectors and activities since, we are still an education company to date. 
+        For we have only one measurement of success; The continuous growth of others and self.`,
     },
 
     {
       name: 'Peter Reinartz',
       role: 'Executive Chairman',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -38,7 +46,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Zipporah Ntabo',
       role: 'Office Administrator & Finance',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/zip-elewa_jksbfg.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/zip-elewa_jksbfg.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -46,7 +54,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Ian Odhiambo',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -54,7 +62,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Shawn Chiama',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -62,7 +70,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Jane Njoroge',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jane-elewa_yyybka.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jane-elewa_yyybka.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -70,7 +78,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Reagan Cherana',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/reagan-elewa_bn8xkl.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/reagan-elewa_bn8xkl.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -78,7 +86,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Noella Mwanzia',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679660055/elewa-group-website/elewa-team-members/noella-elewa_g6tquq.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679660055/elewa-group-website/elewa-team-members/noella-elewa_g6tquq.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -86,7 +94,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Paul Chesa',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/chesa-elewa_uwfv3n.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/chesa-elewa_uwfv3n.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -94,7 +102,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Jeff Kingori',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jeff-elewa_l8ax9w.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jeff-elewa_l8ax9w.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -102,13 +110,22 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Frankline Odero',
       role: 'Software Engineer',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
   ];
 
+
+  showTeamMemberDetails(teamMember: any, index: number) {
+    this.showTeamMember = true;
+    this.currentBannerIndex = index;
+  }
+
+  closeTeamMemberDetailsTriggered() {
+    this.showTeamMember = false;
+  }
 }
 
 

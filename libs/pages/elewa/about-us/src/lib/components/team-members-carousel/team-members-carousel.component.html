@@ -1,11 +1,11 @@
-<div class="section">
+<div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
   <div class="container">
     <p class="h1">Management <span>Team</span> </p>
     <div class="dflex" >
-      <div class="team" *ngFor="let member of teamMembers">
+      <div class="team" *ngFor="let member of teamMembers; let i = index" (click)="showTeamMemberDetails(teamMembers, i)">
         <img [src]="member.imageLink" alt="">
         <p class="name"> {{member.name}} </p>
-        <p class="title"> {{member.role}} </p>
+        <p class="title">  {{ member.role}} </p>
         <button><i class="fa-brands fa-linkedin-in"></i></button>
       </div>
     </div>
@@ -15,3 +15,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #showTeamMemberCard>
+  <elewa-group-team-member [teamMembers]="teamMembers" [currentBannerIndex]="currentBannerIndex" (closeTeamMemberViewTriggered)="closeTeamMemberDetailsTriggered()" ></elewa-group-team-member>
+</ng-template>
