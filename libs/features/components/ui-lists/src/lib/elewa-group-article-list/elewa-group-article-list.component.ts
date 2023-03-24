@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-export interface Article { image: string; timestamp: string; title: string; body: string; topic: string;} 
+import { Article } from '../models/articles.interface';
+// export interface Article { image: string; timestamp: string; title: string; body: string; topic: "Elewa" | "All News" | "iTalanta" | "Press" | "VentureLabs";} 
 @Component({
   selector: 'elewa-group-elewa-group-article-list',
   templateUrl: './elewa-group-article-list.component.html',
@@ -46,3 +47,5 @@ currentIndex = 0;
     return (this.currentIndex + 1) / this.articles.length * 100;
   }
    }
+export { Article };
+
