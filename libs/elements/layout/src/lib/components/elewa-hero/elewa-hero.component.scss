@@ -57,12 +57,12 @@
   #elewa-hero .title {
     font-family: var(--elewa-group-website-jeko-title);
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
   }
 
   #elewa-hero .subtitle {
-    font-size: 1.2rem!important;
+    font-size: 1.5rem!important;
     font-weight: 400;
     font-family: var(--elewa-group-website-dmsans-regular);
     margin-bottom: 20px;
@@ -71,16 +71,21 @@
   #elewa-hero .description{
     margin: auto;
     font-family: var(--elewa-group-website-jeko-title);
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
   @media (max-width: 500px) {
+
     #elewa-hero .title {
-      font-size: 1.5rem;
+      font-size: 2rem!important;
     }
   
     #elewa-hero .subtitle {
-      font-size: 1rem;
-      font-family: var(--elewa-group-website-dmsans-regular);
+      font-size: 1rem!important;
+    }
+  
+    #elewa-hero .description{
+      font-size: 1rem!important;
     }
   }

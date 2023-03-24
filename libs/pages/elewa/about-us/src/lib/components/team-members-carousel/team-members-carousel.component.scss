@@ -44,7 +44,6 @@ span {
 .team img {
   width: 100%;
   height: 50vh;
-  // border-radius: 15px;
   object-fit: contain;
 }
 
@@ -68,13 +67,13 @@ span {
 }
 
 .name {
-  font-family: var(--elewa-group-website-dmsans-medium);
-  font-size: var(--elewa-group-website-team-and-members-name-font-size);
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 2rem;
 }
 
 .title {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: var(--elewa-group-website-team-and-members-title-font-size);
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 1.3rem;
 }
 
 .name,

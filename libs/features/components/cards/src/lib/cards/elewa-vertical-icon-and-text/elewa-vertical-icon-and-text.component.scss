@@ -9,13 +9,14 @@
 }
 
 .about-title {
-    font-family: var(--elewa-group-website-dmsans-bold);
-    font-weight: var(--elewa-group-website-font-weight-title);
-    font-size: var(--elewa-group-website-font-size-title);
+    font-family: var(--elewa-group-website-jeko-title);
+    font-weight: 300;
+    font-size: 2.5rem;
 }
 
 .about-description {
     font-family: var(--elewa-group-website-dmsans-regular);
     font-weight: var(--elewa-group-website-font-size-description);
+    font-size: 1.3rem;
     max-width: 50ch;
 }
