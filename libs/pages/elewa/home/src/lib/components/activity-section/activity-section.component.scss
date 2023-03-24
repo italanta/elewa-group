@@ -30,6 +30,18 @@
   visibility: hidden;
 }
 
+
+@media (max-width: 1500px) {
+
+	.title {
+		font-size: 3rem;
+	}
+
+	.sub-title {
+		font-size: 1.5rem!important;
+	}
+}
+
 @media (max-width: 500px) {
   .container {
     display: block;

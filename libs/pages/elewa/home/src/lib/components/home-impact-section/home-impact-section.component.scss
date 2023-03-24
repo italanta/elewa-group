@@ -61,6 +61,20 @@
   padding-left: 50px;
 }
 
+@media (max-width: 1500px) {
+  .p1 {
+    font-size: 3rem;
+  }
+  
+  .p2 {
+    font-size: 1.5rem;
+  }
+  
+  .p3 {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .container {
     height: fit-content;

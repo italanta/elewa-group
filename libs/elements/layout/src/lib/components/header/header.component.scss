@@ -90,6 +90,12 @@
 
   /* media screen  */
 
+  @media only screen and (max-width: 1500px) {
+    .nav-link {
+      font-size: 0.8rem;
+    }
+  }
+
   @media only screen and (max-width: 1306px) {
     .nav-item {
       margin-left: 2rem;
