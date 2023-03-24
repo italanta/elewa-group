@@ -1,22 +1,33 @@
 .about-card {
-    background-color: var(--elewa-group-website-color-card);
+	background-color: var(--elewa-group-website-color-card);
 }
 
 .about-icon {
-    height: 7rem;
-    width: auto;
-    color: #808080;    
+	height: 7rem;
+	width: auto;
+	color: #808080;
 }
 
 .about-title {
-    font-family: var(--elewa-group-website-jeko-title);
-    font-weight: 300;
-    font-size: 2.5rem;
+	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: 300;
+	font-size: 2.5rem;
 }
 
 .about-description {
-    font-family: var(--elewa-group-website-dmsans-regular);
-    font-weight: var(--elewa-group-website-font-size-description);
-    font-size: 1.3rem;
-    max-width: 50ch;
+	font-family: var(--elewa-group-website-dmsans-regular);
+	font-weight: var(--elewa-group-website-font-size-description);
+	font-size: 1.3rem;
+	max-width: 50ch;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.about-title {
+		font-size: 1.5rem;
+	}
+
+	.about-description {
+		font-size: 1rem;
+	}
 }
