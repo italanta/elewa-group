@@ -21,6 +21,17 @@
 	max-width: 50ch;
 }
 
+@media only screen and (max-width: 1500px) {
+
+	.about-title {
+		font-size: 2rem;
+	}
+
+	.about-description {
+		font-size: 1.3rem;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 
 	.about-title {

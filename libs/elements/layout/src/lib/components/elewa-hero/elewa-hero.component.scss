@@ -41,8 +41,17 @@
     left: 0;
     transform: translate(0, -50%);
     color: var(--elewa-group-website-color);
-
     max-width: max(70%, 32rem);
+  }
+
+  #elewa-hero .pos-half {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  #elewa-hero .pos-bottom {
+    top: 70%;
+    transform: translate(0, -70%);
   }
 
   #elewa-hero .footer {

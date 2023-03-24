@@ -87,6 +87,16 @@ button {
   border: solid white 1px;
 }
 
+@media screen and (max-width: 1500px) {
+  .name {
+    font-size: 1.6rem;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 850px) {
   span {
     display: none;
