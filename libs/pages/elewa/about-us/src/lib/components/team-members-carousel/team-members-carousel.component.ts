@@ -94,7 +94,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Paul Chesa',
       role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/chesa-elewa_uwfv3n.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679666201/elewa-group-website/elewa-team-members/chesa-elewa_soeb8f.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -102,7 +102,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Jeff Kingori',
       role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jeff-elewa_l8ax9w.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679665800/elewa-group-website/elewa-team-members/jeff-elewa_hdupp7.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
