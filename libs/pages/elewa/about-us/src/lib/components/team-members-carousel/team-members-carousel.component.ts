@@ -10,9 +10,9 @@ export class TeamMembersCarouselComponent {
 
   teamMembers = [
     {
-      name: 'Jente Rossell',
+      name: 'Jente Rosseel',
       role: 'Founder, Managing Partner',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690305/elewa-group-website/Team/Mask_Group_13_mgajlm.png',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/jente-elewa_wbqyyi.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -21,7 +21,7 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Peter Reinartz',
       role: 'Executive Chairman',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690304/elewa-group-website/Team/Mask_Group_4_fk3hzv.png',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -30,16 +30,15 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Kennedy Adhola',
       role: 'Operations & Partnerships',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690305/elewa-group-website/Team/Mask_Group_5_qd54pd.png',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/ken-elewa_ydwzop.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
-
     {
-      name: 'Herman',
-      role: 'Management',
-      imageLink:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690304/elewa-group-website/Team/Mask_Group_4_fk3hzv.png",
+      name: 'Zipporah Ntabo',
+      role: 'Office Administrator & Finance',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/zip-elewa_jksbfg.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
@@ -47,16 +46,63 @@ export class TeamMembersCarouselComponent {
     {
       name: 'Ian Odhiambo',
       role: 'Software Engineer',
-      imageLink:'https://img.freepik.com/free-photo/successful-businessman-sitting-wooden-stool-jobs-career-campaign_53876-129404.jpg?w=360&t=st=1676277173~exp=1676277773~hmac=86f6cae7d4a6b8123f3b13132256b2ad905fcb9a403de395889d2a5c126c3753',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
-
+    {
+      name: 'Shawn Chiama',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Jane Njoroge',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jane-elewa_yyybka.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
     {
       name: 'Reagan Cherana',
       role: 'Software Engineer',
-      imageLink:'https://img.freepik.com/free-photo/cheerful-smiling-female-professional-posing-near-office_1262-21010.jpg?w=360&t=st=1676277257~exp=1676277857~hmac=97be74fdc6bb1812a20e94bc0c8bb4e16a4ba801af415a3ba93cae6f20340020',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/reagan-elewa_bn8xkl.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Noella Mwanzia',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679660055/elewa-group-website/elewa-team-members/noella-elewa_g6tquq.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Paul Chesa',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/chesa-elewa_uwfv3n.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Jeff Kingori',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jeff-elewa_l8ax9w.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Frankline Odero',
+      role: 'Software Engineer',
+      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',

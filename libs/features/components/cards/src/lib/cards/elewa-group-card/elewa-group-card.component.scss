@@ -51,8 +51,11 @@
 		}
 
 		.headers .p1 {
-			font-size: var(--elewa-group-website-font-size-title-medium);
-			font-weight: var(--elewa-group-website-font-weight-title-medium);
+			font-size: 1.5rem;
+		}
+
+		.headers .p2 {
+			font-size: 1.1rem;
 		}
 
 		.img img {
@@ -60,7 +63,7 @@
 		}
 
 		.text {
-			font-size: var(--elewa-group-website-font-size-description-medium);
+			font-size: 1.1rem!important;
 		}
 	}
 }

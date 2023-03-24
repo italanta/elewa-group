@@ -56,7 +56,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
     RouterModule.forRoot(
       ELEWA_GROUP_ROUTES,
       {
-        scrollPositionRestoration: 'enabled',
+        scrollPositionRestoration: "enabled",
         enableTracing: true,
         onSameUrlNavigation: 'reload'
       },

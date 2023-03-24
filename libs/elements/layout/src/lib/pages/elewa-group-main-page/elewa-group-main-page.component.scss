@@ -12,7 +12,7 @@
 
 .footer-content {
   h4 {
-    margin: 0;
+    margin: auto;
     width: 70%;
     font-family: var(--elewa-group-website-jeko-title)!important;
     font-size: 4.5rem!important;
@@ -21,12 +21,19 @@
   }
 
   .mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     margin-bottom: 1.2rem;
     padding: 50px 0px;
+  }
+
+  ::ng-deep button {
+    margin: auto;
   }
 }
 
@@ -34,6 +41,13 @@
   .footer-content {
     h4 {
       font-size: 2rem!important;
+      width: 90%!important;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    ::ng-deep button {
+      width: 70%!important;
+      margin: auto;
     }
   }
 }
