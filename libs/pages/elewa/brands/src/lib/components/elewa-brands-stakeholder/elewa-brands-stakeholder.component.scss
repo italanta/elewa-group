@@ -36,10 +36,27 @@
       text-decoration: underline;
       font-weight: var(--elewa-group-website-font-weight-title);
       cursor: pointer;
+      font-size: 2rem;
     }
   }
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (max-width: 1500px) {
+  .stakeholder-text{
+    h1{
+      font-size: 3rem!important;
+    }
+    .stakeholder-paragraphs{
+      p{
+        font-size: 1.5rem!important;
+      }
+      a {
+        font-size: 1.5rem!important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
   .stakeholder{
     display: flex;
     justify-content: space-between;
@@ -53,18 +70,17 @@
       }
     }
     .stakeholder-text{
-      width: 60%;
+      width: 70%;
       h1{
-        font-size: 2.8rem;
+        font-size: 4.5rem;
       }
       .stakeholder-paragraphs{
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 90%;
-        padding-right: 7rem;
+        gap: 30px;
         p{
-          max-width: 17rem;
+          font-size: 2rem;
         }
       }
     }
