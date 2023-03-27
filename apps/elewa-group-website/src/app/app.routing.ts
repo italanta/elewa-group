@@ -5,9 +5,8 @@ import { RouterModule, Route } from '@angular/router';
 export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // { path: '*', redirectTo: 'home', pathMatch: 'full' },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
-  { path: 'home', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
+  { path: '', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
 
   // about us page route
   { path: 'about', loadChildren: () => import('libs/pages/elewa/about-us/src/lib/elewa-about-us.module').then(m => m.AboutUsModule) },
