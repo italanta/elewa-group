@@ -19,10 +19,11 @@ export class AboutUsWeCareComponent {
       icon:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
       title: "Impact",
       description: "Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change."
-    },    {
+    },
+    {
       icon: "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690299/elewa-group-website/Icons/PNG/Opendata_fe7h3j.png",
       title: "Open data",
-      description: "Sharing is caring. We share what we learn. All our internal projects are open source."
+      description: "Sharing is caring. We share what we learn. We've made all our internal projects open source."
     },
   ]
 

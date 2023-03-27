@@ -1,6 +1,9 @@
 <div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
   <div class="container">
-    <p class="h1"> <span>Team</span> Management</p>
+    <div class="nav">
+      <span [class]="!mngmentMembersIsActive ? ['active-link'] : ['null']" (click)="applyFilter(false)" >Team</span>
+      <p [class]="mngmentMembersIsActive ? ['active-link', 'h1'] : ['h1']" (click)="applyFilter(true)"> Management</p>
+    </div>
     <div class="dflex" >
       <div class="team" *ngFor="let member of teamMembers; let i = index" (click)="showTeamMemberDetails(teamMembers, i)">
         <img [src]="member.imageLink" alt="">

@@ -15,22 +15,37 @@
 .h1 {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 3rem;
-  margin-bottom: 60px;
 }
 
 p {
   color: var(--elewa-group-website-team-and-members-color-white);
+  margin: 0;
 }
 
 span {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 3rem;
-  color: var(--elewa-group-website-team-and-members-color-grey);
+  color: var(--elewa-group-website-team-and-members-color-white);
   padding-right: 20px;
   margin-right: 20px;
   border-right: 3px solid var(--elewa-group-website-team-and-members-color-white);
 }
 
+.active-link {
+  color: var(--elewa-group-website-team-and-members-color-grey)!important;
+}
+
+span:hover, .h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
+}
 .dflex {
   display: flex;
   overflow-x: hidden;
