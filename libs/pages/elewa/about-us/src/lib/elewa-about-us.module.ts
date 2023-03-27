@@ -17,6 +17,8 @@ import { AboutUsHistoryCarouselComponent } from './components/about-us-history-c
 import { AboutUsWeCareComponent } from './components/about-us-we-care/about-us-we-care.component';
 import { ElewaAboutUsLocationSectionComponent } from './components/elewa-about-us-location-section/elewa-about-us-location-section.component';
 
+import { BannersModule } from '@elewa-group/features/components/banners';
+
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 
 import { NextDirective } from './directives/next.directive';
@@ -37,7 +39,8 @@ import { AboutUsRoutingModule } from './about-us.routing';
     LayoutModule,
     AboutUsRoutingModule,
     UiListsModule,
-    CardsModule
+    CardsModule,
+    BannersModule
   ],
 
   declarations: [

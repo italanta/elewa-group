@@ -37,6 +37,25 @@
 	}
 }
 
+@media only screen and (max-width: 1500px) {
+	.headers .p1 {
+		font-size: 1.5rem;
+	}
+
+	.headers .p2 {
+		font-size: 1.1rem;
+	}
+
+	.img img {
+		margin: 10px 0;
+	}
+
+	.text {
+		font-size: 1.2rem!important;
+	}
+}
+
+
 @media only screen and (max-width: 850px) {
 	.card {
 		width: 300px;

@@ -22,8 +22,9 @@
 }
 
 .culture-row {
-
 	img {
+		width: 90px;
+		object-fit: contain;
 		margin-bottom: 20px;
 	}
 
@@ -108,10 +109,6 @@
 			width: 50%;
 		}
 	}
-}
-
-.culture-row img {
-	width: 90px;
 }
 
 @media only screen and (max-width: 1500px) {

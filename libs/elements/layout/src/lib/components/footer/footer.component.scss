@@ -20,14 +20,20 @@
     padding: 1.5rem 1rem;
 
     h4 {
-      font-size: 1.1rem!important;
-      font-weight: var(--elewa-group-website-font-weight-subtitle);
+      font-size: 1.2rem !important;
+      font-weight: bolder;
       font-family: var(--elewa-group-website-jeko-title);
+      text-decoration: underline;
     }
 
     p {
       font-family: var(--elewa-group-website-dmsans-regular);
       font-size: 1.1rem;
+    }
+
+    .hq:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
 
     p:hover {
@@ -46,6 +52,10 @@
       object-fit: contain;
     }
 
+    .logo:hover {
+      cursor: pointer;
+    }
+
     .icons {
       position: absolute;
       right: 7%;
@@ -56,6 +66,10 @@
         width: 30px;
         height: 30px;
         object-fit: contain;
+      }
+
+      img:hover {
+        cursor: pointer;
       }
     }
   }

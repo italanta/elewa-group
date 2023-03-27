@@ -1,6 +1,6 @@
 <div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
   <div class="container">
-    <p class="h1">Management <span>Team</span> </p>
+    <p class="h1"> <span>Team</span> Management</p>
     <div class="dflex" >
       <div class="team" *ngFor="let member of teamMembers; let i = index" (click)="showTeamMemberDetails(teamMembers, i)">
         <img [src]="member.imageLink" alt="">

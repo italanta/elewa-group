@@ -53,7 +53,7 @@ export class TeamMembersCarouselComponent {
     },
     {
       name: 'Ian Odhiambo',
-      role: 'Software Engineer',
+      role: 'Founder Kujali',
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:

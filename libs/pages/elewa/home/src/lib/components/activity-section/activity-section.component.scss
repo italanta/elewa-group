@@ -26,6 +26,10 @@
   gap: 20px;
 }
 
+.carousel:hover {
+  cursor: pointer;
+}
+
 .button-area {
   visibility: hidden;
 }

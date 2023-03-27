@@ -3,6 +3,6 @@
 		{{ message }}
 	</span>
 	<span>
-		{{ word }} <a class="bannerLink" routerLink="{{ url }}">{{ callToActionText }}</a>
+		{{ word }} <a class="bannerLink" (click)="goToLink(url)">{{ callToActionText }}</a>
 	</span>
 </section>

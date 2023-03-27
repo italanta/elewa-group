@@ -26,9 +26,9 @@ span {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 3rem;
   color: var(--elewa-group-website-team-and-members-color-grey);
-  padding-left: 20px;
-  margin-left: 20px;
-  border-left: 3px solid var(--elewa-group-website-team-and-members-color-white);
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 3px solid var(--elewa-group-website-team-and-members-color-white);
 }
 
 .dflex {
@@ -86,6 +86,10 @@ button {
   margin: 5px 0;
   padding: 0;
   border: solid white 1px;
+}
+
+.fa-linkedin-in {
+  padding: 5px;
 }
 
 @media screen and (max-width: 1500px) {

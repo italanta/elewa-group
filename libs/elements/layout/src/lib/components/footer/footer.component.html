@@ -4,22 +4,22 @@
   <div class="footer-navigations">
     <div class="headquarters">
       <h4>Headquarters</h4>
-      <p>The Promenade, 19 General</p><br/>
-      <p>Mathenge Rd</p><br/>
-      <p>Nairobi, Kenya</p>
+      <p class="hq" (click)="goToLocation()" >The Promenade, 19 General<br/>
+      Mathenge Rd<br/>
+      Nairobi, Kenya</p>
     </div>
     <div class="contact">
       <h4>Contact</h4>
       <p>T +254 78 92 27 755</p><br/>
-      <p>E info@elewa.co.ke</p>
+      <p>E info@elewa.ke</p>
     </div>
     <div class="activities">
       <h4>Navigation</h4>
-      <p>About us</p><br/>
-      <p>Social impact</p><br/>
-      <p>Invest</p><br/>
-      <p>News</p><br/>
-      <p>Contact</p>
+      <p (click)="goToPage('about')" >About us</p><br/>
+      <p (click)="goToPage('social-impact')">Social impact</p><br/>
+      <p (click)="goToPage('invest')" >Invest</p><br/>
+      <p (click)="goToPage('news')" >News</p><br/>
+      <p (click)="goToPage('contact')" >Contact</p>
     </div>
     <div class="brands">
       <h4>Brands</h4>
@@ -34,11 +34,11 @@
     </div>
   </div>
   <div class="footer-imgs">
-    <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg" alt="logo" class="logo"/>
+    <img (click)="goToPage('')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg" alt="logo" class="logo"/>
     <div class="icons">
       <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg" alt="">
-      <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
-      <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
+      <img  (click)="goToSocial('https://www.instagram.com/elewa_education/')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
+      <img (click)="goToSocial('https://www.linkedin.com/company/elewa/')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
     </div>
   </div>
 </div>
