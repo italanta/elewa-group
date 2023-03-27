@@ -1,9 +1,10 @@
 .startup-container {
 	display: flex;
 	justify-content: center;
+	padding: 80px;
 	align-items: center;
 	background-color: var(--elewa-group-website-color-primary);
-	height: 100vh;
+	min-height: 100vh;
 	border-radius: 0 0 30px 30px;
 }
 
@@ -45,16 +46,15 @@ img {
 }
 
 h1 {
-	font-family: var(--elewa-group-website-dmsans-bold);
-	font-size: 34px;
 	font-weight: var(--elewa-group-website-font-weight-title);
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 3.3rem;
 	padding-bottom: 10%;
-
 }
 
 p {
 	font-family: var(--elewa-group-website-dmsans-regular);
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 .text {
@@ -70,7 +70,18 @@ p {
 	cursor: pointer;
 }
 
-@media (max-width:1000px) {
+@media screen and (max-width: 1500px) {
+	h1 {
+		font-size: 3rem;
+	}
+	
+	p {
+		font-family: var(--elewa-group-website-dmsans-regular);
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
 	.startup-container {
 		display: flex;
 		flex-direction: column;
@@ -79,7 +90,8 @@ p {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100vw;
-		height: 170vh;
+		height: fit-content;
+		padding: 30px;
 	}
 
 	.section-1 {
@@ -105,12 +117,12 @@ p {
 	}
 
 	h1 {
-		font-size: 23px;
+		font-size: 2rem;
 		font-weight: var(--elewa-group-website-font-weight-title);
 	}
 
 	p {
-		font-size: 15px;
+		font-size: 1rem;
 	}
 
 	.text {
