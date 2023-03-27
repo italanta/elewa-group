@@ -23,6 +23,7 @@
 p {
   width: 35%;
   font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 1.5rem;
   flex: 1.7;
   margin-right: 14%;
   line-height: 22px;
@@ -31,15 +32,32 @@ p {
 h1 {
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
+
 h2{
   font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 2rem;
   font-weight: 100;
   flex: 1;
-  font-size: 25px;
   padding-top: 0;
 }
+
+
+@media screen and (max-width: 1500px) {
+  p {
+    font-size: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
 /* For screens smaller than 768px (tablets) */
 @media (max-width: 600px) {
   .vacancy {

@@ -27,15 +27,25 @@
 .title {
 	font-family: var(--elewa-group-website-jeko-title);
 	font-weight: 200;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 
 .value {
 	font-family: var(--elewa-group-website-jeko-title);
 	font-weight: 300;
-	font-size: 3rem;
+	font-size: 4.5rem;
 }
 
+
+@media only screen and (max-width: 1500px) {
+	.title {
+		font-size: 1.5rem;
+	}
+	
+	.value {
+		font-size: 3rem;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	.stats {

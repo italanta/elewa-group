@@ -1,48 +1,65 @@
-#careers-hero{
-    height: 70vh;
-    margin: 0;
-    padding: 0;
-    position: relative;
+#careers-hero {
+	height: 70vh;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
-
 
 #careers-hero .container {
-    width: 90%;
-    margin: auto;
-    position: relative;
-    background-color: var( --elewa-group-website-color-white);
-    height: 80%;
-    top: 5%;
-    border-radius: 2px;
-  }
-
-#careers-hero .content{
-    padding-top: 10%;
+	width: 90%;
+	margin: auto;
+	position: relative;
+	background-color: var(--elewa-group-website-color-white);
+	height: 80%;
+	top: 5%;
+	border-radius: 2px;
 }
 
-#careers-hero .title{
-    font-family: var(--elewa-group-website-jeko-title);
-    font-size: 3rem;
-    font-weight: 300;
+#careers-hero .content {
+	padding-top: 10%;
 }
 
-#careers-hero .paragraph{
-    font-family: var(--elewa-group-website-dmsans-regular);
-    font-size: 1.2rem;
-    font-weight: 200;
-    width: 60%;
+#careers-hero .title {
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 4.5rem;
+	font-weight: 300;
+}
+
+#careers-hero .paragraph {
+	font-family: var(--elewa-group-website-dmsans-regular);
+	font-size: 2rem;
+	font-weight: 200;
+	width: 60%;
+}
+
+@media only screen and (max-width: 1500px) {
+	#careers-hero .title {
+		font-size: 3rem;
+	}
+	
+	#careers-hero .paragraph {
+		font-size: 1.5rem;
+	}
 }
 
 @media only screen and (max-width: 850px) {
-    #careers-hero {
-        padding-top: 100px;
-    }
+	#careers-hero {
+		padding-top: 100px;
+	}
 
-    ::ng-deep .button-with-animation {
-        width: 60%!important;
-    }
+	::ng-deep .button-with-animation {
+		width: 60% !important;
+	}
 
-    #careers-hero .paragraph{
-        width: 90%;
-    }
+	#careers-hero .paragraph {
+		width: 90%;
+	}
+
+	#careers-hero .title {
+		font-size: 2rem;
+	}
+	
+	#careers-hero .paragraph {
+		font-size: 1.2rem;
+	}
 }

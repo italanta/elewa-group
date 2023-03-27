@@ -5,10 +5,10 @@
 }
 
 .items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 25px;
-  width: 100%;
-  justify-content: center;
+  max-width: 100%;
 }
 
 .card1 {
@@ -17,31 +17,37 @@
   margin-right: 50px;
 }
 
+.img {
+  text-align: center;
+}
+
 .img img {
-  width: 500px;
-  height: 600px;
+  width: 70%;
+  max-height: 90%;
   border-radius: 30px;
+  object-fit: cover;
 }
 
 .p1 {
-  width: 500px;
-  font-size: 60px;
+  width: 90%;
+  font-size: 4.5rem;
   padding-bottom: 20px;
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: 300;
 }
 
 .p2 {
-  width: 580px;
-  font-size: 1.4rem;
+  width: 90%;
+  font-size: 2rem;
   padding-bottom: 20px;
   font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 200;
 }
 
 .p3 {
-  width: 580px;
-  font-size: 1.4rem;
+  width: 90%;
+  font-size: 2rem;
+  padding-bottom: 20px;
   font-family: var(--elewa-group-website-dmsans-regular);
   font-weight: 200;
 }
@@ -53,6 +59,20 @@
 
 .btn2 {
   padding-left: 50px;
+}
+
+@media (max-width: 1500px) {
+  .p1 {
+    font-size: 3rem;
+  }
+  
+  .p2 {
+    font-size: 1.5rem;
+  }
+  
+  .p3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -171,5 +191,18 @@
   .img {
     width: 30%;
     height: 20%;
+  }
+
+  .p1 {
+    width: 90%;
+    font-size: 2rem;
+  }
+  
+  .p2 {
+    font-size: 1.2rem;
+  }
+  
+  .p3 {
+    font-size: 1.2rem;
   }
 }

@@ -53,6 +53,7 @@
     "@angular/cli": "~15.1.0",
     "@angular/compiler-cli": "~15.1.0",
     "@angular/language-service": "~15.1.0",
+    "@contentful/rich-text-types": "^15.15.1",
     "@nrwl/cypress": "15.6.2",
     "@nrwl/eslint-plugin-nx": "15.6.2",
     "@nrwl/jest": "15.6.2",

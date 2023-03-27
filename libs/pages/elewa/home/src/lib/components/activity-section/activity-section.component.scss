@@ -9,27 +9,44 @@
 .title {
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: var(--elewa-group-website-font-weight-title);
-  font-size: 50px;
+  font-size: 4.5rem;
   margin: 30px 0;
 }
 
 .sub-title {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 40px;
   margin-left: -30px;
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.carousel:hover {
+  cursor: pointer;
 }
 
 .button-area {
   visibility: hidden;
 }
 
-@media (max-width: 850px) {
+
+@media (max-width: 1500px) {
+
+	.title {
+		font-size: 3rem;
+	}
+
+	.sub-title {
+		font-size: 1.5rem!important;
+	}
+}
+
+@media (max-width: 500px) {
   .container {
     display: block;
     padding-left: 10px;
@@ -46,11 +63,11 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
-  .subtitle {
-    font-size: 5px;
+  .sub-title {
+    font-size: 1.2rem!important;
   }
 
   .button-area {

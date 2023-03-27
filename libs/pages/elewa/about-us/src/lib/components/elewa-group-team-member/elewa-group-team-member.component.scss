@@ -1,10 +1,9 @@
-
-
 .banner-container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  padding: 30px;
 }
 
 .banner {
@@ -14,6 +13,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 30px 5%;
   display: flex;
   align-items: center;
 }
@@ -22,32 +22,38 @@
   display:flex;
   width: 40%;
   height: 70%;
+  padding: 30px;
+  object-fit: fill;
+  margin-top: 5%;
   margin-bottom: 3%;
   height: 100%;
   background-size: cover;
   background-position: center;
   border-bottom-right-radius: 5%;
+  border-radius: 30px;
 }
 
 .banner-info {
   height: 70%;
-  width: 40%;
+  width: 80%;
   padding: 0 40px;
   text-align: left;
+  padding: 0px 50px;
   color: var(--elewa-group-website-color);
   
 }
 
 .banner-info h1 {
-  font-size: var(--elewa-group-website-font-size-subheading);
-  font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 2.5rem!important;
+  font-family: var(--elewa-group-website-jeko-title);
   margin-bottom: 1px;
 
 }
 
 .banner-info h2 {
-  font-family: var(--elewa-group-website-dmsans-bold);
-  font-size: var(--elewa-group-website-font-size-description);
+  font-family: var(--elewa-group-website-jeko-title);
+  font-weight: 200;
+  font-size: 2rem!important;
   font-size: 15px;
   margin-bottom: 40px;
 }
@@ -55,7 +61,7 @@
 .banner-info p {
   color: var(--elewa-group-website-color);
   font-family: var(--elewa-group-website-dmsans-regular);
-   font-size: var(--elewa-group-website-font-size-title);
+  font-size: 2rem!important;
 }
 
 .linkedin-icon {
@@ -68,7 +74,7 @@
   justify-content: center;
   position: absolute;
   bottom: 70px;
-  left: 70px;
+  left: 7%;
 }
 
 
@@ -115,12 +121,12 @@
 }
 
 .progress-bar {
-  width: 47%;
+  width: 57%;
   height: 1px;
   background-color: gray;
   position: absolute;
   bottom: 70px;
-  margin-left: 45%;
+  margin-left: 35%;
   font-size: 100px;
   color: white;
   font-weight: bolder;
@@ -157,6 +163,20 @@
 
 .close-button:active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1500px) {
+  .banner-info h1 {
+    font-size: 2rem!important;
+  }
+  
+  .banner-info h2 {
+    font-size: 1.5rem!important;
+  }
+  
+  .banner-info p {
+    font-size: 1.2rem!important;
+  }
 }
 
 

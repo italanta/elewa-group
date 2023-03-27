@@ -25,7 +25,6 @@
  .history-container {
  	display: flex;
  	text-align: center;
- 	padding-top: 130px;
  	padding-bottom: 130px;
  	justify-content: center;
  	flex-direction: column;
@@ -33,13 +32,15 @@
 
 
  .heading {
- 	font-size: var(--elewa-group-website-team-and-members-h1-font-size);
+ 	font-size: 4rem;
+	font-family: var(--elewa-group-website-jeko-title);
  	padding-top: 90px;
  }
 
  .sub-heading {
- 	font-size: var(--elewa-group-website-font-size-hero-heading);
- 	font-family: var(--elewa-group-website-dmsans-bold);
+	font-size: 4rem;
+	font-family: var(--elewa-group-website-jeko-title);
+	font-weight: bolder;
  	padding-bottom: 75px;
 
  }
@@ -52,12 +53,12 @@
 
 
  	.heading {
- 		font-size: var(--elewa-group-website-team-and-members-title-font-size);
+ 		font-size: 2rem;
 
  	}
 
  	.sub-heading {
- 		font-size: var(--elewa-group-website-font-size-description);
+ 		font-size: 2rem;
  		font-family: var(--elewa-group-website-dmsans-bold);
  	}
 

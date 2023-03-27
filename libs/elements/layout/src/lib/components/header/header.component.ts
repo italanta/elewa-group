@@ -54,13 +54,14 @@ export class HeaderComponent implements OnInit {
   private getIsLightHeader(page: string): boolean {
     // Define an array of pages that should use a light header
     const lightHeaderPages = [
-      '/home/en',
-      '/about/en',
-      '/social-impact/en',
-      '/invest/en',
-      '/brands/en',
-      '/venture-labs/en',
-      '/contact/en',
+      '/',
+      '/home',
+      '/about',
+      '/social-impact',
+      '/invest',
+      '/brands',
+      '/venture-labs',
+      '/contact',
     ];
 
     // Determine whether the current page is in the array of light header pages
