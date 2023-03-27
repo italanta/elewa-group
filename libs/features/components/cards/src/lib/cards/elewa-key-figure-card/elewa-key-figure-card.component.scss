@@ -18,6 +18,7 @@ img {
 .desc {
 	font-weight: var(--elewa-group-website-font-size-description);
 	font-family: var(--elewa-group-website-dmsans-regular);
+	font-size: 1.3rem;
 	padding-top: 20px;
 	padding: 30px 30px;
 	text-align: center;
@@ -30,42 +31,36 @@ img {
 	border: 1px solid gray;
 	padding-top: 100px;
 	text-align: center;
-	font-weight: var(--elewa-group-website-font-weight-title-medium);
-	font-family: var(--elewa-group-website-dmsans-bold);
 }
 
-h1,
-h3 {
+h1 {
 	margin: 0;
 	padding: 0;
 	display: inline;
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 4.5rem;
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+// @media screen and (min-device-width: 480px) and (orientation: portrait) {
+// 	.container {
+// 		max-width: 100%;
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+// }
 
-	.container {
-		max-width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
+@media screen and (max-width: 1500px) {
+	.desc {
+		font-size: 1.3rem;
 	}
-
-	.figure {
-		max-width: 100px;
-		height: 350px;
-	}
-}
-
-@media screen and (min-device-width: 480px) and (orientation: portrait) {
-
-	.container {
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
+	
+	h1 {
+		font-family: var(--elewa-group-website-jeko-title);
+		font-size: 3rem;
 	}
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
 	.desc {
 		padding: 20px 10px;
 	}
@@ -84,5 +79,13 @@ h3 {
 		height: 200px;
 		padding-top: 20px;
 		font-size: 13px;
+	}
+	.desc {
+		font-size: 0.8rem;
+	}
+	
+	h1 {
+		font-family: var(--elewa-group-website-jeko-title);
+		font-size: 2rem;
 	}
 }
