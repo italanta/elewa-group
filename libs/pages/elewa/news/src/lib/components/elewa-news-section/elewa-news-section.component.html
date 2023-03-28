@@ -2,14 +2,14 @@
 
 <div class="container">
     <h2>News & Stories</h2>
-    <nav class="tabs">
-      <a class="tab" (click)="selectedTab='all-news'; filterArticles();" [class.active]="selectedTab==='all-news'">All News</a>
-      <a class="tab" (click)="selectedTab='elewa'; filterArticles();" [class.active]="selectedTab==='elewa'">Elewa</a>
-      <a class="tab" (click)="selectedTab='italanta'; filterArticles();" [class.active]="selectedTab==='italanta'">Italanta</a>
-      <a class="tab" (click)="selectedTab='press'; filterArticles();" [class.active]="selectedTab==='press'">Press</a>
-      <a class="tab" (click)="selectedTab='venture-labs'; filterArticles();" [class.active]="selectedTab==='venture-labs'">Venture Labs</a>
-    </nav>
-    <div class="news">
-      <elewa-group-elewa-group-article-list [articles]="filteredArticles"></elewa-group-elewa-group-article-list>
+   
+    <button *ngFor="let tab of tabs" class="tab" (click)="selectedTab= tab; filterArticles();" [class.active]="selectedTab=== tab ">
+
+      {{tab}}
+      
+    </button>
+    
+    <div class="news" [ngSwitch]="selectedTab">
+      <elewa-group-elewa-group-article-list *ngSwitchCase="selectedTab" [articles]="filteredArticles"></elewa-group-elewa-group-article-list>
     </div>
 </div>
