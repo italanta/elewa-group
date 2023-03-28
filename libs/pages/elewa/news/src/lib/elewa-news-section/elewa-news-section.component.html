@@ -1,7 +1,18 @@
+<div class="container">
+    <h1 class="title">{{title}}</h1>
+    <div class="tabs">
+        <button class="news-tab">All News</button>
+        <button class="news-tab">Elewa</button>
+         <button class="news-tab">iTalanta</button>
+         <button class="news-tab">Venture Labs</button>
+         <button class="news-tab">Press</button>
+    </div>
 
-<h1>{{title}}</h1>
-<button>All News</button>
-<button>Elewa</button>
- <button>iTalanta</button>
- <button>Venture Labs</button>
- <button>Press</button>
+     <div [ngSwitch]="selectedTab">
+        <elewa-group-elewa-group-article-list
+        *ngSwitchCase="selectedTab"
+        [articles]="filteredArticles"
+        >
+        </elewa-group-elewa-group-article-list>
+      </div>
+</div>

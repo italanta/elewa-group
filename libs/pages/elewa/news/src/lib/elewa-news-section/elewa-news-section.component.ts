@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
+import { Component } from '@angular/core';
 import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -59,4 +60,15 @@ title = "News & Stories"
         body: "dummy"
       },
 ]
+selectedTab: string
+
+constructor(){
+  this.selectedTab='all-news'
+  this.filterTopic();
+}
+
+filteredArticles: Article[]
+filterTopic(){
+  this.filteredArticles = this.article.filter(item => item.topic === this.selectedTab || this.selectedTab === 'all-news')
+}
 }
