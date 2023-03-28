@@ -1,5 +1,11 @@
 import { Component, Input } from '@angular/core';
-
+export interface Article {
+  image:string,
+  timestamp: string,
+  title:string,
+  body: string,
+  topic:  "elewa" | "all-news" | "italanta" | "press" | "venture-labs",  
+}
 @Component({
   selector: 'elewa-group-elewa-group-article-list',
   templateUrl: './elewa-group-article-list.component.html',
@@ -7,25 +13,7 @@ import { Component, Input } from '@angular/core';
 })
 
 export class ElewaGroupArticleListComponent {  
-@Input() articles = [{
-  image: "https://media.gettyimages.com/id/sb10069524c-001/photo/south-africa-cape-town-hout-bay-group-portrait-of-boys-jumping-in-field.jpg?s=612x612&w=gi&k=20&c=WKGJNH5q42Io6WApbEU-2TqSQTdR2wI5bXwGWAfC8Hg=",
-  timestamp: "12 oct 2022 ",
-  title: "introduction to controversial learning",
-  body: "dummy"
-},
-{
-  image: "https://www.iofs.org.kz/uploads/2022/05/7779.jpg",
-  timestamp: "08 dec 2022",
-  title: "rewatch the italanta academy launch event",
-  body: "dummy",
-
-},
-
-{
-  image: "https://media.gettyimages.com/id/950514452/photo/engineer.jpg?s=612x612&w=0&k=20&c=G8Blb3mzohi4De9dsmW1iOlRYY8vmIhx8zrVbRWV3BM=",
-  timestamp: "06 0ct 2022",
-  title: "introducung conversational",
-  body: "dummy"}];
+@Input() articles : Article[]
 
 currentIndex = 0;
   calculateReadTime(body: string): number {
