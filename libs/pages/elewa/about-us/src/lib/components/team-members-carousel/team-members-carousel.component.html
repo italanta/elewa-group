@@ -5,11 +5,11 @@
       <p [class]="mngmentMembersIsActive ? ['active-link', 'h1'] : ['h1']" (click)="applyFilter(true)"> Management</p>
     </div>
     <div class="dflex" >
-      <div class="team" *ngFor="let member of teamMembers; let i = index" (click)="showTeamMemberDetails(teamMembers, i)">
-        <img [src]="member.imageLink" alt="">
-        <p class="name"> {{member.name}} </p>
+      <div class="team" *ngFor="let member of teamMembers; let i = index">
+        <img [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
+        <p class="name" (click)="showTeamMemberDetails(teamMembers, i)"> {{member.name}} </p>
         <p class="title">  {{ member.role}} </p>
-        <button><i class="fa-brands fa-linkedin-in"></i></button>
+        <button (click)="goToSocialProfile(member.LinkedInProfileLink)"><i class="fa-brands fa-linkedin-in"></i></button>
       </div>
     </div>
     <div class="button-area">

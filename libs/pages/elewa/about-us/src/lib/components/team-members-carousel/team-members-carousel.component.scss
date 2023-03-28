@@ -63,6 +63,10 @@ span:hover, .h1:hover {
   border-radius: 30px;
 }
 
+.team img:hover {
+  cursor: pointer;
+}
+
 .button-area {
   font-weight: var(--elewa-group-website-team-and-members-button-area-font-weight);
   margin: 20px 0;
@@ -87,6 +91,11 @@ span:hover, .h1:hover {
   font-size: 2rem;
 }
 
+.name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .title {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 1.3rem;
@@ -101,6 +110,10 @@ button {
   margin: 5px 0;
   padding: 0;
   border: solid white 1px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .fa-linkedin-in {

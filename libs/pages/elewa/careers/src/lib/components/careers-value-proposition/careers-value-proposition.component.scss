@@ -1,5 +1,6 @@
 .componentdiv {
 	max-width: 90%;
+	margin: auto;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 }
@@ -8,8 +9,6 @@
 	display: inline;
 	align-items: start;
 	justify-content: start;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-top: 0%;
 }
 
@@ -37,7 +36,6 @@
 }
 
 .container2 {
-	margin-right: 10%;
 	margin-top: 0%;
 }
 
