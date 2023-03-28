@@ -127,15 +127,15 @@ export class TeamMembersCarouselComponent {
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
-    {
-      name: 'Lynn Anastasia',
-      management: false,
-      role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
-      LinkedInProfileLink: 'https://www.linkedin.com/in/lynn-nyangon/',
-      summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
-    },
+    // {
+    //   name: 'Lynn Anastasia',
+    //   management: false,
+    //   role: 'Software Engineer',
+    //   imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
+    //   LinkedInProfileLink: 'https://www.linkedin.com/in/lynn-nyangon/',
+    //   summary:
+    //     'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    // },
     {
       name: 'Frankline Odero',
       management: false,
