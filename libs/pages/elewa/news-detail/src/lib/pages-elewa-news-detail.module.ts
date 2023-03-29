@@ -7,6 +7,10 @@ import { NewsRelatedArticlesComponent } from './components/news-related-articles
 import { NewsArticleComponent } from './components/news-article/news-article.component';
 
 import { NewsDetailPageComponent } from './pages/news-detail-page/news-detail-page.component';
+
+import { NgxContentfulRichTextModule } from 'ngx-contentful-rich-text';
+
+import { NewsDetailPageComponent } from './pages/news-detail-page/news-detail-page.component';
 import { NgxContentfulRichTextModule } from 'ngx-contentful-rich-text';
 @NgModule({
   imports: [CommonModule, LayoutModule, NgxContentfulRichTextModule ],

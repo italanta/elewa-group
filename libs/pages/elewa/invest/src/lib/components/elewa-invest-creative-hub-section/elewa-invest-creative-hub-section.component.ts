@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./elewa-invest-creative-hub-section.component.scss'],
 })
 export class ElewaInvestCreativeHubSectionComponent {
-  title = "Elewa Creative hub"
-  paragraphs = ["The Elewa Creative Hub Lies at the heart of our organization. A two-acre property center of Nairobi's creative district, the hub connects all Elewa's Activities under a single banner.", "", "Through partnerships with creative community, the Elewa Hub organizes vibrant activites tht bring talents from different fields (tech, business, art, fashion) to nurture continuous innovation"]
+  title = "The Elewa Creative Hub"
+  paragraphs = ["Coming soon; The Elewa Creative Hub Lies at the heart of our organization. A two-acre property at the center of Nairobi's creative district, the hub connects all Elewa's Activities under a single banner.", "", "Through partnerships with creative community, the Elewa Hub will organize vibrant activites that bring talents from different fields (tech, business, art, fashion) together to nurture continuous innovation."]
   imagePosition = "right"
-  imgURL = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/Mask_Group_20_yshsq2.png"
+  imgURL = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1679983012/elewa-group-website/Images/creative-hub-image_dd6o8o.jpg"
   bgColor = "white"
   textColor = "black"
 }

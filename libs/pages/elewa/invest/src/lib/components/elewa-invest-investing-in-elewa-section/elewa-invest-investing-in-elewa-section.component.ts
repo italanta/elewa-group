@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./elewa-invest-investing-in-elewa-section.component.scss'],
 })
 export class ElewaInvestInvestingInElewaSectionComponent {
-  image = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/f2b2ea6afc31e9720638da1bbd0d2d69_p58coq.png"
+  image = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1679983082/elewa-group-website/Images/invest-now_ftxg4z.jpg"
   titleText = "Investing in Elewa NV"
   backgroundColor = "var(--elewa-group-website-color)"
   paragraph: string[] = ['From time to time, we offer investment opportunities (private equity & debt) to out community of investors. Interested to take part when this opportunity arrives?'];
