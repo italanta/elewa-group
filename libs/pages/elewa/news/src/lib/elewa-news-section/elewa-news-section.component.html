@@ -1,11 +1,11 @@
 <div class="container">
     <h1 class="title">{{title}}</h1>
     <div class="tabs">
-        <button class="news-tab">All News</button>
-        <button class="news-tab">Elewa</button>
-         <button class="news-tab">iTalanta</button>
-         <button class="news-tab">Venture Labs</button>
-         <button class="news-tab">Press</button>
+        <button (click) = "selectedTab='all-news'; filterTopic()" [class.active]="selectedTab==='all-news'"class="news-tab">All News</button>
+        <button (click) = "selectedTab='elewa'; filterTopic()" [class.active]="selectedTab==='elewa'"class="news-tab">Elewa</button>
+         <button (click) = "selectedTab='italanta'; filterTopic()" [class.active]="selectedTab==='italanta'"class="news-tab">iTalanta</button>
+         <button (click) = "selectedTab='venture-labs'; filterTopic()" [class.active]="selectedTab==='venture-labs'"class="news-tab">Venture Labs</button>
+         <button (click) = "selectedTab='press'; filterTopic()" [class.active]="selectedTab==='press'"class="news-tab">Press</button>
     </div>
 
      <div [ngSwitch]="selectedTab">
