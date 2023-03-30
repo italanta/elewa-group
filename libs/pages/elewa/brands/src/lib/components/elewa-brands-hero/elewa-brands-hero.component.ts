@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ElewaBrandsHeroComponent {
   title = "OUR BRANDS"
-  subtitle = "Changing the world one person at a time"
+  subtitle = "Changing the world. One person at a time"
   backgroundImage = "https://res.cloudinary.com/dyl3rncv3/image/upload/v1679983194/elewa-group-website/hero-Images/one-person_oyiyxq.jpg"
   footer=""
 }

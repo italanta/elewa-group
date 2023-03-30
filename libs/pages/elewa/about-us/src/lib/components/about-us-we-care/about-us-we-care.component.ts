@@ -11,7 +11,7 @@ export class AboutUsWeCareComponent {
   paragraph2 = " Our investments are therefore not limited to internal ones but contribure heavily to our community and environment.From training the next scout leaders on sustainable practices, to bridging the employment gap for junior software developers."
   columns = [
     {
-      icon: "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Holistic_id4kra.png",
+      icon: "https://res.cloudinary.com/dyl3rncv3/image/upload/v1680180166/elewa-group-website/Icons/PNG/Holistic_118_ylipr0.png",
       title: "Holistic solutions",
       description: "We go beyond a simple patch-up but develop lasting solutions through holistic design."
     },

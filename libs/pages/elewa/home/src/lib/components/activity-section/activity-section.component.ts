@@ -18,7 +18,7 @@ export class ActivitySectionComponent {
     {
       subtitle: 'Technology',
       imgSrc:
-        'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/technolagy_sgfgo6.png',
+        'https://res.cloudinary.com/dyl3rncv3/image/upload/v1680178812/elewa-group-website/Icons/PNG/technolagy_120x125_hpgq8i.png',
       description:
         'Offshore tech services which accelerate your business and our talent.',
       title: 'Italanta',

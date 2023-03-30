@@ -131,9 +131,6 @@ button:hover {
 }
 
 @media screen and (max-width: 850px) {
-  span {
-    display: none;
-  }
 
   .container {
     position: absolute;
@@ -148,7 +145,10 @@ button:hover {
   .h1 {
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: 2rem;
-    margin-bottom: 25px;
+  }
+
+  span {
+    font-size: 2rem;
   }
 
   .dflex {

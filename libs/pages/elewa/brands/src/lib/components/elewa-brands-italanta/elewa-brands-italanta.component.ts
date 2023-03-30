@@ -11,6 +11,6 @@ export class ElewaBrandsItalantaComponent {
   name = 'iTalanta';
   brandDescription = 'From Silicon Savannah to the world, iTalanta is an offshore software development agency that doubles as a talent accelerator. iTalanta supports a portfolio of clients that consist of some of the hottest startups in the world.'
   buttonText = 'Visit Website'
-  url = '/home';
+  url = 'https://italanta.net/';
   logoPlacement: 'right'
 }
