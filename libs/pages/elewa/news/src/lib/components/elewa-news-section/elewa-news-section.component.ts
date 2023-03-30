@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Article } from 'libs/features/components/ui-lists/src/lib/models/article.interface'
+import { Article } from 'libs/features/components/ui-lists/src/lib/models/article.interface'
 // import {Article}
 
 @Component({

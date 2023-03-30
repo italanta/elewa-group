@@ -3,7 +3,12 @@
 <div class="container">
     <h2>News & Stories</h2>
    
-    <button *ngFor="let tab of tabs" class="tab" (click)="selectedTab= tab; filterArticles();" [class.active]="selectedTab=== tab ">
+    <button 
+    *ngFor="let tab of tabs" 
+    class="tab" 
+    (click)="selectedTab= tab; 
+    filterArticles();" 
+    [class.active]="selectedTab=== tab">
 
       {{tab}}
       
