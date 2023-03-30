@@ -26,7 +26,7 @@ export class ActivitySectionComponent {
     {
       subtitle: 'Ventures',
       imgSrc:
-        'https:res.cloudinary.com/dyl3rncv3/image/upload/v1675690296/elewa-group-website/Icons/SVG/venturelabs_icon_vfnmpj.svg',
+        'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690299/elewa-group-website/Icons/PNG/brands_z6sf8c.png',
       description:
         'Sometimes to grow means to let go. Our bravest move into Venture Labs, where they start and accelerate their own startups',
       title: 'Venture Labs',
