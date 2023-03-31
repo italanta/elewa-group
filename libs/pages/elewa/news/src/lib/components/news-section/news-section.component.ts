@@ -10,6 +10,7 @@ import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-a
 export class NewsSectionComponent {
   #articles:Article[];
   selectedArticles:Article[]
+  categories:string[] = ['all-news','elewa','italanta','venture-labs','press']
   constructor(){
     this.#articles = [
       {
@@ -60,6 +61,10 @@ export class NewsSectionComponent {
       return this.#articles.filter(article => article.topic.toLowerCase().includes(query.toLowerCase()))
     }
     return this.#articles
+  }
+
+  clickHandler(cat:string):void{
+    this.filterArticles(cat)
   }
 
 }

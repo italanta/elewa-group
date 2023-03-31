@@ -3,11 +3,7 @@
         <h1>News & Stories </h1>
     </div>    
     <div class="filter-section">
-        <elewa-group-button-plain [innerText]="'all-news'" (queryString)="filterSelector($event)" />
-        <elewa-group-button-plain [innerText]="'elewa'" (queryString)="filterSelector($event)" />
-        <elewa-group-button-plain [innerText]="'italanta'" (queryString)="filterSelector($event)" />
-        <elewa-group-button-plain [innerText]="'venture-labs'" (queryString)="filterSelector($event)" />
-        <elewa-group-button-plain [innerText]="'press'" (queryString)="filterSelector($event)" />
+        <button (click)="clickHandler(category)" *ngFor=" let category of categories">{{category}}</button>
     </div>
 
     <div class="articles">
