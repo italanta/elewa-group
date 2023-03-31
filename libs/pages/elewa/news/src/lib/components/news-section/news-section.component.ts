@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
+import { Article } from 'libs/features/components/ui-lists/src/lib/article-interface';
 
 @Component({
   selector: 'elewa-group-news-section',

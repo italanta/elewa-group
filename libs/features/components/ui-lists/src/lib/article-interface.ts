@@ -1,0 +1,1 @@
+export interface Article { image: string; timestamp: string; title: string; body: string;topic: "elewa" | "all-news" | "iTalanta" | "press" | "venture-labs";} //import this interface in the component you will be reusing article-list in. e.g import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
