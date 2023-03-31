@@ -4,10 +4,11 @@
     <div class="carousel">
       <elewa-group-elewa-horizontal-timeline-carousel></elewa-group-elewa-horizontal-timeline-carousel>
     </div>
-  
-    <div class="history-container">
-      <p class="heading">Learn more about</p>
-      <p class="sub-heading">Elewa's social impact.</p>
-    </div>
+
+    <elewa-group-elewa-call-to-action-banner
+      [message]="'Learn more about'"
+      [callToActionText]="callToActionText"
+      [url]="'social-impact'"
+    ></elewa-group-elewa-call-to-action-banner> 
   </div>  
 </div>

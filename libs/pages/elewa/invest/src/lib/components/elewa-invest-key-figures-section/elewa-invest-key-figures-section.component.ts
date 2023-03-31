@@ -31,7 +31,7 @@ export class ElewaInvestKeyFiguresSectionComponent {
     },
     {
       string: "10M",
-      description: "Number of unified technical vacancies in US and EU markets",
+      description: "Number of technical vacancies by 2030",
 
     },
     {
@@ -41,7 +41,7 @@ export class ElewaInvestKeyFiguresSectionComponent {
     },
     {
       string: "$4.6",
-      description: "Startup funding rised by African startups in 2022",
+      description: "Startup funding raised by African startups in 2022",
 
     },
     {

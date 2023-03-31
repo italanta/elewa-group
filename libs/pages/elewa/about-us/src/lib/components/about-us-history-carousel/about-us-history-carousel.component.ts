@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './about-us-history-carousel.component.html',
   styleUrls: ['./about-us-history-carousel.component.scss'],
 })
-export class AboutUsHistoryCarouselComponent {}
+export class AboutUsHistoryCarouselComponent {
+
+  callToActionText= `Elewa's social impact.`;
+}

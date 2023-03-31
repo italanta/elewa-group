@@ -29,10 +29,10 @@
 	}
 
 	.heading {
-		font-size: 3rem;
-		width: 80%;
+		font-size: 4.5rem;
+		width: 100%;
 		margin-bottom: 20px;
-		font-family: var(--elewa-group-website-dmsans-regular);
+		font-family: var(--elewa-group-website-jeko-title);
 	}
 
 	.sub-heading {
@@ -57,18 +57,38 @@
 
 	.title {
 		margin-bottom: 20px;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		font-family: var(--elewa-group-website-jeko-title);
 	}
 
 	.description {
 		font-family: var(--elewa-group-website-dmsans-regular);
-		font-size: 1rem;
+		font-size: 1.3rem;
+		font-weight: 200;
 	}
 
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 1500px) {
+
+	.heading {
+		font-size: 3rem!important;
+	}
+
+	.sub-heading {
+		font-size: 1.2rem;
+	}
+
+	.title {
+		font-size: 1.2rem;
+	}
+
+	.description {
+		font-size: 1rem!important;
+	}
+}
+
+@media screen and (max-width: 500px) {
 	.container {
 		margin: 0 0;
 		padding: 20px 40px;
@@ -85,11 +105,11 @@
 
 		.heading {
 			width: 100%;
-			font-size: var(--elewa-group-website-font-size-heading-medium);
+			font-size: 2rem!important;
 		}
 
 		.sub-heading {
-			font-size: var(--elewa-group-website-font-size-subheading-medium);
+			font-size: 1.2rem;
 		}
 
 		.cards {
@@ -108,8 +128,12 @@
 			padding-left: 0;
 		}
 
+		.title {
+			font-size: 1.2rem;
+		}
+
 		.description {
-			font-size: var(--elewa-group-website-font-size-description-medium);
+			font-size: 1rem;
 		}
 
 		.sub-heading {

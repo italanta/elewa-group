@@ -27,6 +27,7 @@
   .border {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid var(--elewa-group-website-color-white);
     margin: 0 80px;
     padding-top: 20px;
@@ -65,7 +66,7 @@
   .nav-link {
     color: var(--elewa-group-website-color-white);
     text-decoration: none;
-    font-size: var(--elewa-group-website-font-size-nav-link);
+    font-size: 1.1rem;
     font-family: var(--elewa-group-website-dmsans-regular);
     transition: color .25s;
   }
@@ -73,6 +74,7 @@
   .nav-link:hover {
     color: var(--elewa-group-website-navbars-link-hover-color);
     cursor: pointer;
+    text-decoration: underline;
   }
 
   .menu-header {
@@ -89,6 +91,12 @@
   }
 
   /* media screen  */
+
+  @media only screen and (max-width: 1500px) {
+    .nav-link {
+      font-size: 0.8rem;
+    }
+  }
 
   @media only screen and (max-width: 1306px) {
     .nav-item {
@@ -157,6 +165,9 @@
       cursor: pointer;
     }
 
+    .nav-link .active {
+      color: blue!important;
+    }
 
 
     .hamburger.active .bar:nth-child(1) {

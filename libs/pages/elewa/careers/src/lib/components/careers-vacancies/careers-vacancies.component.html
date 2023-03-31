@@ -1,13 +1,20 @@
 <div class="main">
   <div class="main-vacancies">
     <h1>Vacancies</h1>
-    <div class="vacancy" *ngFor="let vacancy of vacancies">
-      <h2 class="title">{{ vacancy.title }}</h2>
-      <p>{{ vacancy.description }}</p>
-      <div class="btn">
-        <elewa-group-button-with-animation
-          class="btn1"  [message]="message1"
-        ></elewa-group-button-with-animation>
+    <div *ngFor="let vacancy of vacancies">
+      <div class="vacancy">
+        <h2 class="title">{{ vacancy.title }}</h2>
+        <p class="desc" [innerHTML]="vacancy.description" ></p>
+        <div class="btn">
+          <elewa-group-button-with-animation
+            class="btn1"  [message]="message1"
+          ></elewa-group-button-with-animation>
+        </div>
+      </div>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="location-title">Job Location : </p>
+        <p>{{ vacancy.location }}</p>
       </div>
     </div>
   </div>

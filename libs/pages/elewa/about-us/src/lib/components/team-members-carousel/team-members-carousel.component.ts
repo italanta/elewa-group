@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { TeamMember } from '../../models/team-member.interface';
+
 @Component({
   selector: 'elewa-group-team-members-carousel',
   templateUrl: './team-members-carousel.component.html',
@@ -8,61 +10,174 @@ import { Component } from '@angular/core';
 
 export class TeamMembersCarouselComponent {
 
-  teamMembers = [
+  showTeamMember: boolean = false;
+  currentBannerIndex: number = 0;
+
+  allTeamMembers: TeamMember[] = [
     {
-      name: 'Jente Rossell',
+      name: 'Jente Rosseel',
+      management: true,
       role: 'Founder, Managing Partner',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690305/elewa-group-website/Team/Mask_Group_13_mgajlm.png',
-      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/jente-elewa_wbqyyi.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/jrosseel/',
       summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+        `I believe education can be meaningful and enjoyable. Coming from a formal education background in Belgium, 
+        I started Elewa with a mission to strengthen formal and traditional education systems. 
+        I realized that education, work, and life are indistinguishably linked.
+        <br>
+        Having diversified to many different sectors and activities since, we are still an education company to date. 
+        For we have only one measurement of success; The continuous growth of others and self.`,
     },
-
-    {
-      name: 'Peter Reinartz',
-      role: 'Executive Chairman',
-      imageLink:'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690304/elewa-group-website/Team/Mask_Group_4_fk3hzv.png',
-      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
-      summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
-    },
-
     {
       name: 'Kennedy Adhola',
+      management: true,
       role: 'Operations & Partnerships',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690305/elewa-group-website/Team/Mask_Group_5_qd54pd.png',
-      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/ken-elewa_ydwzop.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/kennedy-adhola-97570535/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
-
     {
-      name: 'Herman',
-      role: 'Management',
-      imageLink:"https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690304/elewa-group-website/Team/Mask_Group_4_fk3hzv.png",
-      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      name: 'Peter Reinartz',
+      management: true,
+      role: 'Executive Chairman',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/peter-reinartz-1b4452ab/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Zippie Ntabo',
+      management: false,
+      role: 'Office Administrator & Finance',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/zip-elewa_jksbfg.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/zippie-ntabo-310693134/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
     {
       name: 'Ian Odhiambo',
-      role: 'Software Engineer',
-      imageLink:'https://img.freepik.com/free-photo/successful-businessman-sitting-wooden-stool-jobs-career-campaign_53876-129404.jpg?w=360&t=st=1676277173~exp=1676277773~hmac=86f6cae7d4a6b8123f3b13132256b2ad905fcb9a403de395889d2a5c126c3753',
+      management: false,
+      role: 'Founder Kujali',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
-
+    {
+      name: 'Shawn Chiama',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Jane Njoroge',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jane-elewa_yyybka.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/jane-w-njoroge/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
     {
       name: 'Reagan Cherana',
+      management: false,
       role: 'Software Engineer',
-      imageLink:'https://img.freepik.com/free-photo/cheerful-smiling-female-professional-posing-near-office_1262-21010.jpg?w=360&t=st=1676277257~exp=1676277857~hmac=97be74fdc6bb1812a20e94bc0c8bb4e16a4ba801af415a3ba93cae6f20340020',
-      LinkedInProfileLink: 'https://www.linkedin.com/feed/',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/reagan-elewa_bn8xkl.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/reagan-charana/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Noella Mwanzia',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679660055/elewa-group-website/elewa-team-members/noella-elewa_g6tquq.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/noella-mwanzia-633803173/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Paul Chesa',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679666201/elewa-group-website/elewa-team-members/chesa-elewa_soeb8f.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/paulchesa/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Joy-Linda Wawira',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679984133/elewa-group-website/elewa-team-members/joy_gvbweu.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/joy-wawira/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Jeff Kingori',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679665800/elewa-group-website/elewa-team-members/jeff-elewa_hdupp7.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/jeffrey-king-ori-165333164/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    // {
+    //   name: 'Lynn Anastasia',
+    //   management: false,
+    //   role: 'Software Engineer',
+    //   imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
+    //   LinkedInProfileLink: 'https://www.linkedin.com/in/lynn-nyangon/',
+    //   summary:
+    //     'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    // },
+    {
+      name: 'Frankline Odero',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/frankline-sable/',
+      summary:
+        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+    },
+    {
+      name: 'Stephen Mwaura',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679985792/elewa-group-website/elewa-team-members/lemmy_oosngt.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/stephenlemmymwaura/',
       summary:
         'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
     },
   ];
 
+  teamMembers: TeamMember[] = this.allTeamMembers;
+
+  mngmentMembersIsActive: boolean = true;
+
+  showTeamMemberDetails(teamMember: any, index: number) {
+    this.showTeamMember = true;
+    this.currentBannerIndex = index;
+  }
+
+  closeTeamMemberDetailsTriggered() {
+    this.showTeamMember = false;
+  }
+
+  applyFilter(managementValue: boolean) {
+    this.mngmentMembersIsActive = !managementValue;
+    managementValue ? this.teamMembers = this.allTeamMembers.filter((teamMember) => teamMember.management === managementValue)
+                    :this.teamMembers = this.allTeamMembers;
+  }
+
+  goToSocialProfile(socialProfileLink: string) {
+    window.open(socialProfileLink, '_blank');
+  }
 }
 
 

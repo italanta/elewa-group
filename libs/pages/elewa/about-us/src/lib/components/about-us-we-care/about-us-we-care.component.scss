@@ -18,7 +18,7 @@
 
 .container .data h2 {
 	font-family: var(--elewa-group-website-jeko-title);
-	font-size: 3rem;
+	font-size: 4.5rem;
 }
 
 .paragraphs {
@@ -26,7 +26,8 @@
 	padding-top: 20px;
 	justify-content: space-between;
 	font-family: var(--elewa-group-website-dmsans-regular);
-	font-size: 1.2rem;
+	font-weight: 100;
+	font-size: 2rem;
 	margin-bottom: 80px;
 }
 
@@ -39,7 +40,16 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 100px;
+}
 
+@media (max-width: 1500px) {
+	.container .data h2 {
+		font-size: 3rem;
+	}
+	
+	.paragraphs {
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -60,5 +70,13 @@
 
 	p:nth-child(1) {
 		margin-bottom: 20px;
+	}
+
+	.container .data h2 {
+		font-size: 3rem;
+	}
+	
+	.paragraphs {
+		font-size: 1.5rem;
 	}
 }

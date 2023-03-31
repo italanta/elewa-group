@@ -8,13 +8,22 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
-  message = "Send Message"
-  url = "contact"
-  contactData:FormGroup
+
+  url = "contact";
+  message = "Send Message";
+
+  contactData: FormGroup;
+
+  constructor () {}
+
+  ngOnInit(){
+    this.buildContactForm()
+  }
 
   handleSubmit(){
     console.log(this.contactData.value)
   }
+
   buildContactForm(){
     this.contactData = new FormGroup({ 
       name: new FormControl(''),
@@ -24,7 +33,8 @@ export class ContactFormComponent {
       message: new FormControl(''),
     })
   }
-  ngOnInit(){
-    this.buildContactForm()
+
+  goToSocial(url: string) {
+    window.open(url, '_blank');
   }
 }

@@ -1,12 +1,15 @@
-<div class="section">
+<div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
   <div class="container">
-    <p class="h1">Management <span>Team</span> </p>
+    <div class="nav">
+      <span [class]="!mngmentMembersIsActive ? ['active-link'] : ['null']" (click)="applyFilter(false)" >Team</span>
+      <p [class]="mngmentMembersIsActive ? ['active-link', 'h1'] : ['h1']" (click)="applyFilter(true)"> Management</p>
+    </div>
     <div class="dflex" >
-      <div class="team" *ngFor="let member of teamMembers">
-        <img [src]="member.imageLink" alt="">
-        <p class="name"> {{member.name}} </p>
-        <p class="title"> {{member.role}} </p>
-        <button><i class="fa-brands fa-linkedin-in"></i></button>
+      <div class="team" *ngFor="let member of teamMembers; let i = index">
+        <img [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
+        <p class="name" (click)="showTeamMemberDetails(teamMembers, i)"> {{member.name}} </p>
+        <p class="title">  {{ member.role}} </p>
+        <button (click)="goToSocialProfile(member.LinkedInProfileLink)"><i class="fa-brands fa-linkedin-in"></i></button>
       </div>
     </div>
     <div class="button-area">
@@ -15,3 +18,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #showTeamMemberCard>
+  <elewa-group-team-member [teamMembers]="teamMembers" [currentBannerIndex]="currentBannerIndex" (closeTeamMemberViewTriggered)="closeTeamMemberDetailsTriggered()" ></elewa-group-team-member>
+</ng-template>

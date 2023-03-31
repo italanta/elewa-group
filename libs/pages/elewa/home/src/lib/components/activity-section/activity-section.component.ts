@@ -20,7 +20,7 @@ export class ActivitySectionComponent {
       imgSrc:
         'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/technolagy_sgfgo6.png',
       description:
-        '"Offshore tech services which accelerate your business and our talent."',
+        'Offshore tech services which accelerate your business and our talent.',
       title: 'Italanta',
     },
     {
@@ -28,7 +28,7 @@ export class ActivitySectionComponent {
       imgSrc:
         'https:res.cloudinary.com/dyl3rncv3/image/upload/v1675690296/elewa-group-website/Icons/SVG/venturelabs_icon_vfnmpj.svg',
       description:
-        'Sometimes to grow means to let go.Our bravest move into Venture Labs,where our people they start and accelerate their own startups',
+        'Sometimes to grow means to let go. Our bravest move into Venture Labs, where they start and accelerate their own startups',
       title: 'Venture Labs',
     },
   ];

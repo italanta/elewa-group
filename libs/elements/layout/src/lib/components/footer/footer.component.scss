@@ -20,15 +20,25 @@
     padding: 1.5rem 1rem;
 
     h4 {
-      font-size: var(--elewa-group-website-font-size-title);
-      font-weight: var(--elewa-group-website-font-weight-subtitle);
-      font-family: var(--elewa-group-website-dmsans-medium);
+      font-size: 1.2rem !important;
+      font-weight: bolder;
+      font-family: var(--elewa-group-website-jeko-title);
+      text-decoration: underline;
     }
 
-    a {
+    p {
       font-family: var(--elewa-group-website-dmsans-regular);
-      font-size: var(--elewa-group-website-font-size-description-medium);
-      font-weight: var(--elewa-group-website-font-weight-subtitle);
+      font-size: 1.1rem;
+    }
+
+    .hq:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 
@@ -37,8 +47,13 @@
     position: relative;
 
     .logo {
-      width: 10rem;
-      height: 1.5rem;
+      width: 15rem;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .logo:hover {
+      cursor: pointer;
     }
 
     .icons {
@@ -47,9 +62,14 @@
       bottom: 100%;
 
       img {
-        margin-right: 1rem;
-        width: 20px;
-        height: 20px;
+        margin-right: 2rem;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      img:hover {
+        cursor: pointer;
       }
     }
   }
