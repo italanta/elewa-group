@@ -10,6 +10,6 @@ export class ElewaBrandsVentureLabsComponent {
   name = 'Venture Labs';
   brandDescription = `Our moonshot factory, Elewa's Venture Lab invests and incubates global SaaS startups with high potential. Developed by Elewa talents and our network.`;
   buttonText = 'Explore our startups'
-  url = '';
+  url = '/venture-labs';
   logoPlacement: 'right' | 'left' = 'left';
 }

@@ -6,8 +6,8 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./social-call-to-action.component.scss'],
 })
 export class SocialCallToActionComponent {
-  @Input() message = "Become part of our mission.";
-  @Input() word = "And join";
-  @Input()callToActionText ="Elewa";
-  @Input()url= "/investing";
+  @Input() message = "Become part of our mission";
+  @Input() word = "and";
+  @Input()callToActionText ="join elewa.";
+  @Input()url= "/careers";
 }

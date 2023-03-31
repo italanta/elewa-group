@@ -25,6 +25,9 @@
 	}
 
 	.img img {
+		max-height: 100px;
+		width: auto;
+		object-fit: contain;
 		margin: 30px 0;
 		-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(var(--elewa-group-website-color-card-item1)), to(var(--elewa-group-website-color-card-item2)));
 		mask-image: linear-gradient(to bottom, var(--elewa-group-website-color-card-item3), var(--elewa-group-website-color-card-item4));
@@ -34,6 +37,18 @@
 		font-size: 1.5rem;
 		font-weight: 200;
 		font-family: var(--elewa-group-website-dmsans-regular);
+	}
+}
+
+.card:hover {
+	background-color: black!important;
+	color: var(--elewa-group-website-color-card)!important;
+
+	.img img {
+		clip-path: circle();
+		background-color: white!important;
+		-webkit-mask-image: none;
+		mask-image: none;
 	}
 }
 

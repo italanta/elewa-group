@@ -13,11 +13,15 @@ export class ElewaGroupButtonWithAnimationComponent {
     private router: Router,
   ) {}
 
-  @Input() mode: string | undefined;
-  @Input() message: string | undefined;
-  @Input() action: string | undefined;
+  @Input() mode: string;
+  @Input() message: string;
+  @Input() action: string;
 
   btnClick= ()=> {
-    this.router.navigate([this.action]);
+    if (this.action?.includes('http')) {
+      window.open(this.action, '_blank');
+    } else {
+      this.router.navigate([this.action]);
+    }
   };
 }

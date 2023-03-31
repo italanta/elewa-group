@@ -9,5 +9,5 @@ export class HomeJobsSectionComponent {
     @Input() message =" Become part of the family";
     @Input() callToActionText ="open opportunities.";
     @Input() word ="View";
-    @Input() url ="/jobs";
+    @Input() url ="/careers";
 } 
