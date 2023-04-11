@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 import { TeamMember } from '../../models/team-member.interface';
 
@@ -8,7 +10,7 @@ import { TeamMember } from '../../models/team-member.interface';
   styleUrls: ['./team-members-carousel.component.scss'],
 })
 
-export class TeamMembersCarouselComponent {
+export class TeamMembersCarouselComponent implements OnInit {
 
   showTeamMember: boolean = false;
   currentBannerIndex: number = 0;
@@ -159,6 +161,10 @@ export class TeamMembersCarouselComponent {
   teamMembers: TeamMember[] = this.allTeamMembers;
 
   mngmentMembersIsActive: boolean = true;
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   showTeamMemberDetails(teamMember: any, index: number) {
     this.showTeamMember = true;

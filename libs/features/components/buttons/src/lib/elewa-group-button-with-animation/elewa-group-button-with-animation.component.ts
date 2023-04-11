@@ -1,6 +1,8 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import { Router } from '@angular/router';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-button-with-animation',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./elewa-group-button-with-animation.component.scss']
 })
 
-export class ElewaGroupButtonWithAnimationComponent {
+export class ElewaGroupButtonWithAnimationComponent implements OnInit {
 
   @Input() mode: string;
   @Input() message: string;
@@ -26,4 +28,8 @@ export class ElewaGroupButtonWithAnimationComponent {
       this.router.navigate([this.action]);
     }
   };
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

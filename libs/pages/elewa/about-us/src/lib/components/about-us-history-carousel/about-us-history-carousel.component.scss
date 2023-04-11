@@ -6,10 +6,15 @@
  
  .history-main {
  	background-color: var(--elewa-group-website-color-card);
+	max-width: 100%;
+	margin-left: 5%;
+ }
+
+ .call-to-action {
 	max-width: 90%;
 	margin: auto;
  }
-
+ 
  .carousel {
  	height: 80vh;
  }

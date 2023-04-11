@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as AOS from 'aos';
 @Component({
   selector: 'elewa-group-about-us-location-section',
   templateUrl: './elewa-about-us-location-section.component.html',
@@ -24,6 +25,7 @@ export class ElewaAboutUsLocationSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
     this.markerPositions = new google.maps.LatLng(this.latitude, this.longitude)
   }
 

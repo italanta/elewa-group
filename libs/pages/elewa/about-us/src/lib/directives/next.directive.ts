@@ -13,6 +13,7 @@ export class NextDirective {
     const team = elm.getElementsByClassName("team");
     if (team.length > 3) {
       elm.append(team[0]);
+      elm.scroll({behavior: 'smooth'});
     }
   }
 }

@@ -1,13 +1,15 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
 })
-export class ContactFormComponent {
+export class ContactFormComponent implements OnInit {
 
   url = "contact";
   message = "Send Message";
@@ -17,6 +19,7 @@ export class ContactFormComponent {
   constructor () {}
 
   ngOnInit(){
+    AOS.init();
     this.buildContactForm()
   }
 

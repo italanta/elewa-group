@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-about-us-culture',
@@ -6,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us-culture.component.scss'],
 })
 
-export class AboutUsCultureComponent {
+export class AboutUsCultureComponent implements OnInit {
   cultures = [
     {
       img: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png ',
@@ -34,5 +36,9 @@ export class AboutUsCultureComponent {
       description: 'Transparency, an open mind, and an open heart hold our organization together. We commit to and promote full transparency to ourselves, our stakeholders, and our beneficiaries. We furthermore invest heavily in open-source and open-data projects, as true potential lies everywhere. Not just within.'
     }
   ]
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }
 

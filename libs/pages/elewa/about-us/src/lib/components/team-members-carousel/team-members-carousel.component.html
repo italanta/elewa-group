@@ -1,5 +1,5 @@
 <div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
-  <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-duration="3000">
     <div class="nav">
       <span [class]="!mngmentMembersIsActive ? ['active-link'] : ['null']" (click)="applyFilter(false)" >Team</span>
       <p [class]="mngmentMembersIsActive ? ['active-link', 'h1'] : ['h1']" (click)="applyFilter(true)"> Management</p>

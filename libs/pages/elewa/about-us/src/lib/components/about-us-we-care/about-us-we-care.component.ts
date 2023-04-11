@@ -1,11 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-about-us-we-care',
   templateUrl: './about-us-we-care.component.html',
   styleUrls: ['./about-us-we-care.component.scss'],
 })
-export class AboutUsWeCareComponent {
+export class AboutUsWeCareComponent implements OnInit {
   title = "We Care!"
   paragraph1 = "Elewa is a mission-driven organization. We make use of our cooperative and shared culture to drive the needle for the development of people and our environment.We care for our own, but also care deeply about the context surrounding us."
   paragraph2 = " Our investments are therefore not limited to internal ones but contribure heavily to our community and environment.From training the next scout leaders on sustainable practices, to bridging the employment gap for junior software developers."
@@ -27,4 +29,9 @@ export class AboutUsWeCareComponent {
     },
   ]
 
+  constructor() {}
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

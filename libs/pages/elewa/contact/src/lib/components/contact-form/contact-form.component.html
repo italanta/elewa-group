@@ -1,5 +1,5 @@
 <main id="contact__form-container">
-    <section class="contact__left">
+    <section class="contact__left" data-aos="fade-up" data-aos-duration="3000">
         <section class="contact__left-text">
             <h1>Contact</h1>
             <p>Looking for  a quick answer to your question? Check out our <strong>FAQs</strong></p>
@@ -12,7 +12,7 @@
         </section>
     </section>
 
-    <form class="contact__form" [formGroup]="contactData" (submit)="handleSubmit()">
+    <form class="contact__form" [formGroup]="contactData" (submit)="handleSubmit()" data-aos="fade-up" data-aos-duration="3000">
         <section class="form_section">
             <label for="name">Your name</label>
             <input type="text" formControlName="name">
