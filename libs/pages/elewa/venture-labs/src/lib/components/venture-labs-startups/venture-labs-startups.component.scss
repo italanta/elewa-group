@@ -63,11 +63,21 @@ p {
 	padding-bottom: 10%;
 }
 
-.apply-now {
+.apply-now  {
 	color: white;
 	text-decoration: underline;
 	width: fit-content;
 	cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+}
+
+.apply-now:hover {
+  background-size: calc(100% - 0.2em) 2px, auto;
 }
 
 @media screen and (max-width: 1500px) {

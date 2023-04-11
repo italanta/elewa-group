@@ -40,6 +40,10 @@ span:hover, .h1:hover {
   text-decoration: underline;
 }
 
+.link:hover {
+  cursor: pointer;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -60,7 +64,7 @@ span:hover, .h1:hover {
   width: 100%;
   height: 50vh;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .team img:hover {

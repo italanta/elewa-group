@@ -4,9 +4,13 @@
   background-color: var(--elewa-group-website-color-card);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  padding: 2rem 1.5rem;
+
+  .text {
+    max-width: 90%;
+    padding: 50px 0;
+  }
+
   p {
-    max-width: 100%;
     margin-bottom: 2rem;
   }
 }

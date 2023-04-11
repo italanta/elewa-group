@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+
 
 import { LayoutModule } from '@elewa-group/elements/layout';
 import { ButtonsModule } from '@elewa-group/features/components/buttons';
@@ -12,7 +14,7 @@ import { CareersValuePropositionComponent } from './components/careers-value-pro
 import { CareersRoutingModule } from './careers.routing';
 
 @NgModule({
-  imports: [CommonModule, LayoutModule, CareersRoutingModule, ButtonsModule],
+  imports: [CommonModule, CdkAccordionModule, LayoutModule, CareersRoutingModule, ButtonsModule],
   declarations: [CareersPageComponent, CareersVacanciesComponent, CareersHeroComponent, CareersValuePropositionComponent],
 })
 export class CareersModule {}

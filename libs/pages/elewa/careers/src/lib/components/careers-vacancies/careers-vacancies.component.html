@@ -4,7 +4,21 @@
     <div *ngFor="let vacancy of vacancies">
       <div class="vacancy">
         <h2 class="title">{{ vacancy.title }}</h2>
+<!-- 
+        <cdk-accordion>
+          <cdk-accordion-item>
+            <div (click)="accordionItem.toggle()">
+              {{ vacancy.title }}
+              <span class="example-accordion-item-description">
+                Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+              </span>
+            </div>
+          </cdk-accordion-item> -->
+
+        <!-- </cdk-accordion> -->
         <p class="desc" [innerHTML]="vacancy.description" ></p>
+
+
         <div class="btn">
           <elewa-group-button-with-animation
             class="btn1"  [message]="message1"

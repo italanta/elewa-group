@@ -1,6 +1,8 @@
 import { Component,Input, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'elewa-group-elewa-call-to-action-banner',
   templateUrl: './elewa-call-to-action-banner.component.html',
@@ -15,7 +17,9 @@ export class ElewaCallToActionBannerComponent implements OnInit {
 
   constructor(private _router$$: Router) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   goToLink(url: string) {
     this._router$$.navigate([url]);

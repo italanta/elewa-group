@@ -34,6 +34,10 @@ export class ContactFormComponent {
     })
   }
 
+  sendContactEmail() {
+    
+  }
+
   goToSocial(url: string) {
     window.open(url, '_blank');
   }

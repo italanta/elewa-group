@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-activity-section',
   templateUrl: './activity-section.component.html',
   styleUrls: ['./activity-section.component.scss'],
 })
-export class ActivitySectionComponent {
+export class ActivitySectionComponent implements OnInit {
   cards = [
     {
       subtitle: 'Education',
@@ -32,4 +34,8 @@ export class ActivitySectionComponent {
       title: 'Venture Labs',
     },
   ];
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

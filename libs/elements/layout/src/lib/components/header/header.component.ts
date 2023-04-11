@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 import { filter } from 'rxjs/operators';
@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   // Set initial values for the component's properties
   isLightHeader = false;
   headerClass = 'header-light';
+
+  navbarfixed:boolean = false;
 
   constructor(private router: Router) {
     // Subscribe to router events and filter for NavigationEnd events only
@@ -66,5 +68,17 @@ export class HeaderComponent implements OnInit {
 
     // Determine whether the current page is in the array of light header pages
     return lightHeaderPages.includes(page);
+  }
+
+
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.scrollY > 100)
+    {
+      this.navbarfixed = true;
+    }
+    else
+    {
+      this.navbarfixed = false;
+    }
   }
 }

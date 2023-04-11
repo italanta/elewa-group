@@ -9,7 +9,7 @@
         <img [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
         <p class="name" (click)="showTeamMemberDetails(teamMembers, i)"> {{member.name}} </p>
         <p class="title">  {{ member.role}} </p>
-        <button (click)="goToSocialProfile(member.LinkedInProfileLink)"><i class="fa-brands fa-linkedin-in"></i></button>
+        <div class="link" (click)="goToSocialProfile(member.LinkedInProfileLink)"><i class="fa-brands fa-linkedin-in" style="color: #fff"></i></div>
       </div>
     </div>
     <div class="button-area">

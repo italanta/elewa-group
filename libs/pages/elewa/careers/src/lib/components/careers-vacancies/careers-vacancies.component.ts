@@ -6,6 +6,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./careers-vacancies.component.scss'],
 })
 export class CareersVacanciesComponent {
+
+  expandedIndex = 0;
+
   vacancies = [
     {
       title: 'Senior Software Engineer',

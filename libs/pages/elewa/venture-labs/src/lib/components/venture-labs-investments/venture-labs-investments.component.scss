@@ -1,13 +1,15 @@
 .container {
-	max-width: 90%;
+	max-width: 100%;
 	margin: auto;
 	padding: 100px 0;
 
 	h2 {
+		margin-left: 5%;
 		justify-content: left;
 		font-family: var(--elewa-group-website-dmsans-regular);
 		font-weight: 200;
 		font-size: 3rem;
+		padding-bottom: 50px;
 	}
 
 	.investments-cards {

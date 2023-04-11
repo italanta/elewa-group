@@ -1,5 +1,5 @@
 .container {
-	max-width: 90%;
+	max-width: 100%;
 	margin: auto;
 }
 
@@ -16,7 +16,9 @@ h2 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	max-width: 100%;
+	padding: 50px 0px;
 }
+
 
 @media screen and (max-width:1500px) {
 	h2 {
@@ -31,5 +33,7 @@ h2 {
 	.cards {
 		grid-template-columns: repeat(2, 1fr);
 		max-width: 100%;
+		padding: 20px 0px;
+
 	}
 }

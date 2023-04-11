@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { Router } from '@angular/router';
 
@@ -9,15 +9,17 @@ import { Router } from '@angular/router';
 })
 
 export class ElewaGroupButtonWithAnimationComponent {
-  constructor(
-    private router: Router,
-  ) {}
 
   @Input() mode: string;
   @Input() message: string;
   @Input() action: string;
 
+  @Output() btnClickEvent = new EventEmitter();
+
+  constructor(private router: Router) {}
+
   btnClick= ()=> {
+    this.btnClickEvent.emit();
     if (this.action?.includes('http')) {
       window.open(this.action, '_blank');
     } else {
