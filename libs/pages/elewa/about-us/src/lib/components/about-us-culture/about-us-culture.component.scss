@@ -24,6 +24,7 @@
 .culture-row {
 	img {
 		width: 90px;
+		height: 90px;
 		object-fit: contain;
 		margin-bottom: 20px;
 	}
@@ -106,7 +107,7 @@
 		}
 		&:last-of-type p {
 			margin: auto;
-			width: 50%;
+			width: 65%;
 		}
 	}
 }
