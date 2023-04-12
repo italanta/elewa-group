@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SocialImpactHeroSectionComponent {
 
-  title = 'A vehicle for rapid & scalable human development';
-  subtitle = 'Social Enterprise';
+  title = 'Human and Environmental Impact through Social Enterprise';
+  subtitle = 'Scaling impact. Beyond the norm';
   footerText = '';
   backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679910469/elewa-group-website/hero-Images/pexels-bg-edit_bb4znx.jpg'
 

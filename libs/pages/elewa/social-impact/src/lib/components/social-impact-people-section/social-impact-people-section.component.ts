@@ -9,7 +9,7 @@ import * as AOS from 'aos';
 })
 export class SocialImpactPeopleSectionComponent implements OnInit {
 
-  imageURL = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Images/gettyimages-525701055-2048x2048_g7nbt1.png';
+  imageURL = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1681306013/lady-impact_rnc9jy.jpg';
 
   peopleTrained = 0;
   careers = 0;
