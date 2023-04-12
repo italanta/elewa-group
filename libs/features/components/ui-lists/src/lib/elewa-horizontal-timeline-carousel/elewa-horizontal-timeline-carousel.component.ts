@@ -10,6 +10,10 @@ export class ElewaHorizontalTimelineCarouselComponent implements OnInit {
 
   @Input() currentIndex: number = 0;
 
+  shrinkValue: number = -60;
+
+  lastItem: number = 2;
+
   @Input() items = [
     {
       date: "2015",
@@ -70,10 +74,14 @@ export class ElewaHorizontalTimelineCarouselComponent implements OnInit {
 
   ngOnInit() {
     this.currentIndex = 0;
+    if (window.innerWidth < 768) {
+      this.shrinkValue = -25;
+      this.lastItem = 1;
+    }
   }
 
   next() {
-    if (this.currentIndex < this.items.length - 1) {
+    if (this.currentIndex < this.items.length - this.lastItem) {
       this.currentIndex++;
     }
   }

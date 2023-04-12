@@ -1,5 +1,5 @@
 <div class="carousel">
-  <div class="horizontal-timeline" [ngStyle]="{ 'transform': 'translateX(' + -50 * currentIndex + 'vh)' }">
+  <div class="horizontal-timeline" [ngStyle]="{ 'transform': 'translateX(' + shrinkValue * currentIndex + 'vh)' }">
     <div class="item-wrapper" *ngFor="let item of items">
       <div class="status">
         <p class="item-date">{{ item.date }}</p>
