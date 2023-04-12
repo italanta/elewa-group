@@ -14,7 +14,7 @@ export class ActivitySectionComponent implements OnInit {
       imgSrc:
         'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Education_hstyzo.png',
       description:
-        'A key player in the development and operations of a new-age human-centered digital learning experiences.',
+        'Conversational learning and other new-age human-centered digital learning experiences.',
       title: 'Elewa',
       link: 'https://elewa.education',
     },
@@ -32,7 +32,7 @@ export class ActivitySectionComponent implements OnInit {
       imgSrc:
         'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690299/elewa-group-website/Icons/PNG/brands_z6sf8c.png',
       description:
-        'Sometimes to grow means to let go. Our bravest move into Venture Labs, where they start and accelerate their own startups',
+        'Venture studio for early-stage startups by elewa entrepreneurs.',
       title: 'Venture Labs',
       link: '/venture-labs',
     },
