@@ -13,7 +13,7 @@ export class HomeJobsSectionComponent implements OnInit {
   @Input() url = "/careers";
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 
 } 

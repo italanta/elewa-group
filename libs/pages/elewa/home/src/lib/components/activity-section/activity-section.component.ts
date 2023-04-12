@@ -39,6 +39,6 @@ export class ActivitySectionComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

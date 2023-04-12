@@ -19,7 +19,7 @@ export class ContactFormComponent implements OnInit {
   constructor () {}
 
   ngOnInit(){
-    AOS.init();
+    AOS.init({once: true});
     this.buildContactForm()
   }
 

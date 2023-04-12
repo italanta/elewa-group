@@ -12,6 +12,6 @@ export class SocialImpactProjectsSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

@@ -33,6 +33,6 @@ export class ElewaGroupHorizontalListOrgsComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

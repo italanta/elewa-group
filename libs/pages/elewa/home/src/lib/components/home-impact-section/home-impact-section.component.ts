@@ -14,6 +14,6 @@ export class HomeImpactSectionComponent implements OnInit {
   light = 'light'
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

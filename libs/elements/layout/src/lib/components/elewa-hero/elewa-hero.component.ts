@@ -1,7 +1,3 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-
-import * as AOS from "aos";
-
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,18 +5,6 @@ import { Router } from '@angular/router';
   selector: 'elewa-group-elewa-hero',
   templateUrl: './elewa-hero.component.html',
   styleUrls: ['./elewa-hero.component.scss'],
-  // animations: [
-  //   trigger('flyInOut', [
-  //     state('in', style({ transform: 'translateY(-100)' })),
-  //     transition('void => *', [
-  //       style({ transform: 'translateY(100%)' }),
-  //       animate(500)
-  //     ]),
-  //     transition('* => void', [
-  //       animate(100, style({ transform: 'translateY(100%)' }))
-  //     ])
-  //   ])
-  // ]
 })
 export class ElewaHeroComponent implements OnInit {
   @Input() subtitle = 'HOW TO RECOGNIZE AN ELEWA MEMBER';
@@ -37,6 +21,5 @@ export class ElewaHeroComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
   }
 }

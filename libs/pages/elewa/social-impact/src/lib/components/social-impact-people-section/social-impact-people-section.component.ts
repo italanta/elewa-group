@@ -23,7 +23,7 @@ export class SocialImpactPeopleSectionComponent implements OnInit {
 
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
 
     this.peopleTrainedCountStop = setInterval(() => {
       this.peopleTrained++;

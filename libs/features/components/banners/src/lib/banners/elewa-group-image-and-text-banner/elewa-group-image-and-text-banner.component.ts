@@ -19,6 +19,6 @@ export class ElewaGroupImageAndTextBannerComponent implements OnInit {
   @Input() showButton: boolean = false;
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }
