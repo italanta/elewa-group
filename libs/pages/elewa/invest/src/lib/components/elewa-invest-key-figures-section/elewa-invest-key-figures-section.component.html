@@ -1,6 +1,6 @@
 <div class="container">
-  <h2>{{ title }}</h2>
-  <div class="cards">
+  <h2 data-aos="fade-up" data-aos-duration="3000">{{ title }}</h2>
+  <div class="cards" data-aos="fade-up" data-aos-duration="3000">
     <elewa-group-elewa-key-figure-card
     *ngFor="let figure of figures"
       [figure]="figure.string"

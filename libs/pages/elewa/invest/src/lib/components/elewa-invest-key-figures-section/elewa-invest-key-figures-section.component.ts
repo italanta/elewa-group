@@ -1,11 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-elewa-invest-key-figures-section',
   templateUrl: './elewa-invest-key-figures-section.component.html',
   styleUrls: ['./elewa-invest-key-figures-section.component.scss'],
 })
-export class ElewaInvestKeyFiguresSectionComponent {
+export class ElewaInvestKeyFiguresSectionComponent implements OnInit {
  @Input() title = "Key figures"
 
   figures = [
@@ -58,4 +60,8 @@ export class ElewaInvestKeyFiguresSectionComponent {
 
     }
   ]
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }
