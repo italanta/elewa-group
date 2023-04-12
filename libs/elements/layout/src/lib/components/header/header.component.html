@@ -1,4 +1,4 @@
-<div class="container" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+<div class="container" [ngClass]="navbarfixed?'fixed':'nofixed'">
   <header [ngClass]="headerClass" class="menu-header">
     <nav class="navbars-mobile">
       <div class="elewa-mobile">
@@ -51,7 +51,7 @@
     </nav>
   </header>
 
-  <header [ngClass]="headerClass" class="header fixed-top" headroom>
+  <header [ngClass]="headerClass" class="header fixed-top">
     <nav class="navbars">
       <div class="border">
         <div class="elewa-text">
