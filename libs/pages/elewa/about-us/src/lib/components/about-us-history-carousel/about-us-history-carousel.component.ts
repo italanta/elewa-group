@@ -12,6 +12,6 @@ export class AboutUsHistoryCarouselComponent implements OnInit {
   callToActionText= `Elewa's social impact.`;
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

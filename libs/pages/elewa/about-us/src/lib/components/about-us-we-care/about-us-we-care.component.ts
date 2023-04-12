@@ -32,6 +32,6 @@ export class AboutUsWeCareComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

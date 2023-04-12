@@ -16,6 +16,6 @@ export class ElewaGroupBrandsComponent implements OnInit {
   @Input () logoPlacement: 'right' | 'left' = 'right';
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

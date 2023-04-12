@@ -25,7 +25,7 @@ export class ElewaAboutUsLocationSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
     this.markerPositions = new google.maps.LatLng(this.latitude, this.longitude)
   }
 

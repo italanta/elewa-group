@@ -10,6 +10,6 @@ import * as AOS from 'aos';
 export class ElewaBrandsStakeholderComponent implements OnInit {
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

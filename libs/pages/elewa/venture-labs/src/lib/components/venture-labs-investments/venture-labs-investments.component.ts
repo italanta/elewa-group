@@ -36,6 +36,6 @@ export class VentureLabsInvestmentsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

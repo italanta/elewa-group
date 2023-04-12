@@ -13,6 +13,6 @@ export class TeamAndPartnersComponent implements OnInit {
   @Input() imgHeight = '200';
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

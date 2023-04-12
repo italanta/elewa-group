@@ -62,6 +62,6 @@ export class ElewaInvestKeyFiguresSectionComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 }

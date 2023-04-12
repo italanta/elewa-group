@@ -163,7 +163,7 @@ export class TeamMembersCarouselComponent implements OnInit {
   mngmentMembersIsActive: boolean = true;
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 
   showTeamMemberDetails(teamMember: any, index: number) {

@@ -18,7 +18,7 @@ export class ElewaCallToActionBannerComponent implements OnInit {
   constructor(private _router$$: Router) { }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({once: true});
   }
 
   goToLink(url: string) {
