@@ -14,7 +14,11 @@ export class HeaderComponent implements OnInit {
   isLightHeader = false;
   headerClass = 'header-light';
 
-  navbarfixed:boolean = false;
+  navbarfixed: boolean = false;
+
+  scrollUpLight = "scroll-up-light";
+  scrollUpDark = "scroll-up-dark";
+  lastScroll = 0;
 
   constructor(private router: Router) {
     // Subscribe to router events and filter for NavigationEnd events only
@@ -51,6 +55,7 @@ export class HeaderComponent implements OnInit {
     hamburger?.addEventListener('click', mobileMenu);
     navLink.forEach((l) => l.addEventListener('click', closeMenu));
 
+    this.manageScroll()
   }
 
   private getIsLightHeader(page: string): boolean {
@@ -70,15 +75,35 @@ export class HeaderComponent implements OnInit {
     return lightHeaderPages.includes(page);
   }
 
+  manageScroll() {
+    window.addEventListener("scroll", () => {
 
-  @HostListener('window:scroll',['$event']) onscroll(){
-    if(window.scrollY > 100)
-    {
-      this.navbarfixed = true;
-    }
-    else
-    {
-      this.navbarfixed = false;
-    }
+      let elm = document.querySelector(".navbars");
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll <= 0) {
+        elm?.classList.remove(this.scrollUpLight);
+        elm?.classList.remove(this.scrollUpDark);
+        return;
+      }
+
+      switch (this.headerClass) {
+        case 'header-dark':
+          if (currentScroll > this.lastScroll) {
+            elm?.classList.remove(this.scrollUpLight);
+          } else {
+            elm?.classList.add(this.scrollUpLight);
+          }
+          break;
+        case 'header-light':
+          if (currentScroll > this.lastScroll) {
+            elm?.classList.remove(this.scrollUpDark);
+          } else {
+            elm?.classList.add(this.scrollUpDark);
+          }
+          break;
+      }
+      this.lastScroll = currentScroll;
+    })
   }
 }

@@ -11,23 +11,29 @@
   transform: translateY(-100%);
 }
 
-// .fixed {
-//   position: fixed;
-//   width: 100%;
-//   transition: 0.2s linear;
-//   top: 0px;
-//   background-color: black;
-// }
+.scroll-up-light {
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
+  background-color: white!important;
+}
 
-// .nofixed {
-//   position: static;
-//   transition: 0.2s linear;
-//   top: -50px;
-// }
+.scroll-up-dark {
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
+  background-color: black!important;
+}
 
 .container {
   max-width: 100vw;
   height: 10vh;
+}
+
+.navbars {
+  width: 100%;
 }
 
 .navbars ul {
@@ -54,8 +60,9 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--elewa-group-website-color-white);
-  margin: 0 80px;
   padding-top: 20px;
+  max-width: 90%;
+  margin: auto;
 }
 
 .hamburger {

@@ -185,7 +185,7 @@ export class TeamMembersCarouselComponent implements OnInit {
   mngmentMembersIsActive: boolean = true;
 
   ngOnInit(): void {
-    AOS.init({once: true});
+    AOS.init({once: true, disable: 'mobile'});
   }
 
   showTeamMemberDetails(teamMember: any, index: number) {
