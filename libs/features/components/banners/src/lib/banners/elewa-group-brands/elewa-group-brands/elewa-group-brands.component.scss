@@ -56,8 +56,10 @@
 }
 
 #brands__banner .content#img-content img {
+	width: 300px;
+	height: 300px;
 	border-radius: 2rem;
-	padding: 100px 30px;
+	padding: 50px 30px;
 	background-color: black;
 	object-fit: contain;
 }
