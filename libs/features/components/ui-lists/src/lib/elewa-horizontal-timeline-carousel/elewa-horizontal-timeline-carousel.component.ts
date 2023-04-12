@@ -56,7 +56,7 @@ export class ElewaHorizontalTimelineCarouselComponent implements OnInit {
       title: "Conversational Learning",
       description: `
         Elewa Education launches first Conversational learning pilot together with the Kenya Scouts Association. 
-        iTalanta grows as a major activity within the company.
+        iTalanta grows to be a major activity within the company.
       `
     },
     {
@@ -64,7 +64,7 @@ export class ElewaHorizontalTimelineCarouselComponent implements OnInit {
       title: "Elewa Group",
       description: `
         Elewa establishes itself as a regional player in Professional Education and Technology development. 
-          Consolidates its activities through Elewa NV/Group is born. First investment in a Venture Lab by Elewa Group.
+          Consolidates its activities through Elewa NV/Group. First investment in a Venture Lab by Elewa Group.
       `
     },
   ];
