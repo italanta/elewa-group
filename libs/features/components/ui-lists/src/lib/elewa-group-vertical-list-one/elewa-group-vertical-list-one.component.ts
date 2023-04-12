@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-vertical-list-one',
   templateUrl: './elewa-group-vertical-list-one.component.html',
   styleUrls: ['./elewa-group-vertical-list-one.component.scss'],
 })
-export class ElewaGroupVerticalListOneComponent {
-  // @Input() title = "WWF";
-  // @Input() description = "Elewa group vertical list one works!";
-  // @Input() date = "Feb 2023";
+export class ElewaGroupVerticalListOneComponent implements OnInit {
+
   @Input() items = [
     {
       title: "WWF",
@@ -26,4 +26,8 @@ export class ElewaGroupVerticalListOneComponent {
       date: "Feb 2023"
     }
   ];
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

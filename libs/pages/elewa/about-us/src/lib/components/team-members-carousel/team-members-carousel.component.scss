@@ -32,10 +32,11 @@ span {
 }
 
 .active-link {
-  color: var(--elewa-group-website-team-and-members-color-grey)!important;
+  color: var(--elewa-group-website-team-and-members-color-grey) !important;
 }
 
-span:hover, .h1:hover {
+span:hover,
+.h1:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -50,14 +51,20 @@ span:hover, .h1:hover {
   align-items: center;
   margin-bottom: 80px;
 }
+
 .dflex {
   display: flex;
   overflow-x: hidden;
+  transition: all 2s ease;
 }
 
 .team {
   min-width: 21vw;
   margin-right: 10px;
+}
+
+.team:first-of-type {
+  transition: all 2s ease;
 }
 
 .team img {
@@ -128,7 +135,7 @@ button:hover {
   .name {
     font-size: 1.6rem;
   }
-  
+
   .title {
     font-size: 1.1rem;
   }

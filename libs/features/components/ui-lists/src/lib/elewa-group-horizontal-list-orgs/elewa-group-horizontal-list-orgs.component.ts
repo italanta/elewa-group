@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-horizontal-list-orgs',
   templateUrl: './elewa-group-horizontal-list-orgs.component.html',
   styleUrls: ['./elewa-group-horizontal-list-orgs.component.scss'],
 })
-export class ElewaGroupHorizontalListOrgsComponent {
+export class ElewaGroupHorizontalListOrgsComponent implements OnInit {
   imageUrl = [
     {
       "image":  'https://res.cloudinary.com/daumrxfhi/image/upload/v1675966776/vvob_logo_rlh7p9.png'
@@ -29,4 +31,8 @@ export class ElewaGroupHorizontalListOrgsComponent {
       "image": 'https://res.cloudinary.com/daumrxfhi/image/upload/v1675966777/wwf_logo_uui3oo.png'
     }
   ];
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }
