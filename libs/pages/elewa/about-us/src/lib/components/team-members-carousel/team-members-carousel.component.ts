@@ -73,11 +73,11 @@ export class TeamMembersCarouselComponent implements OnInit {
     {
       name: 'Jane Njoroge',
       management: false,
-      role: 'Software Engineer',
+      role: 'Software Developer',
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/jane-elewa_yyybka.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/jane-w-njoroge/',
       summary:
-        `As a Software Engineer, benefiting from the apprenticeship training program at Elewa,
+        `As a Software Developer, benefiting from the apprenticeship training program at Elewa,
            my passion for learning and collaboration is enabling me deliver high-quality software solutions 
            to our clients while ensuring my continuous professional growth.`    
     },
@@ -92,6 +92,16 @@ export class TeamMembersCarouselComponent implements OnInit {
           while fostering a growth mindset and a dedication to continuous learning. 
           By building a community of engineers who prioritize impact and quality, 
           I believe we can shape the future of software engineering and create positive change with everything we create.`,
+    },
+    {
+      name: 'Joy-Lidah Wawira',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_800/v1679984133/elewa-group-website/elewa-team-members/joy_gvbweu.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/joy-wawira/',
+      summary:
+        `I am language agnostic. Developing innovative, robust and scalable software products with an aim to 
+            solve social and enterprise challenges. I believe in the power of sharing knowledge and ideas.`        
     },
     {
       name: 'Reagan Charana',
@@ -117,16 +127,6 @@ export class TeamMembersCarouselComponent implements OnInit {
         `Passionate about how frameworks such as JavaScript, Angular, React, 
           Google Cloud and Firebase may aid to drive innovation that will ensure sustainability of a 
           digital world that harness human interaction.`   
-    },
-    {
-      name: 'Joy-Lidah Wawira',
-      management: false,
-      role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_800/v1679984133/elewa-group-website/elewa-team-members/joy_gvbweu.jpg',
-      LinkedInProfileLink: 'https://www.linkedin.com/in/joy-wawira/',
-      summary:
-        `I am language agnostic. Developing innovative, robust and scalable software products with an aim to 
-            solve social and enterprise challenges. I believe in the power of sharing knowledge and ideas`        
     },
     {
       name: `Jeff King'ori`,
