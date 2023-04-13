@@ -1,8 +1,9 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 import * as AOS from 'aos';
+import { ContactMailService } from '../../services/contact-mail.service';
 
 @Component({
   selector: 'elewa-group-contact-form',
@@ -14,31 +15,36 @@ export class ContactFormComponent implements OnInit {
   url = "contact";
   message = "Send Message";
 
-  contactData: FormGroup;
+  contactDetailsForm: FormGroup;
 
-  constructor () {}
+  sendingEmail: boolean = false;
+
+  constructor(private _fb: FormBuilder,
+              private _contactMailService: ContactMailService
+  ) {}
 
   ngOnInit(){
     AOS.init({once: true});
     this.buildContactForm()
   }
 
-  handleSubmit(){
-    console.log(this.contactData.value)
-  }
-
   buildContactForm(){
-    this.contactData = new FormGroup({ 
-      name: new FormControl(''),
-      company_name: new FormControl(''),
-      email: new FormControl(''),
-      option: new FormControl(''),
-      message: new FormControl(''),
+    this.contactDetailsForm = this._fb.group({ 
+      name: [''],
+      companyName: [''],
+      email: [''],
+      message: [''],
     })
   }
 
   sendContactEmail() {
-    
+    this.sendingEmail = true;
+    const formData = this.contactDetailsForm.value;
+    this._contactMailService.sendEmail(formData).then((success) => {
+      this.sendingEmail = false;
+    }).catch((error) => {
+      this.sendingEmail = false;
+    })
   }
 
   goToSocial(url: string) {
