@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit {
     hamburger?.addEventListener('click', mobileMenu);
     navLink.forEach((l) => l.addEventListener('click', closeMenu));
 
-    this.manageScroll()
+    this.manageScroll();
   }
 
   private getIsLightHeader(page: string): boolean {
@@ -77,13 +77,20 @@ export class HeaderComponent implements OnInit {
 
   manageScroll() {
     window.addEventListener("scroll", () => {
+      let elm = document.querySelector(".navbars");   
+      let elmBorder = document.querySelector(".border");
 
-      let elm = document.querySelector(".navbars");
       const currentScroll = window.pageYOffset;
 
       if (currentScroll <= 0) {
         elm?.classList.remove(this.scrollUpLight);
         elm?.classList.remove(this.scrollUpDark);
+
+        if ('header-light' === this.headerClass) {
+          elmBorder?.classList.add('light-border');
+        } else {
+          elmBorder?.classList.add('dark-border');
+        }
         return;
       }
 
@@ -92,6 +99,7 @@ export class HeaderComponent implements OnInit {
           if (currentScroll > this.lastScroll) {
             elm?.classList.remove(this.scrollUpLight);
           } else {
+            elmBorder?.classList.remove('dark-border');
             elm?.classList.add(this.scrollUpLight);
           }
           break;
@@ -99,6 +107,7 @@ export class HeaderComponent implements OnInit {
           if (currentScroll > this.lastScroll) {
             elm?.classList.remove(this.scrollUpDark);
           } else {
+            elmBorder?.classList.remove('light-border');
             elm?.classList.add(this.scrollUpDark);
           }
           break;

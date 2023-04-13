@@ -53,7 +53,7 @@
 
   <header [ngClass]="headerClass" class="header fixed-top">
     <nav class="navbars">
-      <div class="border">
+      <div class="border" [ngClass]="headerClass === 'header-dark' ? 'dark-border' : 'light-border'">
         <div class="elewa-text">
           <a routerLink="" class="home-logo"><img
               src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg"

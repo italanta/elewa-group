@@ -4,9 +4,11 @@
   will-change: transform;
   transition: transform 0.3s linear;
 }
+
 .headroom--pinned {
   transform: translateY(0%);
 }
+
 .headroom--unpinned {
   transform: translateY(-100%);
 }
@@ -16,7 +18,8 @@
   width: 100%;
   transition: 0.2s linear;
   top: 0px;
-  background-color: white!important;
+  background-color: white !important;
+  border-bottom: solid 2px black;
 }
 
 .scroll-up-dark {
@@ -24,7 +27,8 @@
   width: 100%;
   transition: 0.2s linear;
   top: 0px;
-  background-color: black!important;
+  background-color: black !important;
+  border-bottom: solid 2px white;
 }
 
 .container {
@@ -59,7 +63,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--elewa-group-website-color-white);
   padding-top: 20px;
   max-width: 90%;
   margin: auto;
@@ -279,6 +282,16 @@ header {
 
 
 // header dark and light mode for various items
+
+.light-border {
+  border-bottom: solid white 1px;
+
+}
+
+.dark-border {
+  border-bottom: solid black 1px;
+}
+
 .header {
   &.header-light {
 
@@ -286,10 +299,6 @@ header {
 
     .nav-menu .nav-link {
       color: rgb(243, 242, 242);
-    }
-
-    .border {
-      border-bottom: 1px solid var(--elewa-group-website-color-white);
     }
 
     .logo-dark {
@@ -303,10 +312,6 @@ header {
 
     .nav-menu .nav-link {
       color: rgb(0, 0, 0);
-    }
-
-    .border {
-      border-bottom: 1px solid rgb(32, 31, 31);
     }
 
     .logo-light {
