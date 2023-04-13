@@ -85,7 +85,7 @@ export class TeamMembersCarouselComponent implements OnInit {
       name: 'Shawn Chiama',
       management: false,
       role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_600/v1679657743/elewa-group-website/elewa-team-members/shawn-elewa_tt3iit.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
         `As a Senior Software Engineer, I am committed to instilling a sense of pride and ownership in my mentees, 
@@ -111,7 +111,7 @@ export class TeamMembersCarouselComponent implements OnInit {
       name: 'Paul Chesa',
       management: false,
       role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679666201/elewa-group-website/elewa-team-members/chesa-elewa_soeb8f.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_600/v1679666201/elewa-group-website/elewa-team-members/chesa-elewa_soeb8f.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/paulchesa/',
       summary:
         `Passionate about how frameworks such as JavaScript, Angular, React, 
@@ -122,7 +122,7 @@ export class TeamMembersCarouselComponent implements OnInit {
       name: 'Joy-Lidah Wawira',
       management: false,
       role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679984133/elewa-group-website/elewa-team-members/joy_gvbweu.jpg',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_800/v1679984133/elewa-group-website/elewa-team-members/joy_gvbweu.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/joy-wawira/',
       summary:
         `I am language agnostic. Developing innovative, robust and scalable software products with an aim to 
@@ -131,7 +131,7 @@ export class TeamMembersCarouselComponent implements OnInit {
     {
       name: `Jeff King'ori`,
       management: false,
-      role: 'Software Engineer',
+      role: 'Software Developer',
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679665800/elewa-group-website/elewa-team-members/jeff-elewa_hdupp7.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/jeffrey-king-ori-165333164/',
       summary:
@@ -160,7 +160,7 @@ export class TeamMembersCarouselComponent implements OnInit {
     {
       name: 'Frankline Odero',
       management: false,
-      role: 'Software Engineer',
+      role: 'Software Developer',
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/frankline-sable/',
       summary:
@@ -171,7 +171,7 @@ export class TeamMembersCarouselComponent implements OnInit {
     {
       name: 'Stephen Mwaura',
       management: false,
-      role: 'Software Engineer',
+      role: 'Software Developer',
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679985792/elewa-group-website/elewa-team-members/lemmy_oosngt.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/stephenlemmymwaura/',
       summary:

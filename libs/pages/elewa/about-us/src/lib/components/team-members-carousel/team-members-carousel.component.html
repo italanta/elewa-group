@@ -1,4 +1,5 @@
 <div *ngIf="!showTeamMember; else showTeamMemberCard" class="section">
+
   <div class="container" data-aos="fade-left" data-aos-duration="3000">
     <div class="nav">
       <span [class]="!mngmentMembersIsActive ? ['active-link'] : ['null']" (click)="applyFilter(false)" >Team</span>
@@ -6,7 +7,7 @@
     </div>
     <div class="dflex" >
       <div class="team" data-aos="fade-left" data-aos-duration="3000" *ngFor="let member of teamMembers; let i = index">
-        <img [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
+        <img loading="lazy" [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
         <p class="name" (click)="showTeamMemberDetails(teamMembers, i)"> {{member.name}} </p>
         <p class="title">  {{ member.role}} </p>
         <div class="link" (click)="goToSocialProfile(member.LinkedInProfileLink)"><i class="fa-brands fa-linkedin-in" style="color: #fff"></i></div>
@@ -17,6 +18,7 @@
       <button mat-mini-fab type="button" id="next" elewaGroupNext><i class="fa-solid fa-arrow-right"></i></button>
     </div>
   </div>
+  
 </div>
 
 <ng-template #showTeamMemberCard>
