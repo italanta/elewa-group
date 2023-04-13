@@ -4,7 +4,7 @@
       <span [class]="!mngmentMembersIsActive ? ['active-link'] : ['null']" (click)="applyFilter(false)" >Team</span>
       <p [class]="mngmentMembersIsActive ? ['active-link', 'h1'] : ['h1']" (click)="applyFilter(true)"> Management</p>
     </div>
-    <div class="dflex" >
+    <div class="dflex" [ngClass]="!mngmentMembersIsActive ? 'dflex-margin-left-none' : 'dflex-margin-left-15'">
       <div class="team" data-aos="fade-left" data-aos-duration="3000" *ngFor="let member of teamMembers; let i = index">
         <img [src]="member.imageLink" alt="" (click)="showTeamMemberDetails(teamMembers, i)">
         <p class="name" (click)="showTeamMemberDetails(teamMembers, i)"> {{member.name}} </p>

@@ -1,6 +1,6 @@
 <div class="location-main-flex">
   <!-- Used an image placeholder for the map. Append the key and comment out the img tag -->
-  <div class="map" data-aos="fade-up" data-aos-duration="3000">
+  <div *ngIf="apiLoaded | async" class="map" data-aos="fade-up" data-aos-duration="3000">
     <google-map [options]="mapOptions">
       <map-marker [position]="markerPositions"></map-marker>
     </google-map>

@@ -15,7 +15,11 @@ export class FooterComponent {
   }
 
   goToPage(url: string) {
-    this._router$$.navigate([url]);
+    if (url.includes('http')) {
+      window.open(url, '_blank');
+    } else {
+      this._router$$.navigate([url]);
+    }
   }
 
   goToSocial(url: string) {

@@ -11,7 +11,7 @@ export class PrevDirective {
   nextFunction(){
     const elm = this.el.nativeElement.parentElement.parentElement.children[1];
     const team = elm.getElementsByClassName("team");
-    if (team.length > 3) {
+    if (team.length > 3 || window.innerWidth < 768) {
       elm.prepend(team[team.length - 1]);
     }
   }

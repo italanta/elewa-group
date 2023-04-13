@@ -17,6 +17,16 @@ export class TeamMembersCarouselComponent implements OnInit {
 
   allTeamMembers: TeamMember[] = [
     {
+      name: 'Stephen Mwaura',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679985792/elewa-group-website/elewa-team-members/lemmy_oosngt.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/stephenlemmymwaura/',
+      summary:
+        `I have a strong desire to build software solutions that make a positive impact on people's lives 
+            taking into account user experience and the excellence desired.`        
+    },
+    {
       name: 'Jente Rosseel',
       management: true,
       role: 'Founder, Managing Partner',
@@ -66,9 +76,9 @@ export class TeamMembersCarouselComponent implements OnInit {
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656821/elewa-group-website/elewa-team-members/ian-elewa_bejey9.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/feed/',
       summary:
-        `As pioneer of the Elewa's first Venture Lab, my ultimate goal is to leverage my expertise, acquired over the years, 
+        `As pioneer of Elewa's first Venture Lab, my ultimate goal is to leverage my expertise, acquired over the years, 
          to create a successful venture that will revolutionise an industry and make a 
-         meaningful impact to the people around the world.`,
+         meaningful impact to people around the world.`,
     },
     {
       name: 'Jane Njoroge',
@@ -167,17 +177,7 @@ export class TeamMembersCarouselComponent implements OnInit {
         `I am passionate about developing app and web projects, gami(ng)fication projects as well as handling bits and pieces of computer hardware engineering. 
           <br/><br/>  
           I believe that continous learning and development helps any one to stay ahead of the curve.`        
-    },
-    {
-      name: 'Stephen Mwaura',
-      management: false,
-      role: 'Software Engineer',
-      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679985792/elewa-group-website/elewa-team-members/lemmy_oosngt.jpg',
-      LinkedInProfileLink: 'https://www.linkedin.com/in/stephenlemmymwaura/',
-      summary:
-        `I have a strong desire to build software solutions that make a positive impact on people's lives 
-            taking into account user experience and the excellence desired.`        
-    },
+    }
   ];
 
   teamMembers: TeamMember[] = this.allTeamMembers;
@@ -186,6 +186,11 @@ export class TeamMembersCarouselComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({once: true, disable: 'mobile'});
+    if (window.innerWidth < 768) {
+      let teamMember = this.allTeamMembers[0];
+      this.allTeamMembers.splice(0, 1);
+      this.allTeamMembers.push(teamMember);
+    }
   }
 
   showTeamMemberDetails(teamMember: any, index: number) {

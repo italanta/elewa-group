@@ -61,6 +61,14 @@ span:hover,
   transition: all 2s ease;
 }
 
+.dflex-margin-left-none {
+  margin-left: 0;
+}
+
+.dflex-margin-left-15 {
+  margin-left: -15vw;
+}
+
 .team {
   min-width: 21vw;
   margin-right: 10px;
@@ -168,6 +176,7 @@ button:hover {
 
   .dflex {
     width: 100%;
+    margin: 0;
   }
 
   .team {
