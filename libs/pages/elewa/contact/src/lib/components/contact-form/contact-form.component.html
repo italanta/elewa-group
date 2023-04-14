@@ -12,38 +12,41 @@
         </section>
     </section>
 
-    <form class="contact__form" [formGroup]="contactData" (submit)="handleSubmit()" data-aos="fade-up" data-aos-duration="3000">
+    <form class="contact__form" [formGroup]="contactDetailsForm" data-aos="fade-up" data-aos-duration="3000">
         <section class="form_section">
             <label for="name">Your name</label>
             <input type="text" formControlName="name">
         </section>
         <section class="form_section">
             <label for="name">Company name</label>
-            <input type="text" formControlName="company_name">
+            <input type="text" formControlName="companyName">
         </section>
         <section class="form_section">
             <label for="email">E-mail</label>
-            <input type="email"  formControlName="email">
+            <input type="email" formControlName="email">
         </section>    
-        <section class="form_section form_select">
+        <!-- <section class="form_section form_select">
             <label for="option">Select option</label>
             <select name="option" id="" formControlName="option">
                 <option>Option one</option>
                 <option>Option two</option>
             </select>
-        </section>
+        </section> -->
         <section class="form_section">
             <label for="name">Message</label>
-            <input name="" id="" formControlName="message" />
+            <textarea name="" id="" formControlName="message"></textarea>
         </section>
         <section class="form__bottom-section">
             <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>
-            <elewa-group-button-with-animation class="button"
+            <elewa-group-button-with-animation *ngIf="!sendingEmail; else sendingEmailTemp" class="button"
             [message]="message"
             [action]="url"
             (btnClickEvent)="sendContactEmail()"
             ></elewa-group-button-with-animation>
         </section>
     </form>
-
 </main>
+
+<ng-template #sendingEmailTemp>
+    <span>Sending, please wait....</span>
+</ng-template>

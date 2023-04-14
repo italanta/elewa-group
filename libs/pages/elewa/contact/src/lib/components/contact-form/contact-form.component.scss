@@ -116,7 +116,7 @@
 	flex-direction: column;
 	justify-content: right;
 
-	input, select {
+	input, select, textarea {
 		background-color: var(--elewa-group-website-color-bg);
 		color: white;
 		font-size: 1rem;
@@ -124,6 +124,10 @@
 		border: none;
 		border-bottom: 1px solid white;
 		outline: thin;
+	}
+
+	textarea {
+		width: 100%;
 	}
 
 	label {

@@ -1,7 +1,7 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   padding: 30px;
 }
@@ -19,7 +19,7 @@
 }
 
 .banner-image {
-  display:flex;
+  display: flex;
   width: 40%;
   height: 70%;
   padding: 30px;
@@ -40,11 +40,11 @@
   text-align: left;
   padding: 0px 50px;
   color: var(--elewa-group-website-color);
-  
+
 }
 
 .banner-info h1 {
-  font-size: 2.5rem!important;
+  font-size: 2.5rem !important;
   font-family: var(--elewa-group-website-jeko-title);
   margin-bottom: 1px;
 
@@ -53,7 +53,7 @@
 .banner-info h2 {
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: 200;
-  font-size: 2rem!important;
+  font-size: 2rem !important;
   font-size: 15px;
   margin-bottom: 40px;
 }
@@ -61,7 +61,7 @@
 .banner-info p {
   color: var(--elewa-group-website-color);
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 2rem!important;
+  font-size: 2rem !important;
 }
 
 .linkedin-icon {
@@ -78,7 +78,7 @@
 }
 
 
-.fa-linkedin-in {   
+.fa-linkedin-in {
   color: white;
   font-size: 25px;
 }
@@ -91,7 +91,7 @@
   align-items: center;
   margin-left: 5%;
   margin-right: 5%;
-  padding: 0 40px;  
+  padding: 0 40px;
 }
 
 .previous-button,
@@ -105,8 +105,8 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  margin-left:10px;
-  
+  margin-left: 10px;
+
   // position: absolute;
 }
 
@@ -167,15 +167,15 @@
 
 @media (max-width: 1500px) {
   .banner-info h1 {
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
-  
+
   .banner-info h2 {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
   }
-  
+
   .banner-info p {
-    font-size: 1.2rem!important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -183,111 +183,127 @@
 @media (max-width: 1058px) {
   .banner-container {
     flex-direction: column;
+    min-height: 100vh;
   }
+
   .banner {
     flex-direction: column;
   }
 
+  p {
+    min-height: fit-content;
+  }
+
+  .linkedin-icon {
+    top: 25%!important;
+  }
+
   .banner-info {
-        order: 1;
-        width: 70%;
-        height: 30%;
-        display: block;
-        top:5%;
-        padding: 0;
-        // margin-left: 0;
-       }
+    order: 1;
+    width: 70%;
+    height: fit-content;
+    display: block;
+    top: 5%;
+    padding: 0;
+    margin-top: 30px!important;
+  }
 
-      .banner-info h2{
-        margin-bottom: 5px;
-        text-align: left;
-        margin-left: 0;
-        
-       }
+  .banner-info h1 {
+    font-size: 1.2rem!important;
+  }
 
-      .banner-info p {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-size: 11.5px;
-        text-align: left;
-        margin-left: 0;
-        
-       }
+  .banner-info h2 {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 0;
+    font-size: 1.1rem!important;
 
-       .banner-image {
-         order: -1;
-         margin-top: 5%;
-         width: 70%;
-         height: 60%;
-         }
-   
-    .linkedin-icon {
-      display: flex;
-      width: 50px;
-      height: 50px;
-      background-color: black;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      bottom: 450px;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-50%);
-    }
- 
-    .progress-bar {
-      width: 70%;
-      height: 2px;
-      background-color: lightgrey;
-      border-radius: 5px;
-      position: absolute;
-      bottom: 40px;
-      left: 5%;
-      transform: translateX(-50%);
-    }
+  }
 
-    .progress-bar-fill {
-      height: 100%;
-      width: 90%;
-    }
-
-    .banner-controls {
-      position: absolute;
-      bottom: 45px;
-      right: 0px;
-      display: flex;
-      align-items: center;
-      margin-right: 15%;
-      padding: 0 0px;  
-    }
-
-    .previous-button,
-    .next-button {
-      display: flex;
-      top: 60%;
-      border-width: 0.1px;
-      border-style: inset;
-      color: var(--elewa-group-website-color);
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-    }
-    
+  .banner-info p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1rem!important;
+    text-align: left;
+    margin-left: 0;
 
 
-.fa-arrow-left-long,
-.fa-arrow-right-long {
-color: var(--elewa-group-website-color);
-font-size: 10px;
-font-weight: lighter;
-cursor: pointer;
-background: none;
-border: none;
-}
-          
+  }
+
+  .banner-image {
+    order: -1;
+    margin-top: 5%;
+    width: 70%;
+    max-height: 30%;
+  }
+
+  .linkedin-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+
+  .progress-bar {
+    width: 70%;
+    height: 2px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    transform: translateX(-50%);
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 90%;
+  }
+
+  .banner-controls {
+    position: absolute;
+    bottom: 45px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+    padding: 0 0px;
+  }
+
+  .previous-button,
+  .next-button {
+    display: flex;
+    top: 60%;
+    border-width: 0.1px;
+    border-style: inset;
+    color: var(--elewa-group-website-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+
+
+  .fa-arrow-left-long,
+  .fa-arrow-right-long {
+    color: var(--elewa-group-website-color);
+    font-size: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
 
 }

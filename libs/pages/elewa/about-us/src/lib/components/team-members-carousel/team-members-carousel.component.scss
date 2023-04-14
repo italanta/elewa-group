@@ -8,8 +8,11 @@
 .container {
   background-color: var(--elewa-group-website-team-and-members-background-color);
   max-width: 100%;
-  margin-left: 5%;
   border-bottom: solid .5px rgba($color: #ffff, $alpha: 0.5);
+}
+
+span {
+  margin-left: 5%;
 }
 
 .h1 {
@@ -56,6 +59,14 @@ span:hover,
   display: flex;
   overflow-x: hidden;
   transition: all 2s ease;
+}
+
+.dflex-margin-left-none {
+  margin-left: 0;
+}
+
+.dflex-margin-left-15 {
+  margin-left: -15vw;
 }
 
 .team {
@@ -165,6 +176,7 @@ button:hover {
 
   .dflex {
     width: 100%;
+    margin: 0;
   }
 
   .team {

@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GoogleMapsModule } from '@angular/google-maps';
 
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+
 import { MaterialBricksModule, MaterialDesignModule } from '@iote/bricks-angular';
 
 import { LayoutModule } from '@elewa-group/elements/layout';
@@ -29,18 +31,21 @@ import { AboutUsRoutingModule } from './about-us.routing';
 
 @NgModule({
   imports: [
+    CommonModule,
+
     GoogleMapsModule,
-    ButtonsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
 
     MaterialDesignModule,
     MaterialBricksModule,
 
-    CommonModule,
     LayoutModule,
-    AboutUsRoutingModule,
+    ButtonsModule,
     UiListsModule,
     CardsModule,
-    BannersModule
+    BannersModule,
+    AboutUsRoutingModule
   ],
 
   declarations: [

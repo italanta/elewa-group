@@ -2,32 +2,25 @@ import { Injectable } from '@angular/core';
 
 import * as sgMail from '@sendgrid/mail';
 
+import { ContactMail } from '../model/contact-mail.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactMailService {
 
-
   constructor() { }
 
-  async sendEmail() {
-
+  sendEmail(contactData: ContactMail) {
     sgMail.setApiKey(`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`);
 
-    const msg = {
+    const contactMessage = {
       to: 'contact@elewa.ke',
-      from: 'ian@elewa.ke',
-      subject: 'Sending with SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+      from: contactData.email,
+      subject: 'Elewa Group Contact Form',
+      text: contactData.message,
+      html: `<p> ${contactData.message} </p>`
     }
-
-    return sgMail.send(msg).then(() => {
-        console.log('Email sent')
-      })
-      .catch((error) => {
-        console.error(error)
-      })
+    return sgMail.send(contactMessage);
   }
 }
