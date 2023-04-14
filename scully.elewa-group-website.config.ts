@@ -7,5 +7,4 @@ export const config: ScullyConfig = {
   outDir: './dist/static', // directory for scully build artifacts
   defaultPostRenderers: [],
   routes: {},
-      type: 'default',
 };
