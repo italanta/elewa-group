@@ -1,26 +1,33 @@
 import { Injectable } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
-import * as sgMail from '@sendgrid/mail';
+import { Timestamp } from "@firebase/firestore";
 
-import { ContactMail } from '../model/contact-mail.interface';
+import { ContactMail, SendGridMail } from '../model/contact-mail.interface';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactMailService {
 
-  constructor() { }
+  constructor(private _firestore: AngularFirestore) { }
 
-  sendEmail(contactData: ContactMail) {
-    sgMail.setApiKey(`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`);
+  createEmailDoc(contactData: ContactMail) {
 
-    const contactMessage = {
+    var sentDate = Timestamp.fromDate(new Date());
+
+    const contactMessage: SendGridMail = {
       to: 'contact@elewa.ke',
-      from: contactData.email,
-      subject: 'Elewa Group Contact Form',
-      text: contactData.message,
-      html: `<p> ${contactData.message} </p>`
+      contactEmail: contactData.email,
+      message: {
+        subject: 'Elewa Group Contact Form',
+        text: contactData.message,
+        html: `<p></p>`,
+      },
+      sentOn: sentDate
     }
-    return sgMail.send(contactMessage);
+
+    return this._firestore.collection<SendGridMail>("elewa-mails").add(contactMessage);
   }
 }
