@@ -2,9 +2,9 @@
     <section class="contact__left" data-aos="fade-up" data-aos-duration="3000">
         <section class="contact__left-text">
             <h1>Contact</h1>
-            <p>Looking for  a quick answer to your question? Check out our <strong>FAQs</strong></p>
+            <p>Looking for a quick answer to your question? Check out our <strong>FAQs</strong></p>
             <p>For everything else, drop us a line and we'll get back to you</p>
-        </section> 
+        </section>
         <section class="social_media_icons">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-instagram" (click)="goToSocial('https://www.instagram.com/elewa_education/')"></i>
@@ -24,7 +24,7 @@
         <section class="form_section">
             <label for="email">E-mail</label>
             <input type="email" formControlName="email">
-        </section>    
+        </section>
         <!-- <section class="form_section form_select">
             <label for="option">Select option</label>
             <select name="option" id="" formControlName="option">
@@ -38,11 +38,10 @@
         </section>
         <section class="form__bottom-section">
             <p>By clicking the Submit button you agree to our <strong>Privacy Policy</strong> terms.</p>
-            <elewa-group-button-with-animation *ngIf="!sendingEmail; else sendingEmailTemp" class="button"
-            [message]="message"
-            [action]="url"
-            (btnClickEvent)="sendContactEmail()"
-            ></elewa-group-button-with-animation>
+            <div *ngIf="!sendingEmail; else sendingEmailTemp">
+                <elewa-group-button-with-animation class="button" [message]="message" [action]="url"
+                    (btnClickEvent)="sendContactEmail()"></elewa-group-button-with-animation>
+            </div>
         </section>
     </form>
 </main>

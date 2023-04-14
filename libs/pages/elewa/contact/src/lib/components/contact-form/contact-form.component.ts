@@ -1,8 +1,9 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import * as AOS from 'aos';
+
 import { ContactMailService } from '../../services/contact-mail.service';
 
 @Component({
@@ -25,7 +26,7 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit(){
     AOS.init({once: true});
-    this.buildContactForm()
+    this.buildContactForm();
   }
 
   buildContactForm(){
@@ -40,11 +41,13 @@ export class ContactFormComponent implements OnInit {
   sendContactEmail() {
     this.sendingEmail = true;
     const formData = this.contactDetailsForm.value;
-    this._contactMailService.sendEmail(formData).then((success) => {
-      this.sendingEmail = false;
-    }).catch((error) => {
-      this.sendingEmail = false;
-    })
+    this._contactMailService.createEmailDoc(formData)
+                              .then(() => this.completeMailTo(true))
+                              .catch(() => this.completeMailTo(false));
+  }
+
+  completeMailTo(success: boolean) {
+    this.sendingEmail = false;
   }
 
   goToSocial(url: string) {

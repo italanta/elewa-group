@@ -3,7 +3,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { Timestamp } from "@firebase/firestore";
 
-import { ContactMail } from '../model/contact-mail.interface';
+import { ContactMail, SendGridMail } from '../model/contact-mail.interface';
 
 
 @Injectable({
@@ -13,11 +13,11 @@ export class ContactMailService {
 
   constructor(private _firestore: AngularFirestore) { }
 
-  createEmailDoc(contactData: ContactMail): Promise<ContactMail> {
+  createEmailDoc(contactData: ContactMail) {
 
     var sentDate = Timestamp.fromDate(new Date());
 
-    const contactMessage = {
+    const contactMessage: SendGridMail = {
       to: 'contact@elewa.ke',
       contactEmail: contactData.email,
       message: {
@@ -28,10 +28,6 @@ export class ContactMailService {
       sentOn: sentDate
     }
 
-    return new Promise<ContactMail>((resolve, reject) => {
-      this._firestore
-        .collection("elewa-mails")
-        .add(contactMessage);
-    });
+    return this._firestore.collection<SendGridMail>("elewa-mails").add(contactMessage);
   }
 }
