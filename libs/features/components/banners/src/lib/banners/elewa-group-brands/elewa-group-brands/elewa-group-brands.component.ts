@@ -7,7 +7,8 @@ import * as AOS from 'aos';
   templateUrl: './elewa-group-brands.component.html',
   styleUrls: ['./elewa-group-brands.component.scss'],
 })
-export class ElewaGroupBrandsComponent implements OnInit {
+export class ElewaGroupBrandsComponent implements OnInit 
+{
   @Input () logo: string;
   @Input () name: string;
   @Input () brandDescription: string;
