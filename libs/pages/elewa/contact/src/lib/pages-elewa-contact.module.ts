@@ -10,7 +10,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
-import { ContactMailService } from './services/contact-mail.service';
+// import { ContactMailService } from './services/contact-mail.service';
 
 import { ContactRoutingModule } from './contact.routing';
 
@@ -31,7 +31,7 @@ import { ContactRoutingModule } from './contact.routing';
     ContactFormComponent
   ],
 
-  providers: [ContactMailService]
+  // providers: [ContactMailService]
 
 })
 export class ContactPageModule { }

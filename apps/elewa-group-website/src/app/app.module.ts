@@ -13,7 +13,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
 
-import { environment } from '../environments/environment';
+// import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app.routing';
 
@@ -23,8 +23,8 @@ import { AppRoutingModule } from './app.routing';
     BrowserModule,
     BrowserAnimationsModule,
 
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule,
 
     MaterialDesignModule,
 
