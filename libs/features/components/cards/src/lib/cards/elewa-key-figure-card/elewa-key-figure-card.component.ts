@@ -9,4 +9,5 @@ export class ElewaKeyFigureCardComponent  {
   @Input () figure: string;
   @Input () description?: string;
   @Input () isImage: boolean;
+  @Input () valueFigure: string;
 }

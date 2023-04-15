@@ -1,26 +1,27 @@
 <div class="location-main-flex">
   <!-- Used an image placeholder for the map. Append the key and comment out the img tag -->
-  <div class="map">
+  <div *ngIf="apiLoaded | async" class="map" data-aos="fade-up" data-aos-duration="3000">
     <google-map [options]="mapOptions">
       <map-marker [position]="markerPositions"></map-marker>
     </google-map>
   </div>
 
-  <div class="side-text">
+  <div class="side-text" data-aos="fade-up" data-aos-duration="3000">
     <div>
       <h1>How to get there</h1>
 
       <p>
-        The secret to successful consectetur adipisicing elit. Et error sunt rem
-        quia porro quidem praesentium obcaecati quibusdam aliquam. Laudantium
-        eveniet libero enim explicabo ratione voluptate illum eum, ipsam
-        repellat!
+        Based in the heart of Westlands, Nairobi, Kenya, we are easily
+        accessible from all parts of the city.
+      </p>
+      <p>
+        Not in town? Teams, Meets or Zoom are our second name. Book an appointment today via <a href="mailto:contact@elewa.ke">contact@elewa.ke</a>!
       </p>
 
       <elewa-group-button-with-animation
         [message]="'Get directions'"
         [mode]="'dark'"
-        [action]="'/'"
+        [action]="'https://goo.gl/maps/qvfSXLhuTJzxX7j29'"
       ></elewa-group-button-with-animation>
     </div>
   </div>

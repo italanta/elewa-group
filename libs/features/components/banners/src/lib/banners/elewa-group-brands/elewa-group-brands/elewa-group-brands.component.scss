@@ -1,10 +1,9 @@
 #brands__banner {
+	padding: 100px 0px;
 	width: 100vw;
-	min-height: 100vh;
+	height: fit-content;
 	display: grid;
 	place-items: center;
-	font-size: var(--elewa-group-website-font-size-elewa-text);
-	font-family: var(--elewa-group-website-dmsans-regular);
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
@@ -45,51 +44,44 @@
 
 #brands__banner #text-content .title {
 	margin-bottom: 2rem;
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 4.5rem;
 }
 
 #brands__banner #text-content .paragraph {
 	margin-top: 0.5rem;
 	margin-bottom: 1.5rem;
+	font-family: var(--elewa-group-website-dmsans-regular);
+	font-size: 2rem;
 }
 
 #brands__banner .content#img-content img {
+	width: 300px;
+	height: 300px;
 	border-radius: 2rem;
-	padding: 100px 30px;
+	padding: 50px 30px;
 	background-color: black;
 	object-fit: contain;
-}
-
-
-// RESPONSIVENESS
-$breakpoint-tablet: 768px;
-$breakpoint-low-res-desktops: 1360px;
-
-@media (max-width: $breakpoint-low-res-desktops) {
-	#brands__banner {
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
-	}
-
-	#brands__banner {
-		font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-	}
-
-	#brands__banner .container {
-		gap: 5%;
-		width: 90%;
-		max-height: 80vh;
-	}
 }
 
 hr {
 	border: 2px solid gray;
 }
 
-@media (max-width: $breakpoint-tablet),
-(max-aspect-ratio: 1.1) {
+@media (max-width: 1500px) {
+	#brands__banner #text-content .title {
+		font-size: 3rem;
+	}
+	
+	#brands__banner #text-content .paragraph {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 500px) {
 	#brands__banner {
-		font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-		font-family: var(--elewa-group-website-dmsans-regular);
+		padding: 50px 0px;
+
 	}
 
 	#brands__banner .container {

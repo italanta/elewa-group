@@ -18,20 +18,32 @@
 .title {
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  padding-top: 50px;
 }
 
 .text {
   font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 30px;
   font-weight: 300;
+  max-width: 70%;
 }
 
 .img {
   border-radius: 2%;
   width: 100%;
   padding-top: 7%;
+}
+
+@media screen  and (max-width: 1500px) {
+  .title {
+    font-size: 3rem;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -54,6 +66,7 @@
     font-family: var(--elewa-group-website-dmsans-regular);
     font-size: 20px;
     padding-top: 30px;
+    max-width: 90%;
   }
 
   .img {

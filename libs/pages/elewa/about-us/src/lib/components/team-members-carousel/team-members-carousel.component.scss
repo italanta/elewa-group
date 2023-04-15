@@ -7,33 +7,66 @@
 
 .container {
   background-color: var(--elewa-group-website-team-and-members-background-color);
-  max-width: 90%;
-  margin: auto;
+  max-width: 100%;
   border-bottom: solid .5px rgba($color: #ffff, $alpha: 0.5);
+}
+
+span {
+  margin-left: 5%;
 }
 
 .h1 {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 3rem;
-  margin-bottom: 60px;
 }
 
 p {
   color: var(--elewa-group-website-team-and-members-color-white);
+  margin: 0;
 }
 
 span {
   font-family: var(--elewa-group-website-jeko-title);
   font-size: 3rem;
-  color: var(--elewa-group-website-team-and-members-color-grey);
-  padding-left: 20px;
-  margin-left: 20px;
-  border-left: 3px solid var(--elewa-group-website-team-and-members-color-white);
+  color: var(--elewa-group-website-team-and-members-color-white);
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 3px solid var(--elewa-group-website-team-and-members-color-white);
+}
+
+.active-link {
+  color: var(--elewa-group-website-team-and-members-color-grey) !important;
+}
+
+span:hover,
+.h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
 .dflex {
   display: flex;
   overflow-x: hidden;
+  transition: all 2s ease;
+}
+
+.dflex-margin-left-none {
+  margin-left: 0;
+}
+
+.dflex-margin-left-15 {
+  margin-left: -15vw;
 }
 
 .team {
@@ -41,11 +74,19 @@ span {
   margin-right: 10px;
 }
 
+.team:first-of-type {
+  transition: all 2s ease;
+}
+
 .team img {
   width: 100%;
   height: 50vh;
-  // border-radius: 15px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.team img:hover {
+  cursor: pointer;
 }
 
 .button-area {
@@ -68,13 +109,18 @@ span {
 }
 
 .name {
-  font-family: var(--elewa-group-website-dmsans-medium);
-  font-size: var(--elewa-group-website-team-and-members-name-font-size);
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 2rem;
+}
+
+.name:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .title {
-  font-family: var(--elewa-group-website-dmsans-regular);
-  font-size: var(--elewa-group-website-team-and-members-title-font-size);
+  font-family: var(--elewa-group-website-jeko-title);
+  font-size: 1.3rem;
 }
 
 .name,
@@ -88,14 +134,30 @@ button {
   border: solid white 1px;
 }
 
-@media screen and (max-width: 850px) {
-  span {
-    display: none;
+button:hover {
+  cursor: pointer;
+}
+
+.fa-linkedin-in {
+  padding: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+  .name {
+    font-size: 1.6rem;
   }
+
+  .title {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
 
   .container {
     position: absolute;
-    margin: none;
+    margin: 0;
+    margin-left: 0;
     max-width: 100%;
     left: 0;
     right: 0;
@@ -105,12 +167,16 @@ button {
 
   .h1 {
     font-family: var(--elewa-group-website-dmsans-regular);
-    font-size: var(--elewa-group-website-team-and-members-h1-font-size-responsive);
-    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 2rem;
   }
 
   .dflex {
     width: 100%;
+    margin: 0;
   }
 
   .team {

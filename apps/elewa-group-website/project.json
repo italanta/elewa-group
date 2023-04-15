@@ -19,7 +19,10 @@
           "apps/elewa-group-website/src/favicon.ico",
           "apps/elewa-group-website/src/assets"
         ],
-        "styles": ["apps/elewa-group-website/src/styles.scss"],
+        "styles": [
+          "apps/elewa-group-website/src/styles.scss",
+          "node_modules/aos/dist/aos.css"
+        ],
         "scripts": []
       },
       "configurations": {

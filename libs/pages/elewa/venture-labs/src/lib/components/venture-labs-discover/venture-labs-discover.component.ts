@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class VentureLabsDiscoverComponent {
   message = "Discover what VentureLabs"
   word = "can do for"
-  callToActionText = "your Startup"
+  callToActionText = "your startup."
   url = ""
 }

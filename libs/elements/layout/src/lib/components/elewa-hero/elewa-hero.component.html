@@ -3,7 +3,7 @@
 
   <div class="container">
     <div>
-      <div class="content">
+      <div [ngClass]="contentPage !== 'about' ? ['content', 'pos-half'] : ['content', 'pos-bottom']">
         <h2 class="subtitle">{{ subtitle }}</h2>
         <h1 class="title">{{ title }}</h1>
         <p *ngIf="description" class="description">{{ description }} </p>

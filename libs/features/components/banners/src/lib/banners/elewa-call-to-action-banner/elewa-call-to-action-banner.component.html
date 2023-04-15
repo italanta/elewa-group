@@ -1,8 +1,8 @@
-<section class="banner-jobs-section">
+<section class="banner-jobs-section" data-aos="fade-up" data-aos-duration="3000">
 	<span>
 		{{ message }}
 	</span>
 	<span>
-		{{ word }} <a class="bannerLink" routerLink="{{ url }}">{{ callToActionText }}</a>
+		{{ word }} <a class="bannerLink" (click)="goToLink(url)">{{ callToActionText }}</a>
 	</span>
 </section>

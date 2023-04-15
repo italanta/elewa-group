@@ -1,11 +1,11 @@
 .container {
-	max-width: 90%;
+	max-width: 100%;
 	margin: auto;
 }
 
 h2 {
 	font-family: var(--elewa-group-website-dmsans-regular);
-	font-size: 40px;
+	font-size: 4.5rem;
 	font-weight: 100;
 	text-align: center;
 	margin: 50px;
@@ -16,22 +16,24 @@ h2 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	max-width: 100%;
+	padding: 50px 0px;
 }
 
-@media screen and (max-width:768px) {
-	.cards {
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 100%;
-	}
 
+@media screen and (max-width:1500px) {
 	h2 {
-		margin: 20px 0px;
+		font-size: 3rem;
 	}
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
+	h2 {
+		font-size: 2rem;
+	}
 	.cards {
 		grid-template-columns: repeat(2, 1fr);
 		max-width: 100%;
+		padding: 20px 0px;
+
 	}
 }

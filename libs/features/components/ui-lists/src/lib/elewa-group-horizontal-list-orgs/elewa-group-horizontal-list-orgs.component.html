@@ -1,7 +1,7 @@
-<div class="center">
-  <ul>
-    <li *ngFor="let image of imageUrl">
-      <img src="{{image.image}}">
-    </li>
-  </ul>
+<div class="slider">
+  <div class="slide-track-1">
+      <div class="slide" *ngFor="let logo of logoUrls">
+          <img [src]="logo.logoUrl" [alt]="logo.companyLink" (click)="goToClientWebsite(logo.companyLink)" >
+      </div>
+  </div>
 </div>

@@ -9,32 +9,45 @@
   top: 0;
   z-index: 10;
 }
+
 .footer-content {
   h4 {
-    margin: 0;
-    font-family: var(--elewa-group-website-dmsans-medium);
-    font-size: var(--elewa-group-website-font-size-title-medium);
-    font-weight: var(--elewa-group-website-font-weight-subtitle);
+    margin: auto;
+    width: 70%;
+    font-family: var(--elewa-group-website-jeko-title)!important;
+    font-size: 4.5rem!important;
     text-align: center;
     margin-bottom: 1rem;
   }
 
   .mission {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
     margin-bottom: 1.2rem;
+    padding: 50px 0px;
+  }
+
+  ::ng-deep button {
+    margin: auto;
   }
 }
 
-@media only screen and (min-width: 850px) {
-  .footer {
+@media only screen and (max-width: 500px) {
+  .footer-content {
     h4 {
-      font-size: var(--elewa-group-website-font-size-heading);
-      max-width: 45%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 2rem;
+      font-size: 2rem!important;
+      width: 90%!important;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    ::ng-deep button {
+      width: 70%!important;
+      margin: auto;
     }
   }
-
 }

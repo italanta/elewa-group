@@ -1,5 +1,6 @@
 .componentdiv {
 	max-width: 90%;
+	margin: auto;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 }
@@ -8,8 +9,6 @@
 	display: inline;
 	align-items: start;
 	justify-content: start;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-top: 0%;
 }
 
@@ -37,7 +36,6 @@
 }
 
 .container2 {
-	margin-right: 10%;
 	margin-top: 0%;
 }
 
@@ -51,17 +49,26 @@
 }
 
 h1 {
-	font-family: var(--elewa-group-website-dmsans-bold);
-	font-size: 34px;
-
+	font-family: var(--elewa-group-website-jeko-title);
+	font-size: 4.5rem;
 }
 
 p {
 	font-family: var(--elewa-group-website-dmsans-regular);
-	font-size: 20px;
+	font-size: 2rem;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1500px) {
+	h1 {
+		font-size: 3rem;
+	}
+	
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width:500px) {
 	.componentdiv {
 		display: flex;
 		flex-direction: column;
@@ -91,12 +98,12 @@ p {
 		border-radius: 20px;
 	}
 
-	h {
-		font-size: 20px;
+	h1 {
+		font-size: 2rem;
 	}
 
 	p {
-		font-size: 15px;
+		font-size: 1rem;
 	}
 
 	.infodiv {

@@ -1,0 +1,80 @@
+.article-container{
+    background-image: url("https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690306/elewa-group-website/News/_Article/Group_13581_jvoiqj.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding-top: 35%;  
+}
+.article-header{
+    margin: 0 5%;
+    padding: 5% 10% 0 10%;
+
+    border-radius: 25px 25px 0 0;
+    background-color: #fff;
+}
+.article-header p{
+    text-align: start;
+    font-family: var(--elewa-group-website-dmsans-medium);
+}
+.article-header .p{
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+.art-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 0;
+    gap: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .article-header {
+      margin: 0;
+      padding: 5% 5% 0 5%;
+      border-radius: 0;
+    }
+  
+    .article-header p {
+      text-align: center;
+    }
+  
+    .article-header .p {
+      font-size: 40px;
+    }
+  
+    .art-text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      gap: 0;
+    }
+  }
+  
+  /* media query for screens with width greater than 768px */
+  @media screen and (min-width: 769px) {
+    .article-header {
+      margin: 0 5%;
+      padding: 5% 10% 0 10%;
+      border-radius: 25px 25px 0 0;
+    }
+  
+    .article-header p {
+      text-align: start;
+    }
+  
+    .article-header .p {
+      font-size: 55px;
+      letter-spacing: 2px;
+    }
+  
+    .art-text {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      margin-bottom: 0;
+      gap: 100px;
+    }
+  }

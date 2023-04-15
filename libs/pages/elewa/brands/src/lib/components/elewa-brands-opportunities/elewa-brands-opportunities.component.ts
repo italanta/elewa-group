@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ElewaBrandsOpportunitiesComponent {
   message = "Become part of the family"
-  word = "View"
-  callToAction = "open opportunities"
-  url = "/jobs"
+  word = "view"
+  callToAction = "what we're about."
+  url = "/"
 }

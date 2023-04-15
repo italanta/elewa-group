@@ -3,7 +3,6 @@
   background-color: var(--elewa-group-website-color-card);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  margin-block: 1rem;
   padding:1rem;
   .stakeholder-img{
     margin-bottom: 1rem;
@@ -36,15 +35,31 @@
       text-decoration: underline;
       font-weight: var(--elewa-group-website-font-weight-title);
       cursor: pointer;
+      font-size: 2rem;
     }
   }
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (max-width: 1500px) {
+  .stakeholder-text{
+    h1{
+      font-size: 3rem!important;
+    }
+    .stakeholder-paragraphs{
+      p{
+        font-size: 1.5rem!important;
+      }
+      a {
+        font-size: 1.5rem!important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
   .stakeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-block: 1rem;
     padding:5rem 3rem;
     .stakeholder-img{
       width: 40%;
@@ -53,18 +68,17 @@
       }
     }
     .stakeholder-text{
-      width: 60%;
+      width: 70%;
       h1{
-        font-size: 2.8rem;
+        font-size: 4.5rem;
       }
       .stakeholder-paragraphs{
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 90%;
-        padding-right: 7rem;
+        gap: 30px;
         p{
-          max-width: 17rem;
+          font-size: 2rem;
         }
       }
     }

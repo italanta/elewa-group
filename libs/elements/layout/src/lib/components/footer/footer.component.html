@@ -4,41 +4,41 @@
   <div class="footer-navigations">
     <div class="headquarters">
       <h4>Headquarters</h4>
-      <a>The Promenade, 19 General</a><br/>
-      <a>Mathenge Rd</a><br/>
-      <a>Nairobi, Kenya</a>
+      <p class="hq" (click)="goToLocation()" >The Promenade, 19 General<br/>
+      Mathenge Rd<br/>
+      Nairobi, Kenya</p>
     </div>
     <div class="contact">
       <h4>Contact</h4>
-      <a>T +254 78 92 27 755</a><br/>
-      <a>E info@elewa.co.ke</a>
+      <p>T +254 78 92 27 755</p><br/>
+      <p>E info@elewa.ke</p>
     </div>
     <div class="activities">
       <h4>Navigation</h4>
-      <a>About us</a><br/>
-      <a>Social impact</a><br/>
-      <a>Invest</a><br/>
-      <a>News</a><br/>
-      <a>Contact</a>
+      <p (click)="goToPage('about')" >About us</p><br/>
+      <p (click)="goToPage('social-impact')">Social impact</p><br/>
+      <p (click)="goToPage('invest')" >Invest</p><br/>
+      <p (click)="goToPage('news')" >News</p><br/>
+      <p (click)="goToPage('contact')" >Contact</p>
     </div>
     <div class="brands">
       <h4>Brands</h4>
-      <a>Elewa</a><br/>
-      <a>Italanta</a><br/>
-      <a>Venture labs</a>
+      <p (click)="goToPage('https://www.elewa.education/')">Elewa</p><br/>
+      <p (click)="goToPage('https://italanta.net')">Italanta</p><br/>
+      <p (click)="goToPage('venture-labs')">Venture labs</p>
     </div>
     <div class="privacy">
       <h4>Privacy</h4>
-      <a>Terms and conditions</a><br/>
-      <a>Cookie preferences</a>
+      <p>Terms and conditions</p><br/>
+      <p>Cookie preferences</p>
     </div>
   </div>
   <div class="footer-imgs">
-    <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg" alt="logo" class="logo"/>
+    <img (click)="goToPage('')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg" alt="logo" class="logo"/>
     <div class="icons">
       <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg" alt="">
-      <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
-      <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
+      <img  (click)="goToSocial('https://www.instagram.com/elewa_education/')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg" alt="">
+      <img (click)="goToSocial('https://www.linkedin.com/company/elewa/')" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg" alt="">
     </div>
   </div>
 </div>

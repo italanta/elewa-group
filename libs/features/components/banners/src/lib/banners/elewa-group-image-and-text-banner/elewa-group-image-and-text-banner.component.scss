@@ -9,6 +9,10 @@
 	border-bottom-right-radius: 30px;
 }
 
+.section-button {
+	padding: 50px 0px;
+}
+
 #text-and-image-banner .banner-container {
 	display: flex;
 	gap: 10%;
@@ -44,14 +48,14 @@
 #text-and-image-banner #text-content .title {
 	font-family: var(--elewa-group-website-jeko-title);
 	font-weight: 300;
-	font-size: 3rem;
+	font-size: 4.5rem;
 	margin-bottom: 2rem;
 }
 
 #text-and-image-banner #text-content .paragraph {
 	font-family: var(--elewa-group-website-dmsans-regular);
 	font-weight: 200;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -60,25 +64,13 @@
 	border-radius: 2rem;
 }
 
-
-// RESPONSIVENESS
-$breakpoint-tablet: 768px;
-$breakpoint-low-res-desktops: 1360px;
-
-@media (max-width: $breakpoint-low-res-desktops) {
-	#text-and-image-banner {
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
+@media (max-width: 1500px) {
+	#text-and-image-banner #text-content .title {
+		font-size: 3rem;
 	}
-
-	#text-and-image-banner {
-		font-size: var(--elewa-group-website-font-size-elewa-text-medium);
-	}
-
-	#text-and-image-banner .banner-container {
-		gap: 5%;
-		width: 90%;
-		max-height: 80vh;
+	
+	#text-and-image-banner #text-content .paragraph {
+		font-size: 1.5rem;
 	}
 }
 

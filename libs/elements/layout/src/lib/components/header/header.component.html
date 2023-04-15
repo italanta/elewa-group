@@ -1,45 +1,45 @@
-<div class="container">
+<div class="container" [ngClass]="navbarfixed?'fixed':'nofixed'">
   <header [ngClass]="headerClass" class="menu-header">
     <nav class="navbars-mobile">
       <div class="elewa-mobile">
-        <a routerLink="#" class="home-logo"><img *ngIf="headerClass === 'header-dark'"
+        <a routerLink="" class="home-logo"><img *ngIf="headerClass === 'header-dark'"
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_Black_cndtcl.svg"
             alt=""></a>
-        <a routerLink="#" class="home-logo"><img
+        <a routerLink="" class="home-logo"><img
             src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg"
             alt=""></a>
 
       </div>
       <ul class="nav-menus">
         <li class="nav-items">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Activities</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/about/en" routerLinkActive="active" ariaCurrentWhenActive="page">About us</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About us</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/social-impact/en" routerLinkActive="active"
+          <a class="nav-link" routerLink="/social-impact" routerLinkActive="active"
             ariaCurrentWhenActive="page">Social impact</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/invest/en" routerLinkActive="active" ariaCurrentWhenActive="page">Invest</a>
+          <a class="nav-link" routerLink="/invest" routerLinkActive="active" ariaCurrentWhenActive="page">Invest</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/venture-labs/en" routerLinkActive="active"
+          <a class="nav-link" routerLink="/venture-labs" routerLinkActive="active"
             ariaCurrentWhenActive="page">Venture Labs</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/brands/en" routerLinkActive="active" ariaCurrentWhenActive="page">Brands</a>
+          <a class="nav-link" routerLink="/brands" routerLinkActive="active" ariaCurrentWhenActive="page">Brands</a>
         </li>
         <li class="nav-items">
-          <a class="nav-link" routerLink="/careers/en" routerLinkActive="active"
+          <a class="nav-link" routerLink="/careers" routerLinkActive="active"
             ariaCurrentWhenActive="page">Careers</a>
         </li>
+        <!-- <li class="nav-items">
+          <a class="nav-link" routerLink="/news" routerLinkActive="active" ariaCurrentWhenActive="page">News</a>
+        </li> -->
         <li class="nav-items">
-          <a class="nav-link" routerLink="/news/en" routerLinkActive="active" ariaCurrentWhenActive="page">News</a>
-        </li>
-        <li class="nav-items">
-          <a class="nav-link" routerLink="/contact/en" routerLinkActive="active"
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active"
             ariaCurrentWhenActive="page">Contact</a>
         </li>
 
@@ -53,48 +53,48 @@
 
   <header [ngClass]="headerClass" class="header fixed-top">
     <nav class="navbars">
-      <div class="border">
+      <div class="border" [ngClass]="headerClass === 'header-dark' ? 'dark-border' : 'light-border'">
         <div class="elewa-text">
-          <a routerLink="#" class="home-logo"><img
+          <a routerLink="" class="home-logo"><img
               src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg"
               alt=""></a>
-          <a routerLink="#" class="home-logo-2"><img *ngIf="headerClass === 'header-dark'"
+          <a routerLink="" class="home-logo-2"><img *ngIf="headerClass === 'header-dark'"
               src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_Black_cndtcl.svg"
               alt=""></a>
         </div>
         <ul class="nav-menu">
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Activities</a>
+            <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/about/en" routerLinkActive="active" ariaCurrentWhenActive="page">About
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About
               us</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/social-impact/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/social-impact" routerLinkActive="active"
               ariaCurrentWhenActive="page">Social impact</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/invest/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/invest" routerLinkActive="active"
               ariaCurrentWhenActive="page">Invest</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/venture-labs/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/venture-labs" routerLinkActive="active"
               ariaCurrentWhenActive="page">Venture Labs</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/brands/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/brands" routerLinkActive="active"
               ariaCurrentWhenActive="page">Brands</a>
           </li>
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/careers/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/careers" routerLinkActive="active"
               ariaCurrentWhenActive="page">Careers</a>
           </li>
+          <!-- <li class="nav-item one">
+            <a class="nav-link" routerLink="/news" routerLinkActive="active" ariaCurrentWhenActive="page">News</a>
+          </li> -->
           <li class="nav-item one">
-            <a class="nav-link" routerLink="/news/en" routerLinkActive="active" ariaCurrentWhenActive="page">News</a>
-          </li>
-          <li class="nav-item one">
-            <a class="nav-link" routerLink="/contact/en" routerLinkActive="active"
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active"
               ariaCurrentWhenActive="page">Contact</a>
           </li>
 

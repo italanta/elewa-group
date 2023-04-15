@@ -1,17 +1,24 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'elewa-group-elewa-group-image-and-text-banner',
   templateUrl: './elewa-group-image-and-text-banner.component.html',
   styleUrls: ['./elewa-group-image-and-text-banner.component.scss'],
 })
-export class ElewaGroupImageAndTextBannerComponent {
-  @Input() imageURL = '';
+export class ElewaGroupImageAndTextBannerComponent implements OnInit {
+
+  @Input() imageURL: string = '';
   @Input() paragraphTexts : string[] = [];
-  @Input() titleText = '';
-  @Input() imagePlacement = 'right';
-  @Input() backgroundColor = 'grey';
-  @Input() buttonText = '';
-  @Input() url = '';
-  @Input() showButton = false;
+  @Input() titleText: string = '';
+  @Input() imagePlacement: string = 'right';
+  @Input() backgroundColor: string = 'grey';
+  @Input() buttonText: string = '';
+  @Input() url: string = '';
+  @Input() showButton: boolean = false;
+
+  ngOnInit(): void {
+    AOS.init({once: true});
+  }
 }

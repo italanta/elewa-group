@@ -1,6 +1,7 @@
 .main {
   max-width: 100%;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .main-vacancies {
@@ -17,29 +18,54 @@
   border-top: 1px solid rgb(182, 170, 170);
 }
 
+.location {
+  font-family: var(--elewa-group-website-dmsans-regular);
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
 .main-vacancies {
   margin-top: 10%;
 }
-p {
+
+.desc {
   width: 35%;
   font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 1.5rem;
   flex: 1.7;
   margin-right: 14%;
-  line-height: 22px;
 }
 
 h1 {
   font-family: var(--elewa-group-website-jeko-title);
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
+
 h2{
   font-family: var(--elewa-group-website-dmsans-regular);
+  font-size: 2rem;
   font-weight: 100;
   flex: 1;
-  font-size: 25px;
   padding-top: 0;
 }
+
+
+@media screen and (max-width: 1500px) {
+  p {
+    font-size: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
 /* For screens smaller than 768px (tablets) */
 @media (max-width: 600px) {
   .vacancy {
@@ -60,7 +86,7 @@ h2{
     flex: 1.7;
   }
 
-  p {
+  .desc {
     width: 100%;
   }
 

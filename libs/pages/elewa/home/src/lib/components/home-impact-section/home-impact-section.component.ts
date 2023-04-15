@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 
 @Component({
@@ -6,9 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './home-impact-section.component.html',
   styleUrls: ['./home-impact-section.component.scss'],
 })
-export class HomeImpactSectionComponent {
+export class HomeImpactSectionComponent implements OnInit {
   message1 = '  Learn more  ';
   message2 = 'Become an angel investor';
   light = 'light'
 
+  ngOnInit(): void {
+    AOS.init({once: true});
+  }
 }

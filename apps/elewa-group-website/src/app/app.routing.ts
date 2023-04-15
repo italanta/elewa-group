@@ -5,50 +5,75 @@ import { RouterModule, Route } from '@angular/router';
 export const ELEWA_GROUP_ROUTES: Route[] = [
 
   // { path: '*', redirectTo: 'home', pathMatch: 'full' },
-  { path: '', redirectTo: 'home/en', pathMatch: 'full' },
 
-  { path: 'home', redirectTo: 'home/en' },
-  { path: 'home/en', loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule) },
+  {
+    path: '',
+    loadChildren: () => import('libs/pages/elewa/home/src/lib/features-elewa-home.module').then(m => m.HomePageModule),
+    data: { title: 'Home' }
+  },
 
   // about us page route
-  { path: 'about', redirectTo: 'about/en' },
-  { path: 'about/en', loadChildren: () => import('libs/pages/elewa/about-us/src/lib/elewa-about-us.module').then(m => m.AboutUsModule) },
+  {
+    path: 'about',
+    loadChildren: () => import('libs/pages/elewa/about-us/src/lib/elewa-about-us.module').then(m => m.AboutUsModule),
+    data: { title: 'About Us' }
+  },
 
   // activities page route
-  { path: 'activities', redirectTo: 'activities/en' },
-  { path: 'activities/en', loadChildren: () => import('libs/pages/elewa/activities/src/lib/pages-elewa-activities.module').then(m => m.ActivitiesModule) },
+  {
+    path: 'activities',
+    loadChildren: () => import('libs/pages/elewa/activities/src/lib/pages-elewa-activities.module').then(m => m.ActivitiesModule),
+    data: { title: 'Activities' }
+  },
 
   // social-impact page route
-  { path: 'social-impact', redirectTo: 'social-impact/en' },
-  { path: 'social-impact/en', loadChildren: () => import('libs/pages/elewa/social-impact/src/lib/pages-elewa-social-impact.module').then(m => m.SocialImpactModule) },
+  {
+    path: 'social-impact',
+    loadChildren: () => import('libs/pages/elewa/social-impact/src/lib/pages-elewa-social-impact.module').then(m => m.SocialImpactModule),
+    data: { title: 'Social Impact' }
+  },
 
   // invest page route
-  {  path: 'invest', redirectTo: 'invest/en'  },
-  {  path: 'invest/en', loadChildren: () => import('libs/pages/elewa/invest/src/lib/pages-elewa-invest.module').then(m => m.InvestPageModule)},
+  {
+    path: 'invest',
+    loadChildren: () => import('libs/pages/elewa/invest/src/lib/pages-elewa-invest.module').then(m => m.InvestPageModule),
+    data: { title: 'Invest' }
+  },
 
   // news page route
-  {  path: 'news', redirectTo: 'news/en'  },
-  {  path: 'news/en', loadChildren: () => import('libs/pages/elewa/news/src/lib/pages-elewa-news.module').then(m => m.NewsPageModule)},
+  {
+    path: 'news',
+    loadChildren: () => import('libs/pages/elewa/news/src/lib/pages-elewa-news.module').then(m => m.NewsPageModule),
+    data: { title: 'News' }
+  },
 
   // contact page route
-  {  path: 'contact', redirectTo: 'contact/en'  },
-  {  path: 'contact/en', loadChildren: () => import('libs/pages/elewa/contact/src/lib/pages-elewa-contact.module').then(m => m.ContactPageModule)},
+  {
+    path: 'contact',
+    loadChildren: () => import('libs/pages/elewa/contact/src/lib/pages-elewa-contact.module').then(m => m.ContactPageModule),
+    data: { title: 'Contact' }
+  },
 
   // contact page route
-  {  path: 'careers', redirectTo: 'careers/en'  },
-  {  path: 'careers/en', loadChildren: () => import('libs/pages/elewa/careers/src/lib/pages-elewa-careers.module').then(m => m.CareersModule)},
+  {
+    path: 'careers',
+    loadChildren: () => import('libs/pages/elewa/careers/src/lib/pages-elewa-careers.module').then(m => m.CareersModule),
+    data: { title: 'Careers' }
+  },
 
   // contact page route
-  {  path: 'brands', redirectTo: 'brands/en'  },
-  {  path: 'brands/en', loadChildren: () => import('libs/pages/elewa/brands/src/lib/pages-elewa-brands.module').then(m => m.BrandsModule)},
+  {
+    path: 'brands',
+    loadChildren: () => import('libs/pages/elewa/brands/src/lib/pages-elewa-brands.module').then(m => m.BrandsModule),
+    data: { title: 'Brands' }
+  },
 
   // venture-labs route
-  {  path: 'venture-labs', redirectTo: 'venture-labs/en'  },
-  {  path: 'venture-labs/en', loadChildren: () => import('libs/pages/elewa/venture-labs/src/lib/pages-elewa-venture-labs.module').then(m => m.PagesElewaVentureLabsModule)},
-
-  // venture-lab-detail route
-  {  path: 'venture-lab-detail', redirectTo: 'venture-lab-detail/en'  },
-  {  path: 'venture-lab-detail/en', loadChildren: () => import('libs/pages/elewa/venture-lab-detail/src/lib/pages-elewa-venture-lab-detail.module').then(m => m.PagesElewaVentureLabDetailModule)}
+  {
+    path: 'venture-labs',
+    loadChildren: () => import('libs/pages/elewa/venture-labs/src/lib/pages-elewa-venture-labs.module').then(m => m.PagesElewaVentureLabsModule),
+    data: { title: 'Venture Labs' }
+  },
 ];
 
 @NgModule({
@@ -56,7 +81,7 @@ export const ELEWA_GROUP_ROUTES: Route[] = [
     RouterModule.forRoot(
       ELEWA_GROUP_ROUTES,
       {
-        scrollPositionRestoration: 'enabled',
+        scrollPositionRestoration: "enabled",
         enableTracing: true,
         onSameUrlNavigation: 'reload'
       },
