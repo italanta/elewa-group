@@ -12,6 +12,6 @@ export class ElewaInvestInvestingInElewaSectionComponent {
   paragraph: string[] = ['From time to time, we offer investment opportunities (private equity & debt) to out community of investors. Interested to take part when this opportunity arrives?'];
   imagePlacement = 'left'
   buttonText = "Join the waiting list";
-  url = "home/en";
+  url = "https://forms.gle/Ds3i5eYeygLDYPw96";
   showButton = true;
 }
