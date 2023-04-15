@@ -11,7 +11,7 @@ export class VentureLabsInvestmentsComponent implements OnInit
 {
   cards = [
     {
-      figureUrl: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1681545592/kujali-logo_ajlhm8.png',
+      figureUrl: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,e_grayscale,w_300/v1681550091/kujali-logo-cropped_yedqws.png',
       link: '#'
     },
     // {
