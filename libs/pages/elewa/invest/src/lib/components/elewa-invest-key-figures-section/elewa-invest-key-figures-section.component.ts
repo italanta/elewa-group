@@ -43,6 +43,7 @@ export class ElewaInvestKeyFiguresSectionComponent implements OnInit {
     },
     {
       string: "2050",
+      figure: "",
       description: "Africa holds the worlds largest workforce",
 
     },
