@@ -9,5 +9,5 @@ export class ElewaInvestCallToActionSectionComponent {
   @Input() message = ' Become part of our mission.';
   @Input() callToActionText = 'investing';
   @Input() word = 'And start';
-  @Input() url = '/invest';
+  @Input() url = 'https://forms.gle/Ds3i5eYeygLDYPw96';
 }

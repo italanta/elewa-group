@@ -35,8 +35,8 @@ export class ElewaInvestKeyFiguresSectionComponent {
 
     },
     {
-      string: "7.5%",
-      description: "Kenya 2021 GDP growth",
+      string: "2050",
+      description: "Africa holds the worlds largest workforce",
 
     },
     {
