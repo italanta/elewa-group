@@ -63,7 +63,7 @@ p {
 	padding-bottom: 10%;
 }
 
-.apply-now  {
+.apply-now a {
 	color: white;
 	text-decoration: underline;
 	width: fit-content;
@@ -76,7 +76,7 @@ p {
   transition: all .2s ease-out;
 }
 
-.apply-now:hover {
+.apply-now a:hover {
   background-size: calc(100% - 0.2em) 2px, auto;
 }
 
