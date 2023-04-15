@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="cardSection">
 		<div class="figure" *ngIf="isImage; else noImage">
-			<img [src]="figure" alt="">
+		 	<a href="link" target="_blank"><img [src]="figure" alt="description"></a>
 		</div>
 		<ng-template #noImage>
 			<div class="text">
