@@ -1,8 +1,11 @@
 <div class="container">
     <h2 data-aos="fade-up" data-aos-duration="3000">Elewa spinouts and ventures <br> investments</h2>
+
     <div class="investments-cards" data-aos="fade-up" data-aos-duration="3000">
         <elewa-group-elewa-key-figure-card *ngFor="let card of cards"
         [figure]="card.figureUrl"
-        [isImage]="true"></elewa-group-elewa-key-figure-card>
+        [isImage]="true"
+        [link]="card.link"></elewa-group-elewa-key-figure-card>
     </div>
+
 </div>
