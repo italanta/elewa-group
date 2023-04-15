@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class VentureLabsHeroComponent {
   backgroundImage="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690293/elewa-group-website/hero-Images/Venture_labs_y4tnjx.jpg"
-  subtitle= "About"
-  title="Sustainable business meets moonshot Venture Labs"
+  subtitle= "Venture Labs"
+  title="Elewa's very own moonshot factory"
   footer=""}
