@@ -8,6 +8,9 @@ tmp
 # dependencies
 node_modules
 
+#envs
+/envs
+
 # IDEs and editors
 /.idea
 .project
@@ -46,3 +49,5 @@ package-lock.json
 scully.elewa-group-website.config.js
 scully/plugins/plugins.js
 apps/elewa-group-website/src/assets/scully-routes.json
+.env
+elewa-group-secrets.json
