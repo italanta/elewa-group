@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 import * as AOS from 'aos';
 
-// import { ContactMailService } from '../../services/contact-mail.service';
+import { ContactMailService } from '../../services/contact-mail.service';
 
 @Component({
   selector: 'elewa-group-contact-form',
@@ -20,8 +20,8 @@ export class ContactFormComponent implements OnInit {
 
   sendingEmail = false;
 
-  constructor(private _fb: FormBuilder)
-              // private _contactMailService: ContactMailService
+  constructor(private _fb: FormBuilder,
+              private _contactMailService: ContactMailService)
   {}
 
   ngOnInit(){
@@ -41,9 +41,9 @@ export class ContactFormComponent implements OnInit {
   sendContactEmail() {
     this.sendingEmail = true;
     const formData = this.contactDetailsForm.value;
-    // this._contactMailService.createEmailDoc(formData)
-    //                           .then(() => this.completeMailTo(true))
-    //                           .catch(() => this.completeMailTo(false));
+    this._contactMailService.createEmailDoc(formData)
+                              .then(() => this.completeMailTo(true))
+                              .catch(() => this.completeMailTo(false));
   }
 
   completeMailTo(success: boolean) {

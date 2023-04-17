@@ -1,11 +1,10 @@
-import { Timestamp } from "@firebase/firestore-types";
 
 export interface ContactMail {
   name: string;
   companyName: string;
   email: string;
   message: string;
-  sentOn: Timestamp;
+  sentOn: Date;
 }
 
 export interface SendGridMail {
@@ -16,5 +15,5 @@ export interface SendGridMail {
     text: string;
     html: string;
   };
-  sentOn: Timestamp;
+  sentOn: Date;
 }
