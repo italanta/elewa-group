@@ -136,7 +136,7 @@
   .article {
     flex: 0 0 100%;
     margin-right: 16px;
-    scroll-snap-align: start;
+    scroll-snap-align: flex-start;
     max-width: 300px;
   }
   
