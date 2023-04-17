@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ElewaInvestHeroComponent {
   subtitle = 'Trade, not aid';
-  title = 'Southern innovations that address global problem';
+  title = 'Southern innovations addressing global problems';
   backgroundImg = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679982347/elewa-group-website/hero-Images/dark-to-light_xrat5g.jpg';
   footerText = '';
   description = '';
