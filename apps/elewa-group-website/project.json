@@ -17,7 +17,8 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/elewa-group-website/src/favicon.ico",
-          "apps/elewa-group-website/src/assets"
+          "apps/elewa-group-website/src/assets",
+          "apps/elewa-group-website/src/sitemap.xml"
         ],
         "styles": [
           "apps/elewa-group-website/src/styles.scss",
