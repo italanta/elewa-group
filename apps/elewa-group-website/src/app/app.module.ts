@@ -15,8 +15,6 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app.routing';
 
-import * as process from 'process';
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -26,7 +24,7 @@ import * as process from 'process';
     MaterialDesignModule,
 
     IntercomModule.forRoot({
-      appId:  process.env['APP_ID']!,
+      appId: 'rod48tp9',
       updateOnRouterChange: true
     }),
 
