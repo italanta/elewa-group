@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
+
 import { ContactMail, SendGridMail } from '../model/contact-mail.interface';
 
 
@@ -8,23 +10,17 @@ import { ContactMail, SendGridMail } from '../model/contact-mail.interface';
 })
 export class ContactMailService {
 
-  constructor() {}
+  constructor(private _gtmService: GoogleTagManagerService) {}
 
   createEmailDoc(contactData: ContactMail) {
-
-    const sentDate = new Date();
-
-    const contactMessage: SendGridMail = {
-      to: 'contact@elewa.ke',
-      contactEmail: contactData.email,
-      message: {
-        subject: 'Elewa Group Contact Form',
-        text: contactData.message,
-        html: `<p></p>`,
-      },
-      sentOn: sentDate
+    const gtmTag = {
+      event: 'submit-contact-form',
+      eventCategory: 'Form Submitted',
+      eventAction: 'Contact Form',
+      pageName: '/contact',
+      subject: contactData.message
     };
 
-    return new Promise((resolve, reject) => {})
+    return this._gtmService.pushTag(gtmTag);
   }
 }
