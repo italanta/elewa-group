@@ -47,7 +47,7 @@ export class TeamMembersCarouselComponent implements OnInit {
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/ken-elewa_ydwzop.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/kennedy-adhola-97570535/',
       summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+        'Each and every person can reach their true full potential in life through meaningful and enjoyable Education and Training in their respective areas of interest.',
     },
     {
       name: 'Peter Reinartz',
@@ -56,7 +56,7 @@ export class TeamMembersCarouselComponent implements OnInit {
       imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656822/elewa-group-website/elewa-team-members/peter-elewa_zuzovx.jpg',
       LinkedInProfileLink: 'https://www.linkedin.com/in/peter-reinartz-1b4452ab/',
       summary:
-        'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
+        'With its inventive IT solutions, Elewa is ideally positioned to realize meaningful impact in areas such as education, healthcare and agriculture & environment. As chairman I find it extremely rewarding to contribute to strategy, business development and corporate governance at Elewa, through my experience collected during 38 years of executive management in various sectors and geographies.',
     },
     {
       name: 'Noella Mwanzia',
@@ -158,15 +158,16 @@ export class TeamMembersCarouselComponent implements OnInit {
         `I run Elewa's administration, ultimately driven by the satisfaction of contributing to growth and success of Elewa in both the Finance and 
         Admin Department.`    
     },
-    // {
-    //   name: 'Lynn Anastasia',
-    //   management: false,
-    //   role: 'Software Engineer',
-    //   imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1679656820/elewa-group-website/elewa-team-members/frank-elewa_kihn9e.jpg',
-    //   LinkedInProfileLink: 'https://www.linkedin.com/in/lynn-nyangon/',
-    //   summary:
-    //     'This free Paragraph Generator will generate complete paragraphs according to the instructions provided by you, so that you can quickly build unique content.',
-    // },
+    {
+      name: 'Lynn Anastasia',
+      management: false,
+      role: 'Software Engineer',
+      imageLink: 'https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,h_1000/v1682586211/IMG_9755_vfprhm.jpg',
+      LinkedInProfileLink: 'https://www.linkedin.com/in/lynn-nyangon/',
+      summary:
+        `I believe that the power of knowledge is not just realized in itself but
+        in its application to achieve a set goal. Thus, I strive to learn more every day.`,
+    },
     {
       name: 'Frankline Odero',
       management: false,
@@ -182,12 +183,12 @@ export class TeamMembersCarouselComponent implements OnInit {
 
   teamMembers: TeamMember[] = this.allTeamMembers;
 
-  mngmentMembersIsActive: boolean = true;
+  mngmentMembersIsActive = true;
 
   ngOnInit(): void {
     AOS.init({once: true, disable: 'mobile'});
     if (window.innerWidth < 768) {
-      let teamMember = this.allTeamMembers[0];
+      const teamMember = this.allTeamMembers[0];
       this.allTeamMembers.splice(0, 1);
       this.allTeamMembers.push(teamMember);
     }
